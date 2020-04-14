@@ -19,7 +19,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
-				<iYield>0</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces/>
 			<iExperience>0</iExperience>
@@ -44,7 +44,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
-				<iYield>0</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>1</iCommerce>
@@ -70,7 +70,11 @@
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
-			<Yields/>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
@@ -95,7 +99,11 @@
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
-			<Yields/>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>1</iYield>
+			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
@@ -120,7 +128,11 @@
 			<bVisible>1</bVisible>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
-			<Yields/>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</Yields>
 			<Commerces>
 				<iCommerce>3</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -147,8 +159,8 @@
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
-				<iYield>2</iYield>
-				<iYield>0</iYield>
+				<iYield>3</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces/>
 			<iExperience>0</iExperience>
@@ -173,7 +185,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>2</iYield>
+				<iYield>4</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
@@ -233,7 +245,7 @@
 			<Commerces>
 				<iCommerce>3</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>12</iCommerce>
+				<iCommerce>70</iCommerce>
 			</Commerces>
 			<iExperience>0</iExperience>
 			<iHappiness>1</iHappiness>
@@ -262,7 +274,7 @@
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
+				<iCommerce>15</iCommerce>
 				<iCommerce>0</iCommerce>
 			</Commerces>
 			<iExperience>0</iExperience>
@@ -287,7 +299,7 @@
 			<Yields>
 				<iYield>1</iYield>
 				<iYield>0</iYield>
-				<iYield>0</iYield>
+				<iYield>6</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>6</iCommerce>
@@ -315,7 +327,7 @@
 			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
-				<iYield>3</iYield>
+				<iYield>10</iYield>
 				<iYield>0</iYield>
 			</Yields>
 			<Commerces>
@@ -345,7 +357,7 @@
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>4</iYield>
+				<iYield>10</iYield>
 			</Yields>
 			<Commerces>
 				<iCommerce>0</iCommerce>
