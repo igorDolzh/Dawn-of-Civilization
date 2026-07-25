@@ -1273,6 +1273,8 @@ enum CivilizationTypes		// Exposed to Python
 	GEORGIA,
 	HAITI,
 	ZIMBABWE,
+	MAORI,
+	SOUTH_AFRICA,
 
 	INDEPENDENT,
 	INDEPENDENT2,

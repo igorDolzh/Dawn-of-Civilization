@@ -968,6 +968,31 @@ dGoals = {
 		),
 		NoCityLost(by=1600),
 	),
+	iMaori: (
+		All(
+			CityCount(plots.regions(rOceania).named(OCEANIA), 4),
+			PopulationCount(20),
+			by=1500,
+		),
+		All(
+			BuildingCount((iMonument, 4)),
+			CultureLevelCityCount(iCultureLevelRefined, 2),
+			by=1700,
+		),
+		NoCityLost(by=1840),
+	),
+	iSouthAfrica: (
+		All(
+			ControlledResourceCount((iGold, 3), (iGems, 2)),
+			by=1900,
+		),
+		AreaPercent(plots.regions(rCape, rKalahari).named(SOUTH_AFRICA), 45, by=1920),
+		All(
+			GoldAmount(8000),
+			PopulationCount(35),
+			by=1970,
+		),
+	),
 }
 
 

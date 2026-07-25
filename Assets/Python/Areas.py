@@ -75,6 +75,8 @@ iAshanti :		(61, 32), # Kumasi
 iHaiti :		(31, 42), # Port-au-Prince
 iZulu :			(79, 14), # kwaBulawayo
 iNativeAmericans :	(22, 54), # Cahokia
+iMaori :		(1, 8), # Te Whanganui-a-Tara
+iSouthAfrica :	(72, 11), # Kaapstad
 })
 
 dPeriodCapitals = {
@@ -161,6 +163,8 @@ iAshanti :		((59, 30),	(64, 34)),
 iHaiti :		((31, 42),	(33, 43)),
 iZulu :			((78, 12),	(81, 15)),
 iNativeAmericans :	((20, 51),	(25, 56)),
+iMaori :		((0, 6),	(2, 12)),
+iSouthAfrica :	((71, 10),	(76, 14)),
 })
 
 dExtendedBirthArea = CivDict({
@@ -294,6 +298,8 @@ iAshanti :		((60, 31),	(63, 33)),
 iHaiti :		((31, 42),	(32, 43)),
 iZulu :			((79, 13),	(80, 15)),
 iNativeAmericans :	((21, 52),	(24, 55)),
+iMaori :		((0, 7),	(2, 11)),
+iSouthAfrica :	((72, 11),	(75, 13)),
 })
 
 dCoreAreaExceptions = CivDict({
@@ -403,6 +409,8 @@ iAshanti :	((59, 30),	(64, 34)),
 iHaiti :	((31, 42),	(33, 43)),
 iZulu :		((78, 12),	(81, 15)),
 iNativeAmericans :	((20, 51),	(25, 56)),
+iMaori :	((0, 6),	(2, 12)),
+iSouthAfrica :	((71, 10),	(76, 14)),
 })
 
 dRespawnAreaExceptions = CivDict({

@@ -2020,4 +2020,52 @@
 		<Italian>Before the Horse and the Gun</Italian>
 		<Spanish>Before the Horse and the Gun</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_MAO1</Tag>
+		<English>The Great Fleet</English>
+		<French>The Great Fleet</French>
+		<German>The Great Fleet</German>
+		<Italian>The Great Fleet</Italian>
+		<Spanish>The Great Fleet</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_MAO2</Tag>
+		<English>Whakairo</English>
+		<French>Whakairo</French>
+		<German>Whakairo</German>
+		<Italian>Whakairo</Italian>
+		<Spanish>Whakairo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_MAO3</Tag>
+		<English>Ake Ake Ake</English>
+		<French>Ake Ake Ake</French>
+		<German>Ake Ake Ake</German>
+		<Italian>Ake Ake Ake</Italian>
+		<Spanish>Ake Ake Ake</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_RSA1</Tag>
+		<English>Gold and Diamonds</English>
+		<French>Gold and Diamonds</French>
+		<German>Gold and Diamonds</German>
+		<Italian>Gold and Diamonds</Italian>
+		<Spanish>Gold and Diamonds</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_RSA2</Tag>
+		<English>The Great Trek</English>
+		<French>The Great Trek</French>
+		<German>The Great Trek</German>
+		<Italian>The Great Trek</Italian>
+		<Spanish>The Great Trek</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_RSA3</Tag>
+		<English>Union</English>
+		<French>Union</French>
+		<German>Union</German>
+		<Italian>Union</Italian>
+		<Spanish>Union</Spanish>
+	</TEXT>
 </Civ4GameText>

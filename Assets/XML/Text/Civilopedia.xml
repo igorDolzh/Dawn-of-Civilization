@@ -7087,4 +7087,20 @@ Your stability level can change during a stability check. As long it is higher t
 		<Italian>Great Zimbabwe was the stone-built capital of a Shona kingdom that controlled the gold trade between the interior plateau and the Swahili coast, later succeeded by the Kingdom of Mutapa.</Italian>
 		<Spanish>Great Zimbabwe was the stone-built capital of a Shona kingdom that controlled the gold trade between the interior plateau and the Swahili coast, later succeeded by the Kingdom of Mutapa.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_PEDIA</Tag>
+		<English>The Maori reached Aotearoa around 1280, the last major landmass on earth to be settled by people. Isolated from the rest of Polynesia, they developed fortified pa, an intricate carving tradition, and a martial culture that met European arrival with organised resistance rather than collapse.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_PEDIA</Tag>
+		<English>Descended from Dutch settlers at the Cape, the Boers trekked inland to escape British rule and founded the Transvaal and Orange Free State. The discovery of gold and diamonds beneath their republics made conflict with the British Empire inevitable.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

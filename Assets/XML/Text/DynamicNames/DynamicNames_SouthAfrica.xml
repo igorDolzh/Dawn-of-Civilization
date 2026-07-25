@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- South Africa -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_DESC</Tag>
+		<English>The Boer</English>
+		<French>The Boer</French>
+		<German>The Boer</German>
+		<Italian>The Boer</Italian>
+		<Spanish>The Boer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_PEOPLES</Tag>
+		<English>Boer Peoples</English>
+		<French>Boer Peoples</French>
+		<German>Boer Peoples</German>
+		<Italian>Boer Peoples</Italian>
+		<Spanish>Boer Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_ADJECTIVE</Tag>
+		<English>Boer</English>
+		<French>Boer</French>
+		<German>Boer</German>
+		<Italian>Boer</Italian>
+		<Spanish>Boer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_SHORT_DESC</Tag>
+		<English>South Africa</English>
+		<French>South Africa</French>
+		<German>South Africa</German>
+		<Italian>South Africa</Italian>
+		<Spanish>South Africa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_DEFAULT</Tag>
+		<English>%s1</English>
+		<French>%s1</French>
+		<German>%s1</German>
+		<Italian>%s1</Italian>
+		<Spanish>%s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_COMMUNIST</Tag>
+		<English>%s2 People's Republic</English>
+		<French>%s2 People's Republic</French>
+		<German>%s2 People's Republic</German>
+		<Italian>%s2 People's Republic</Italian>
+		<Spanish>%s2 People's Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_AFRICA_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

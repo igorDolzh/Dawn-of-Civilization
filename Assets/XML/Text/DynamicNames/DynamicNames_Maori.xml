@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Aotearoa -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_DESC</Tag>
+		<English>The Maori</English>
+		<French>The Maori</French>
+		<German>The Maori</German>
+		<Italian>The Maori</Italian>
+		<Spanish>The Maori</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_PEOPLES</Tag>
+		<English>Maori Peoples</English>
+		<French>Maori Peoples</French>
+		<German>Maori Peoples</German>
+		<Italian>Maori Peoples</Italian>
+		<Spanish>Maori Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_ADJECTIVE</Tag>
+		<English>Maori</English>
+		<French>Maori</French>
+		<German>Maori</German>
+		<Italian>Maori</Italian>
+		<Spanish>Maori</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_SHORT_DESC</Tag>
+		<English>Aotearoa</English>
+		<French>Aotearoa</French>
+		<German>Aotearoa</German>
+		<Italian>Aotearoa</Italian>
+		<Spanish>Aotearoa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_DEFAULT</Tag>
+		<English>%s1</English>
+		<French>%s1</French>
+		<German>%s1</German>
+		<Italian>%s1</Italian>
+		<Spanish>%s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_COMMUNIST</Tag>
+		<English>%s2 People's Republic</English>
+		<French>%s2 People's Republic</French>
+		<German>%s2 People's Republic</German>
+		<Italian>%s2 People's Republic</Italian>
+		<Spanish>%s2 People's Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAORI_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

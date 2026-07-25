@@ -468,5 +468,17 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Swahili.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_MAORI</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Polynesia.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Flower.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_SOUTH_AFRICA</Type>
+			<Button>,Art/Interface/Buttons/Civilizations/Netherlands.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,8,4</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Leeuw.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

@@ -1250,6 +1250,19 @@ dStartingUnits = CivDict({
 		iWork: 2,
 		iDefend: 2,
 		iHarass: 2,
+	},
+	iMaori: {
+		iSettle: 2,
+		iWork: 2,
+		iDefend: 3,
+		iHarass: 2,
+	},
+	iSouthAfrica: {
+		iSettle: 3,
+		iWork: 2,
+		iDefend: 3,
+		iAttack: 2,
+		iHarass: 2,
 	}
 }, {})
 
@@ -2213,6 +2226,15 @@ dTechPreferences = {
 		iCeremony: 30,
 		iDivination: 20,
 		iPottery: 20,
+	},
+	iMaori : {
+		iSeafaring: 40,
+		iCeremony: 20,
+	},
+	iSouthAfrica : {
+		iNationalism: 30,
+		iEconomics: 20,
+		iMetallurgy: 20,
 	},
 }
 
