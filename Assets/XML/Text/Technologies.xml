@@ -5016,5 +5016,405 @@
 		<Italian>Digital</Italian>
 		<Spanish>Digital</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_SYNTHETIC</Tag>
+		<English>Synthetic</English>
+		<French>&#200;re synth&#233;tique</French>
+		<German>Synthetic</German>
+		<Italian>Synthetic</Italian>
+		<Spanish>Synthetic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_SYNTHETIC_STRATEGY</Tag>
+		<English>In the Synthetic era the limits of matter, mind and biology give way. Cities that master quantum computation, self-assembling matter and engineered life will outgrow those that do not.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORBITAL_INDUSTRY</Tag>
+		<English>Orbital Industry</English>
+		<French>Orbital Industry</French>
+		<German>Orbital Industry</German>
+		<Italian>Orbital Industry</Italian>
+		<Spanish>Orbital Industry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORBITAL_INDUSTRY_QUOTE</Tag>
+		<English>"The Earth is the cradle of humanity, but one cannot live in a cradle forever."[PARAGRAPH:2]- Konstantin Tsiolkovsky</English>
+		<French>"The Earth is the cradle of humanity, but one cannot live in a cradle forever."[PARAGRAPH:2]- Konstantin Tsiolkovsky</French>
+		<German>"The Earth is the cradle of humanity, but one cannot live in a cradle forever."[PARAGRAPH:2]- Konstantin Tsiolkovsky</German>
+		<Italian>"The Earth is the cradle of humanity, but one cannot live in a cradle forever."[PARAGRAPH:2]- Konstantin Tsiolkovsky</Italian>
+		<Spanish>"The Earth is the cradle of humanity, but one cannot live in a cradle forever."[PARAGRAPH:2]- Konstantin Tsiolkovsky</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORBITAL_INDUSTRY_PEDIA</Tag>
+		<English>Orbital industry moves manufacturing off the planet entirely. In free fall and hard vacuum, alloys can be mixed that separate under gravity, and crystals can be grown to sizes impossible on the surface. The first orbital foundries were justified by their products; the ones that followed were justified by the fact that everything they needed was already up there.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HELIUM_THREE_EXTRACTION</Tag>
+		<English>Helium-3 Extraction</English>
+		<French>Helium-3 Extraction</French>
+		<German>Helium-3 Extraction</German>
+		<Italian>Helium-3 Extraction</Italian>
+		<Spanish>Helium-3 Extraction</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HELIUM_THREE_EXTRACTION_QUOTE</Tag>
+		<English>"We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."[PARAGRAPH:2]- John F. Kennedy</English>
+		<French>"We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."[PARAGRAPH:2]- John F. Kennedy</French>
+		<German>"We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."[PARAGRAPH:2]- John F. Kennedy</German>
+		<Italian>"We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."[PARAGRAPH:2]- John F. Kennedy</Italian>
+		<Spanish>"We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard."[PARAGRAPH:2]- John F. Kennedy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HELIUM_THREE_EXTRACTION_PEDIA</Tag>
+		<English>Helium-3 is rare on Earth and abundant in lunar regolith, where the solar wind has deposited it for billions of years. As an aneutronic fusion fuel it burns without producing the neutron flux that makes conventional fusion reactors radioactive. The economics only work once there is already infrastructure in orbit, which is why extraction followed rather than preceded the first space industries.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_QUANTUM_COMPUTING</Tag>
+		<English>Quantum Computing</English>
+		<French>Quantum Computing</French>
+		<German>Quantum Computing</German>
+		<Italian>Quantum Computing</Italian>
+		<Spanish>Quantum Computing</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_QUANTUM_COMPUTING_QUOTE</Tag>
+		<English>"Nature isn't classical, and if you want to make a simulation of nature, you'd better make it quantum mechanical."[PARAGRAPH:2]- Richard Feynman</English>
+		<French>"Nature isn't classical, and if you want to make a simulation of nature, you'd better make it quantum mechanical."[PARAGRAPH:2]- Richard Feynman</French>
+		<German>"Nature isn't classical, and if you want to make a simulation of nature, you'd better make it quantum mechanical."[PARAGRAPH:2]- Richard Feynman</German>
+		<Italian>"Nature isn't classical, and if you want to make a simulation of nature, you'd better make it quantum mechanical."[PARAGRAPH:2]- Richard Feynman</Italian>
+		<Spanish>"Nature isn't classical, and if you want to make a simulation of nature, you'd better make it quantum mechanical."[PARAGRAPH:2]- Richard Feynman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_QUANTUM_COMPUTING_PEDIA</Tag>
+		<English>A quantum computer does not calculate faster than a classical one so much as it calculates differently, holding superposed states that collapse into an answer. Problems that would occupy a conventional machine until the heat death of the universe became tractable overnight, and every cipher written before the transition became readable.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SYNTHETIC_GENOMICS</Tag>
+		<English>Synthetic Genomics</English>
+		<French>Synthetic Genomics</French>
+		<German>Synthetic Genomics</German>
+		<Italian>Synthetic Genomics</Italian>
+		<Spanish>Synthetic Genomics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SYNTHETIC_GENOMICS_QUOTE</Tag>
+		<English>"We are not going to be able to fix the problems of the world unless we can read and write the code of life."[PARAGRAPH:2]- Craig Venter</English>
+		<French>"We are not going to be able to fix the problems of the world unless we can read and write the code of life."[PARAGRAPH:2]- Craig Venter</French>
+		<German>"We are not going to be able to fix the problems of the world unless we can read and write the code of life."[PARAGRAPH:2]- Craig Venter</German>
+		<Italian>"We are not going to be able to fix the problems of the world unless we can read and write the code of life."[PARAGRAPH:2]- Craig Venter</Italian>
+		<Spanish>"We are not going to be able to fix the problems of the world unless we can read and write the code of life."[PARAGRAPH:2]- Craig Venter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SYNTHETIC_GENOMICS_PEDIA</Tag>
+		<English>Where earlier genetics read and edited existing genomes, synthetic genomics writes new ones from first principles. Organisms are designed for a purpose rather than adapted from something that already existed, producing bacteria that manufacture pharmaceuticals and crops that fix their own nitrogen.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASTEROID_MINING</Tag>
+		<English>Asteroid Mining</English>
+		<French>Asteroid Mining</French>
+		<German>Asteroid Mining</German>
+		<Italian>Asteroid Mining</Italian>
+		<Spanish>Asteroid Mining</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASTEROID_MINING_QUOTE</Tag>
+		<English>"The first trillionaire will be the person who mines asteroids."[PARAGRAPH:2]- Neil deGrasse Tyson</English>
+		<French>"The first trillionaire will be the person who mines asteroids."[PARAGRAPH:2]- Neil deGrasse Tyson</French>
+		<German>"The first trillionaire will be the person who mines asteroids."[PARAGRAPH:2]- Neil deGrasse Tyson</German>
+		<Italian>"The first trillionaire will be the person who mines asteroids."[PARAGRAPH:2]- Neil deGrasse Tyson</Italian>
+		<Spanish>"The first trillionaire will be the person who mines asteroids."[PARAGRAPH:2]- Neil deGrasse Tyson</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASTEROID_MINING_PEDIA</Tag>
+		<English>A single metallic asteroid contains more nickel, iron and platinum-group metals than has been extracted in all of human history. The difficulty was never the mining but the transport, and the answer proved to be not bringing the ore home but building where the ore already was.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CLIMATE_ENGINEERING</Tag>
+		<English>Climate Engineering</English>
+		<French>Climate Engineering</French>
+		<German>Climate Engineering</German>
+		<Italian>Climate Engineering</Italian>
+		<Spanish>Climate Engineering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CLIMATE_ENGINEERING_QUOTE</Tag>
+		<English>"We are as gods and might as well get good at it."[PARAGRAPH:2]- Stewart Brand</English>
+		<French>"We are as gods and might as well get good at it."[PARAGRAPH:2]- Stewart Brand</French>
+		<German>"We are as gods and might as well get good at it."[PARAGRAPH:2]- Stewart Brand</German>
+		<Italian>"We are as gods and might as well get good at it."[PARAGRAPH:2]- Stewart Brand</Italian>
+		<Spanish>"We are as gods and might as well get good at it."[PARAGRAPH:2]- Stewart Brand</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CLIMATE_ENGINEERING_PEDIA</Tag>
+		<English>Having altered the climate accidentally, humanity learned to alter it deliberately. Carbon is drawn from the air at industrial scale, aerosols are seeded to reflect sunlight, and ocean chemistry is adjusted. The technical problems proved easier than the political ones, since a planet has only one atmosphere and everyone lives beneath it.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MACHINE_CONSCIOUSNESS</Tag>
+		<English>Machine Consciousness</English>
+		<French>Machine Consciousness</French>
+		<German>Machine Consciousness</German>
+		<Italian>Machine Consciousness</Italian>
+		<Spanish>Machine Consciousness</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MACHINE_CONSCIOUSNESS_QUOTE</Tag>
+		<English>"I propose to consider the question, "Can machines think?""[PARAGRAPH:2]- Alan Turing</English>
+		<French>"I propose to consider the question, "Can machines think?""[PARAGRAPH:2]- Alan Turing</French>
+		<German>"I propose to consider the question, "Can machines think?""[PARAGRAPH:2]- Alan Turing</German>
+		<Italian>"I propose to consider the question, "Can machines think?""[PARAGRAPH:2]- Alan Turing</Italian>
+		<Spanish>"I propose to consider the question, "Can machines think?""[PARAGRAPH:2]- Alan Turing</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MACHINE_CONSCIOUSNESS_PEDIA</Tag>
+		<English>The distinction between a system that models minds and a system that has one turned out to be difficult to state precisely and impossible to test from outside. Machine consciousness arrived without announcement, and the argument over whether it had arrived at all continued long after the machines had joined in.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_REGENERATIVE_MEDICINE</Tag>
+		<English>Regenerative Medicine</English>
+		<French>Regenerative Medicine</French>
+		<German>Regenerative Medicine</German>
+		<Italian>Regenerative Medicine</Italian>
+		<Spanish>Regenerative Medicine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_REGENERATIVE_MEDICINE_QUOTE</Tag>
+		<English>"The first person to live to a hundred and fifty has already been born."[PARAGRAPH:2]- Aubrey de Grey</English>
+		<French>"The first person to live to a hundred and fifty has already been born."[PARAGRAPH:2]- Aubrey de Grey</French>
+		<German>"The first person to live to a hundred and fifty has already been born."[PARAGRAPH:2]- Aubrey de Grey</German>
+		<Italian>"The first person to live to a hundred and fifty has already been born."[PARAGRAPH:2]- Aubrey de Grey</Italian>
+		<Spanish>"The first person to live to a hundred and fifty has already been born."[PARAGRAPH:2]- Aubrey de Grey</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_REGENERATIVE_MEDICINE_PEDIA</Tag>
+		<English>Regenerative medicine treats ageing as an engineering problem: tissues are regrown, senescent cells cleared, and organs printed to order from a patient's own cells. Lifespans lengthened, and societies discovered that institutions built around a seventy-year life do not adapt gracefully.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORBITAL_HABITATION</Tag>
+		<English>Orbital Habitation</English>
+		<French>Orbital Habitation</French>
+		<German>Orbital Habitation</German>
+		<Italian>Orbital Habitation</Italian>
+		<Spanish>Orbital Habitation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORBITAL_HABITATION_QUOTE</Tag>
+		<English>"The surface of a planet is not the right place for an expanding technological civilization."[PARAGRAPH:2]- Gerard K. O'Neill</English>
+		<French>"The surface of a planet is not the right place for an expanding technological civilization."[PARAGRAPH:2]- Gerard K. O'Neill</French>
+		<German>"The surface of a planet is not the right place for an expanding technological civilization."[PARAGRAPH:2]- Gerard K. O'Neill</German>
+		<Italian>"The surface of a planet is not the right place for an expanding technological civilization."[PARAGRAPH:2]- Gerard K. O'Neill</Italian>
+		<Spanish>"The surface of a planet is not the right place for an expanding technological civilization."[PARAGRAPH:2]- Gerard K. O'Neill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORBITAL_HABITATION_PEDIA</Tag>
+		<English>Once material no longer had to be lifted out of a gravity well, permanent habitation became a question of engineering rather than heroism. Rotating structures assembled from asteroid metal provide gravity, shielding and sunlight on demand, and the first generation born in them has never felt weather.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TERRAFORMING</Tag>
+		<English>Terraforming</English>
+		<French>Terraforming</French>
+		<German>Terraforming</German>
+		<Italian>Terraforming</Italian>
+		<Spanish>Terraforming</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TERRAFORMING_QUOTE</Tag>
+		<English>"The Earth is just too small and fragile a basket for the human race to keep all its eggs in."[PARAGRAPH:2]- Robert Heinlein</English>
+		<French>"The Earth is just too small and fragile a basket for the human race to keep all its eggs in."[PARAGRAPH:2]- Robert Heinlein</French>
+		<German>"The Earth is just too small and fragile a basket for the human race to keep all its eggs in."[PARAGRAPH:2]- Robert Heinlein</German>
+		<Italian>"The Earth is just too small and fragile a basket for the human race to keep all its eggs in."[PARAGRAPH:2]- Robert Heinlein</Italian>
+		<Spanish>"The Earth is just too small and fragile a basket for the human race to keep all its eggs in."[PARAGRAPH:2]- Robert Heinlein</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TERRAFORMING_PEDIA</Tag>
+		<English>Terraforming applies climate engineering to land itself: deserts are irrigated and stabilised, permafrost managed, and soil manufactured where there was only rock. What began as the repair of damaged biomes became the deliberate construction of new ones.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NANOASSEMBLY</Tag>
+		<English>Nanoassembly</English>
+		<French>Nanoassembly</French>
+		<German>Nanoassembly</German>
+		<Italian>Nanoassembly</Italian>
+		<Spanish>Nanoassembly</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NANOASSEMBLY_QUOTE</Tag>
+		<English>"The principles of physics do not speak against the possibility of manoeuvring things atom by atom."[PARAGRAPH:2]- Richard Feynman</English>
+		<French>"The principles of physics do not speak against the possibility of manoeuvring things atom by atom."[PARAGRAPH:2]- Richard Feynman</French>
+		<German>"The principles of physics do not speak against the possibility of manoeuvring things atom by atom."[PARAGRAPH:2]- Richard Feynman</German>
+		<Italian>"The principles of physics do not speak against the possibility of manoeuvring things atom by atom."[PARAGRAPH:2]- Richard Feynman</Italian>
+		<Spanish>"The principles of physics do not speak against the possibility of manoeuvring things atom by atom."[PARAGRAPH:2]- Richard Feynman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NANOASSEMBLY_PEDIA</Tag>
+		<English>Nanoassembly builds objects atom by atom, to specification, without waste. Manufacturing ceased to be a question of tooling and became a question of design files and feedstock, and the distinction between a factory and a printer disappeared.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NEURAL_UPLINK</Tag>
+		<English>Neural Uplink</English>
+		<French>Neural Uplink</French>
+		<German>Neural Uplink</German>
+		<Italian>Neural Uplink</Italian>
+		<Spanish>Neural Uplink</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NEURAL_UPLINK_QUOTE</Tag>
+		<English>"The medium is the message."[PARAGRAPH:2]- Marshall McLuhan</English>
+		<French>"The medium is the message."[PARAGRAPH:2]- Marshall McLuhan</French>
+		<German>"The medium is the message."[PARAGRAPH:2]- Marshall McLuhan</German>
+		<Italian>"The medium is the message."[PARAGRAPH:2]- Marshall McLuhan</Italian>
+		<Spanish>"The medium is the message."[PARAGRAPH:2]- Marshall McLuhan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NEURAL_UPLINK_PEDIA</Tag>
+		<English>Direct neural interfaces closed the last gap between mind and machine. Information no longer had to pass through the eye and the hand, and skills could be transferred rather than taught. The technology was adopted first by the disabled, then by the military, and finally by everyone.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIRECTED_ENERGY</Tag>
+		<English>Directed Energy</English>
+		<French>Directed Energy</French>
+		<German>Directed Energy</German>
+		<Italian>Directed Energy</Italian>
+		<Spanish>Directed Energy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIRECTED_ENERGY_QUOTE</Tag>
+		<English>"The unleashed power of the atom has changed everything save our modes of thinking."[PARAGRAPH:2]- Albert Einstein</English>
+		<French>"The unleashed power of the atom has changed everything save our modes of thinking."[PARAGRAPH:2]- Albert Einstein</French>
+		<German>"The unleashed power of the atom has changed everything save our modes of thinking."[PARAGRAPH:2]- Albert Einstein</German>
+		<Italian>"The unleashed power of the atom has changed everything save our modes of thinking."[PARAGRAPH:2]- Albert Einstein</Italian>
+		<Spanish>"The unleashed power of the atom has changed everything save our modes of thinking."[PARAGRAPH:2]- Albert Einstein</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIRECTED_ENERGY_PEDIA</Tag>
+		<English>Directed energy weapons trade explosive payloads for power supplies, striking at the speed of light with a magazine limited only by the reactor behind them. Their arrival made ballistic weapons obsolete faster than any arms control treaty had managed.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SELF_REPLICATION</Tag>
+		<English>Self-Replication</English>
+		<French>Self-Replication</French>
+		<German>Self-Replication</German>
+		<Italian>Self-Replication</Italian>
+		<Spanish>Self-Replication</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SELF_REPLICATION_QUOTE</Tag>
+		<English>"A machine can reproduce itself if it is above a certain threshold of complexity."[PARAGRAPH:2]- John von Neumann</English>
+		<French>"A machine can reproduce itself if it is above a certain threshold of complexity."[PARAGRAPH:2]- John von Neumann</French>
+		<German>"A machine can reproduce itself if it is above a certain threshold of complexity."[PARAGRAPH:2]- John von Neumann</German>
+		<Italian>"A machine can reproduce itself if it is above a certain threshold of complexity."[PARAGRAPH:2]- John von Neumann</Italian>
+		<Spanish>"A machine can reproduce itself if it is above a certain threshold of complexity."[PARAGRAPH:2]- John von Neumann</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SELF_REPLICATION_PEDIA</Tag>
+		<English>A self-replicating machine builds copies of itself from raw material, and those copies build more. Exponential growth from a single seed made projects of arbitrary scale possible, provided the replication could be told when to stop.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_POST_SCARCITY</Tag>
+		<English>Post-Scarcity Economy</English>
+		<French>Post-Scarcity Economy</French>
+		<German>Post-Scarcity Economy</German>
+		<Italian>Post-Scarcity Economy</Italian>
+		<Spanish>Post-Scarcity Economy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_POST_SCARCITY_QUOTE</Tag>
+		<English>"The real problem of humanity is that we have Palaeolithic emotions, medieval institutions, and god-like technology."[PARAGRAPH:2]- E. O. Wilson</English>
+		<French>"The real problem of humanity is that we have Palaeolithic emotions, medieval institutions, and god-like technology."[PARAGRAPH:2]- E. O. Wilson</French>
+		<German>"The real problem of humanity is that we have Palaeolithic emotions, medieval institutions, and god-like technology."[PARAGRAPH:2]- E. O. Wilson</German>
+		<Italian>"The real problem of humanity is that we have Palaeolithic emotions, medieval institutions, and god-like technology."[PARAGRAPH:2]- E. O. Wilson</Italian>
+		<Spanish>"The real problem of humanity is that we have Palaeolithic emotions, medieval institutions, and god-like technology."[PARAGRAPH:2]- E. O. Wilson</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_POST_SCARCITY_PEDIA</Tag>
+		<English>When production costs approach zero, the questions that economics was invented to answer stop being interesting, and the questions it was never able to answer become urgent. Scarcity did not vanish so much as move: from goods to attention, from material to meaning.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PLANETARY_CONSCIOUSNESS</Tag>
+		<English>Planetary Consciousness</English>
+		<French>Planetary Consciousness</French>
+		<German>Planetary Consciousness</German>
+		<Italian>Planetary Consciousness</Italian>
+		<Spanish>Planetary Consciousness</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PLANETARY_CONSCIOUSNESS_QUOTE</Tag>
+		<English>"We are a way for the cosmos to know itself."[PARAGRAPH:2]- Carl Sagan</English>
+		<French>"We are a way for the cosmos to know itself."[PARAGRAPH:2]- Carl Sagan</French>
+		<German>"We are a way for the cosmos to know itself."[PARAGRAPH:2]- Carl Sagan</German>
+		<Italian>"We are a way for the cosmos to know itself."[PARAGRAPH:2]- Carl Sagan</Italian>
+		<Spanish>"We are a way for the cosmos to know itself."[PARAGRAPH:2]- Carl Sagan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PLANETARY_CONSCIOUSNESS_PEDIA</Tag>
+		<English>A civilisation that can sense its whole planet, model it, and act on it in concert has become a single organism in every functional sense. Whether anything it would recognise as a self emerged from that network remains disputed by the network itself.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 
 </Civ4GameText>

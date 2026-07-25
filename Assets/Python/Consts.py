@@ -615,7 +615,7 @@ iGeorgia : 1466,
 iZimbabwe : 1450,
 iAshanti : 1902,
 iZulu : 1879,
-}, 2025)
+}, 2100)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
 dNeighbours = dictFromEdges(lBirthCivs, lNeighbours)
@@ -628,63 +628,63 @@ iEgypt : [(-3000, -50)],
 iBabylonia : [(-3000, -500)],
 iAssyria : [(-3000, -600)],
 iNubia : [(500, 1500)],
-iChina : [(600, 2025)],
+iChina : [(600, 2100)],
 iHittites : [(-1800, -800)],
-iGreece : [(1800, 2025)],
-iIndia : [(1600, 1800), (1900, 2025)],
+iGreece : [(1800, 2100)],
+iIndia : [(1600, 1800), (1900, 2100)],
 iPhoenicia : [(-1000, -150)],
 iPersia : [(220, 580)],
-iCelts : [(400, 1150), (1850, 2025)],
+iCelts : [(400, 1150), (1850, 2100)],
 iRome : [(-500, 450)],
 iMaya : [(0, 800)],
 iDravidia : [(-300, 600), (1300, 1650)],
-iEthiopia : [(1270, 1520), (1850, 2025)],
-iKorea : [(600, 2025)],
-iKhmer : [(1950, 2025)],
+iEthiopia : [(1270, 1520), (1850, 2100)],
+iKorea : [(600, 2100)],
+iKhmer : [(1950, 2100)],
 iMali : [(1340, 1590)],
 iByzantium : [(1100, 1280)],
-iFrance : [(1700, 2025)],
-iMalays : [(500, 1500), (1940, 2025)],
-iJapan : [(1800, 2025)],
-iNorse : [(1520, 2025)],
+iFrance : [(1700, 2100)],
+iMalays : [(500, 1500), (1940, 2100)],
+iJapan : [(1800, 2100)],
+iNorse : [(1520, 2100)],
 iTurks : [(1350, 1500)],
-iMoors : [(1000, 2025)],
-iJava : [(720, 1755), (1900, 2025)],
-iSpain : [(1700, 2025)],
-iEngland : [(1700, 2025)],
-iHolyRome : [(1800, 2025)],
-iBurma : [(850, 1885), (1950, 2025)],
-iRus : [(1650, 2025)],
-iVietnam : [(950, 2025)],
-iSwahili : [(1960, 2025)],
-iMisr : [(1800, 2025)],
-iPoland : [(1920, 2025)],
-iPortugal : [(1700, 2025)],
+iMoors : [(1000, 2100)],
+iJava : [(720, 1755), (1900, 2100)],
+iSpain : [(1700, 2100)],
+iEngland : [(1700, 2100)],
+iHolyRome : [(1800, 2100)],
+iBurma : [(850, 1885), (1950, 2100)],
+iRus : [(1650, 2100)],
+iVietnam : [(950, 2100)],
+iSwahili : [(1960, 2100)],
+iMisr : [(1800, 2100)],
+iPoland : [(1920, 2100)],
+iPortugal : [(1700, 2100)],
 iInca : [(1800, 1930)],
-iItaly : [(1820, 2025)],
-iMongols : [(1910, 2025)],
-iMughals : [(1940, 2025)],
-iThailand : [(1700, 2025)],
-iSweden : [(1250, 2025)],
-iRussia : [(1280, 1550), (1700, 2025)],
-iOttomans : [(1700, 2025)],
-iIran : [(1500, 2025)],
-iNetherlands : [(1700, 2025)],
-iGermany : [(1840, 2025)],
-iSaudis : [(1820, 2025)],
-iAmerica : [(1776, 2025)],
-iArgentina : [(1810, 2025)],
-iMexico : [(1810, 2025)],
-iColombia : [(1810, 2025)],
-iBrazil : [(1820, 2025)],
-iBelgium : [(1830, 2025)],
-iAustralia : [(1851, 2025)],
-iCanada : [(1867, 2025)],
-iGeorgia : [(1490, 2025)],
+iItaly : [(1820, 2100)],
+iMongols : [(1910, 2100)],
+iMughals : [(1940, 2100)],
+iThailand : [(1700, 2100)],
+iSweden : [(1250, 2100)],
+iRussia : [(1280, 1550), (1700, 2100)],
+iOttomans : [(1700, 2100)],
+iIran : [(1500, 2100)],
+iNetherlands : [(1700, 2100)],
+iGermany : [(1840, 2100)],
+iSaudis : [(1820, 2100)],
+iAmerica : [(1776, 2100)],
+iArgentina : [(1810, 2100)],
+iMexico : [(1810, 2100)],
+iColombia : [(1810, 2100)],
+iBrazil : [(1820, 2100)],
+iBelgium : [(1830, 2100)],
+iAustralia : [(1851, 2100)],
+iCanada : [(1867, 2100)],
+iGeorgia : [(1490, 2100)],
 iZimbabwe : [(1450, 1700)],
 iAshanti : [(1700, 1900)],
-iHaiti : [(1804, 2025)],
-iZulu : [(1816, 2025)],
+iHaiti : [(1804, 2100)],
+iZulu : [(1816, 2100)],
 }, [])
 
 dAggressionLevel = CivDict({
@@ -1003,7 +1003,7 @@ iNumCorporations = 10
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 141
+iNumTechs = 157
 (iTanning, iMining, iPottery, iPastoralism, iAgriculture, iMythology, iSailing,
 iSmelting, iMasonry, iLeverage, iProperty, iCeremony, iDivination, iSeafaring,
 iAlloys, iConstruction, iRiding, iArithmetics, iWriting, iCalendar, iShipbuilding,
@@ -1025,7 +1025,8 @@ iRadar, iSpaceflight, iNuclearPower, iLaser, iComputers, iTourism, iEcology,
 iAerodynamics, iSatellites, iSuperconductors, iRobotics, iTelecommunications, iRenewableEnergy, iGenetics,
 iSupermaterials, iFusion, iNanotechnology, iCybernetics, iBiotechnology,
 iUnifiedTheory, iArtificialIntelligence,
-iTranshumanism) = range(iNumTechs)
+iTranshumanism,
+iOrbitalIndustry, iHeliumThreeExtraction, iQuantumComputing, iSyntheticGenomics, iAsteroidMining, iClimateEngineering, iMachineConsciousness, iRegenerativeMedicine, iOrbitalHabitation, iTerraforming, iNanoassembly, iNeuralUplink, iDirectedEnergy, iSelfReplication, iPostScarcity, iPlanetaryConsciousness) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
@@ -1125,7 +1126,7 @@ iNumBuildings += iNumNationalWonders
 (iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange, iTradingCompanyBuilding, iIberianTradingCompanyBuilding, iNationalMonument, iNationalTheatre, 
 iNationalGallery, iNationalCollege, iMilitaryAcademy, iSecretService, iIronworks, iRedCross, iNationalPark, iCentralBank, iSpaceport) = range(iFirstNationalWonder, iNumBuildings)
 
-iNumGreatWonders = 140 # different from DLL constant because that includes national wonders
+iNumGreatWonders = 144 # different from DLL constant because that includes national wonders
 iFirstWonder = iNumBuildings
 iNumBuildings += iNumGreatWonders
 (iGreatSphinx, iPyramids, iOracle, iGreatWall, iIshtarGate, iTerracottaArmy, iHangingGardens, iGreatCothon, iDujiangyan, iApadanaPalace, 
@@ -1141,7 +1142,7 @@ iChapultepecCastle, iEiffelTower, iWestminsterPalace, iTriumphalArch, iMenloPark
 iLasLajasSanctuary, iPalaceOfNations, iMoleAntonelliana, iNeuschwanstein, iFrontenac, iWembley, iLubyanka, iCristoRedentor, iMetropolitain, iNobelPrize, 
 iGoldenGateBridge, iBletchleyPark, iSagradaFamilia, iTiananmenSquare, iCERN, iItaipuDam, iGraceland, iCNTower, iPentagon, iUnitedNations, 
 iCrystalCathedral, iMotherlandCalls, iBerlaymont, iWorldTradeCenter, iAtomium, iIronDome, iHarbourOpera, iLotusTemple, iFloralisGenerica, iGlobalSeedVault, 
-iGardensByTheBay, iBurjKhalifa, iHubbleSpaceTelescope, iChannelTunnel, iSkytree, iOrientalPearlTower, iDeltaWorks, iSpaceElevator, iLargeHadronCollider, iITER) = range(iFirstWonder, iNumBuildings)
+iGardensByTheBay, iBurjKhalifa, iHubbleSpaceTelescope, iChannelTunnel, iSkytree, iOrientalPearlTower, iDeltaWorks, iSpaceElevator, iLargeHadronCollider, iITER, iAwakenedMind, iPlanetaryThermostat, iMethuselahInstitute, iVonNeumannFoundry) = range(iFirstWonder, iNumBuildings)
 
 iTemple = iJewishTemple #generic
 iCathedral = iJewishCathedral #generic
@@ -1256,8 +1257,8 @@ lMarsBaseComponents = [iMarsFraming, iMarsPowerSource, iMarsExtractor, iMarsHabi
 
 #Eras
 
-iNumEras = 7
-(iAncient, iClassical, iMedieval, iRenaissance, iIndustrial, iGlobal, iDigital) = range (iNumEras)
+iNumEras = 8
+(iAncient, iClassical, iMedieval, iRenaissance, iIndustrial, iGlobal, iDigital, iSynthetic) = range (iNumEras)
 
 # Culture
 

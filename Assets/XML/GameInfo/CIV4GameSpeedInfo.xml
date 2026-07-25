@@ -146,14 +146,25 @@
 					<iTurnsPerIncrement>180</iTurnsPerIncrement>
 				</GameTurnInfo>
 				
+				<!-- Synthetic Era -->
+				<!-- 2025 AD to 2100 AD -->
+				<!-- 300 turns -->
+				
+				<!-- 300 x 0.25 years = 75 years -> 2100 AD -->
+				<GameTurnInfo>
+					<iMonthIncrement>3</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
+				</GameTurnInfo>
+				
 				<!-- Ancient: 330 turns -->
 				<!-- Classical: 300 turns -->
 				<!-- Medieval: 330 turns -->
 				<!-- Renaissance: 300 turns -->
 				<!-- Industrial: 210 turns -->
 				<!-- Global: 150 turns -->
+				<!-- Synthetic: 300 turns -->
 				<!-- Digital: 180 turns -->
-				<!-- TOTAL: 1800 turns -->
+				<!-- TOTAL: 2100 turns -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
@@ -295,14 +306,25 @@
 					<iTurnsPerIncrement>90</iTurnsPerIncrement>
 				</GameTurnInfo>
 				
+				<!-- Synthetic Era -->
+				<!-- 2025 AD to 2100 AD -->
+				<!-- 150 turns -->
+				
+				<!-- 150 x 0.50 years = 75 years -> 2100 AD -->
+				<GameTurnInfo>
+					<iMonthIncrement>6</iMonthIncrement>
+					<iTurnsPerIncrement>150</iTurnsPerIncrement>
+				</GameTurnInfo>
+				
 				<!-- Ancient: 165 turns -->
 				<!-- Classical: 150 turns -->
 				<!-- Medieval: 165 turns -->
 				<!-- Renaissance: 150 turns -->
 				<!-- Industrial: 105 turns -->
 				<!-- Global: 75 turns -->
+				<!-- Synthetic: 150 turns -->
 				<!-- Digital: 90 turns -->
-				<!-- TOTAL: 900 turns -->
+				<!-- TOTAL: 1050 turns -->
 			</GameTurnInfos>
 		</GameSpeedInfo>
 		<GameSpeedInfo>
@@ -444,14 +466,25 @@
 					<iTurnsPerIncrement>10</iTurnsPerIncrement>
 				</GameTurnInfo>
 				
+				<!-- Synthetic Era -->
+				<!-- 2025 AD to 2100 AD -->
+				<!-- 150 turns -->
+				
+				<!-- 150 x 0.50 years = 75 years -> 2100 AD -->
+				<GameTurnInfo>
+					<iMonthIncrement>6</iMonthIncrement>
+					<iTurnsPerIncrement>150</iTurnsPerIncrement>
+				</GameTurnInfo>
+				
 				<!-- Ancient: 110 turns -->
 				<!-- Classical: 100 turns -->
 				<!-- Medieval: 110 turns -->
 				<!-- Renaissance: 100 turns -->
 				<!-- Industrial: 70 turns -->
 				<!-- Global: 60 turns -->
+				<!-- Synthetic: 150 turns -->
 				<!-- Digital: 50 turns -->
-				<!-- TOTAL: 600 turns -->
+				<!-- TOTAL: 750 turns -->
 				
 			</GameTurnInfos>
 		</GameSpeedInfo>

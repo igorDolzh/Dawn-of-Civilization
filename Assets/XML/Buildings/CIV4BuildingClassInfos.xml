@@ -2499,6 +2499,42 @@
 			<DefaultBuilding>BUILDING_ITER</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_AWAKENED_MIND</Type>
+			<Description>TXT_KEY_BUILDING_AWAKENED_MIND</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_AWAKENED_MIND</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_PLANETARY_THERMOSTAT</Type>
+			<Description>TXT_KEY_BUILDING_PLANETARY_THERMOSTAT</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_PLANETARY_THERMOSTAT</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_METHUSELAH_INSTITUTE</Type>
+			<Description>TXT_KEY_BUILDING_METHUSELAH_INSTITUTE</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_METHUSELAH_INSTITUTE</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_VON_NEUMANN_FOUNDRY</Type>
+			<Description>TXT_KEY_BUILDING_VON_NEUMANN_FOUNDRY</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_VON_NEUMANN_FOUNDRY</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_PLAGUE</Type>
 			<Description>TXT_KEY_BUILDING_PLAGUE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

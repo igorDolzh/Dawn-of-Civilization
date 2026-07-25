@@ -13,7 +13,7 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_CIVS				(73)
 
-#define NUM_ERAS				(ERA_DIGITAL+1)
+#define NUM_ERAS				(ERA_SYNTHETIC+1)
 
 #define PAGAN_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PAGAN_TEMPLE"))
 #define BUILDING_PALACE			((BuildingClassTypes)0)
@@ -142,8 +142,8 @@ enum OverseasGroup
 
 #endif	// CVRHYES_H
 
-static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 25, 25, 25};
-static const int lTechBackwardsBonus[NUM_ERAS] = {0, 20, 30, 40, 50, 50, 50};
+static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 25, 25, 25, 25};
+static const int lTechBackwardsBonus[NUM_ERAS] = {0, 20, 30, 40, 50, 50, 50, 50};
 
 // Leoreth: order of persecution
 static const int persecutionOrder[NUM_RELIGIONS][NUM_RELIGIONS-1] = 

@@ -524,13 +524,16 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 	def placeTechs(self):
 		lTechs = []
-		dTechs = dict((iX, []) for iX in range(23))
-		
+		# derive the column count from the tech tree itself: a hardcoded bound raises
+		# KeyError below as soon as a tech is added beyond it
+		iNumColumns = max(gc.getTechInfo(iTech).getGridX() for iTech in range(gc.getNumTechInfos())) + 1
+		dTechs = dict((iX, []) for iX in range(iNumColumns))
+
 		for iTech in range(gc.getNumTechInfos()):
 			techInfo = gc.getTechInfo(iTech)
 			dTechs[techInfo.getGridX()].append((techInfo.getGridY(), techInfo.getDescription(), iTech))
-		
-		for iX in range(23):
+
+		for iX in range(iNumColumns):
 			if lTechs:
 				lTechs.append(("", -1))
 			

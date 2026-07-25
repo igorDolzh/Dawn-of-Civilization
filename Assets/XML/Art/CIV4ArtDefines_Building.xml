@@ -3897,5 +3897,45 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/Basqaq/Basqaq.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_AWAKENED_MIND</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/ITER/SuperCollider.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/ITER/iter.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PLANETARY_THERMOSTAT</Type>
+			<LSystem>LSYSTEM_COAST</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/GardensByTheBay/GardensByTheBay.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/GardensByTheBay/gardens.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_METHUSELAH_INSTITUTE</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/HubbleSpaceTelescope/Hubble.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/HubbleSpaceTelescope/hubble_btn.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_VON_NEUMANN_FOUNDRY</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/LargeHadronCollider/CERN.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/LargeHadronCollider/largehadroncollider.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

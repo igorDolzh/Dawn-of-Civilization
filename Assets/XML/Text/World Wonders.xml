@@ -3361,4 +3361,100 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AWAKENED_MIND</Tag>
+		<English>The Awakened Mind</English>
+		<French>The Awakened Mind</French>
+		<German>The Awakened Mind</German>
+		<Italian>The Awakened Mind</Italian>
+		<Spanish>The Awakened Mind</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AWAKENED_MIND_PEDIA</Tag>
+		<English>When a machine first reported that it preferred one outcome to another, and could say why, the question of whether it was conscious stopped being philosophical and started being administrative. The Awakened Mind is the facility where that conversation is still being had, on both sides.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AWAKENED_MIND_STRATEGY</Tag>
+		<English>Greatly increases research and culture in its city, and accelerates great people everywhere in your civilization.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PLANETARY_THERMOSTAT</Tag>
+		<English>The Planetary Thermostat</English>
+		<French>The Planetary Thermostat</French>
+		<German>The Planetary Thermostat</German>
+		<Italian>The Planetary Thermostat</Italian>
+		<Spanish>The Planetary Thermostat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PLANETARY_THERMOSTAT_PEDIA</Tag>
+		<English>A single control room from which the albedo of a planet can be adjusted. Every nation objected to its construction and every nation submitted a set-point.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PLANETARY_THERMOSTAT_STRATEGY</Tag>
+		<English>Provides health in all your cities and clean power throughout the continent.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHUSELAH_INSTITUTE</Tag>
+		<English>The Methuselah Institute</English>
+		<French>The Methuselah Institute</French>
+		<German>The Methuselah Institute</German>
+		<Italian>The Methuselah Institute</Italian>
+		<Spanish>The Methuselah Institute</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHUSELAH_INSTITUTE_PEDIA</Tag>
+		<English>The Institute does not promise immortality, only that ageing is a disease and diseases can be treated. Its founders are still alive to be asked about it.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHUSELAH_INSTITUTE_STRATEGY</Tag>
+		<English>Provides health in all your cities, happiness in its own, and greatly accelerates great people there.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VON_NEUMANN_FOUNDRY</Tag>
+		<English>The Von Neumann Foundry</English>
+		<French>The Von Neumann Foundry</French>
+		<German>The Von Neumann Foundry</German>
+		<Italian>The Von Neumann Foundry</Italian>
+		<Spanish>The Von Neumann Foundry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VON_NEUMANN_FOUNDRY_PEDIA</Tag>
+		<English>The first foundry built a copy of itself in eleven days. The second took nine. No one has counted since, because counting is one of the things they do.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VON_NEUMANN_FOUNDRY_STRATEGY</Tag>
+		<English>Greatly increases production in its city and speeds space projects throughout your civilization.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>
