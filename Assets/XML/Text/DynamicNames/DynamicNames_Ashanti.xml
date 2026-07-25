@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ashanti -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_DESC</Tag>
+		<English>The Ashanti</English>
+		<French>The Ashanti</French>
+		<German>The Ashanti</German>
+		<Italian>The Ashanti</Italian>
+		<Spanish>The Ashanti</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_PEOPLES</Tag>
+		<English>Akan Peoples</English>
+		<French>Akan Peoples</French>
+		<German>Akan Peoples</German>
+		<Italian>Akan Peoples</Italian>
+		<Spanish>Akan Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_ADJECTIVE</Tag>
+		<English>Ashanti</English>
+		<French>Ashanti</French>
+		<German>Ashanti</German>
+		<Italian>Ashanti</Italian>
+		<Spanish>Ashanti</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_SHORT_DESC</Tag>
+		<English>Ashanti</English>
+		<French>Ashanti</French>
+		<German>Ashanti</German>
+		<Italian>Ashanti</Italian>
+		<Spanish>Ashanti</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_DEFAULT</Tag>
+		<English>%s1 Empire</English>
+		<French>%s1 Empire</French>
+		<German>%s1 Empire</German>
+		<Italian>%s1 Empire</Italian>
+		<Spanish>%s1 Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_COMMUNIST</Tag>
+		<English>%s2 People's Republic</English>
+		<French>%s2 People's Republic</French>
+		<German>%s2 People's Republic</German>
+		<Italian>%s2 People's Republic</Italian>
+		<Spanish>%s2 People's Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ASHANTI_FASCIST</Tag>
+		<English>%s2 Union</English>
+		<French>%s2 Union</French>
+		<German>%s2 Union</German>
+		<Italian>%s2 Union</Italian>
+		<Spanish>%s2 Union</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1876,4 +1876,124 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_GEO1</Tag>
+		<English>Kingdom of All Kartli</English>
+		<French>Kingdom of All Kartli</French>
+		<German>Kingdom of All Kartli</German>
+		<Italian>Kingdom of All Kartli</Italian>
+		<Spanish>Kingdom of All Kartli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_GEO2</Tag>
+		<English>The Georgian Golden Age</English>
+		<French>The Georgian Golden Age</French>
+		<German>The Georgian Golden Age</German>
+		<Italian>The Georgian Golden Age</Italian>
+		<Spanish>The Georgian Golden Age</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_GEO3</Tag>
+		<English>Bulwark of the Caucasus</English>
+		<French>Bulwark of the Caucasus</French>
+		<German>Bulwark of the Caucasus</German>
+		<Italian>Bulwark of the Caucasus</Italian>
+		<Spanish>Bulwark of the Caucasus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZIM1</Tag>
+		<English>Houses of Stone</English>
+		<French>Houses of Stone</French>
+		<German>Houses of Stone</German>
+		<Italian>Houses of Stone</Italian>
+		<Spanish>Houses of Stone</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZIM2</Tag>
+		<English>Gold of the Interior</English>
+		<French>Gold of the Interior</French>
+		<German>Gold of the Interior</German>
+		<Italian>Gold of the Interior</Italian>
+		<Spanish>Gold of the Interior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZIM3</Tag>
+		<English>Mwene Mutapa</English>
+		<French>Mwene Mutapa</French>
+		<German>Mwene Mutapa</German>
+		<Italian>Mwene Mutapa</Italian>
+		<Spanish>Mwene Mutapa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ASH1</Tag>
+		<English>The Golden Stool</English>
+		<French>The Golden Stool</French>
+		<German>The Golden Stool</German>
+		<Italian>The Golden Stool</Italian>
+		<Spanish>The Golden Stool</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ASH2</Tag>
+		<English>The Gold Coast</English>
+		<French>The Gold Coast</French>
+		<German>The Gold Coast</German>
+		<Italian>The Gold Coast</Italian>
+		<Spanish>The Gold Coast</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ASH3</Tag>
+		<English>War of the Golden Stool</English>
+		<French>War of the Golden Stool</French>
+		<German>War of the Golden Stool</German>
+		<Italian>War of the Golden Stool</Italian>
+		<Spanish>War of the Golden Stool</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_HAI1</Tag>
+		<English>The First Free Republic</English>
+		<French>The First Free Republic</French>
+		<German>The First Free Republic</German>
+		<Italian>The First Free Republic</Italian>
+		<Spanish>The First Free Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_HAI2</Tag>
+		<English>Citadelle Laferriere</English>
+		<French>Citadelle Laferriere</French>
+		<German>Citadelle Laferriere</German>
+		<Italian>Citadelle Laferriere</Italian>
+		<Spanish>Citadelle Laferriere</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_HAI3</Tag>
+		<English>Pearl of the Antilles</English>
+		<French>Pearl of the Antilles</French>
+		<German>Pearl of the Antilles</German>
+		<Italian>Pearl of the Antilles</Italian>
+		<Spanish>Pearl of the Antilles</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZUL1</Tag>
+		<English>Mfecane</English>
+		<French>Mfecane</French>
+		<German>Mfecane</German>
+		<Italian>Mfecane</Italian>
+		<Spanish>Mfecane</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZUL2</Tag>
+		<English>Horns of the Buffalo</English>
+		<French>Horns of the Buffalo</French>
+		<German>Horns of the Buffalo</German>
+		<Italian>Horns of the Buffalo</Italian>
+		<Spanish>Horns of the Buffalo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZUL3</Tag>
+		<English>Land of Heaven</English>
+		<French>Land of Heaven</French>
+		<German>Land of Heaven</German>
+		<Italian>Land of Heaven</Italian>
+		<Spanish>Land of Heaven</Spanish>
+	</TEXT>
 </Civ4GameText>

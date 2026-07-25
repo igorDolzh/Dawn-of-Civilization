@@ -46,7 +46,8 @@ lIndependenceCivs = [
 	iColombia,
 	iBrazil,
 	iAustralia,
-	iCanada
+	iCanada,
+	iHaiti
 ]
 
 lDynamicReligionCivs = [
@@ -57,7 +58,8 @@ lDynamicReligionCivs = [
 	iColombia,
 	iBrazil,
 	iAustralia,
-	iCanada
+	iCanada,
+	iHaiti
 ]
 
 lInvasionCivs = [

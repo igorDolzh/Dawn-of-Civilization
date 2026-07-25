@@ -69,6 +69,11 @@ iBrazil :		(44, 20), # Rio de Janeiro
 iBelgium : 		(63, 62), # Bruxelles
 iAustralia :	(142, 12), # Sydney
 iCanada :		(31, 61), # Montreal
+iGeorgia :		(89, 55), # Mtskheta
+iZimbabwe :		(79, 17), # Great Zimbabwe
+iAshanti :		(61, 32), # Kumasi
+iHaiti :		(31, 42), # Port-au-Prince
+iZulu :			(79, 14), # kwaBulawayo
 })
 
 dPeriodCapitals = {
@@ -149,6 +154,11 @@ iColombia :		((26, 31),	(36, 38)),
 iBrazil :		((40, 16),	(49, 31)),
 iAustralia :	((126, 6),	(144, 24)),
 iCanada : 		((6, 59),	(37, 68)),
+iGeorgia :		((87, 53),	(91, 57)),
+iZimbabwe :		((77, 16),	(81, 20)),
+iAshanti :		((59, 30),	(64, 34)),
+iHaiti :		((31, 42),	(33, 43)),
+iZulu :			((78, 12),	(81, 15)),
 })
 
 dExtendedBirthArea = CivDict({
@@ -276,6 +286,11 @@ iBrazil :		((42, 19),	(47, 25)),
 iBelgium :		((61, 61),	(63, 63)),
 iAustralia :	((139, 9),	(143, 13)),
 iCanada :		((26, 59),	(37, 62)),
+iGeorgia :		((88, 54),	(90, 56)),
+iZimbabwe :		((78, 17),	(80, 19)),
+iAshanti :		((60, 31),	(63, 33)),
+iHaiti :		((31, 42),	(32, 43)),
+iZulu :			((79, 13),	(80, 15)),
 })
 
 dCoreAreaExceptions = CivDict({
@@ -379,6 +394,11 @@ iMughals :	((99, 42),	(104, 50)),
 iOttomans : ((78, 51),	(87, 55)),
 iRussia :	((81, 56),	(95, 75)),
 iGermany :	((64, 59),	(70, 66)),
+iGeorgia :	((87, 53),	(91, 57)),
+iZimbabwe :	((77, 16),	(81, 20)),
+iAshanti :	((59, 30),	(64, 34)),
+iHaiti :	((31, 42),	(33, 43)),
+iZulu :		((78, 12),	(81, 15)),
 })
 
 dRespawnAreaExceptions = CivDict({

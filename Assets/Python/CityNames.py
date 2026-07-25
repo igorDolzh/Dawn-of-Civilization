@@ -83,6 +83,11 @@ dBaseLanguages = {
 	iBelgium: (iFrench, iDutch),
 	iAustralia: (iEnglish,),
 	iCanada: (iEnglish, iFrench),
+	iGeorgia: (iByzantine, iLocal),
+	iZimbabwe: (iKiswahili, iLocal),
+	iAshanti: (iMande, iLocal),
+	iHaiti: (iFrench, iLocal),
+	iZulu: (iCongolese, iLocal),
 }
 
 lUniqueSuffixes = [

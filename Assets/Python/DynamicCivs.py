@@ -605,6 +605,11 @@ dStartingLeaders = [
 	iBelgium : iLeopold,
 	iAustralia : iCurtin,
 	iCanada : iMacDonald,
+	iGeorgia : iTamar,
+	iZimbabwe : iMutota,
+	iAshanti : iOseiTutu,
+	iHaiti : iToussaint,
+	iZulu : iShaka,
 },
 # 600 AD
 {

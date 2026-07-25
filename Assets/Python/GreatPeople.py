@@ -5879,6 +5879,200 @@ dGreatPeople = {
 			"Igor Gouzenko", # 20th
 		),
 	},
+	iGeorgia : {
+		iGreatProphet : (
+			"Nino of Cappadocia",
+			"Euthymius of Athos",
+			"George of Athos",
+			"Arsen of Ikalto",
+		),
+		iGreatArtist : (
+			"Shota Rustaveli",
+			"Ioane Shavteli",
+			"Chakhrukhadze",
+			"Damiane",
+		),
+		iGreatScientist : (
+			"Ioane Petritsi",
+			"Arsen Iqaltoeli",
+			"Ephrem Mtsire",
+		),
+		iGreatMerchant : (
+			"Zakaria Mkhargrdzeli",
+			"Kakhaber Kakhaberidze",
+		),
+		iGreatEngineer : (
+			"Beshken Opizari",
+			"Beka Opizari",
+		),
+		iGreatStatesman : (
+			"Bagrat III",
+			"David the Builder",
+			"Giorgi III",
+			"Giorgi V",
+		),
+		iGreatGeneral : (
+			"Ivane Mkhargrdzeli",
+			"Zakaria Mkhargrdzeli",
+			"Torghva Pantsulaia",
+		),
+		iGreatSpy : (
+			"Kutlu Arslan",
+		),
+	},
+	iZimbabwe : {
+		iGreatProphet : (
+			"Chaminuka",
+			"Nehanda",
+			"Kaguvi",
+		),
+		iGreatArtist : (
+			"Chikura Wadyembeu",
+			"Nyatsimba",
+		),
+		iGreatScientist : (
+			"Mudadi weMatare",
+			"Zvarevashe",
+		),
+		iGreatMerchant : (
+			"Chirisamhuru",
+			"Nyahuma",
+			"Mavura",
+		),
+		iGreatEngineer : (
+			"Mbire weDare",
+			"Chirundu",
+		),
+		iGreatStatesman : (
+			"Nyatsimba Mutota",
+			"Matope Nyanhehwe",
+			"Changamire Dombo",
+		),
+		iGreatGeneral : (
+			"Changamire Dombo",
+			"Chikuyo Chisamarengu",
+			"Kakuyo Komunyaka",
+		),
+		iGreatSpy : (
+			"Mukwati",
+		),
+	},
+	iAshanti : {
+		iGreatProphet : (
+			"Okomfo Anokye",
+			"Komfo Yaw",
+			"Nana Oduro",
+		),
+		iGreatArtist : (
+			"Kwaku Dua",
+			"Osei Bonsu",
+			"Kane Kwei",
+		),
+		iGreatScientist : (
+			"Nana Kofi Adu",
+			"Kwame Frimpong",
+		),
+		iGreatMerchant : (
+			"Osei Kwadwo",
+			"John Owusu Ansah",
+			"Kwadwo Adinkra",
+		),
+		iGreatEngineer : (
+			"Nana Antwi Agyei",
+			"Kofi Nti",
+		),
+		iGreatStatesman : (
+			"Osei Tutu",
+			"Opoku Ware I",
+			"Osei Kwadwo",
+			"Prempeh I",
+		),
+		iGreatGeneral : (
+			"Amankwatia",
+			"Asamoah Nkwanta",
+			"Osei Bonsu",
+		),
+		iGreatSpy : (
+			"fYaa Asantewaa",
+		),
+	},
+	iHaiti : {
+		iGreatProphet : (
+			"Dutty Boukman",
+			"fCecile Fatiman",
+			"Romaine-la-Prophetesse",
+		),
+		iGreatArtist : (
+			"Hector Hyppolite",
+			"Philippe-Auguste",
+			"Jacques Roumain",
+			"Rene Depestre",
+		),
+		iGreatScientist : (
+			u"Anténor Firmin",
+			"Jean Price-Mars",
+			"Louis-Joseph Janvier",
+		),
+		iGreatMerchant : (
+			"Andre Rigaud",
+			"Jean-Pierre Boyer",
+		),
+		iGreatEngineer : (
+			"Henri Barre",
+			"Charles Deslandes",
+		),
+		iGreatStatesman : (
+			"Toussaint Louverture",
+			"Alexandre Petion",
+			"Jean-Pierre Boyer",
+		),
+		iGreatGeneral : (
+			"Jean-Jacques Dessalines",
+			"Henri Christophe",
+			"Francois Capois",
+		),
+		iGreatSpy : (
+			"Jean-Baptiste Chavannes",
+		),
+	},
+	iZulu : {
+		iGreatProphet : (
+			"Isaiah Shembe",
+			"Nxele",
+			"Mbiya Kulile",
+		),
+		iGreatArtist : (
+			"Magolwane kaMkhathini",
+			"Mshongweni",
+			"Benedict Wallet Vilakazi",
+		),
+		iGreatScientist : (
+			"John Langalibalele Dube",
+			"Pixley ka Isaka Seme",
+		),
+		iGreatMerchant : (
+			"John Dunn",
+			"Sobhuza",
+		),
+		iGreatEngineer : (
+			"Mgobhozi",
+			"Ndlela kaSompisi",
+		),
+		iGreatStatesman : (
+			"Shaka kaSenzangakhona",
+			"Dingane",
+			"Mpande",
+			"Cetshwayo",
+		),
+		iGreatGeneral : (
+			"Ndlela kaSompisi",
+			"Ntshingwayo kaMahole",
+			"Dabulamanzi kaMpande",
+		),
+		iGreatSpy : (
+			"fMkabayi kaJama",
+		),
+	},
 }
 
 

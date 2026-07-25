@@ -1211,6 +1211,39 @@ dStartingUnits = CivDict({
 		iFerry: 2,
 		iEscort: 1,
 		iLightEscort: 1,
+	},
+	iGeorgia: {
+		iSettle: 2,
+		iWork: 2,
+		iDefend: 3,
+		iAttack: 2,
+		iHarass: 1,
+	},
+	iZimbabwe: {
+		iSettle: 3,
+		iWork: 2,
+		iDefend: 2,
+		iHarass: 2,
+	},
+	iAshanti: {
+		iSettle: 3,
+		iWork: 2,
+		iDefend: 3,
+		iAttack: 2,
+		iHarass: 1,
+	},
+	iHaiti: {
+		iSettle: 2,
+		iWork: 2,
+		iDefend: 3,
+		iAttack: 1,
+	},
+	iZulu: {
+		iSettle: 3,
+		iWork: 2,
+		iDefend: 3,
+		iAttack: 4,
+		iShock: 2,
 	}
 }, {})
 
@@ -2146,6 +2179,29 @@ dTechPreferences = {
 		iSynthetics: 20,
 		iElectricity: 20,
 		iEngine: 20,
+	},
+	iGeorgia : {
+		iTheology: 30,
+		iFeudalism: 30,
+		iCivilService: 20,
+	},
+	iZimbabwe : {
+		iSeafaring: 30,
+		iGuilds: 20,
+		iEngineering: 20,
+	},
+	iAshanti : {
+		iGuilds: 30,
+		iEconomics: 30,
+		iSeafaring: 20,
+	},
+	iHaiti : {
+		iNationalism: 40,
+		iEconomics: 20,
+	},
+	iZulu : {
+		iNationalism: 30,
+		iMonarchy: 20,
 	},
 }
 

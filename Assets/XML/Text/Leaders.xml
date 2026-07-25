@@ -1381,4 +1381,84 @@
 		<Italian>Uzbeg Khan</Italian>
 		<Spanish>Uzbeg Khan</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_OSEI_TUTU</Tag>
+		<English>Osei Tutu</English>
+		<French>Osei Tutu</French>
+		<German>Osei Tutu</German>
+		<Italian>Osei Tutu</Italian>
+		<Spanish>Osei Tutu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TAMAR</Tag>
+		<English>Tamar</English>
+		<French>Tamar</French>
+		<German>Tamar</German>
+		<Italian>Tamar</Italian>
+		<Spanish>Tamar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TOUSSAINT</Tag>
+		<English>Toussaint Louverture</English>
+		<French>Toussaint Louverture</French>
+		<German>Toussaint Louverture</German>
+		<Italian>Toussaint Louverture</Italian>
+		<Spanish>Toussaint Louverture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MUTOTA</Tag>
+		<English>Mutota</English>
+		<French>Mutota</French>
+		<German>Mutota</German>
+		<Italian>Mutota</Italian>
+		<Spanish>Mutota</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SHAKA</Tag>
+		<English>Shaka</English>
+		<French>Shaka</French>
+		<German>Shaka</German>
+		<Italian>Shaka</Italian>
+		<Spanish>Shaka</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_OSEI_TUTU_PEDIA</Tag>
+		<English>Founder of the Ashanti Empire and first Asantehene, who united the Akan states under the Golden Stool.</English>
+		<French>Founder of the Ashanti Empire and first Asantehene, who united the Akan states under the Golden Stool.</French>
+		<German>Founder of the Ashanti Empire and first Asantehene, who united the Akan states under the Golden Stool.</German>
+		<Italian>Founder of the Ashanti Empire and first Asantehene, who united the Akan states under the Golden Stool.</Italian>
+		<Spanish>Founder of the Ashanti Empire and first Asantehene, who united the Akan states under the Golden Stool.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TAMAR_PEDIA</Tag>
+		<English>Queen of Georgia, whose reign is remembered as the Georgian Golden Age.</English>
+		<French>Queen of Georgia, whose reign is remembered as the Georgian Golden Age.</French>
+		<German>Queen of Georgia, whose reign is remembered as the Georgian Golden Age.</German>
+		<Italian>Queen of Georgia, whose reign is remembered as the Georgian Golden Age.</Italian>
+		<Spanish>Queen of Georgia, whose reign is remembered as the Georgian Golden Age.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TOUSSAINT_PEDIA</Tag>
+		<English>Leader of the Haitian Revolution, the first successful revolt of enslaved people to found a free state.</English>
+		<French>Leader of the Haitian Revolution, the first successful revolt of enslaved people to found a free state.</French>
+		<German>Leader of the Haitian Revolution, the first successful revolt of enslaved people to found a free state.</German>
+		<Italian>Leader of the Haitian Revolution, the first successful revolt of enslaved people to found a free state.</Italian>
+		<Spanish>Leader of the Haitian Revolution, the first successful revolt of enslaved people to found a free state.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MUTOTA_PEDIA</Tag>
+		<English>Founder of the Kingdom of Mutapa, successor to Great Zimbabwe.</English>
+		<French>Founder of the Kingdom of Mutapa, successor to Great Zimbabwe.</French>
+		<German>Founder of the Kingdom of Mutapa, successor to Great Zimbabwe.</German>
+		<Italian>Founder of the Kingdom of Mutapa, successor to Great Zimbabwe.</Italian>
+		<Spanish>Founder of the Kingdom of Mutapa, successor to Great Zimbabwe.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SHAKA_PEDIA</Tag>
+		<English>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</English>
+		<French>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</French>
+		<German>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</German>
+		<Italian>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</Italian>
+		<Spanish>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -1267,6 +1267,12 @@ enum CivilizationTypes		// Exposed to Python
 	TURKS,
 	VIETNAM,
 	ZULU,
+
+	ASHANTI,
+	GEORGIA,
+	HAITI,
+	ZIMBABWE,
+
 	INDEPENDENT,
 	INDEPENDENT2,
 	NATIVE,
@@ -1494,6 +1500,11 @@ enum LeaderHeadTypes			// Exposed to Python
 	BOUDICA,
 
 	SITTING_BULL,
+
+	// Leoreth's LeaderHeadTypes enum is a partial convenience list and is already
+	// offset from CIV4LeaderHeadInfos.xml past its early entries (e.g. CURTIN is
+	// index 150 in the XML but 140 here), so new leaders are deliberately not added:
+	// OSEI_TUTU, TAMAR, TOUSSAINT, MUTOTA and SHAKA are referenced only from Python.
 
 	NUM_LEADERHEADS
 };

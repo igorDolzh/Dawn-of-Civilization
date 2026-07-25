@@ -1262,5 +1262,45 @@
 			<NoShaderNIF>Art/Leaderheads/Songtsen/S_Gampo.nif</NoShaderNIF>
 			<BackgroundKFM>Art/Leaderheads/Songtsen/Zara Yaqob_BG.kfm</BackgroundKFM>
 		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_OSEI_TUTU</Type>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_Mali_MansaMusa.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,13</Button>
+			<NIF>art/LeaderHeads/Mansa_Musa/mansa_musa.nif</NIF>
+			<KFM>art/LeaderHeads/Mansa_Musa/mansa_musa.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Mansa_Musa/mansa_musa_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Mansa_Musa/Mansa_Musa_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TAMAR</Type>
+			<Button>Art/Leaderheads/Basil/Basil.dds</Button>
+			<NIF>Art/Leaderheads/Basil/basil.nif</NIF>
+			<KFM>Art/Leaderheads/Basil/huayna_capac.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Basil/basil.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Justinian/Justinian_Background.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_TOUSSAINT</Type>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_France_Napoleon.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,3,12</Button>
+			<NIF>art/LeaderHeads/Napoleon/napoleon.nif</NIF>
+			<KFM>art/LeaderHeads/Napoleon/napoleon.kfm</KFM>
+			<NoShaderNIF>art/LeaderHeads/Napoleon/napoleon_noshader.nif</NoShaderNIF>
+			<BackgroundKFM>art/LeaderHeads/Napoleon/napoleon_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_MUTOTA</Type>
+			<Button>Art/Leaderheads/Menelik/Button_Menelik.dds</Button>
+			<NIF>Art/Leaderheads/Menelik/Charlemagne.nif</NIF>
+			<KFM>Art/Leaderheads/Menelik/Charlemagne.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Menelik/Charlemagne.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Menelik/Saladin_BG.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_SHAKA</Type>
+			<Button>Art/Leaderheads/Mbemba/Button_Mbemba.dds</Button>
+			<NIF>Art/Leaderheads/Mbemba/Arawak.nif</NIF>
+			<KFM>Art/Leaderheads/Mbemba/Arawak.kfm</KFM>
+			<NoShaderNIF>Art/Leaderheads/Mbemba/Arawak.nif</NoShaderNIF>
+			<BackgroundKFM>Art/Leaderheads/Mbemba/kublai_khan_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>
 	</LeaderheadArtInfos>
 </Civ4ArtDefines>

@@ -910,6 +910,51 @@ dGoals = {
 		),
 		BrokeredPeace(12, by=2000),
 	),
+	iGeorgia: (
+		Control(plots.region(rCaucasus).named(CAUCASUS), by=1210),
+		All(
+			CultureLevelCityCount(iCultureLevelRefined, 3),
+			GreatPeople(iGreatArtist, 3),
+			by=1250,
+		),
+		All(
+			StateReligion(iOrthodoxy),
+			BuildingCount((iOrthodoxCathedral, 2)),
+			by=1450,
+		),
+	),
+	iZimbabwe: (
+		AreaPercent(plots.regions(rZambezi, rCape).named(SOUTH_AFRICA), 40, by=1400),
+		ControlledResourceCount((iGold, 4), (iIvory, 3), by=1500),
+		TradeRouteCount(12, by=1600),
+	),
+	iAshanti: (
+		GoldAmount(3000, by=1750),
+		ControlledResourceCount((iGold, 3), (iIvory, 3), by=1820),
+		All(
+			NoCityConquered(),
+			PopulationCount(25),
+			by=1900,
+		),
+	),
+	iHaiti: (
+		All(
+			CityCount(plots.region(rCaribbean).named(CARIBBEAN), 3),
+			NoCityLost(),
+			by=1840,
+		),
+		BuildingCount((iCastle, 3), by=1850),
+		GoldAmount(5000, by=1900),
+	),
+	iZulu: (
+		AreaPercent(plots.regions(rCape, rKalahari).named(SOUTH_AFRICA), 50, by=1860),
+		All(
+			BuildingCount((iBarracks, 6)),
+			NoCityLost(),
+			by=1879,
+		),
+		PopulationCount(30, by=1900),
+	),
 }
 
 
