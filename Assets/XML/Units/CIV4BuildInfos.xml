@@ -1919,5 +1919,34 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildHamlet.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,10</Button>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_FLOOD</Type>
+			<Description>TXT_KEY_BUILD_FLOOD</Description>
+			<PrereqTech>TECH_TERRAFORMING</PrereqTech>
+			<iTime>900</iTime>
+			<ImprovementType>IMPROVEMENT_FLOOD_WORKS</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/BuildMarineReserve.dds</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_RECLAMATION</Type>
+			<Description>TXT_KEY_BUILD_RECLAMATION</Description>
+			<PrereqTech>TECH_TERRAFORMING</PrereqTech>
+			<iTime>0</iTime>
+			<bKill>1</bKill>
+			<ImprovementType>IMPROVEMENT_RECLAMATION</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/BuildOrchard.dds</Button>
+		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

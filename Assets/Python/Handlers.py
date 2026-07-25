@@ -33,6 +33,7 @@ import Rise
 import Rules
 import Shortcuts
 import Stability
+import Terraforming
 import UniquePowers
 import Victories
 import Wonders

@@ -157,4 +157,100 @@
 		<Italian>Canal</Italian>
 		<Spanish>Canal</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FLOOD_WORKS</Tag>
+		<English>Flood Works</English>
+		<French>Flood Works</French>
+		<German>Flood Works</German>
+		<Italian>Flood Works</Italian>
+		<Spanish>Flood Works</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FLOOD_WORKS_PEDIA</Tag>
+		<English>Channels and sluices cut to admit the sea. Once opened, the tile is lost to the water.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_RECLAMATION</Tag>
+		<English>Reclamation Works</English>
+		<French>Reclamation Works</French>
+		<German>Reclamation Works</German>
+		<Italian>Reclamation Works</Italian>
+		<Spanish>Reclamation Works</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_RECLAMATION_PEDIA</Tag>
+		<English>Caissons and fill barges holding back the sea while the seabed is raised into dry land.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_FLOOD</Tag>
+		<English>Flood Terrain</English>
+		<French>Flood Terrain</French>
+		<German>Flood Terrain</German>
+		<Italian>Flood Terrain</Italian>
+		<Spanish>Flood Terrain</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_RECLAMATION</Tag>
+		<English>Reclaim Land</English>
+		<French>Reclaim Land</French>
+		<German>Reclaim Land</German>
+		<Italian>Reclaim Land</Italian>
+		<Spanish>Reclaim Land</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_FLOODED</Tag>
+		<English>The sea has claimed %s1.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_RECLAIMED</Tag>
+		<English>New land has been raised from the sea near %s1.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_NOT_COASTAL</Tag>
+		<English>This site does not reach the sea, and the works have been abandoned.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_WOULD_LANDLOCK</Tag>
+		<English>Raising land here would cut %s1 off from the sea, and the works have been abandoned.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_WOULD_STRAND</Tag>
+		<English>Raising land here would seal off open water, and the works have been abandoned.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_BLOCKED_BY_CITY</Tag>
+		<English>The works cannot proceed so close to a city.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>
