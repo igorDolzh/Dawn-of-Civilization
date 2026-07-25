@@ -263,20 +263,6 @@ def brazilianMadeireiroAbility(plot, city, iFeature):
 			message(plot.getOwner(), 'TXT_KEY_DEFORESTATION_EVENT', infos.feature(iFeature).getText(), city.getName(), iGold, type=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.commerce(0).getButton(), location=plot)
 
 
-### BEGIN GAME TURN ###
-
-@handler("BeginGameTurn")
-def checkImmigration(iGameTurn):
-	if iGameTurn < year(dBirth[iAmerica]) + turns(5):
-		return
-
-	data.iImmigrationTimer -= 1
-	
-	if data.iImmigrationTimer == 0:
-		immigration()
-		data.iImmigrationTimer = turns(3 + rand(5))
-
-
 ### TECH ACQUIRED ###
 
 @handler("techAcquired")
@@ -371,92 +357,6 @@ def doUnitBribes(spy):
 	
 	x, y = location(spy)
 	bribePopup.cancel().launch(spy.getOwner(), x, y)
-
-
-def getImmigrationValue(city):
-	iFoodDifference = city.foodDifference(False)
-	iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
-	
-	if iFoodDifference < 0:
-		return iFoodDifference
-	
-	iValue = 0
-	
-	iValue += max(0, iHappinessDifference)
-	iValue += max(0, iFoodDifference / 2)
-	iValue += city.getPopulation() / 2
-	
-	if city.getRegionID() in lNorthAmerica:
-		iValue += 5
-	
-	if iValue > 0:
-		iValue += rand(0, 2)
-	
-	return iValue
-	
-	
-def getEmigrationValue(city):
-	iFoodDifference = city.foodDifference(False)
-	iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
-	
-	iValue = 0
-	
-	iValue -= min(0, iHappinessDifference)
-	iValue -= min(0, iFoodDifference / 2)
-	
-	if iValue > 0:
-		iValue += city.getPopulation() / 5
-		iValue += rand(0, 2)
-	
-	return iValue
-
-
-def immigration():
-	sourcePlayers = players.major().existing().where(lambda p: not player(p).isBirthProtected()).where(lambda p: player(p).getCapitalCity().getRegionID() not in lNewWorld).where(lambda p: cities.owner(p).any(lambda city: getEmigrationValue(city) > 0))
-	targetPlayers = players.major().existing().where(lambda p: player(p).getCapitalCity().getRegionID() in lNewWorld).where(lambda p: cities.owner(p).any(lambda city: getImmigrationValue(city) > 0))
-	
-	iNumMigrations = min(sourcePlayers.count(), targetPlayers.count())
-	
-	sourceCities = sourcePlayers.cities().where(lambda city: city.getRegionID() not in lNewWorld).where(lambda city: city.getPopulation() > 1).highest(iNumMigrations, getEmigrationValue)
-	targetCities = targetPlayers.cities().regions(*lNewWorld).highest(iNumMigrations, getImmigrationValue)
-	
-	for sourceCity, targetCity in zip(sourceCities, targetCities):
-		iPopulation = 1
-		if sourceCity.getPopulation() >= 9 and targetCity.foodDifference(False) >= 2:
-			iPopulation += 1
-	
-		sourceCity.changePopulation(-iPopulation)
-		targetCity.changePopulation(iPopulation)
-			
-		# extra cottage growth for target city's vicinity
-		for pCurrent in plots.surrounding(targetCity, radius=2):
-			if pCurrent.getWorkingCity() == targetCity:
-				pCurrent.changeUpgradeProgress(turns(10))
-					
-		# migration brings culture
-		targetPlot = plot(targetCity)
-		iTargetPlayer = targetCity.getOwner()
-		iSourcePlayer = sourceCity.getOwner()
-		
-		iCultureChange = targetPlot.getCulture(iTargetPlayer) / targetCity.getPopulation()
-		targetPlot.changeCulture(iSourcePlayer, iCultureChange, False)
-		
-		iCultureChange = targetCity.getCulture(iTargetPlayer) / targetCity.getPopulation()
-		targetCity.changeCulture(iSourcePlayer, iCultureChange, False)
-		
-		# chance to spread religions in source city
-		#lReligions = [iReligion for iReligion in range(iNumReligions) if sourceCity.isHasReligion(iReligion) and not targetCity.isHasReligion(iReligion)]
-		#if player(iSourcePlayer).getStateReligion() in lReligions:
-		#	lReligions.append(player(iSourcePlayer).getStateReligion())
-		
-		#if rand(1, 4) <= len(lReligions):
-		#	targetCity.setHasReligion(random_entry(lReligions), True, True, True)
-					
-		# notify affected players
-		message(iSourcePlayer, 'TXT_KEY_UP_EMIGRATION', sourceCity.getName(), event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.unit(iSettler).getButton(), color=iYellow, location=sourceCity)
-		message(iTargetPlayer, 'TXT_KEY_UP_IMMIGRATION', targetCity.getName(), event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.unit(iSettler).getButton(), color=iYellow, location=targetCity)
-
-		events.fireEvent("immigration", sourceCity, targetCity, iPopulation, iCultureChange)
 
 
 ### POPUPS ###

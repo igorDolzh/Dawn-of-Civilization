@@ -22,6 +22,7 @@ import GreatPeople
 import History
 import Logging
 import Messages
+import Migration
 import Minors
 import Periods
 import Plague

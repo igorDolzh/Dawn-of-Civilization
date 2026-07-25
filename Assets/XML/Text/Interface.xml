@@ -42,6 +42,30 @@
 		<Spanish>&#161;Parte de nuestra poblaci&#243;n est&#225; emigrando a Estados Unidos!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MIGRATION_EMIGRATION</Tag>
+		<English>A part of our population is leaving %s1 for %s2!</English>
+		<French>Une partie de notre population quitte %s1 pour %s2 !</French>
+		<German>Ein Teil unserer Bev&#246;lkerung verl&#228;sst %s1 in Richtung %s2!</German>
+		<Italian>Parte della nostra popolazione lascia %s1 per %s2!</Italian>
+		<Spanish>&#161;Parte de nuestra poblaci&#243;n abandona %s1 rumbo a %s2!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MIGRATION_IMMIGRATION</Tag>
+		<English>Migrants from %s1 have settled in %s2!</English>
+		<French>Des migrants de %s1 se sont install&#233;s &#224; %s2 !</French>
+		<German>Migranten aus %s1 haben sich in %s2 niedergelassen!</German>
+		<Italian>Migranti da %s1 si sono stabiliti a %s2!</Italian>
+		<Spanish>&#161;Migrantes de %s1 se han asentado en %s2!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MIGRATION_INTERNAL</Tag>
+		<English>People are leaving %s1 to settle in %s2!</English>
+		<French>Des habitants quittent %s1 pour s'installer &#224; %s2 !</French>
+		<German>Menschen verlassen %s1, um sich in %s2 anzusiedeln!</German>
+		<Italian>La popolazione lascia %s1 per stabilirsi a %s2!</Italian>
+		<Spanish>&#161;La poblaci&#243;n abandona %s1 para asentarse en %s2!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TECH_BASE_COST</Tag>
 		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Base Cost:[COLOR_REVERT]</English>
 		<French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Co&#251;t de base :[COLOR_REVERT]</French>
