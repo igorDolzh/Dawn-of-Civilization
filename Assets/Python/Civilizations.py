@@ -1244,6 +1244,12 @@ dStartingUnits = CivDict({
 		iDefend: 3,
 		iAttack: 4,
 		iShock: 2,
+	},
+	iNativeAmericans: {
+		iSettle: 3,
+		iWork: 2,
+		iDefend: 2,
+		iHarass: 2,
 	}
 }, {})
 
@@ -2202,6 +2208,11 @@ dTechPreferences = {
 	iZulu : {
 		iNationalism: 30,
 		iMonarchy: 20,
+	},
+	iNativeAmericans : {
+		iCeremony: 30,
+		iDivination: 20,
+		iPottery: 20,
 	},
 }
 

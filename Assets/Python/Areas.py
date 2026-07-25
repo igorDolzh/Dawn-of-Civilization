@@ -74,6 +74,7 @@ iZimbabwe :		(79, 17), # Great Zimbabwe
 iAshanti :		(61, 32), # Kumasi
 iHaiti :		(31, 42), # Port-au-Prince
 iZulu :			(79, 14), # kwaBulawayo
+iNativeAmericans :	(22, 54), # Cahokia
 })
 
 dPeriodCapitals = {
@@ -159,6 +160,7 @@ iZimbabwe :		((77, 16),	(81, 20)),
 iAshanti :		((59, 30),	(64, 34)),
 iHaiti :		((31, 42),	(33, 43)),
 iZulu :			((78, 12),	(81, 15)),
+iNativeAmericans :	((20, 51),	(25, 56)),
 })
 
 dExtendedBirthArea = CivDict({
@@ -291,6 +293,7 @@ iZimbabwe :		((78, 17),	(80, 19)),
 iAshanti :		((60, 31),	(63, 33)),
 iHaiti :		((31, 42),	(32, 43)),
 iZulu :			((79, 13),	(80, 15)),
+iNativeAmericans :	((21, 52),	(24, 55)),
 })
 
 dCoreAreaExceptions = CivDict({
@@ -399,6 +402,7 @@ iZimbabwe :	((77, 16),	(81, 20)),
 iAshanti :	((59, 30),	(64, 34)),
 iHaiti :	((31, 42),	(33, 43)),
 iZulu :		((78, 12),	(81, 15)),
+iNativeAmericans :	((20, 51),	(25, 56)),
 })
 
 dRespawnAreaExceptions = CivDict({

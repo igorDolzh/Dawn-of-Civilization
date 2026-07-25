@@ -1996,4 +1996,28 @@
 		<Italian>Land of Heaven</Italian>
 		<Spanish>Land of Heaven</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_NAT1</Tag>
+		<English>City of the Sun</English>
+		<French>City of the Sun</French>
+		<German>City of the Sun</German>
+		<Italian>City of the Sun</Italian>
+		<Spanish>City of the Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_NAT2</Tag>
+		<English>The Great River Road</English>
+		<French>The Great River Road</French>
+		<German>The Great River Road</German>
+		<Italian>The Great River Road</Italian>
+		<Spanish>The Great River Road</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_NAT3</Tag>
+		<English>Before the Horse and the Gun</English>
+		<French>Before the Horse and the Gun</French>
+		<German>Before the Horse and the Gun</German>
+		<Italian>Before the Horse and the Gun</Italian>
+		<Spanish>Before the Horse and the Gun</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -88,6 +88,7 @@ dBaseLanguages = {
 	iAshanti: (iMande, iLocal),
 	iHaiti: (iFrench, iLocal),
 	iZulu: (iCongolese, iLocal),
+	iNativeAmericans: (iMississippian, iLocal),
 }
 
 lUniqueSuffixes = [

@@ -10,7 +10,7 @@ from Civics import isCommunist, isFascist, isRepublic, isAutocratic
 
 ### CONSTANTS ###
 
-iNumLanguages = 61
+iNumLanguages = 62
 lLanguages = (
 	iAmerican, iArabic, iArgentinian, iAssyrian, iBabylonian, iBerber, iBrazilian, iBurmese, iByzantine, iCeltic, 
 	iChinese, iCongolese, iCoptic, iDravidian, iDutch, iEgyptian, iEgyptianArabic, iEnglish, iEthiopian, iFrench, 
@@ -18,7 +18,7 @@ lLanguages = (
 	iKorean, iKushan, iLatin, iLocal, iMalay, iManchu, iMande, iMayan, iMexican, iModernGreek, 
 	iMongol, iNahuatl, iNordic, iNubian, iOttoman, iPersian, iPhoenician, iPolish, iPolynesian, iPortuguese, 
 	iQuechua, iUkrainian, iRussian, iSomali, iSpanish, iSwedish, iThai, iTibetan, iToltec, iTurkish, 
-	iVietnamese,
+	iVietnamese, iMississippian,
 ) = range(iNumLanguages)
 
 
@@ -1600,6 +1600,9 @@ name_translations = {
 		iPersian: "Arbaira",
 		iRussian: "Erbil",
 		iTurkish: "Erbil",
+	},
+	"St. Louis": {
+		iMississippian: "Cahokia",
 	},
 	"Ardabil": {
 		# iArmenian: "Artawil",

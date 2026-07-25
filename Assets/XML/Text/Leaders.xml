@@ -1461,4 +1461,20 @@
 		<Italian>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</Italian>
 		<Spanish>King of the Zulu, who forged a small chiefdom into the dominant power of southern Africa.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_GREAT_SUN</Tag>
+		<English>Great Sun</English>
+		<French>Great Sun</French>
+		<German>Great Sun</German>
+		<Italian>Great Sun</Italian>
+		<Spanish>Great Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_GREAT_SUN_PEDIA</Tag>
+		<English>The paramount chief of the Mississippian world, whose person was held so sacred that he was carried rather than allowed to touch the ground. The title survived among the Natchez into the eighteenth century.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

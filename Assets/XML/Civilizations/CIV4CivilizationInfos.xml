@@ -4540,17 +4540,19 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_NATIVE_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_NATIVE_AMERICA</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_TEOTL_TOLTEC</PaganReligion>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>NAT</Identifier>
-			<StartingYear>0</StartingYear>
+			<StartingYear>1050</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
+				<LoadingTime>25</LoadingTime>
+				<LoadingTime>15</LoadingTime>
+				<LoadingTime>18</LoadingTime>
+				<LoadingTime>8</LoadingTime>
+				<LoadingTime>2</LoadingTime>
 			</LoadingTimes>
-			<bPlayable>0</bPlayable>
-			<bAIPlayable>0</bAIPlayable>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Cahokia</City>
 				<City>Poverty Point</City>
@@ -4629,7 +4631,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_BARBARIAN</LeaderName>
+					<LeaderName>LEADER_GREAT_SUN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>

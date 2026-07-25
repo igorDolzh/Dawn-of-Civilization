@@ -955,6 +955,19 @@ dGoals = {
 		),
 		PopulationCount(30, by=1900),
 	),
+	iNativeAmericans: (
+		All(
+			CityCount(plots.regions(rMidwest, rDeepSouth).named(NORTH_AMERICA), 5),
+			BuildingCount((iMonument, 5)),
+			by=1300,
+		),
+		All(
+			TradeRouteCount(8),
+			ResourceCount(iCopper, 3),
+			by=1450,
+		),
+		NoCityLost(by=1600),
+	),
 }
 
 

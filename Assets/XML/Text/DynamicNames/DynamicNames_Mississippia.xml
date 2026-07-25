@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mississippia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_DESC</Tag>
+		<English>The Mississippians</English>
+		<French>The Mississippians</French>
+		<German>The Mississippians</German>
+		<Italian>The Mississippians</Italian>
+		<Spanish>The Mississippians</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_PEOPLES</Tag>
+		<English>Mound Builders</English>
+		<French>Mound Builders</French>
+		<German>Mound Builders</German>
+		<Italian>Mound Builders</Italian>
+		<Spanish>Mound Builders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_ADJECTIVE</Tag>
+		<English>Mississippian</English>
+		<French>Mississippian</French>
+		<German>Mississippian</German>
+		<Italian>Mississippian</Italian>
+		<Spanish>Mississippian</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_SHORT_DESC</Tag>
+		<English>Mississippia</English>
+		<French>Mississippia</French>
+		<German>Mississippia</German>
+		<Italian>Mississippia</Italian>
+		<Spanish>Mississippia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_DEFAULT</Tag>
+		<English>%s1</English>
+		<French>%s1</French>
+		<German>%s1</German>
+		<Italian>%s1</Italian>
+		<Spanish>%s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_REPUBLIC</Tag>
+		<English>%s1 Confederacy</English>
+		<French>%s1 Confederacy</French>
+		<German>%s1 Confederacy</German>
+		<Italian>%s1 Confederacy</Italian>
+		<Spanish>%s1 Confederacy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_COMMUNIST</Tag>
+		<English>%s2 People's Confederacy</English>
+		<French>%s2 People's Confederacy</French>
+		<German>%s2 People's Confederacy</German>
+		<Italian>%s2 People's Confederacy</Italian>
+		<Spanish>%s2 People's Confederacy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NATIVE_AMERICA_FASCIST</Tag>
+		<English>%s2 Dominion</English>
+		<French>%s2 Dominion</French>
+		<German>%s2 Dominion</German>
+		<Italian>%s2 Dominion</Italian>
+		<Spanish>%s2 Dominion</Spanish>
+	</TEXT>
+</Civ4GameText>

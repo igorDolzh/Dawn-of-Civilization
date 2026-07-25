@@ -69,6 +69,7 @@ lBirthOrder = [
 	iMisr,
 	iGeorgia,
 	iPoland,
+	iNativeAmericans,
 	iPortugal,
 	iInca,
 	iItaly,
@@ -118,7 +119,7 @@ iCivGroupEastAsia : [iChina, iJapan, iKorea, iTibet, iVietnam, iMongols, iRussia
 iCivGroupSouthAsia : [iIndia, iHarappa, iPolynesia, iDravidia, iKushans, iKhmer, iMalays, iJava, iBurma, iVietnam, iMughals, iThailand, iAustralia],
 iCivGroupMiddleEast : [iEgypt, iBabylonia, iAssyria, iHittites, iPersia, iKushans, iByzantium, iArabia, iMoors, iSwahili, iMisr, iOttomans, iCarthage, iTurks, iTatars, iIran, iSaudis, iGeorgia],
 iCivGroupAfrica : [iEgypt, iNubia, iCarthage, iEthiopia, iMali, iMoors, iMisr, iSwahili, iCongo, iAshanti, iZimbabwe, iZulu],
-iCivGroupAmerica : [iMaya, iToltecs, iInca, iAztecs, iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti],
+iCivGroupAmerica : [iMaya, iToltecs, iInca, iAztecs, iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iNativeAmericans],
 }
 
 # used in: Stability
@@ -130,7 +131,7 @@ dTechGroups = {
 iTechGroupWestern : [iRome, iGreece, iCelts, iByzantium, iFrance, iNorse, iSpain, iEngland, iHolyRome, iRus, iPoland, iPortugal, iItaly, iSweden, iRussia, iNetherlands, iGermany, iAmerica, iArgentina, iMexico, iColombia, iBrazil, iBelgium, iAustralia, iCanada, iGeorgia, iHaiti],
 iTechGroupMiddleEast : [iEgypt, iBabylonia, iHarappa, iAssyria, iNubia, iHittites, iIndia, iCarthage, iPersia, iEthiopia, iKushans, iMali, iArabia, iMoors, iSwahili, iMisr, iOttomans, iTatars, iMughals, iDravidia, iCongo, iTurks, iIran, iSaudis, iAshanti, iZimbabwe, iZulu],
 iTechGroupFarEast : [iChina, iKorea, iKhmer, iMalays, iJapan, iJava, iTibet, iBurma, iVietnam, iMongols, iThailand, iManchuria],
-iTechGroupNativeAmerica : [iPolynesia, iMaya, iToltecs, iInca, iAztecs],
+iTechGroupNativeAmerica : [iPolynesia, iMaya, iToltecs, iInca, iAztecs, iNativeAmericans],
 }
 
 lBioNewWorld = [iMaya, iToltecs, iInca, iAztecs]
@@ -424,6 +425,8 @@ lNeighbours = [
 	(iIran, iGeorgia),
 	(iRussia, iGeorgia),
 	(iAmerica, iHaiti),
+	(iAmerica, iNativeAmericans),
+	(iNativeAmericans, iAztecs),
 ]
 
 lInfluences = [
@@ -535,6 +538,7 @@ iSwahili : 957,
 iMisr : 969,
 iGeorgia : 1008,
 iPoland : 1025,
+iNativeAmericans : 1050,
 iPortugal : 1130,
 iInca : 1150,
 iItaly : 1167,
@@ -605,6 +609,7 @@ iSwahili : 1513,
 iMisr : 1517,
 iPoland : 1650,
 iInca : 1533,
+iNativeAmericans : 1350,
 iMongols : 1368,
 iAztecs : 1521,
 iMughals : 1640,
@@ -680,6 +685,7 @@ iBrazil : [(1820, 2100)],
 iBelgium : [(1830, 2100)],
 iAustralia : [(1851, 2100)],
 iCanada : [(1867, 2100)],
+iNativeAmericans : [(1050, 1600)],
 iGeorgia : [(1490, 2100)],
 iZimbabwe : [(1450, 1700)],
 iAshanti : [(1700, 1900)],
@@ -738,6 +744,7 @@ iZimbabwe : 1,
 iAshanti : 2,
 iHaiti : 1,
 iZulu : 3,
+iNativeAmericans : 2,
 }, 0)
 
 dWarOnFlipProbability = CivDict({
@@ -812,6 +819,7 @@ iZimbabwe : 20,
 iAshanti : 40,
 iHaiti : 30,
 iZulu : 60,
+iNativeAmericans : 40,
 }, 0)
 
 dResurrectionProbability = CivDict({
@@ -884,6 +892,7 @@ iZimbabwe : 20,
 iAshanti : 25,
 iHaiti : 30,
 iZulu : 30,
+iNativeAmericans : 15,
 })
 
 dPatienceThreshold = CivDict({
@@ -958,6 +967,7 @@ iZimbabwe : 30,
 iAshanti : 30,
 iHaiti : 30,
 iZulu : 30,
+iNativeAmericans : 30,
 }, 100)
 
 dMaxColonists = CivDict({
@@ -1296,7 +1306,7 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 159
+iNumLeaders = 160
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iDjoser, iHatshepsut, iRamesses, iPtolemy, iSargon, iHammurabi, iWentAntu, 
 iAshurbanipal, iWu, iTaizong, iHongwu, iMao, iMursili, iPericles, iAlexanderTheGreat, iGeorge, iAsoka, 
 iChandragupta, iShivaji, iGandhi, iHiram, iHannibal, iTaharqa, iAmanirena, iAhoeitu, iCyrus, iDarius, 
@@ -1312,7 +1322,7 @@ iKublaiKhan, iMontezuma, iTughluq, iAkbar, iBhutto, iUzbeg, iNaresuan, iMongkut,
 iIvan, iPeter, iCatherine, iAlexanderI, iStalin, iMehmed, iSuleiman, iAtaturk, iMbemba, iAbbas, 
 iKhomeini, iWillemVanOranje, iWilliam, iKangxi, iFrederick, iBismarck, iHitler, iIbnSaud, iWashington, iLincoln, 
 iRoosevelt, iSanMartin, iPeron, iJuarez, iSantaAnna, iCardenas, iBolivar, iPedro, iVargas, iLeopold, 
-iCurtin, iMacDonald, iTrudeau, iSittingBull, iOseiTutu, iTamar, iToussaint, iMutota, iShaka) = range(iNumLeaders)
+iCurtin, iMacDonald, iTrudeau, iSittingBull, iOseiTutu, iTamar, iToussaint, iMutota, iShaka, iGreatSun) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 	iChina : iHongwu,
