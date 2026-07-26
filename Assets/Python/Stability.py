@@ -603,6 +603,13 @@ def calculateStability(iPlayer):
 	if iSeparatismExcess > 0:
 		iCorePeripheryStability -= int(25 * sigmoid(1.0 * iSeparatismExcess / 100))
 		
+	# Big empires fall apart: Planetary Consciousness retires that rule. The penalty is damped
+	# here, at the point it is recorded, rather than inside calculateSeparatism, so the per-city
+	# calculation stays correct for every other player and for the stability overlay.
+	if tPlayer.isHasTech(iPlanetaryConsciousness):
+		iCorePeripheryStability = max(0, iCorePeripheryStability)
+		iSeparatism = 0
+
 	lParameters[iParameterCorePeriphery] = iCorePeripheryStability
 	lParameters[iParameterAdministration] = iAdministration
 	lParameters[iParameterSeparatism] = iSeparatism

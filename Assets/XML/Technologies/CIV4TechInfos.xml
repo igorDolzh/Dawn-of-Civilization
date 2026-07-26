@@ -5774,6 +5774,7 @@
 			<iCost>260000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_SYNTHETIC</Era>
+			<iTradeRoutes>2</iTradeRoutes>
 			<iAsset>92</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -5900,6 +5901,7 @@
 			<iAsset>96</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bMapVisible>1</bMapVisible>
 			<iGridX>25</iGridX>
 			<iGridY>11</iGridY>
 			<Flavors>
