@@ -4126,4 +4126,28 @@
 		<Spanish></Spanish>
 	</TEXT>
 	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_CARPATHIAN_BASIN</Tag>
+		<English>the Carpathian Basin</English>
+		<French>the Carpathian Basin</French>
+		<German>the Carpathian Basin</German>
+		<Italian>the Carpathian Basin</Italian>
+		<Spanish>the Carpathian Basin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_ALPS</Tag>
+		<English>the Alps</English>
+		<French>the Alps</French>
+		<German>the Alps</German>
+		<Italian>the Alps</Italian>
+		<Spanish>the Alps</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_HUNGARIAN</Tag>
+		<English>Hungarian</English>
+		<French>Hungarian</French>
+		<German>Hungarian</German>
+		<Italian>Hungarian</Italian>
+		<Spanish>Hungarian</Spanish>
+	</TEXT>
 </Civ4GameText>

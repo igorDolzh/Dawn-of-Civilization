@@ -13,7 +13,7 @@ iWorldY = 80
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 80
+iNumCivs = 83
 (iAmerica, iArabia, iArgentina, iAssyria, iAustralia, iAztecs, iBabylonia, iBelgium, iBrazil, iBurma,
 iByzantium, iCanada, iCarthage, iCelts, iChina, iColombia, iDravidia, iEgypt, iEngland, iEthiopia,
 iFrance, iGermany, iGreece, iHarappa, iHittites, iHolyRome, iInca, iIndia, iIran, iItaly,
@@ -21,86 +21,21 @@ iJapan, iJava, iKhmer, iCongo, iKorea, iKushans, iMalays, iMali, iManchuria, iMa
 iMexico, iMisr, iMongols, iMoors, iMughals, iNativeAmericans, iNetherlands, iNorse, iNubia, iOttomans,
 iPersia, iPoland, iPolynesia, iPortugal, iRome, iRus, iRussia, iSaudis, iSpain, iSumeria,
 iSwahili, iSweden, iTatars, iThailand, iTibet, iToltecs, iTurks, iVietnam, iZulu,
-iAshanti, iGeorgia, iHaiti, iZimbabwe, iMaori, iSouthAfrica, iIndependent,
+iAshanti, iGeorgia, iHaiti, iZimbabwe, iMaori, iSouthAfrica, iSwitzerland,
+iHungary, iBulgaria, iIndependent,
 iIndependent2, iNative, iMinor, iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 iPhoenicia = iCarthage
 
 lBirthOrder = [
-	iEgypt,
-	iBabylonia,
-	iHarappa,
-	iAssyria,
-	iNubia,
-	iChina,
-	iHittites,
-	iGreece,
-	iIndia,
-	iCarthage,
-	iPolynesia,
-	iPersia,
-	iCelts,
-	iRome,
-	iMaya,
-	iDravidia,
-	iEthiopia,
-	iToltecs,
-	iKushans,
-	iKorea,
-	iKhmer,
-	iMali,
-	iByzantium,
-	iFrance,
-	iMalays,
-	iJapan,
-	iNorse,
-	iTurks,
-	iArabia,
-	iTibet,
-	iMoors,
-	iJava,
-	iSpain,
-	iEngland,
-	iHolyRome,
-	iBurma,
-	iRus,
-	iVietnam,
-	iSwahili,
-	iMisr,
-	iGeorgia,
-	iPoland,
-	iNativeAmericans,
-	iPortugal,
-	iInca,
-	iItaly,
-	iMongols,
-	iAztecs,
-	iMughals,
-	iZimbabwe,
-	iThailand,
-	iSweden,
-	iTatars,
-	iRussia,
-	iOttomans,
-	iMaori,
-	iCongo,
-	iIran,
-	iNetherlands,
-	iManchuria,
-	iAshanti,
-	iGermany,
-	iSaudis,
-	iAmerica,
-	iHaiti,
-	iArgentina,
-	iMexico,
-	iColombia,
-	iZulu,
-	iBrazil,
-	iBelgium,
-	iAustralia,
-	iSouthAfrica,
-	iCanada
+	iEgypt, iBabylonia, iHarappa, iAssyria, iNubia, iChina, iHittites, iGreece, iIndia, iCarthage,
+	iPolynesia, iPersia, iCelts, iRome, iMaya, iDravidia, iEthiopia, iToltecs, iKushans, iKorea,
+	iKhmer, iMali, iByzantium, iFrance, iMalays, iJapan, iNorse, iTurks, iArabia, iTibet,
+	iBulgaria, iMoors, iJava, iSpain, iEngland, iHolyRome, iBurma, iRus, iVietnam, iSwahili,
+	iMisr, iHungary, iGeorgia, iPoland, iNativeAmericans, iPortugal, iInca, iItaly, iMongols, iAztecs,
+	iMughals, iZimbabwe, iThailand, iSweden, iTatars, iRussia, iOttomans, iMaori, iSwitzerland, iCongo,
+	iIran, iNetherlands, iManchuria, iAshanti, iGermany, iSaudis, iAmerica, iHaiti, iArgentina, iMexico,
+	iColombia, iZulu, iBrazil, iBelgium, iAustralia, iSouthAfrica, iCanada
 ]
 
 lCivOrder = lBirthOrder + [
@@ -116,7 +51,7 @@ iNumCivGroups = 6
 (iCivGroupEurope, iCivGroupEastAsia, iCivGroupSouthAsia, iCivGroupMiddleEast, iCivGroupAfrica, iCivGroupAmerica) = range(iNumCivGroups)
 
 dCivGroups = {
-iCivGroupEurope : [iGreece, iRome, iCelts, iByzantium, iFrance, iNorse, iSpain, iEngland, iHolyRome, iRus, iItaly, iPoland, iPortugal, iSweden, iRussia, iTatars, iNetherlands, iGermany, iBelgium],
+iCivGroupEurope : [iGreece, iRome, iCelts, iByzantium, iFrance, iNorse, iSpain, iEngland, iHolyRome, iRus, iItaly, iPoland, iPortugal, iSweden, iRussia, iTatars, iNetherlands, iGermany, iBelgium, iSwitzerland, iHungary, iBulgaria],
 iCivGroupEastAsia : [iChina, iJapan, iKorea, iTibet, iVietnam, iMongols, iRussia, iTurks, iManchuria],
 iCivGroupSouthAsia : [iIndia, iHarappa, iPolynesia, iDravidia, iKushans, iKhmer, iMalays, iJava, iBurma, iVietnam, iMughals, iThailand, iAustralia, iMaori],
 iCivGroupMiddleEast : [iEgypt, iBabylonia, iAssyria, iHittites, iPersia, iKushans, iByzantium, iArabia, iMoors, iSwahili, iMisr, iOttomans, iCarthage, iTurks, iTatars, iIran, iSaudis, iGeorgia],
@@ -578,6 +513,9 @@ iBelgium : 1830,
 iAustralia : 1851,
 iSouthAfrica : 1852,
 iCanada : 1867,
+iBulgaria : 681,
+iHungary : 1000,
+iSwitzerland : 1291,
 }, -3000)
 
 lBirthCivs = dBirth.keys()
@@ -631,6 +569,8 @@ iZimbabwe : 1450,
 iAshanti : 1902,
 iZulu : 1879,
 iMaori : 1840,
+iBulgaria : 1018,
+iHungary : 1526,
 }, 2100)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
@@ -704,6 +644,9 @@ iHaiti : [(1804, 2100)],
 iZulu : [(1816, 2100)],
 iMaori : [(1280, 1900)],
 iSouthAfrica : [(1852, 2100)],
+iBulgaria : [(1185, 1396), (1878, 2100)],
+iHungary : [(1867, 2100)],
+iSwitzerland : [(1291, 2100)],
 }, [])
 
 dAggressionLevel = CivDict({

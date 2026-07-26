@@ -480,5 +480,23 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Leeuw.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_BULGARIA</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_HUNGARY</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_SWITZERLAND</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

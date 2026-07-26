@@ -70,6 +70,9 @@ iBelgium : 		(63, 62), # Bruxelles
 iAustralia :	(142, 12), # Sydney
 iCanada :		(31, 61), # Montreal
 iGeorgia :		(89, 55), # Mtskheta
+iBulgaria :		(78, 57), # Pliska
+iHungary :		(73, 58), # Esztergom
+iSwitzerland :	(65, 58), # Bern
 iZimbabwe :		(79, 17), # Great Zimbabwe
 iAshanti :		(61, 32), # Kumasi
 iHaiti :		(31, 42), # Port-au-Prince
@@ -158,6 +161,9 @@ iBrazil :		((40, 16),	(49, 31)),
 iAustralia :	((126, 6),	(144, 24)),
 iCanada : 		((6, 59),	(37, 68)),
 iGeorgia :		((87, 53),	(91, 57)),
+iBulgaria :		((74, 55),	(80, 59)),
+iHungary :		((70, 56),	(77, 61)),
+iSwitzerland :	((63, 56),	(68, 60)),
 iZimbabwe :		((77, 16),	(81, 20)),
 iAshanti :		((59, 30),	(64, 34)),
 iHaiti :		((31, 42),	(33, 43)),
@@ -293,6 +299,9 @@ iBelgium :		((61, 61),	(63, 63)),
 iAustralia :	((139, 9),	(143, 13)),
 iCanada :		((26, 59),	(37, 62)),
 iGeorgia :		((88, 54),	(90, 56)),
+iBulgaria :		((76, 56),	(79, 58)),
+iHungary :		((72, 57),	(75, 60)),
+iSwitzerland :	((64, 57),	(67, 59)),
 iZimbabwe :		((78, 17),	(80, 19)),
 iAshanti :		((60, 31),	(63, 33)),
 iHaiti :		((31, 42),	(32, 43)),
@@ -404,6 +413,9 @@ iOttomans : ((78, 51),	(87, 55)),
 iRussia :	((81, 56),	(95, 75)),
 iGermany :	((64, 59),	(70, 66)),
 iGeorgia :	((87, 53),	(91, 57)),
+iBulgaria :	((74, 55),	(80, 59)),
+iHungary :	((70, 56),	(77, 61)),
+iSwitzerland :	((63, 56),	(68, 60)),
 iZimbabwe :	((77, 16),	(81, 20)),
 iAshanti :	((59, 30),	(64, 34)),
 iHaiti :	((31, 42),	(33, 43)),

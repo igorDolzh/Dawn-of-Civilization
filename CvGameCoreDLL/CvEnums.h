@@ -1275,6 +1275,9 @@ enum CivilizationTypes		// Exposed to Python
 	ZIMBABWE,
 	MAORI,
 	SOUTH_AFRICA,
+	SWITZERLAND,
+	HUNGARY,
+	BULGARIA,
 
 	INDEPENDENT,
 	INDEPENDENT2,

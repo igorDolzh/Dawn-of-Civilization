@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bulgaria -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_DESC</Tag>
+		<English>The Bulgarians</English>
+		<French>The Bulgarians</French>
+		<German>The Bulgarians</German>
+		<Italian>The Bulgarians</Italian>
+		<Spanish>The Bulgarians</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_PEOPLES</Tag>
+		<English>Bulgarian Peoples</English>
+		<French>Bulgarian Peoples</French>
+		<German>Bulgarian Peoples</German>
+		<Italian>Bulgarian Peoples</Italian>
+		<Spanish>Bulgarian Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_ADJECTIVE</Tag>
+		<English>Bulgarian</English>
+		<French>Bulgarian</French>
+		<German>Bulgarian</German>
+		<Italian>Bulgarian</Italian>
+		<Spanish>Bulgarian</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_SHORT_DESC</Tag>
+		<English>Bulgaria</English>
+		<French>Bulgaria</French>
+		<German>Bulgaria</German>
+		<Italian>Bulgaria</Italian>
+		<Spanish>Bulgaria</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_BULGARIA_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

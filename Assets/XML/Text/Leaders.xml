@@ -1509,4 +1509,52 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SIMEON</Tag>
+		<English>Simeon I</English>
+		<French>Simeon I</French>
+		<German>Simeon I</German>
+		<Italian>Simeon I</Italian>
+		<Spanish>Simeon I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SIMEON_PEDIA</Tag>
+		<English>Simeon I</English>
+		<French>Simeon I</French>
+		<German>Simeon I</German>
+		<Italian>Simeon I</Italian>
+		<Spanish>Simeon I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_STEPHEN</Tag>
+		<English>Stephen I</English>
+		<French>Stephen I</French>
+		<German>Stephen I</German>
+		<Italian>Stephen I</Italian>
+		<Spanish>Stephen I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_STEPHEN_PEDIA</Tag>
+		<English>Stephen I</English>
+		<French>Stephen I</French>
+		<German>Stephen I</German>
+		<Italian>Stephen I</Italian>
+		<Spanish>Stephen I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TELL</Tag>
+		<English>Wilhelm Tell</English>
+		<French>Wilhelm Tell</French>
+		<German>Wilhelm Tell</German>
+		<Italian>Wilhelm Tell</Italian>
+		<Spanish>Wilhelm Tell</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_TELL_PEDIA</Tag>
+		<English>Wilhelm Tell</English>
+		<French>Wilhelm Tell</French>
+		<German>Wilhelm Tell</German>
+		<Italian>Wilhelm Tell</Italian>
+		<Spanish>Wilhelm Tell</Spanish>
+	</TEXT>
 </Civ4GameText>

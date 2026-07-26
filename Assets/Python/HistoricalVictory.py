@@ -66,6 +66,8 @@ AMERICAS = "TXT_KEY_VICTORY_NAME_AMERICAS"
 ANATOLIA = "TXT_KEY_VICTORY_NAME_ANATOLIA"
 ASIA = "TXT_KEY_VICTORY_NAME_ASIA"
 BALKANS = "TXT_KEY_VICTORY_NAME_BALKANS"
+CARPATHIAN_BASIN = "TXT_KEY_VICTORY_NAME_CARPATHIAN_BASIN"
+HUNGARIAN = "TXT_KEY_VICTORY_NAME_HUNGARIAN"
 BRAZIL = "TXT_KEY_VICTORY_NAME_BRAZIL"
 BRITAIN = "TXT_KEY_VICTORY_NAME_BRITAIN"
 CARIBBEAN = "TXT_KEY_VICTORY_NAME_CARIBBEAN"
@@ -992,6 +994,24 @@ dGoals = {
 			PopulationCount(35),
 			by=1970,
 		),
+	),
+	iBulgaria: (
+		Control(plots.region(rBalkans).named(BALKANS), at=927),
+		ReligionSpreadCount(iOrthodoxy, 12, by=1100),
+		CultureLevelCityCount(iCultureLevelRefined, 3, by=1300),
+	),
+	iHungary: (
+		All(
+			StateReligion(iCatholicism),
+			Control(plots.rectangle((70, 56), (77, 61)).named(CARPATHIAN_BASIN), at=1200),
+		),
+		AllowOnly(plots.rectangle((70, 56), (77, 61)).named(CARPATHIAN_BASIN), civs(iHungary).named(HUNGARIAN), at=1500),
+		CultureLevelCityCount(iCultureLevelRefined, 3, by=1500),
+	),
+	iSwitzerland: (
+		NoCityLost(by=1815),
+		PeaceTurns(100, by=1900),
+		GoldAmount(20000, by=1950),
 	),
 }
 
