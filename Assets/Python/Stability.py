@@ -73,6 +73,12 @@ def decayPenalties():
 		for iPlayer in players.major():
 			if data.players[iPlayer].iBarbarianLosses > 0:
 				data.players[iPlayer].iBarbarianLosses -= 1 + data.players[iPlayer].iBarbarianLosses / 5
+			
+			# entrenched serfdom after the Black Death, and revolutions put down by force
+			if data.players[iPlayer].iSerfdomPenalty < 0:
+				data.players[iPlayer].iSerfdomPenalty += 1
+			if data.players[iPlayer].iSuppressionPenalty < 0:
+				data.players[iPlayer].iSuppressionPenalty += 1
 
 
 @handler("BeginGameTurn")

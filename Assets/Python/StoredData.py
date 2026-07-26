@@ -115,6 +115,19 @@ class PlayerData:
 		
 		self.iPlagueCountdown = 0
 		
+		# Black Death
+		
+		self.iPrePlaguePopulation = 0
+		self.iLabourShortageModifier = 0
+		self.iLabourShortageEnd = -1
+		self.iSerfdomPenalty = 0
+		
+		# Revolutions
+		
+		self.iRevolutionaryPressure = 0
+		self.iRevolutionTurn = -1
+		self.iSuppressionPenalty = 0
+		
 		# Birth Rate
 		
 		self.bDemographicTransition = False
@@ -280,6 +293,10 @@ class GameData:
 		self.iGlobalWarDefender = -1
 		
 		self.iCongressTurn = -1
+		
+		# Revolutions
+		
+		self.iRevolutions = 0
 		
 		self.bNoCongressOption = False
 		

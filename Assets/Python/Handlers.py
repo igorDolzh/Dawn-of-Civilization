@@ -12,6 +12,7 @@ import ScreensHandler
 
 import AIWars
 import BirthRate
+import BlackDeath
 import Civics
 import Collapse
 import Communications
@@ -33,6 +34,7 @@ import Plague
 import Religions
 import Resources
 import Resurrection
+import Revolutions
 import Rise
 import Rules
 import Shortcuts

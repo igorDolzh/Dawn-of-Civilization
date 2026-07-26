@@ -3904,4 +3904,100 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_LABOUR</Tag>
+		<English>So many have died that the fields stand empty and no man can be found to work them. Those who remain know their worth, and %s1 can no longer be enforced. Do we let them go, or bind them tighter?</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_EMANCIPATE</Tag>
+		<English>Let them go</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_ENTRENCH</Tag>
+		<English>Bind them to the land</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_SHORTAGE</Tag>
+		<English>The plague has taken %d1%% of our people. Labour is scarce and dear: +%d2%% production while the shortage lasts.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_EMANCIPATED</Tag>
+		<English>The peasants are free men, and they work for wages now. Our workshops have never been busier.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_ENTRENCHED</Tag>
+		<English>The peasants are bound to the land by law. They have not forgotten that they were once needed.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BLACK_DEATH_SHORTAGE_OVER</Tag>
+		<English>A generation has grown up, and labour is ordinary again.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVOLUTION_CALL</Tag>
+		<English>The people are in the streets, and the soldiers will not fire on them. The old order can be led into whatever comes next, or it can be defended. Which shall it be?</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVOLUTION_LEAD</Tag>
+		<English>Lead the revolution</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVOLUTION_SUPPRESS</Tag>
+		<English>Suppress it</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVOLUTION_LED</Tag>
+		<English>The old regime is gone and a republic stands in its place. Our neighbours are watching very closely.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REVOLUTION_SUPPRESSED</Tag>
+		<English>The rising has been put down. The barricades are cleared, and nothing has been forgotten.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>
