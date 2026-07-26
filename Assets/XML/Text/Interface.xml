@@ -4088,4 +4088,20 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_WAR_OUTBREAK</Tag>
+		<English>The great powers have divided into two armed camps and the world is at war. Our factories turn to war work: +%d2%% production for the duration.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLD_WAR_DEMOBILISED</Tag>
+		<English>The war is over. The factories return to peacetime work.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

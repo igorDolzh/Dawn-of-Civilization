@@ -44,3 +44,4 @@ import Terraforming
 import UniquePowers
 import Victories
 import Wonders
+import WorldWars

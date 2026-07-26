@@ -126,6 +126,10 @@ class PlayerData:
 		
 		self.iRevolutionaryPressure = 0
 		self.iSocialistPressure = 0
+		
+		# World Wars
+		
+		self.iMobilisationModifier = 0
 		self.iRevolutionTurn = -1
 		self.iSuppressionPenalty = 0
 		
@@ -292,6 +296,10 @@ class GameData:
 		
 		self.iGlobalWarAttacker = -1
 		self.iGlobalWarDefender = -1
+		
+		# World Wars
+		
+		self.lWorldWarsFought = []
 		
 		self.iCongressTurn = -1
 		
