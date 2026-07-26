@@ -299,6 +299,12 @@ class GameData:
 		
 		self.iRevolutions = 0
 		
+		# Civil War
+		
+		self.lConfederateCities = []
+		self.bCivilWarStarted = False
+		self.bCivilWarResolved = False
+		
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}

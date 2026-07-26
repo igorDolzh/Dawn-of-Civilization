@@ -4032,4 +4032,52 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIL_WAR_CALL</Tag>
+		<English>%d1 of our states have declared themselves out of the Union rather than give up the institution their wealth is built on. They have raised armies. Do we compel them back, or let them go?</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIL_WAR_FIGHT</Tag>
+		<English>The Union must be preserved</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIL_WAR_CONCEDE</Tag>
+		<English>Let them go in peace</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIL_WAR_FIGHTING</Tag>
+		<English>The Union will be preserved by force of arms. Volunteers are mustering.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIL_WAR_CONCEDED</Tag>
+		<English>The seceded states are gone, and the institution that divided us remains. Nothing has been settled.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIL_WAR_UNION_RESTORED</Tag>
+		<English>The rebellion is over and the Union is whole. What the war was fought over cannot survive it: we adopt %s1.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -14,6 +14,7 @@ import AIWars
 import BirthRate
 import BlackDeath
 import Civics
+import CivilWar
 import Collapse
 import Communications
 import Companies
