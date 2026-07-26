@@ -287,6 +287,14 @@ class GameData:
 		
 		self.bNoPlagues = False
 		
+		# Crusades
+		
+		self.dCrusadeDecisions = {}
+		
+		self.bJerusalemFallen = False
+		
+		self.iHumanRefusedCrusadePenalty = 0
+		
 		# Stability
 		
 		self.iHumanStability = 0

@@ -2874,11 +2874,16 @@ def canApplySportsLeagueDone3(argsList):
 ######## CRUSADE ###########
 
 def canTriggerCrusade(argsList):
+	# Leoreth: superseded by Assets/Python/Crusades.py, which runs the Crusades as scripted
+	# historical events on their own dates. This vanilla quest fired in any era, against the
+	# Orthodox holy city rather than Jerusalem, and declared war without asking the player.
+	return False
+
 	kTriggeredData = argsList[0]
 	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	otherPlayer = gc.getPlayer(kTriggeredData.eOtherPlayer)
-	
+
 	if player.getStateReligion() != iCatholicism:
 		return False
 	

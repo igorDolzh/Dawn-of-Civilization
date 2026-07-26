@@ -6922,4 +6922,68 @@
 		<Italian>[PARAGRAPH:1]To complete this quest, you must construct %d1 [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] in your various coastal cities. You will also have to build %d2 [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you reach the Industrial Era without having met the conditions.</Italian>
 		<Spanish>[PARAGRAPH:1]To complete this quest, you must construct %d1 [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] in your various coastal cities. You will also have to build %d2 [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you reach the Industrial Era without having met the conditions.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_CALL</Tag>
+		<English>%s1</English>
+		<French>%s1</French>
+		<German>%s1</German>
+		<Italian>%s1</Italian>
+		<Spanish>%s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_CALL_FIRST</Tag>
+		<English>The Pope has proclaimed a crusade. Jerusalem lies in the hands of %s1, and every Christian prince is called to take the cross and restore the Holy City to the faithful.[PARAGRAPH:1]Will you answer the call?</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_CALL_SECOND</Tag>
+		<English>Word comes from Rome that the Holy Land stands in peril. A second crusade is preached against %s1, though the enthusiasm of the first has cooled and the road is known to be hard.[PARAGRAPH:1]Will you answer the call?</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_CALL_THIRD</Tag>
+		<English>Jerusalem has fallen. %s1 holds the Holy Sepulchre, and the Pope calls the kings of Christendom to a crusade greater than any before it.[PARAGRAPH:1]Will you answer the call?</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_ANSWER</Tag>
+		<English>Take the cross</English>
+		<French>Take the cross</French>
+		<German>Take the cross</German>
+		<Italian>Take the cross</Italian>
+		<Spanish>Take the cross</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_REFUSE</Tag>
+		<English>Decline the call</English>
+		<French>Decline the call</French>
+		<German>Decline the call</German>
+		<Italian>Decline the call</Italian>
+		<Spanish>Decline the call</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_ANSWERED</Tag>
+		<English>We have taken the cross. Our army has landed in the Holy Land and war is declared upon %s1. Christendom notes our devotion; the Muslim world will not forget it.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRUSADE_REFUSED</Tag>
+		<English>We have declined the call to crusade. Our treasury and our armies are spared, but those who took the cross will remember that we did not.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

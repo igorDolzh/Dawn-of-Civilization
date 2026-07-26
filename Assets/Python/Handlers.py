@@ -16,6 +16,7 @@ import Collapse
 import Communications
 import Companies
 import Congresses
+import Crusades
 import DynamicCivs
 import EventSigns
 import FutureRules
