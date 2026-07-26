@@ -13,6 +13,26 @@ def getAdjustedModifier(iPlayer, iModifier):
 			return getModifier(iPlayer, iModifier) * dLateScenarioModifiers[iModifier] / 100
 	return getModifier(iPlayer, iModifier)
 	
+def getBaseModifier(iPlayer, iModifier):
+	"""The value this player's civilization starts with, before any rule changes it at runtime.
+
+	Identical to getAdjustedModifier except that it looks the civilization up explicitly. That one
+	passes iPlayer straight into getModifier, which indexes lCivOrder - a plain list of
+	civilizations, with no player resolution - so it silently falls through to tDefaults whenever
+	the two ids differ. dBirth below is a CivDict and resolves players itself, which is why the
+	discrepancy has never shown up.
+
+	Anything that recomputes a modifier from its baseline every turn cannot tolerate that, so it
+	uses this instead.
+	"""
+	iCivilization = civ(iPlayer)
+
+	if scenario() > i3000BC and dBirth[iPlayer] < dBirth[iNorse]:
+		if iModifier in dLateScenarioModifiers:
+			return getModifier(iCivilization, iModifier) * dLateScenarioModifiers[iModifier] / 100
+
+	return getModifier(iCivilization, iModifier)
+
 def setModifier(iPlayer, iModifier, iNewValue):
 	player(iPlayer).setModifier(iModifier, iNewValue)
 	

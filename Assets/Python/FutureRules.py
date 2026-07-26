@@ -28,9 +28,11 @@ dModifierRules = {
 		(iModifierColonyMaintenance, 0),
 	],
 
-	# Cities are limited by food. Growth thresholds stop scaling against you.
+	# Cities are limited by food.
+	# The growth threshold half of this lives in BirthRate.py, which recomputes that modifier every
+	# turn from the civilization baseline. Two absolute writers of one integer would race on load
+	# order, so this table must not touch it.
 	iPostScarcity: [
-		(iModifierGrowthThreshold, 50),
 		(iModifierCitiesMaintenance, 50),
 	],
 

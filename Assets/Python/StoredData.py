@@ -115,6 +115,10 @@ class PlayerData:
 		
 		self.iPlagueCountdown = 0
 		
+		# Birth Rate
+		
+		self.bDemographicTransition = False
+		
 		self.bFirstContactPlague = False
 		
 		# Victory

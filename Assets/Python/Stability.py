@@ -21,8 +21,9 @@ tEraAdministrationModifier = (
 	150, # medieval
 	200, # renaissance
 	250, # industrial
-	200, # modern
-	200, # future
+	200, # global
+	200, # digital
+	200, # synthetic
 )
 
 dCivilizationAdministrationModifier = CivDict({

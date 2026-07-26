@@ -11,6 +11,7 @@ import Scenarios
 import ScreensHandler
 
 import AIWars
+import BirthRate
 import Civics
 import Collapse
 import Communications
