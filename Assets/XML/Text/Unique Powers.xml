@@ -1177,4 +1177,28 @@
 		<Italian>When attacking within their own territory, units receive the defensive bonus of their current tile</Italian>
 		<Spanish>When attacking within their own territory, units receive the defensive bonus of their current tile</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NEUTRALITY_EFFECT</Tag>
+		<English>While others fight, we bank: %d1 gold from %d2 wars we are not part of.</English>
+		<French>While others fight, we bank: %d1 gold from %d2 wars we are not part of.</French>
+		<German>While others fight, we bank: %d1 gold from %d2 wars we are not part of.</German>
+		<Italian>While others fight, we bank: %d1 gold from %d2 wars we are not part of.</Italian>
+		<Spanish>While others fight, we bank: %d1 gold from %d2 wars we are not part of.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_BULWARK_EFFECT</Tag>
+		<English>The frontier is garrisoned. %d1 of our cities stand ready.</English>
+		<French>The frontier is garrisoned. %d1 of our cities stand ready.</French>
+		<German>The frontier is garrisoned. %d1 of our cities stand ready.</German>
+		<Italian>The frontier is garrisoned. %d1 of our cities stand ready.</Italian>
+		<Spanish>The frontier is garrisoned. %d1 of our cities stand ready.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CYRILLIC_EFFECT</Tag>
+		<English>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</English>
+		<French>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</French>
+		<German>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</German>
+		<Italian>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</Italian>
+		<Spanish>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</Spanish>
+	</TEXT>
 </Civ4GameText>

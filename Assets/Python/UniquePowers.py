@@ -169,3 +169,112 @@ def tatarCapturePower(iOwner, iUnit, unit):
 		player(iPlayer).changeGold(iGold)
 		
 		events.fireEvent("combatGold", iPlayer, iGold)
+
+
+# Swiss UP: Armed Neutrality - a share of every war we stay out of, in mercenary contracts and
+# in the deposits of people who would rather their money sat somewhere quiet.
+iSwissNeutralityGold = 4
+
+
+@handler("BeginPlayerTurn")
+def swissPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iSwitzerland:
+		return
+
+	# the power is neutrality itself: fighting forfeits it
+	if team(iPlayer).getAtWarCount(True) > 0:
+		return
+
+	iWars = otherWars(iPlayer)
+	if iWars <= 0:
+		return
+
+	iGold = scale(iWars * iSwissNeutralityGold)
+	player(iPlayer).changeGold(iGold)
+
+	# once a decade rather than every turn, or the log becomes unreadable
+	if every(10):
+		message(iPlayer, "TXT_KEY_UP_NEUTRALITY_EFFECT", iGold, iWars, color=iYellow)
+
+
+def otherWars(iPlayer):
+	"""Wars between other major civilizations, counted once per pair."""
+	others = players.major().existing().where(lambda p: p != iPlayer)
+	lOthers = [p for p in others]
+
+	iCount = 0
+	for i, iFirst in enumerate(lOthers):
+		for iSecond in lOthers[i+1:]:
+			if team(iFirst).isAtWar(player(iSecond).getTeam()):
+				iCount += 1
+
+	return iCount
+
+
+# Hungarian UP: Bulwark of Christendom - the border forts that held the Mongols and then the
+# Ottomans. A war of religion against Hungary finds the frontier already garrisoned.
+iHungarianDefenders = 2
+
+
+@handler("changeWar")
+def hungarianPower(bWar, iTeam, iOtherTeam):
+	if not bWar:
+		return
+
+	for iPlayer in players.major().existing().where(lambda p: civ(p) == iHungary):
+		if player(iPlayer).getTeam() != iTeam:
+			continue
+
+		iAttacker = slot_of_team(iOtherTeam)
+		if iAttacker < 0:
+			continue
+
+		# only against a different faith - this is a frontier power, not a general one
+		if player(iAttacker).getStateReligion() == player(iPlayer).getStateReligion():
+			continue
+
+		garrison(iPlayer)
+
+
+def garrison(iPlayer):
+	"""Reinforce the core, where the border castles stood."""
+	core = cities.owner(iPlayer).core(iPlayer)
+
+	for city in core:
+		ensureDefenders(iPlayer, location(city), iHungarianDefenders)
+
+	if core:
+		message(iPlayer, "TXT_KEY_UP_BULWARK_EFFECT", core.count(), color=iYellow)
+
+
+def slot_of_team(iTeam):
+	for iPlayer in players.major().existing():
+		if player(iPlayer).getTeam() == iTeam:
+			return iPlayer
+	return -1
+
+
+# Bulgarian UP: the Cyrillic alphabet. Bulgaria gave the Slavs their letters, and the prestige of
+# that ran far past its borders - so its culture grows with the reach of the faith it wrote for.
+iBulgarianCulturePerCity = 1
+
+
+@handler("BeginPlayerTurn")
+def bulgarianPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iBulgaria:
+		return
+
+	if player(iPlayer).getStateReligion() != iOrthodoxy:
+		return
+
+	iForeign = cities.all().religion(iOrthodoxy).where(lambda city: city.getOwner() != iPlayer).count()
+	if iForeign <= 0:
+		return
+
+	iCulture = scale(iForeign * iBulgarianCulturePerCity)
+
+	for city in cities.owner(iPlayer):
+		city.changeCulture(iPlayer, iCulture, True)
+
+	if every(10):
+		message(iPlayer, "TXT_KEY_UP_CYRILLIC_EFFECT", iCulture, iForeign, color=iYellow)
