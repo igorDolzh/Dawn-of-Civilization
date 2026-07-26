@@ -5417,4 +5417,148 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DISTRIBUTED_CONSENSUS</Tag>
+		<English>Distributed Consensus</English>
+		<French>Distributed Consensus</French>
+		<German>Distributed Consensus</German>
+		<Italian>Distributed Consensus</Italian>
+		<Spanish>Distributed Consensus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DISTRIBUTED_CONSENSUS_QUOTE</Tag>
+		<English>"Trust is a protocol, not a virtue."[PARAGRAPH:2]- Anonymous</English>
+		<French>"Trust is a protocol, not a virtue."[PARAGRAPH:2]- Anonymous</French>
+		<German>"Trust is a protocol, not a virtue."[PARAGRAPH:2]- Anonymous</German>
+		<Italian>"Trust is a protocol, not a virtue."[PARAGRAPH:2]- Anonymous</Italian>
+		<Spanish>"Trust is a protocol, not a virtue."[PARAGRAPH:2]- Anonymous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DISTRIBUTED_CONSENSUS_PEDIA</Tag>
+		<English>Ledgers that no single party holds and none can quietly rewrite. Institutions that had rested on being believed now rest on being checkable, and a great deal of quiet discretion disappeared with them.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COGNITIVE_ENHANCEMENT</Tag>
+		<English>Cognitive Enhancement</English>
+		<French>Cognitive Enhancement</French>
+		<German>Cognitive Enhancement</German>
+		<Italian>Cognitive Enhancement</Italian>
+		<Spanish>Cognitive Enhancement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COGNITIVE_ENHANCEMENT_QUOTE</Tag>
+		<English>"The mind is the last frontier that edits itself."[PARAGRAPH:2]- Anonymous</English>
+		<French>"The mind is the last frontier that edits itself."[PARAGRAPH:2]- Anonymous</French>
+		<German>"The mind is the last frontier that edits itself."[PARAGRAPH:2]- Anonymous</German>
+		<Italian>"The mind is the last frontier that edits itself."[PARAGRAPH:2]- Anonymous</Italian>
+		<Spanish>"The mind is the last frontier that edits itself."[PARAGRAPH:2]- Anonymous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COGNITIVE_ENHANCEMENT_PEDIA</Tag>
+		<English>Once attention, memory and reasoning became things that could be adjusted rather than merely trained, the gap between the augmented and the unaugmented stopped being a matter of effort. Every society that adopted it had to decide what it owed those who did not.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALGORITHMIC_GOVERNANCE</Tag>
+		<English>Algorithmic Governance</English>
+		<French>Algorithmic Governance</French>
+		<German>Algorithmic Governance</German>
+		<Italian>Algorithmic Governance</Italian>
+		<Spanish>Algorithmic Governance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALGORITHMIC_GOVERNANCE_QUOTE</Tag>
+		<English>"The most dangerous phrase in government is: the model recommends it."[PARAGRAPH:2]- Anonymous</English>
+		<French>"The most dangerous phrase in government is: the model recommends it."[PARAGRAPH:2]- Anonymous</French>
+		<German>"The most dangerous phrase in government is: the model recommends it."[PARAGRAPH:2]- Anonymous</German>
+		<Italian>"The most dangerous phrase in government is: the model recommends it."[PARAGRAPH:2]- Anonymous</Italian>
+		<Spanish>"The most dangerous phrase in government is: the model recommends it."[PARAGRAPH:2]- Anonymous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALGORITHMIC_GOVERNANCE_PEDIA</Tag>
+		<English>Policy set by systems that optimise measurable outcomes. Administration became faster, more consistent and much harder to argue with, and the question of who chose the objective function turned out to be the only question that mattered.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ABUNDANCE_LOGISTICS</Tag>
+		<English>Abundance Logistics</English>
+		<French>Abundance Logistics</French>
+		<German>Abundance Logistics</German>
+		<Italian>Abundance Logistics</Italian>
+		<Spanish>Abundance Logistics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ABUNDANCE_LOGISTICS_QUOTE</Tag>
+		<English>"To each according to throughput."[PARAGRAPH:2]- Anonymous</English>
+		<French>"To each according to throughput."[PARAGRAPH:2]- Anonymous</French>
+		<German>"To each according to throughput."[PARAGRAPH:2]- Anonymous</German>
+		<Italian>"To each according to throughput."[PARAGRAPH:2]- Anonymous</Italian>
+		<Spanish>"To each according to throughput."[PARAGRAPH:2]- Anonymous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ABUNDANCE_LOGISTICS_PEDIA</Tag>
+		<English>When production and distribution both approach zero marginal cost, scarcity stops organising economic life. What replaces it is logistics: not whether a thing can be made, but whether it can be got to where it is wanted before it is no longer wanted.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NOOSPHERE</Tag>
+		<English>Noosphere</English>
+		<French>Noosphere</French>
+		<German>Noosphere</German>
+		<Italian>Noosphere</Italian>
+		<Spanish>Noosphere</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NOOSPHERE_QUOTE</Tag>
+		<English>"Everything that rises must converge."[PARAGRAPH:2]- Pierre Teilhard de Chardin</English>
+		<French>"Everything that rises must converge."[PARAGRAPH:2]- Pierre Teilhard de Chardin</French>
+		<German>"Everything that rises must converge."[PARAGRAPH:2]- Pierre Teilhard de Chardin</German>
+		<Italian>"Everything that rises must converge."[PARAGRAPH:2]- Pierre Teilhard de Chardin</Italian>
+		<Spanish>"Everything that rises must converge."[PARAGRAPH:2]- Pierre Teilhard de Chardin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NOOSPHERE_PEDIA</Tag>
+		<English>The layer of thought wrapped around the planet, first proposed as metaphor and later built as infrastructure. Whether it constitutes a mind is a question the noosphere has been unable to settle about itself.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_WORLD_FEDERATION</Tag>
+		<English>World Federation</English>
+		<French>World Federation</French>
+		<German>World Federation</German>
+		<Italian>World Federation</Italian>
+		<Spanish>World Federation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_WORLD_FEDERATION_QUOTE</Tag>
+		<English>"We must build a kind of United States of Europe. And then, the world."[PARAGRAPH:2]- Winston Churchill</English>
+		<French>"We must build a kind of United States of Europe. And then, the world."[PARAGRAPH:2]- Winston Churchill</French>
+		<German>"We must build a kind of United States of Europe. And then, the world."[PARAGRAPH:2]- Winston Churchill</German>
+		<Italian>"We must build a kind of United States of Europe. And then, the world."[PARAGRAPH:2]- Winston Churchill</Italian>
+		<Spanish>"We must build a kind of United States of Europe. And then, the world."[PARAGRAPH:2]- Winston Churchill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_WORLD_FEDERATION_PEDIA</Tag>
+		<English>Sovereignty pooled rather than surrendered. Federation solved the problems no nation could solve alone and created a new one: what a member state may do when the federation decides against it.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

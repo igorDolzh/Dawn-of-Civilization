@@ -196,6 +196,25 @@
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_TECHNOCRACY</Type>
+			<Description>TXT_KEY_CIVIC_TECHNOCRACY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_TECHNOCRACY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_TECHNOCRACY_STRATEGY</Strategy>
+			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,3</Button>
+			<TechPrereq>TECH_ALGORITHMIC_GOVERNANCE</TechPrereq>
+			<iAnarchyLength>2</iAnarchyLength>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<iWarWearinessModifier>50</iWarWearinessModifier>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+		</CivicInfo>
+		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGITIMACY</CivicOptionType>
 			<Type>CIVIC_PERSONALISM</Type>
 			<Description>TXT_KEY_CIVIC_PERSONALISM</Description>
@@ -368,6 +387,25 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGITIMACY</CivicOptionType>
+			<Type>CIVIC_TRANSPARENCY</Type>
+			<Description>TXT_KEY_CIVIC_TRANSPARENCY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_TRANSPARENCY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_TRANSPARENCY_STRATEGY</Strategy>
+			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,3</Button>
+			<TechPrereq>TECH_DISTRIBUTED_CONSENSUS</TechPrereq>
+			<iAnarchyLength>2</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iDistanceMaintenanceModifier>-25</iDistanceMaintenanceModifier>
+			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>-50</iCommerce>
+			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -602,6 +640,20 @@
 					<bValid>1</bValid>
 				</SpecialistValid>
 			</SpecialistValids>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
+			<Type>CIVIC_AUGMENTATION</Type>
+			<Description>TXT_KEY_CIVIC_AUGMENTATION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_AUGMENTATION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_AUGMENTATION_STRATEGY</Strategy>
+			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,3</Button>
+			<TechPrereq>TECH_COGNITIVE_ENHANCEMENT</TechPrereq>
+			<iAnarchyLength>2</iAnarchyLength>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iExtraHealth>3</iExtraHealth>
+			<iFreeSpecialist>2</iFreeSpecialist>
+			<iCivicPercentAnger>500</iCivicPercentAnger>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -854,6 +906,20 @@
 			</Hurrys>
 		</CivicInfo>
 		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
+			<Type>CIVIC_ABUNDANCE</Type>
+			<Description>TXT_KEY_CIVIC_ABUNDANCE</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ABUNDANCE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ABUNDANCE_STRATEGY</Strategy>
+			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,3</Button>
+			<TechPrereq>TECH_ABUNDANCE_LOGISTICS</TechPrereq>
+			<iAnarchyLength>2</iAnarchyLength>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iCorporationCommerceModifier>-50</iCorporationCommerceModifier>
+			<iFoodProductionModifier>25</iFoodProductionModifier>
+			<bNoForeignTrade>1</bNoForeignTrade>
+		</CivicInfo>
+		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_RELIGION</CivicOptionType>
 			<Type>CIVIC_ANIMISM</Type>
 			<Description>TXT_KEY_CIVIC_ANIMISM</Description>
@@ -1009,6 +1075,20 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BuildingHappinessChange>
 			</BuildingHappinessChanges>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_RELIGION</CivicOptionType>
+			<Type>CIVIC_COSMISM</Type>
+			<Description>TXT_KEY_CIVIC_COSMISM</Description>
+			<Civilopedia>TXT_KEY_CIVIC_COSMISM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_COSMISM_STRATEGY</Strategy>
+			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,3</Button>
+			<TechPrereq>TECH_NOOSPHERE</TechPrereq>
+			<iAnarchyLength>2</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<bNoStateReligionAnarchy>1</bNoStateReligionAnarchy>
+			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_TERRITORY</CivicOptionType>
@@ -1252,6 +1332,20 @@
 					<iExperienceModifier>4</iExperienceModifier>
 				</DomainExperienceModifier>
 			</DomainExperienceModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_TERRITORY</CivicOptionType>
+			<Type>CIVIC_PLANETARY_UNION</Type>
+			<Description>TXT_KEY_CIVIC_PLANETARY_UNION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_PLANETARY_UNION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_PLANETARY_UNION_STRATEGY</Strategy>
+			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,3</Button>
+			<TechPrereq>TECH_WORLD_FEDERATION</TechPrereq>
+			<iAnarchyLength>2</iAnarchyLength>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iDistanceMaintenanceModifier>-100</iDistanceMaintenanceModifier>
+			<iColonyMaintenanceModifier>-100</iColonyMaintenanceModifier>
+			<iWarWearinessModifier>100</iWarWearinessModifier>
 		</CivicInfo>
 	</CivicInfos>
 </Civ4CivicInfos>

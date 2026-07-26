@@ -1034,7 +1034,7 @@ iNumCorporations = 10
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 157
+iNumTechs = 163
 (iTanning, iMining, iPottery, iPastoralism, iAgriculture, iMythology, iSailing,
 iSmelting, iMasonry, iLeverage, iProperty, iCeremony, iDivination, iSeafaring,
 iAlloys, iConstruction, iRiding, iArithmetics, iWriting, iCalendar, iShipbuilding,
@@ -1057,7 +1057,8 @@ iAerodynamics, iSatellites, iSuperconductors, iRobotics, iTelecommunications, iR
 iSupermaterials, iFusion, iNanotechnology, iCybernetics, iBiotechnology,
 iUnifiedTheory, iArtificialIntelligence,
 iTranshumanism,
-iOrbitalIndustry, iHeliumThreeExtraction, iQuantumComputing, iSyntheticGenomics, iAsteroidMining, iClimateEngineering, iMachineConsciousness, iRegenerativeMedicine, iOrbitalHabitation, iTerraforming, iNanoassembly, iNeuralUplink, iDirectedEnergy, iSelfReplication, iPostScarcity, iPlanetaryConsciousness) = range(iNumTechs)
+iOrbitalIndustry, iHeliumThreeExtraction, iQuantumComputing, iSyntheticGenomics, iAsteroidMining, iClimateEngineering, iMachineConsciousness, iRegenerativeMedicine, iOrbitalHabitation, iTerraforming, iNanoassembly, iNeuralUplink, iDirectedEnergy, iSelfReplication, iPostScarcity, iPlanetaryConsciousness,
+iDistributedConsensus, iCognitiveEnhancement, iAlgorithmicGovernance, iAbundanceLogistics, iNoosphere, iWorldFederation) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
@@ -1184,13 +1185,13 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 42
-(iChiefdom, iDespotism, iMonarchy, iRepublic, iElective, iStateParty, iDemocracy,
-iPersonalism, iCitizenship, iVassalage, iTheocracy, iBureaucracy, iStratocracy, iConstitution,
-iTraditionalism, iSlavery, iManorialism, iCasteSystem, iIndividualism, iTotalitarianism, iEgalitarianism,
-iReciprocity, iRedistribution, iMerchantTrade, iRegulatedTrade, iFreeEnterprise, iCentralPlanning, iPublicWelfare,
-iAnimism, iDeification, iClergy, iSyncretism, iMonasticism, iFanaticism, iSecularism,
-iKinship, iThalassocracy, iHegemony, iIsolationism, iColonialism, iNationhood, iMultilateralism) = range(iNumCivics)
+iNumCivics = 48
+(iChiefdom, iDespotism, iMonarchy, iRepublic, iElective, iStateParty, iDemocracy, iTechnocracy,
+iPersonalism, iCitizenship, iVassalage, iTheocracy, iBureaucracy, iStratocracy, iConstitution, iTransparency,
+iTraditionalism, iSlavery, iManorialism, iCasteSystem, iIndividualism, iTotalitarianism, iEgalitarianism, iAugmentation,
+iReciprocity, iRedistribution, iMerchantTrade, iRegulatedTrade, iFreeEnterprise, iCentralPlanning, iPublicWelfare, iAbundance,
+iAnimism, iDeification, iClergy, iSyncretism, iMonasticism, iFanaticism, iSecularism, iCosmism,
+iKinship, iThalassocracy, iHegemony, iIsolationism, iColonialism, iNationhood, iMultilateralism, iPlanetaryUnion) = range(iNumCivics)
 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)

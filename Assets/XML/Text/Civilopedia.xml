@@ -7103,4 +7103,52 @@ Your stability level can change during a stability check. As long it is higher t
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TECHNOCRACY_PEDIA</Tag>
+		<English>Government by expertise rather than by mandate. Administrators are selected on measured performance and replaced when it falls, which produces unusually capable states and unusually brittle legitimacy.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRANSPARENCY_PEDIA</Tag>
+		<English>A state whose internal record is open by construction. Graft becomes impractical and administration cheap, at the cost of any capacity for covert action.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUGMENTATION_PEDIA</Tag>
+		<English>A society organised around the enhanced human. Output rises sharply and so does the resentment of those who cannot afford, or refuse, the modifications.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ABUNDANCE_PEDIA</Tag>
+		<English>An economy that has stopped rationing. Internal plenty is total, and the external commerce that plenty makes pointless withers accordingly.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COSMISM_PEDIA</Tag>
+		<English>A conviction that humanity's purpose lies outward and forward rather than in revelation. It tolerates every faith precisely because it privileges none.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLANETARY_UNION_PEDIA</Tag>
+		<English>Federation at planetary scale. Administration of the most remote province costs no more than the capital, and a member that starts a war finds the federation itself the first casualty.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

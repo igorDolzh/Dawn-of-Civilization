@@ -37,11 +37,13 @@ class CvCivicsScreen:
 
 		self.BUTTON_SMALL = 24
 		self.BUTTON_LARGE = 64
-		self.LINE = 28
+		# 7 rows at 24px is exactly 6 rows at 28px, so the eighth civic per category fits
+		# without moving the panel grid or overflowing the bottom panel
+		self.LINE = 24
 		self.MARGIN = 10
 
 		self.nCategories = 5
-		self.nCategoryCivics = 6
+		self.nCategoryCivics = 7
 		self.nColumns = 2
 
 		self.X_CIVIC_CATEGORY = self.MARGIN
@@ -246,7 +248,8 @@ class CvCivicsScreen:
 		
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory:
-				if iCivic % 7 == 0: continue
+				# the category's first civic is already drawn as the large icon
+				if self.getCivicIndex(iCivic) == 0: continue
 			
 				sName = "CivicButton" + str(iCivic)
 				sButton = gc.getCivicInfo(iCivic).getButton()
@@ -368,14 +371,17 @@ class CvCivicsScreen:
 		iHoverCategory = gc.getCivicInfo(iHoverCivic).getCivicOptionType()
 		
 		for iCivic in range(iNumCivics):
-			if iCivic % 7 == 0: continue
-		
 			iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
 			if iCategory == iHoverCategory:
 				continue
+
+			iIndex = self.getCivicIndex(iCivic)
+			# the category's first civic is drawn as the large icon, not as a row
+			if iIndex == 0: continue
+
 			iX, iY = self.getPosition(iCategory)
 			xPos = iX + self.W_CIVIC_CATEGORY - self.BUTTON_SMALL - self.MARGIN
-			iLine = iY + self.MARGIN + (iCivic % 7 - 1) * self.LINE
+			iLine = iY + self.MARGIN + (iIndex - 1) * self.LINE
 			
 			sName = "CivicName" + str(iCivic)
 			sText = gc.getCivicInfo(iCivic).getDescription()
@@ -414,6 +420,16 @@ class CvCivicsScreen:
 	
 	def getBaseCivic(self, iCategory):
 		return next(iCivic for iCivic in range(gc.getNumCivicInfos()) if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory)
+
+
+	def getCivicIndex(self, iCivic):
+		"""Position of a civic within its own category, counting from zero.
+
+		This replaces the previous `iCivic % 7` arithmetic, which assumed every category held
+		exactly seven civics and silently desynchronises as soon as one holds a different number.
+		"""
+		iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
+		return len([i for i in range(iCivic) if gc.getCivicInfo(i).getCivicOptionType() == iCategory])
 
 
 	def handleInput(self, inputClass):

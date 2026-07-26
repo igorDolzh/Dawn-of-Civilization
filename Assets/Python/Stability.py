@@ -998,7 +998,9 @@ def getCivicStability(iPlayer, civics=None):
 	if iEgalitarianism in civics:
 		if iDemocracy in civics: iStability += 2
 		if iConstitution in civics: iStability += 2
-		if notcivics(iSyncretism, iSecularism) in civics: iStability -= 3
+		# notcivics() expands over every civic in the category, so Cosmism would inherit this
+		# penalty by default. It belongs with the tolerant religion civics, not the dogmatic ones.
+		if notcivics(iSyncretism, iSecularism, iCosmism) in civics: iStability -= 3
 		
 	if iIndividualism in civics:
 		if (iRepublic, iDemocracy) in civics: iStability += 2
@@ -1092,7 +1094,43 @@ def getCivicStability(iPlayer, civics=None):
 	
 	if iHegemony in civics:
 		if iStratocracy in civics: iStability += 2
-		
+
+	# Future civics. Without entries here they would score as combinatorially neutral, which
+	# reads as "safe in any pairing" and makes them strictly better than the civics they compete
+	# with. Note Thalassocracy already penalises Abundance through the notcivics() expansion at
+	# the Thalassocracy block above, which is intended: an abundance economy undermines a
+	# trading empire.
+	if iTechnocracy in civics:
+		if iSecularism in civics: iStability += 3
+		if iCosmism in civics: iStability += 2
+		if iFanaticism in civics: iStability -= 4
+		if iTraditionalism in civics: iStability -= 3
+
+	if iTransparency in civics:
+		if (iConstitution, iCitizenship) in civics: iStability += 3
+		if iTotalitarianism in civics: iStability -= 4
+		if iStateParty in civics: iStability -= 3
+
+	if iAugmentation in civics:
+		if iIndividualism in civics: iStability += 2
+		if iEgalitarianism in civics: iStability -= 2
+		if iTraditionalism in civics: iStability -= 3
+
+	if iAbundance in civics:
+		if iPublicWelfare in civics: iStability += 3
+		if iEgalitarianism in civics: iStability += 2
+		if iFreeEnterprise in civics: iStability -= 3
+
+	if iCosmism in civics:
+		if iIndividualism in civics: iStability += 2
+		if iTheocracy in civics: iStability -= 4
+
+	if iPlanetaryUnion in civics:
+		if iMultilateralism in civics: iStability += 3
+		if iDemocracy in civics: iStability += 2
+		if iHegemony in civics: iStability -= 4
+		if iNationhood in civics: iStability -= 3
+
 	return iStability
 
 def sigmoid(x):

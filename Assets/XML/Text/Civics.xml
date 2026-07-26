@@ -801,4 +801,100 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TECHNOCRACY</Tag>
+		<English>Technocracy</English>
+		<French>Technocracy</French>
+		<German>Technocracy</German>
+		<Italian>Technocracy</Italian>
+		<Spanish>Technocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TECHNOCRACY_STRATEGY</Tag>
+		<English>Rule by those who can demonstrate competence, measured continuously. Research and great people flourish; the machinery of war does not.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRANSPARENCY</Tag>
+		<English>Transparency</English>
+		<French>Transparency</French>
+		<German>Transparency</German>
+		<Italian>Transparency</Italian>
+		<Spanish>Transparency</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRANSPARENCY_STRATEGY</Tag>
+		<English>Every public act is recorded and auditable. Corruption and waste collapse; so does your ability to keep a secret.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUGMENTATION</Tag>
+		<English>Augmentation</English>
+		<French>Augmentation</French>
+		<German>Augmentation</German>
+		<Italian>Augmentation</Italian>
+		<Spanish>Augmentation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUGMENTATION_STRATEGY</Tag>
+		<English>Citizens are enhanced as a matter of course. Specialists and health improve markedly; those left behind do not take it well.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ABUNDANCE</Tag>
+		<English>Abundance</English>
+		<French>Abundance</French>
+		<German>Abundance</German>
+		<Italian>Abundance</Italian>
+		<Spanish>Abundance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ABUNDANCE_STRATEGY</Tag>
+		<English>Goods are produced and distributed at near zero cost. Food and production surge; trade and corporations lose their purpose.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COSMISM</Tag>
+		<English>Cosmism</English>
+		<French>Cosmism</French>
+		<German>Cosmism</German>
+		<Italian>Cosmism</Italian>
+		<Spanish>Cosmism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COSMISM_STRATEGY</Tag>
+		<English>Meaning is sought in the cosmos rather than in doctrine. Great people and culture flourish without any state religion.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLANETARY_UNION</Tag>
+		<English>Planetary Union</English>
+		<French>Planetary Union</French>
+		<German>Planetary Union</German>
+		<Italian>Planetary Union</Italian>
+		<Spanish>Planetary Union</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLANETARY_UNION_STRATEGY</Tag>
+		<English>Sovereignty is pooled across the world. Distance ceases to cost anything; war becomes almost impossible to sustain.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>
