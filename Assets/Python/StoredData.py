@@ -125,6 +125,7 @@ class PlayerData:
 		# Revolutions
 		
 		self.iRevolutionaryPressure = 0
+		self.iSocialistPressure = 0
 		self.iRevolutionTurn = -1
 		self.iSuppressionPenalty = 0
 		

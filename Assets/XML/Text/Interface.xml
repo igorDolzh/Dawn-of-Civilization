@@ -4000,4 +4000,36 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SOCIALIST_REVOLUTION_CALL</Tag>
+		<English>The war has gone on too long and we are losing it. The soldiers are going home, the factories have stopped, and the workers have formed councils that no longer take our orders. There is a party that says it can govern in our place.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SOCIALIST_REVOLUTION_LEAD</Tag>
+		<English>All power to the councils</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SOCIALIST_REVOLUTION_SUPPRESS</Tag>
+		<English>Restore order</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SOCIALIST_REVOLUTION_LED</Tag>
+		<English>The old state is swept away and the economy belongs to the people. The world has taken notice, and very little of that notice is friendly.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>
