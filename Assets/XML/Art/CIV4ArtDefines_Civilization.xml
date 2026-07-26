@@ -498,5 +498,35 @@
 			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_PHILIPPINES</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_ISRAEL</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_TAIWAN</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_SINGAPORE</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+			<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_BANGLADESH</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Byzantium.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Labarum.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

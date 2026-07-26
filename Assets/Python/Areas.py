@@ -80,6 +80,11 @@ iZulu :			(79, 14), # kwaBulawayo
 iNativeAmericans :	(22, 54), # Cahokia
 iMaori :		(1, 8), # Te Whanganui-a-Tara
 iSouthAfrica :	(72, 11), # Kaapstad
+iPhilippines :	(129, 38), # Manila
+iIsrael :		(84, 45), # Jerusalem
+iTaiwan :		(128, 47), # Taipei
+iSingapore :	(121, 29), # Singapore
+iBangladesh :	(113, 43), # Dhaka
 })
 
 dPeriodCapitals = {
@@ -171,6 +176,11 @@ iZulu :			((78, 12),	(81, 15)),
 iNativeAmericans :	((20, 51),	(25, 56)),
 iMaori :		((0, 6),	(2, 12)),
 iSouthAfrica :	((71, 10),	(76, 14)),
+iPhilippines :	((127, 33),	(131, 41)),
+iIsrael :		((82, 43),	(86, 47)),
+iTaiwan :		((127, 45),	(129, 48)),
+iSingapore :	((120, 28),	(122, 30)),
+iBangladesh :	((111, 41),	(115, 45)),
 })
 
 dExtendedBirthArea = CivDict({
@@ -309,6 +319,11 @@ iZulu :			((79, 13),	(80, 15)),
 iNativeAmericans :	((21, 52),	(24, 55)),
 iMaori :		((0, 7),	(2, 11)),
 iSouthAfrica :	((72, 11),	(75, 13)),
+iPhilippines :	((128, 35),	(130, 39)),
+iIsrael :		((83, 44),	(85, 46)),
+iTaiwan :		((128, 46),	(128, 47)),
+iSingapore :	((121, 29),	(121, 29)),
+iBangladesh :	((112, 42),	(114, 44)),
 })
 
 dCoreAreaExceptions = CivDict({
@@ -423,6 +438,11 @@ iZulu :		((78, 12),	(81, 15)),
 iNativeAmericans :	((20, 51),	(25, 56)),
 iMaori :	((0, 6),	(2, 12)),
 iSouthAfrica :	((71, 10),	(76, 14)),
+iPhilippines :	((127, 33),	(131, 41)),
+iIsrael :	((82, 43),	(86, 47)),
+iTaiwan :	((127, 45),	(129, 48)),
+iSingapore :	((120, 28),	(122, 30)),
+iBangladesh :	((111, 41),	(115, 45)),
 })
 
 dRespawnAreaExceptions = CivDict({

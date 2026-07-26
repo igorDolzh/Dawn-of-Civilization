@@ -411,3 +411,85 @@ def nativeAmericanPower(iGameTurn, iPlayer):
 		iWild = plots.ring(city).where(lambda plot: plot.getFeatureType() in (iForest, iJungle)).count()
 		if iWild > 0:
 			city.changeCulture(iPlayer, scale(iWild * iNativeCulture), True)
+
+
+# Filipino UP: Seven Thousand Islands - an archipelago that was never one land to be held, and
+# whose cities all faced outward across water rather than inward at each other.
+iFilipinoCulture = 2
+
+
+@handler("BeginPlayerTurn")
+def filipinoPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iPhilippines:
+		return
+
+	for city in cities.owner(iPlayer).coastal():
+		city.changeCulture(iPlayer, scale(iFilipinoCulture), True)
+
+
+# Israeli UP: Start-Up Nation - a state that spent its whole existence under threat and answered
+# with research rather than mass, because it never had the mass.
+iIsraeliGreatPeople = 3
+
+
+@handler("BeginPlayerTurn")
+def israeliPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iIsrael:
+		return
+
+	# innovation under pressure: the power only runs while the country is threatened
+	if team(iPlayer).getAtWarCount(True) <= 0:
+		return
+
+	capital_city = capital(iPlayer)
+	if capital_city:
+		capital_city.changeGreatPeopleProgress(scale(iIsraeliGreatPeople))
+
+
+# Taiwanese UP: the Economic Miracle - an export economy built on manufacturing, where what the
+# factories made was sold abroad rather than consumed at home.
+iTaiwaneseGoldPerProduction = 4
+
+
+@handler("BeginPlayerTurn")
+def taiwanesePower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iTaiwan:
+		return
+
+	iProduction = cities.owner(iPlayer).sum(lambda city: city.getYieldRate(YieldTypes.YIELD_PRODUCTION))
+	if iProduction <= 0:
+		return
+
+	player(iPlayer).changeGold(scale(iProduction / iTaiwaneseGoldPerProduction))
+
+
+# Singaporean UP: Entrepot - a port that produced almost nothing and grew rich entirely on what
+# passed through it.
+iSingaporeanGoldPerRoute = 8
+
+
+@handler("BeginPlayerTurn")
+def singaporeanPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iSingapore:
+		return
+
+	iRoutes = cities.owner(iPlayer).sum(lambda city: city.getTradeRoutes())
+	if iRoutes <= 0:
+		return
+
+	player(iPlayer).changeGold(scale(iRoutes * iSingaporeanGoldPerRoute))
+
+
+# Bangladeshi UP: Delta Labour - one of the densest populations on earth, on land that floods, and
+# an economy built on the sheer number of hands available rather than on what they were given.
+iBangladeshiProduction = 5
+
+
+@handler("BeginPlayerTurn")
+def bangladeshiPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iBangladesh:
+		return
+
+	for city in cities.owner(iPlayer):
+		if city.getPopulation() >= iBangladeshiProduction:
+			city.changeCulture(iPlayer, scale(city.getPopulation() / iBangladeshiProduction), True)

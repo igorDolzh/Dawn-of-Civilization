@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Philippines -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_DESC</Tag>
+		<English>The Filipinos</English>
+		<French>The Filipinos</French>
+		<German>The Filipinos</German>
+		<Italian>The Filipinos</Italian>
+		<Spanish>The Filipinos</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_PEOPLES</Tag>
+		<English>Filipino Peoples</English>
+		<French>Filipino Peoples</French>
+		<German>Filipino Peoples</German>
+		<Italian>Filipino Peoples</Italian>
+		<Spanish>Filipino Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_ADJECTIVE</Tag>
+		<English>Filipino</English>
+		<French>Filipino</French>
+		<German>Filipino</German>
+		<Italian>Filipino</Italian>
+		<Spanish>Filipino</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_SHORT_DESC</Tag>
+		<English>Philippines</English>
+		<French>Philippines</French>
+		<German>Philippines</German>
+		<Italian>Philippines</Italian>
+		<Spanish>Philippines</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PHILIPPINES_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

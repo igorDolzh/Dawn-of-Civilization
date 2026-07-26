@@ -1385,4 +1385,84 @@
 		<Italian>The gold of the interior: %d1 gold from %d2 sources.</Italian>
 		<Spanish>The gold of the interior: %d1 gold from %d2 sources.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PHI_TITLE</Tag>
+		<English>Seven Thousand Islands</English>
+		<French>Seven Thousand Islands</French>
+		<German>Seven Thousand Islands</German>
+		<Italian>Seven Thousand Islands</Italian>
+		<Spanish>Seven Thousand Islands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PHI</Tag>
+		<English>culture in every coastal city</English>
+		<French>culture in every coastal city</French>
+		<German>culture in every coastal city</German>
+		<Italian>culture in every coastal city</Italian>
+		<Spanish>culture in every coastal city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ISR_TITLE</Tag>
+		<English>Start-Up Nation</English>
+		<French>Start-Up Nation</French>
+		<German>Start-Up Nation</German>
+		<Italian>Start-Up Nation</Italian>
+		<Spanish>Start-Up Nation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ISR</Tag>
+		<English>great people in your capital while at war</English>
+		<French>great people in your capital while at war</French>
+		<German>great people in your capital while at war</German>
+		<Italian>great people in your capital while at war</Italian>
+		<Spanish>great people in your capital while at war</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TWN_TITLE</Tag>
+		<English>Economic Miracle</English>
+		<French>Economic Miracle</French>
+		<German>Economic Miracle</German>
+		<Italian>Economic Miracle</Italian>
+		<Spanish>Economic Miracle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_TWN</Tag>
+		<English>gold from your total production</English>
+		<French>gold from your total production</French>
+		<German>gold from your total production</German>
+		<Italian>gold from your total production</Italian>
+		<Spanish>gold from your total production</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SIN_TITLE</Tag>
+		<English>Entrepot</English>
+		<French>Entrepot</French>
+		<German>Entrepot</German>
+		<Italian>Entrepot</Italian>
+		<Spanish>Entrepot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SIN</Tag>
+		<English>gold from every trade route</English>
+		<French>gold from every trade route</French>
+		<German>gold from every trade route</German>
+		<Italian>gold from every trade route</Italian>
+		<Spanish>gold from every trade route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_BAN_TITLE</Tag>
+		<English>Delta Labour</English>
+		<French>Delta Labour</French>
+		<German>Delta Labour</German>
+		<Italian>Delta Labour</Italian>
+		<Spanish>Delta Labour</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_BAN</Tag>
+		<English>culture from your largest cities</English>
+		<French>culture from your largest cities</French>
+		<German>culture from your largest cities</German>
+		<Italian>culture from your largest cities</Italian>
+		<Spanish>culture from your largest cities</Spanish>
+	</TEXT>
 </Civ4GameText>

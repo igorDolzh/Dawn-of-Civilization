@@ -1557,4 +1557,84 @@
 		<Italian>Wilhelm Tell</Italian>
 		<Spanish>Wilhelm Tell</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RIZAL</Tag>
+		<English>Jose Rizal</English>
+		<French>Jose Rizal</French>
+		<German>Jose Rizal</German>
+		<Italian>Jose Rizal</Italian>
+		<Spanish>Jose Rizal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RIZAL_PEDIA</Tag>
+		<English>Jose Rizal</English>
+		<French>Jose Rizal</French>
+		<German>Jose Rizal</German>
+		<Italian>Jose Rizal</Italian>
+		<Spanish>Jose Rizal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BEN_GURION</Tag>
+		<English>David Ben-Gurion</English>
+		<French>David Ben-Gurion</French>
+		<German>David Ben-Gurion</German>
+		<Italian>David Ben-Gurion</Italian>
+		<Spanish>David Ben-Gurion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BEN_GURION_PEDIA</Tag>
+		<English>David Ben-Gurion</English>
+		<French>David Ben-Gurion</French>
+		<German>David Ben-Gurion</German>
+		<Italian>David Ben-Gurion</Italian>
+		<Spanish>David Ben-Gurion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHIANG</Tag>
+		<English>Chiang Kai-shek</English>
+		<French>Chiang Kai-shek</French>
+		<German>Chiang Kai-shek</German>
+		<Italian>Chiang Kai-shek</Italian>
+		<Spanish>Chiang Kai-shek</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CHIANG_PEDIA</Tag>
+		<English>Chiang Kai-shek</English>
+		<French>Chiang Kai-shek</French>
+		<German>Chiang Kai-shek</German>
+		<Italian>Chiang Kai-shek</Italian>
+		<Spanish>Chiang Kai-shek</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_LEE</Tag>
+		<English>Lee Kuan Yew</English>
+		<French>Lee Kuan Yew</French>
+		<German>Lee Kuan Yew</German>
+		<Italian>Lee Kuan Yew</Italian>
+		<Spanish>Lee Kuan Yew</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_LEE_PEDIA</Tag>
+		<English>Lee Kuan Yew</English>
+		<French>Lee Kuan Yew</French>
+		<German>Lee Kuan Yew</German>
+		<Italian>Lee Kuan Yew</Italian>
+		<Spanish>Lee Kuan Yew</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MUJIB</Tag>
+		<English>Sheikh Mujibur Rahman</English>
+		<French>Sheikh Mujibur Rahman</French>
+		<German>Sheikh Mujibur Rahman</German>
+		<Italian>Sheikh Mujibur Rahman</Italian>
+		<Spanish>Sheikh Mujibur Rahman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_MUJIB_PEDIA</Tag>
+		<English>Sheikh Mujibur Rahman</English>
+		<French>Sheikh Mujibur Rahman</French>
+		<German>Sheikh Mujibur Rahman</German>
+		<Italian>Sheikh Mujibur Rahman</Italian>
+		<Spanish>Sheikh Mujibur Rahman</Spanish>
+	</TEXT>
 </Civ4GameText>

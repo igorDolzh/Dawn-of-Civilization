@@ -67,6 +67,7 @@ ANATOLIA = "TXT_KEY_VICTORY_NAME_ANATOLIA"
 ASIA = "TXT_KEY_VICTORY_NAME_ASIA"
 BALKANS = "TXT_KEY_VICTORY_NAME_BALKANS"
 CARPATHIAN_BASIN = "TXT_KEY_VICTORY_NAME_CARPATHIAN_BASIN"
+PHILIPPINE_ISLANDS = "TXT_KEY_VICTORY_NAME_PHILIPPINE_ISLANDS"
 HUNGARIAN = "TXT_KEY_VICTORY_NAME_HUNGARIAN"
 BRAZIL = "TXT_KEY_VICTORY_NAME_BRAZIL"
 BRITAIN = "TXT_KEY_VICTORY_NAME_BRITAIN"
@@ -1012,6 +1013,31 @@ dGoals = {
 		NoCityLost(by=1815),
 		PeaceTurns(100, by=1900),
 		GoldAmount(20000, by=1950),
+	),
+	iPhilippines: (
+		Control(plots.region(rPhilippines).named(PHILIPPINE_ISLANDS), at=1946),
+		ReligionSpreadCount(iCatholicism, 10, by=1950),
+		HappiestTurns(30, by=2000),
+	),
+	iIsrael: (
+		Control(plots.region(rLevant).named(LEVANT), at=1970),
+		EraFirstDiscover(iDigital, 3, by=2000),
+		NoCityLost(by=2000),
+	),
+	iTaiwan: (
+		NoCityLost(by=2000),
+		GoldAmount(15000, by=1990),
+		CultureLevelCityCount(iCultureLevelRefined, 2, by=2000),
+	),
+	iSingapore: (
+		TradeGold(3000, by=1990),
+		GoldAmount(20000, by=2000),
+		HappiestTurns(30, by=2000),
+	),
+	iBangladesh: (
+		PopulationCount(60, by=2000),
+		NoCityLost(by=2000),
+		HappiestTurns(20, by=2000),
 	),
 }
 
