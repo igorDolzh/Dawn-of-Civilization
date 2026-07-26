@@ -9352,6 +9352,14 @@ long CvPlayer::getRealPopulation() const
 		iTotalPopulation += pLoopCity->getRealPopulation();
 	}
 
+	// Leoreth: the empire total is stored in thousands, so it no longer saturates MAX_INT.
+	// A 32-bit return could only represent 2.1 billion people, which a large late-game empire
+	// genuinely reaches (roughly 57 cities of size 30). Dividing here raises the effective
+	// ceiling to 2.1 trillion; consumers append the three zeros when displaying.
+	// Note this makes the player total a different unit from CvCity::getRealPopulation(),
+	// which is unchanged - nothing compares the two.
+	iTotalPopulation /= 1000;
+
 	if (iTotalPopulation > MAX_INT)
 	{
 		iTotalPopulation = MAX_INT;

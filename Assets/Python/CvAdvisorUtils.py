@@ -258,31 +258,33 @@ def buildingBuiltFeats(pCity, iBuildingType):
 
 def endTurnFeats(iPlayer):
 
+	# getRealPopulation() now returns the empire total in thousands, so every threshold
+	# below is expressed in thousands too. The feats fire at the same real populations.
 	lRealPopulation = gc.getPlayer(iPlayer).getRealPopulation()
 
-	if (lRealPopulation > 500000):
+	if (lRealPopulation > 500):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_HALF_MILLION, "TXT_KEY_FEAT_HALF_MILLION")
-	if (lRealPopulation > 1000000):
+	if (lRealPopulation > 1000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_1_MILLION, "TXT_KEY_FEAT_1_MILLION")
-	if (lRealPopulation > 2000000):
+	if (lRealPopulation > 2000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_2_MILLION, "TXT_KEY_FEAT_2_MILLION")
-	if (lRealPopulation > 5000000):
+	if (lRealPopulation > 5000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_5_MILLION, "TXT_KEY_FEAT_5_MILLION")
-	if (lRealPopulation > 10000000):
+	if (lRealPopulation > 10000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_10_MILLION, "TXT_KEY_FEAT_10_MILLION")
-	if (lRealPopulation > 20000000):
+	if (lRealPopulation > 20000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_20_MILLION, "TXT_KEY_FEAT_20_MILLION")
-	if (lRealPopulation > 50000000):
+	if (lRealPopulation > 50000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_50_MILLION, "TXT_KEY_FEAT_50_MILLION")
-	if (lRealPopulation > 100000000):
+	if (lRealPopulation > 100000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_100_MILLION, "TXT_KEY_FEAT_100_MILLION")
-	if (lRealPopulation > 200000000):
+	if (lRealPopulation > 200000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_200_MILLION, "TXT_KEY_FEAT_200_MILLION")
-	if (lRealPopulation > 500000000):
+	if (lRealPopulation > 500000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_500_MILLION, "TXT_KEY_FEAT_500_MILLION")
-	if (lRealPopulation > 1000000000):
+	if (lRealPopulation > 1000000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_1_BILLION, "TXT_KEY_FEAT_1_BILLION")
-	if (lRealPopulation > 2000000000):
+	if (lRealPopulation > 2000000):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_2_BILLION, "TXT_KEY_FEAT_2_BILLION")
 
 	if (not gc.getPlayer(iPlayer).isFeatAccomplished(FeatTypes.FEAT_TRADE_ROUTE)):
