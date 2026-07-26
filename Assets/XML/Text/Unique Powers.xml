@@ -1201,4 +1201,188 @@
 		<Italian>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</Italian>
 		<Spanish>Our letters are read abroad: +%d1 culture in every city, from %d2 Orthodox cities elsewhere.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_GEO_TITLE</Tag>
+		<English>Monasteries of the Caucasus</English>
+		<French>Monasteries of the Caucasus</French>
+		<German>Monasteries of the Caucasus</German>
+		<Italian>Monasteries of the Caucasus</Italian>
+		<Spanish>Monasteries of the Caucasus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_GEO</Tag>
+		<English>great people in cities beside mountains</English>
+		<French>great people in cities beside mountains</French>
+		<German>great people in cities beside mountains</German>
+		<Italian>great people in cities beside mountains</Italian>
+		<Spanish>great people in cities beside mountains</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZIM_TITLE</Tag>
+		<English>Gold of the Interior</English>
+		<French>Gold of the Interior</French>
+		<German>Gold of the Interior</German>
+		<Italian>Gold of the Interior</Italian>
+		<Spanish>Gold of the Interior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZIM</Tag>
+		<English>gold from each source of gold and gems</English>
+		<French>gold from each source of gold and gems</French>
+		<German>gold from each source of gold and gems</German>
+		<Italian>gold from each source of gold and gems</Italian>
+		<Spanish>gold from each source of gold and gems</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MAO_TITLE</Tag>
+		<English>Utu</English>
+		<French>Utu</French>
+		<German>Utu</German>
+		<Italian>Utu</Italian>
+		<Spanish>Utu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MAO</Tag>
+		<English>culture when winning a battle in your own territory</English>
+		<French>culture when winning a battle in your own territory</French>
+		<German>culture when winning a battle in your own territory</German>
+		<Italian>culture when winning a battle in your own territory</Italian>
+		<Spanish>culture when winning a battle in your own territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ASH_TITLE</Tag>
+		<English>Golden Stool</English>
+		<French>Golden Stool</French>
+		<German>Golden Stool</German>
+		<Italian>Golden Stool</Italian>
+		<Spanish>Golden Stool</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ASH</Tag>
+		<English>gold whenever a city grows</English>
+		<French>gold whenever a city grows</French>
+		<German>gold whenever a city grows</German>
+		<Italian>gold whenever a city grows</Italian>
+		<Spanish>gold whenever a city grows</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HAI_TITLE</Tag>
+		<English>Revolution</English>
+		<French>Revolution</French>
+		<German>Revolution</German>
+		<Italian>Revolution</Italian>
+		<Spanish>Revolution</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HAI</Tag>
+		<English>experience when fighting civilizations that permit slavery</English>
+		<French>experience when fighting civilizations that permit slavery</French>
+		<German>experience when fighting civilizations that permit slavery</German>
+		<Italian>experience when fighting civilizations that permit slavery</Italian>
+		<Spanish>experience when fighting civilizations that permit slavery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZUL_TITLE</Tag>
+		<English>Impi</English>
+		<French>Impi</French>
+		<German>Impi</German>
+		<Italian>Impi</Italian>
+		<Spanish>Impi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZUL</Tag>
+		<English>free experience for melee and shock units</English>
+		<French>free experience for melee and shock units</French>
+		<German>free experience for melee and shock units</German>
+		<Italian>free experience for melee and shock units</Italian>
+		<Spanish>free experience for melee and shock units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_RSA_TITLE</Tag>
+		<English>Great Trek</English>
+		<French>Great Trek</French>
+		<German>Great Trek</German>
+		<Italian>Great Trek</Italian>
+		<Spanish>Great Trek</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_RSA</Tag>
+		<English>new cities claim the land around them immediately</English>
+		<French>new cities claim the land around them immediately</French>
+		<German>new cities claim the land around them immediately</German>
+		<Italian>new cities claim the land around them immediately</Italian>
+		<Spanish>new cities claim the land around them immediately</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NAT_TITLE</Tag>
+		<English>The Land</English>
+		<French>The Land</French>
+		<German>The Land</German>
+		<Italian>The Land</Italian>
+		<Spanish>The Land</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NAT</Tag>
+		<English>culture from forest and jungle around your cities</English>
+		<French>culture from forest and jungle around your cities</French>
+		<German>culture from forest and jungle around your cities</German>
+		<Italian>culture from forest and jungle around your cities</Italian>
+		<Spanish>culture from forest and jungle around your cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SWI_TITLE</Tag>
+		<English>Armed Neutrality</English>
+		<French>Armed Neutrality</French>
+		<German>Armed Neutrality</German>
+		<Italian>Armed Neutrality</Italian>
+		<Spanish>Armed Neutrality</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SWI</Tag>
+		<English>gold from every war you stay out of</English>
+		<French>gold from every war you stay out of</French>
+		<German>gold from every war you stay out of</German>
+		<Italian>gold from every war you stay out of</Italian>
+		<Spanish>gold from every war you stay out of</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HUN_TITLE</Tag>
+		<English>Bulwark of Christendom</English>
+		<French>Bulwark of Christendom</French>
+		<German>Bulwark of Christendom</German>
+		<Italian>Bulwark of Christendom</Italian>
+		<Spanish>Bulwark of Christendom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HUN</Tag>
+		<English>your core is garrisoned against wars of religion</English>
+		<French>your core is garrisoned against wars of religion</French>
+		<German>your core is garrisoned against wars of religion</German>
+		<Italian>your core is garrisoned against wars of religion</Italian>
+		<Spanish>your core is garrisoned against wars of religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_BUL_TITLE</Tag>
+		<English>The Cyrillic Alphabet</English>
+		<French>The Cyrillic Alphabet</French>
+		<German>The Cyrillic Alphabet</German>
+		<Italian>The Cyrillic Alphabet</Italian>
+		<Spanish>The Cyrillic Alphabet</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_BUL</Tag>
+		<English>culture from Orthodox cities across the world</English>
+		<French>culture from Orthodox cities across the world</French>
+		<German>culture from Orthodox cities across the world</German>
+		<Italian>culture from Orthodox cities across the world</Italian>
+		<Spanish>culture from Orthodox cities across the world</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZIMBABWE_EFFECT</Tag>
+		<English>The gold of the interior: %d1 gold from %d2 sources.</English>
+		<French>The gold of the interior: %d1 gold from %d2 sources.</French>
+		<German>The gold of the interior: %d1 gold from %d2 sources.</German>
+		<Italian>The gold of the interior: %d1 gold from %d2 sources.</Italian>
+		<Spanish>The gold of the interior: %d1 gold from %d2 sources.</Spanish>
+	</TEXT>
 </Civ4GameText>

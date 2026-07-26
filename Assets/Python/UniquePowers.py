@@ -278,3 +278,136 @@ def bulgarianPower(iGameTurn, iPlayer):
 
 	if every(10):
 		message(iPlayer, "TXT_KEY_UP_CYRILLIC_EFFECT", iCulture, iForeign, color=iYellow)
+
+
+# Georgian UP: Monasteries of the Caucasus - the mountain monasteries of the Georgian golden age,
+# which made a small kingdom a centre of learning out of all proportion to its size.
+iGeorgianGreatPeople = 1
+
+
+@handler("BeginPlayerTurn")
+def georgianPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iGeorgia:
+		return
+
+	for city in cities.owner(iPlayer):
+		if plots.ring(city).any(lambda plot: plot.isPeak()):
+			city.changeGreatPeopleProgress(scale(iGeorgianGreatPeople))
+
+
+# Zimbabwean UP: Gold of the Interior - Great Zimbabwe was built on the gold trade out of the
+# Shona plateau, which reached the coast and from there the Indian Ocean.
+iZimbabweanGold = 3
+
+
+@handler("BeginPlayerTurn")
+def zimbabweanPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iZimbabwe:
+		return
+
+	iSources = player(iPlayer).getNumAvailableBonuses(iGold) + player(iPlayer).getNumAvailableBonuses(iGems)
+	if iSources <= 0:
+		return
+
+	iAmount = scale(iSources * iZimbabweanGold)
+	player(iPlayer).changeGold(iAmount)
+
+	if every(10):
+		message(iPlayer, "TXT_KEY_UP_ZIMBABWE_EFFECT", iAmount, iSources, color=iYellow)
+
+
+# Maori UP: Utu - the obligation of reciprocity. A victory defending your own ground is not just
+# survival, it is mana, and mana is what a chief is measured by.
+iMaoriCulture = 20
+
+
+@handler("combatResult")
+def maoriPower(winningUnit, losingUnit):
+	iPlayer = winningUnit.getOwner()
+	if civ(iPlayer) != iMaori:
+		return
+
+	# defending, and at home: utu is owed on your own land
+	if plot(winningUnit).getOwner() != iPlayer:
+		return
+
+	defended = city(winningUnit)
+	if not defended:
+		return
+
+	defended.changeCulture(iPlayer, scale(iMaoriCulture), True)
+
+
+# Ashanti UP: the Golden Stool - the Akan state was built on gold, and the stool that embodied it
+# was said to hold the soul of the nation. Prosperity and legitimacy were the same thing.
+iAshantiGold = 6
+
+
+@handler("cityGrowth")
+def ashantiPower(city, iPlayer):
+	if civ(iPlayer) != iAshanti:
+		return
+
+	iAmount = scale(iAshantiGold)
+	player(iPlayer).changeGold(iAmount)
+
+
+# Haitian UP: Revolution - an army of the formerly enslaved, which beat three European powers in
+# succession. It fights hardest against the states that still hold people.
+iHaitianExperience = 2
+
+
+@handler("combatResult")
+def haitianPower(winningUnit, losingUnit):
+	iPlayer = winningUnit.getOwner()
+	if civ(iPlayer) != iHaiti:
+		return
+
+	if not player(losingUnit.getOwner()).canUseSlaves():
+		return
+
+	winningUnit.changeExperience(iHaitianExperience, -1, False, False, False)
+
+
+# Zulu UP: Impi - Shaka's reorganisation of the regiments, which turned a minor clan into the
+# dominant military power of southern Africa within a decade.
+iZuluExperience = 3
+
+
+@handler("unitBuilt")
+def zuluPower(city, unit):
+	iPlayer = unit.getOwner()
+	if civ(iPlayer) != iZulu:
+		return
+
+	if not isUnitOfRole(unit.getUnitType(), iAttack) and not isUnitOfRole(unit.getUnitType(), iShock):
+		return
+
+	unit.changeExperience(iZuluExperience, -1, False, False, False)
+
+
+# South African UP: the Great Trek - the Boer republics were founded by wagon columns that simply
+# went inland and declared the land theirs. Their claim arrived with them.
+@handler("cityBuilt")
+def southAfricanPower(city):
+	iPlayer = city.getOwner()
+	if civ(iPlayer) != iSouthAfrica:
+		return
+
+	convertSurroundingPlotCulture(iPlayer, plots.ring(city))
+
+
+# Native American UP: the Land - a relationship to territory that did not depend on clearing it.
+# Forest and marsh were not obstacles to be removed before the land could be worth something.
+iNativeCulture = 1
+
+
+@handler("BeginPlayerTurn")
+def nativeAmericanPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iNativeAmericans:
+		return
+
+	for city in cities.owner(iPlayer):
+		iWild = plots.ring(city).where(lambda plot: plot.getFeatureType() in (iForest, iJungle)).count()
+		if iWild > 0:
+			city.changeCulture(iPlayer, scale(iWild * iNativeCulture), True)
