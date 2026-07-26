@@ -51,6 +51,21 @@ def checkMigration(iGameTurn):
 
 ### SCORING ###
 
+def foodDifference(city):
+	"""The city's food balance as its people experience it.
+
+	From the railway age a city may buy the food its land cannot grow, and CvCity::foodDifference
+	sums worked tiles only, so it reports such a city as starving. Both scorers must use this
+	instead, or a city kept alive by imports would repel migrants and shed its own population -
+	the exact opposite of what feeding it is for.
+
+	Imported inside the function because FoodImports imports this module.
+	"""
+	import FoodImports
+	return FoodImports.effectiveFoodDifference(city)
+
+
+
 # Both scoring functions add rand(0, 2) of jitter, which draws from the synced RNG.
 # They must therefore be evaluated exactly once per city per cycle: see migration().
 
@@ -61,7 +76,7 @@ def getEmigrationValue(city):
 
 	iOwner = city.getOwner()
 
-	iFoodDifference = city.foodDifference(False)
+	iFoodDifference = foodDifference(city)
 	iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
 	iHealthRate = city.healthRate(False, 0)
 
@@ -102,7 +117,7 @@ def getImmigrationValue(city):
 	if city.isDisorder() or city.isOccupation() or city.hasBuilding(iPlague):
 		return 0
 
-	iFoodDifference = city.foodDifference(False)
+	iFoodDifference = foodDifference(city)
 
 	# a city that cannot feed itself cannot feed newcomers
 	if iFoodDifference < 0:

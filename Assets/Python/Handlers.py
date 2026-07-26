@@ -19,6 +19,7 @@ import Congresses
 import Crusades
 import DynamicCivs
 import EventSigns
+import FoodImports
 import FutureRules
 import GreatPeople
 import History

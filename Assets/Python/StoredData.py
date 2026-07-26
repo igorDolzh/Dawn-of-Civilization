@@ -287,6 +287,10 @@ class GameData:
 		
 		self.bNoPlagues = False
 		
+		# Food Imports
+		
+		self.lImportDependentCities = []
+		
 		# Crusades
 		
 		self.dCrusadeDecisions = {}

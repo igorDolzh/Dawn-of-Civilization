@@ -3872,4 +3872,28 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FOOD_IMPORT_DEPENDENT</Tag>
+		<English>%s1 can no longer feed itself from the surrounding land, and now buys its food. Our treasury will be charged each turn.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FOOD_IMPORT_FAMINE</Tag>
+		<English>We cannot afford to feed %s1, and the city is starving.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FOOD_IMPORT_FAMINE_MIGRATED</Tag>
+		<English>We cannot afford to feed %s1. Its people are leaving for %s2.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>
