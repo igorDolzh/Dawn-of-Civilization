@@ -35,14 +35,19 @@ dCivilWars = {
 	iAmerica: ([rDeepSouth], 3),
 }
 
-# the institution being fought over, and what victory replaces it with
-iDisputedCivic = iSlavery
-iAbolitionCivic = iEgalitarianism
-iAbolitionTech = iCivilRights
-
-# Egalitarianism needs Civil Rights, which is not guaranteed by 1861. Free labour without the
-# civil-rights framing is the fallback, and it is what the Black Death uses too
-iFallbackCivic = iIndividualism
+# The civics that actually end slavery, in the order they should be preferred, each with the tech
+# it needs. This is not the same question as "does the player run the Slavery civic".
+#
+# CvPlayer::canUseSlaves is permissive by default: slavery is legal unless a civic sets
+# bNoSlavery, and only these three do. Individualism - the obvious Society civic for a
+# 19th century republic, and the one the Black Death emancipation uses - does NOT, so adopting it
+# frees the peasants of Europe without touching the plantations of the South. Exactly the
+# distinction the war was about.
+lAbolitionCivics = [
+	(iEgalitarianism, iCivilRights),     # Society: abolition as a civil right
+	(iNationhood, iNationalism),         # Territory: one nation, and therefore no chattel in it
+	(iMultilateralism, iGeopolitics),    # Territory: abolition by treaty
+]
 
 # who the seceded cities belong to
 iConfederacy = iIndependent
@@ -92,8 +97,10 @@ def checkCivilWar(iGameTurn):
 		if iPlayer < 0 or not player(iPlayer).isExisting():
 			continue
 
-		# the war is about the institution. Without it there is nothing to secede over
-		if not has_civic(iPlayer, iDisputedCivic):
+		# The war is about the institution, so the gate is whether slavery is still legal here -
+		# not whether the player runs one particular civic. canUseSlaves() is the mod's own
+		# predicate and covers all three routes to it, including the permissive default.
+		if not player(iPlayer).canUseSlaves():
 			continue
 
 		rebels = cities.owner(iPlayer).regions(*lRegions)
@@ -225,11 +232,22 @@ def isUnion(iPlayer):
 
 
 def abolish(iPlayer):
-	"""The amendment the war made possible."""
-	iCivic = iAbolitionCivic if team(iPlayer).isHasTech(iAbolitionTech) else iFallbackCivic
+	"""The amendment the war made possible - if the century has caught up enough to write it.
 
-	player(iPlayer).setCivics(infos.civic(iCivic).getCivicOptionType(), iCivic)
+	Only a civic that sets bNoSlavery actually ends slavery, so the choice is made from the list
+	above rather than from whatever reads as progressive. If none of them is available yet the
+	Union is still restored, but the institution survives its war, which is a real outcome and
+	should be reported as one rather than silently faked.
+	"""
+	for iCivic, iTech in lAbolitionCivics:
+		if team(iPlayer).isHasTech(iTech):
+			player(iPlayer).setCivics(infos.civic(iCivic).getCivicOptionType(), iCivic)
 
-	message(iPlayer, 'TXT_KEY_CIVIL_WAR_UNION_RESTORED', infos.civic(iCivic).getText(),
+			message(iPlayer, 'TXT_KEY_CIVIL_WAR_UNION_RESTORED', infos.civic(iCivic).getText(),
+				event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT,
+				color=iGreen)
+			return
+
+	message(iPlayer, 'TXT_KEY_CIVIL_WAR_UNION_RESTORED_UNRESOLVED',
 		event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT,
-		color=iGreen)
+		color=iYellow)
