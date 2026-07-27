@@ -1717,4 +1717,20 @@
 		<Italian>Abylai Khan</Italian>
 		<Spanish>Abylai Khan</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ZAYED</Tag>
+		<English>Zayed bin Sultan</English>
+		<French>Zayed bin Sultan</French>
+		<German>Zayed bin Sultan</German>
+		<Italian>Zayed bin Sultan</Italian>
+		<Spanish>Zayed bin Sultan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ZAYED_PEDIA</Tag>
+		<English>Zayed bin Sultan</English>
+		<French>Zayed bin Sultan</French>
+		<German>Zayed bin Sultan</German>
+		<Italian>Zayed bin Sultan</Italian>
+		<Spanish>Zayed bin Sultan</Spanish>
+	</TEXT>
 </Civ4GameText>

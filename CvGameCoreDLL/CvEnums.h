@@ -1288,6 +1288,7 @@ enum CivilizationTypes		// Exposed to Python
 	ALGERIA,
 	UKRAINE,
 	KAZAKHSTAN,
+	UAE,
 
 	INDEPENDENT,
 	INDEPENDENT2,

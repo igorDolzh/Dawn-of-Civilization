@@ -1064,6 +1064,11 @@ dGoals = {
 		GoldAmount(12000, by=2040),
 		HappiestTurns(30, by=2050),
 	),
+	iUAE: (
+		GoldAmount(30000, by=2030),
+		BestPopulationCity(by=2040),
+		HappiestTurns(40, by=2050),
+	),
 }
 
 

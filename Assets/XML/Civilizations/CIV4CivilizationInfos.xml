@@ -9481,5 +9481,75 @@
 			<CivilizationSelectionSound>AS3D_TURKS_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_TURKS_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_UAE</Type>
+			<Description>TXT_KEY_CIV_UAE_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_UAE_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_UAE_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_UAE_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_GREEN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_UAE</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EAST</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
+			<Impact>IMPACT_LIMITED</Impact>
+			<Identifier>UAE</Identifier>
+			<StartingYear>1971</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>20</LoadingTime>
+				<LoadingTime>14</LoadingTime>
+				<LoadingTime>18</LoadingTime>
+				<LoadingTime>8</LoadingTime>
+				<LoadingTime>2</LoadingTime>
+				<LoadingTime>2</LoadingTime>
+			</LoadingTimes>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Abu Dhabi</City>
+				<City>Dubai</City>
+				<City>Sharjah</City>
+				<City>Al Ain</City>
+				<City>Ajman</City>
+				<City>Ras al-Khaimah</City>
+				<City>Fujairah</City>
+				<City>Umm al-Quwain</City>
+				<City>Khor Fakkan</City>
+				<City>Dibba</City>
+			</Cities>
+			<Buildings/>
+			<Units/>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_CHIEFDOM</CivicType>
+				<CivicType>CIVIC_PERSONALISM</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_KINSHIP</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_ZAYED</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_SAUDI</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_ARABIA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_ARABIA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
 	</CivilizationInfos>
 </Civ4CivilizationInfos>

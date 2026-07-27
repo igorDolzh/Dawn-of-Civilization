@@ -742,6 +742,7 @@ dStartingLeaders = [
 	iAlgeria: iAbdelkader,
 	iUkraine: iHrushevsky,
 	iKazakhstan: iAbylai,
+	iUAE: iZayed,
 },
 ]
 

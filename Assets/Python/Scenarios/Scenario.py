@@ -168,6 +168,7 @@ LEADER_DATES = {
 	iHrushevsky: 1918,
 	iAzikiwe: 1960,
 	iSaddam: 1980,
+	iZayed: 1971,
 }
 
 RELIGION_FOUNDING_DATES = {

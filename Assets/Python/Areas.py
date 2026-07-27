@@ -72,7 +72,7 @@ iCanada :		(31, 61), # Montreal
 iGeorgia :		(89, 55), # Mtskheta
 iBulgaria :		(78, 57), # Pliska
 iHungary :		(73, 58), # Esztergom
-iSwitzerland :	(65, 58), # Bern
+iSwitzerland :	(65, 59), # Bern
 iZimbabwe :		(79, 17), # Great Zimbabwe
 iAshanti :		(61, 32), # Kumasi
 iHaiti :		(31, 42), # Port-au-Prince
@@ -80,16 +80,17 @@ iZulu :			(79, 14), # kwaBulawayo
 iNativeAmericans :	(22, 54), # Cahokia
 iMaori :		(1, 8), # Te Whanganui-a-Tara
 iSouthAfrica :	(72, 11), # Kaapstad
-iPhilippines :	(129, 38), # Manila
+iPhilippines :	(130, 38), # Selurong (Manila)
 iIsrael :		(84, 45), # Jerusalem
 iTaiwan :		(128, 47), # Taipei
-iSingapore :	(121, 29), # Singapore
+iSingapore :	(120, 30), # Tumasik (Singapore)
 iBangladesh :	(113, 43), # Dhaka
 iIraq :		(89, 48), # Baghdad
-iNigeria :	(63, 31), # Lagos
+iNigeria :	(65, 32), # Eko (Lagos)
 iAlgeria :	(62, 47), # Algiers
 iUkraine :	(81, 62), # Kyiv
 iKazakhstan :	(103, 60), # Almaty
+iUAE :		(94, 40), # Julfar
 })
 
 dPeriodCapitals = {
@@ -184,13 +185,14 @@ iSouthAfrica :	((71, 10),	(76, 14)),
 iPhilippines :	((127, 33),	(131, 41)),
 iIsrael :		((82, 43),	(86, 47)),
 iTaiwan :		((127, 45),	(129, 48)),
-iSingapore :	((120, 28),	(122, 30)),
+iSingapore :	((119, 28),	(122, 31)),
 iBangladesh :	((111, 41),	(115, 45)),
 iIraq :		((86, 45),	(92, 51)),
 iNigeria :	((60, 28),	(66, 34)),
 iAlgeria :	((58, 44),	(66, 49)),
 iUkraine :	((77, 59),	(84, 65)),
 iKazakhstan :	((97, 56),	(107, 64)),
+iUAE :		((92, 39),	(96, 43)),
 })
 
 dExtendedBirthArea = CivDict({
@@ -332,13 +334,14 @@ iSouthAfrica :	((72, 11),	(75, 13)),
 iPhilippines :	((128, 35),	(130, 39)),
 iIsrael :		((83, 44),	(85, 46)),
 iTaiwan :		((128, 46),	(128, 47)),
-iSingapore :	((121, 29),	(121, 29)),
+iSingapore :	((120, 29),	(121, 30)),
 iBangladesh :	((112, 42),	(114, 44)),
 iIraq :		((87, 46),	(91, 50)),
 iNigeria :	((61, 29),	(65, 33)),
 iAlgeria :	((59, 45),	(65, 48)),
 iUkraine :	((78, 60),	(83, 64)),
 iKazakhstan :	((98, 57),	(106, 63)),
+iUAE :		((93, 40),	(95, 42)),
 })
 
 dCoreAreaExceptions = CivDict({
@@ -456,13 +459,14 @@ iSouthAfrica :	((71, 10),	(76, 14)),
 iPhilippines :	((127, 33),	(131, 41)),
 iIsrael :	((82, 43),	(86, 47)),
 iTaiwan :	((127, 45),	(129, 48)),
-iSingapore :	((120, 28),	(122, 30)),
+iSingapore :	((119, 28),	(122, 31)),
 iBangladesh :	((111, 41),	(115, 45)),
 iIraq :	((86, 45),	(92, 51)),
 iNigeria :	((60, 28),	(66, 34)),
 iAlgeria :	((58, 44),	(66, 49)),
 iUkraine :	((77, 59),	(84, 65)),
 iKazakhstan :	((97, 56),	(107, 64)),
+iUAE :	((92, 39),	(96, 43)),
 })
 
 dRespawnAreaExceptions = CivDict({

@@ -1726,25 +1726,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=61,y=32
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_NIGERIA
-		CityName=Kumasi
-		CityPopulation=9
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
-		BeginCulture
-			Civilization=CIVILIZATION_NIGERIA, Culture=100
-		EndCulture
-		YearFounded=1900
-	EndCity
-EndPlot
-BeginPlot
 	x=61,y=46
 	RouteType=ROUTE_ROAD
 	BeginCity
@@ -1843,44 +1824,6 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BELGIUM, Culture=100
-		EndCulture
-		YearFounded=1900
-	EndCity
-EndPlot
-BeginPlot
-	x=62,y=31
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_NIGERIA
-		CityName=Nkran
-		CityPopulation=15
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
-		BeginCulture
-			Civilization=CIVILIZATION_NIGERIA, Culture=100
-		EndCulture
-		YearFounded=1900
-	EndCity
-EndPlot
-BeginPlot
-	x=62,y=33
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_NIGERIA
-		CityName=Kete Krachi
-		CityPopulation=9
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
-		BeginCulture
-			Civilization=CIVILIZATION_NIGERIA, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -2197,7 +2140,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SWITZERLAND
 		CityName=Genève
-		CityPopulation=18
+		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
@@ -2241,6 +2184,25 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Èkó
+		CityPopulation=15
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BeginCulture
+			Civilization=CIVILIZATION_NIGERIA, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=65,y=34
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_NIGERIA
+		CityName=Kontagora
 		CityPopulation=9
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2282,7 +2244,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SWITZERLAND
 		CityName=Bern
-		CityPopulation=12
+		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
@@ -2357,6 +2319,44 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=66,y=31
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_NIGERIA
+		CityName=Warri
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BeginCulture
+			Civilization=CIVILIZATION_NIGERIA, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=66,y=33
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_NIGERIA
+		CityName=Bida
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BeginCulture
+			Civilization=CIVILIZATION_NIGERIA, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
 	x=66,y=56
 	RouteType=ROUTE_ROAD
 	BeginCity
@@ -2417,11 +2417,11 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=66,y=66
+	x=66,y=65
 	RouteType=ROUTE_ROAD
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
-		CityName=Haithabu
+		CityName=Hamburg
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2484,8 +2484,30 @@ BeginPlot
 	x=67,y=57
 	RouteType=ROUTE_ROAD
 	BeginCity
-		CityOwner=CIVILIZATION_SWITZERLAND
+		CityOwner=CIVILIZATION_ITALY
 		CityName=Brixia
+		CityPopulation=12
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_BANK
+		BuildingType=BUILDING_UNIVERSITY
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_ITALY, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=67,y=59
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_SWITZERLAND
+		CityName=Augsburg
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2498,25 +2520,6 @@ BeginPlot
 		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_SWITZERLAND, Culture=100
-		EndCulture
-		YearFounded=1900
-	EndCity
-EndPlot
-BeginPlot
-	x=67,y=60
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_HOLY_ROMAN
-		CityName=Ulm
-		CityPopulation=9
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
-		BeginCulture
-			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -2541,11 +2544,11 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=67,y=65
+	x=67,y=64
 	RouteType=ROUTE_ROAD
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
-		CityName=Lübeck
+		CityName=Lüneburg
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2686,23 +2689,20 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=68,y=64
+	x=68,y=63
 	RouteType=ROUTE_ROAD
 	BeginCity
-		CityOwner=CIVILIZATION_GERMANY
-		CityName=Mecklenburg
-		CityPopulation=12
+		CityOwner=CIVILIZATION_HOLY_ROMAN
+		CityName=Magdeburg
+		CityPopulation=9
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_BANK
-		BuildingType=BUILDING_UNIVERSITY
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
-			Civilization=CIVILIZATION_GERMANY, Culture=100
+			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -2773,28 +2773,6 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Ariminum
-		CityPopulation=12
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_BANK
-		BuildingType=BUILDING_UNIVERSITY
-		ReligionType=RELIGION_CATHOLICISM
-		BeginCulture
-			Civilization=CIVILIZATION_ITALY, Culture=100
-		EndCulture
-		YearFounded=1900
-	EndCity
-EndPlot
-BeginPlot
-	x=69,y=57
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_ITALY
-		CityName=Padua
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3529,6 +3507,28 @@ BeginPlot
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_BULGARIA, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=76,y=63
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_GERMANY
+		CityName=Warszawa
+		CityPopulation=12
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_BANK
+		BuildingType=BUILDING_UNIVERSITY
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_GERMANY, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -4859,6 +4859,25 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=92,y=40
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_UAE
+		CityName=Murwab
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BeginCulture
+			Civilization=CIVILIZATION_UAE, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
 	x=92,y=49
 	RouteType=ROUTE_ROAD
 	BeginCity
@@ -4919,6 +4938,25 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=94,y=40
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_UAE
+		CityName=Julfar
+		CityPopulation=15
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BeginCulture
+			Civilization=CIVILIZATION_UAE, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
 	x=94,y=49
 	RouteType=ROUTE_ROAD
 	BeginCity
@@ -4934,6 +4972,25 @@ BeginPlot
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_IRAN, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=95,y=41
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_UAE
+		CityName=Sohar
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		BeginCulture
+			Civilization=CIVILIZATION_UAE, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -5676,18 +5733,19 @@ BeginPlot
 	x=119,y=31
 	RouteType=ROUTE_ROAD
 	BeginCity
-		CityOwner=CIVILIZATION_MALAYS
+		CityOwner=CIVILIZATION_SINGAPORE
 		CityName=Beruas
-		CityPopulation=9
+		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_HARBOR
-		ReligionType=RELIGION_ISLAM
+		BuildingType=BUILDING_BANK
+		BuildingType=BUILDING_UNIVERSITY
 		BeginCulture
-			Civilization=CIVILIZATION_MALAYS, Culture=100
+			Civilization=CIVILIZATION_SINGAPORE, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -5812,7 +5870,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SINGAPORE
 		CityName=Jambi
-		CityPopulation=18
+		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
@@ -5833,7 +5891,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SINGAPORE
 		CityName=Tumasik
-		CityPopulation=12
+		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
@@ -5844,6 +5902,26 @@ BeginPlot
 		BuildingType=BUILDING_UNIVERSITY
 		BeginCulture
 			Civilization=CIVILIZATION_SINGAPORE, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=120,y=32
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_MALAYS
+		CityName=Terengganu
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		ReligionType=RELIGION_ISLAM
+		BeginCulture
+			Civilization=CIVILIZATION_MALAYS, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity
@@ -6355,26 +6433,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=128,y=35
-	RouteType=ROUTE_ROAD
-	BeginCity
-		CityOwner=CIVILIZATION_PHILIPPINES
-		CityName=Bunbun
-		CityPopulation=9
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_LIBRARY
-		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
-		ReligionType=RELIGION_CATHOLICISM
-		BeginCulture
-			Civilization=CIVILIZATION_PHILIPPINES, Culture=100
-		EndCulture
-		YearFounded=1900
-	EndCity
-EndPlot
-BeginPlot
 	x=128,y=47
 	RouteType=ROUTE_ROAD
 	BeginCity
@@ -6453,6 +6511,26 @@ BeginPlot
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_KOREA, Culture=100
+		EndCulture
+		YearFounded=1900
+	EndCity
+EndPlot
+BeginPlot
+	x=131,y=36
+	RouteType=ROUTE_ROAD
+	BeginCity
+		CityOwner=CIVILIZATION_PHILIPPINES
+		CityName=Sugbo
+		CityPopulation=9
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_LIBRARY
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_HARBOR
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_PHILIPPINES, Culture=100
 		EndCulture
 		YearFounded=1900
 	EndCity

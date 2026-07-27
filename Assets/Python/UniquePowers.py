@@ -586,3 +586,21 @@ def kazakhPower(iGameTurn, iPlayer):
 	capital_city = capital(iPlayer)
 	if capital_city:
 		capital_city.changeGreatPeopleProgress(scale(iOre * iKazakhGreatPeople))
+
+
+# Emirati UP: Sovereign Wealth - a state that turned a few decades of oil into a fund, and then
+# lived off the fund. The treasury earns on itself rather than on what the country produces.
+iEmiratiInterest = 200
+
+
+@handler("BeginPlayerTurn")
+def emiratiPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iUAE:
+		return
+
+	iTreasury = player(iPlayer).getGold()
+	if iTreasury <= 0:
+		return
+
+	# a share of the treasury, not of income: the fund compounds whether or not trade is good
+	player(iPlayer).changeGold(scale(iTreasury / iEmiratiInterest))

@@ -398,6 +398,13 @@ lCivilizations = [
 		techs=techs.column(17),
 	),
 	Civilization(
+		iUAE,
+		iGold=1500,
+		iStateReligion=iIslam,
+		lCivics=[iStateParty, iBureaucracy, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(19),
+	),
+	Civilization(
 		iNative,
 		iGold=600,
 		techs=techs.column(12)

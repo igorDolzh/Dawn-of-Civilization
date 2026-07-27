@@ -1545,4 +1545,20 @@
 		<Italian>extra food in every city</Italian>
 		<Spanish>extra food in every city</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_UAE_TITLE</Tag>
+		<English>Sovereign Wealth</English>
+		<French>Sovereign Wealth</French>
+		<German>Sovereign Wealth</German>
+		<Italian>Sovereign Wealth</Italian>
+		<Spanish>Sovereign Wealth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_UAE</Tag>
+		<English>your treasury earns interest on itself</English>
+		<French>your treasury earns interest on itself</French>
+		<German>your treasury earns interest on itself</German>
+		<Italian>your treasury earns interest on itself</Italian>
+		<Spanish>your treasury earns interest on itself</Spanish>
+	</TEXT>
 </Civ4GameText>

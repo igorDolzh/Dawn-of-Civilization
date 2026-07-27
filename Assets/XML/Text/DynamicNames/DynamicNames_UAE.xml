@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- United Arab Emirates -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_DESC</Tag>
+		<English>The Emiratis</English>
+		<French>The Emiratis</French>
+		<German>The Emiratis</German>
+		<Italian>The Emiratis</Italian>
+		<Spanish>The Emiratis</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_PEOPLES</Tag>
+		<English>Emirati Peoples</English>
+		<French>Emirati Peoples</French>
+		<German>Emirati Peoples</German>
+		<Italian>Emirati Peoples</Italian>
+		<Spanish>Emirati Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_ADJECTIVE</Tag>
+		<English>Emirati</English>
+		<French>Emirati</French>
+		<German>Emirati</German>
+		<Italian>Emirati</Italian>
+		<Spanish>Emirati</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_SHORT_DESC</Tag>
+		<English>the UAE</English>
+		<French>the UAE</French>
+		<German>the UAE</German>
+		<Italian>the UAE</Italian>
+		<Spanish>the UAE</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UAE_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>
