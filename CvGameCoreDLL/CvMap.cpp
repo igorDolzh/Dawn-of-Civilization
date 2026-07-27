@@ -1121,6 +1121,25 @@ ScenarioTypes CvMap::getScenario()
 }
 
 
+// Whether the natural disasters already in the game may fire. Custom map option slot 1, declared
+// as lDisasters in PrivateMaps/Dawn_of_Civilization.py; index 1 is "Off". Disasters.enabled() is
+// the Python half of this contract and hardcodes the same slot and value.
+//
+// Saves written before the option existed carry only one custom map option, so the count is
+// checked rather than assumed, and the answer defaults to the behaviour the mod already had.
+bool CvMap::areDisastersEnabled()
+{
+	if (getNumCustomMapOptions() <= 1)
+	{
+		return true;
+	}
+
+	// CustomMapOptionTypes only declares NO_CUSTOM_MAPOPTION, so compare as int the way
+	// getScenario() casts rather than relying on the enum carrying the slot value
+	return (int)getCustomMapOption(1) != 1;
+}
+
+
 int CvMap::getNumBonuses(BonusTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");

@@ -16,8 +16,19 @@ lStartingDates = [
 ]
 
 
+# Whether the natural disasters already in the game are allowed to fire. The index of "Off" here is
+# the contract read by Disasters.enabled() and by CvMap::areDisastersEnabled(); keep all three in step.
+lDisasters = [
+	"On",
+	"Off",
+]
+
+
+# Option 0 is the scenario: CvMap::getScenario() reads getCustomMapOption(0) directly.
+# Everything below this list is written generically over it, so adding an entry is the whole change.
 lCustomMapOptions = [
 	("Starting Date", lStartingDates, lStartingDates[0]),
+	("Natural Disasters", lDisasters, lDisasters[0]),
 ]
 
 

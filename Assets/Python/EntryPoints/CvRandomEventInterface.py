@@ -11,6 +11,7 @@
 #
 import CvUtil
 import CityNames as cn
+import Disasters
 
 from Religions import embraceReformation, tolerateReformation, counterReformation
 
@@ -18,6 +19,21 @@ from RFCUtils import *
 from Core import *
 
 localText = CyTranslator()
+
+######## NATURAL DISASTERS ###########
+
+def canTriggerNaturalDisaster(argsList):
+	"""Shared <PythonCanDo> gate for every natural disaster trigger.
+
+	The DLL resolves these hooks by name, so all of them can point here rather than each needing
+	its own function. Returning false makes CvPlayer::initTriggeredData return NULL, which drops
+	the trigger out of that turn's weighted roll entirely - no message, and no turn consumed, so
+	the remaining events keep their normal chance.
+
+	Two disasters are absent from the XML list because they already own a <PythonCanDo>:
+	canTriggerImpactCrater and canTriggerDustbowlCont call Disasters.enabled() themselves.
+	"""
+	return Disasters.enabled()
 
 ######## BLESSED SEA ###########
 
@@ -843,6 +859,9 @@ def applyVolcano1(argsList):
 ######## DUSTBOWL ###########
 
 def canTriggerDustbowlCont(argsList):
+	if not Disasters.enabled():
+		return false
+
 	kTriggeredData = argsList[0]
 
 	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
@@ -1781,6 +1800,9 @@ def getHelpAncientTexts2(argsList):
 ######## IMPACT_CRATER ###########
 
 def canTriggerImpactCrater(argsList):
+
+	if not Disasters.enabled():
+		return false
 
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)

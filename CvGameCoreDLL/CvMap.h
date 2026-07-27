@@ -282,6 +282,8 @@ public:
 	// Leoreth
 	ScenarioTypes getScenario();
 
+	bool areDisastersEnabled();
+
 protected:
 
 	int m_iGridWidth;

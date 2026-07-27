@@ -6317,6 +6317,12 @@ void CvGame::doDeals()
 
 void CvGame::doGlobalWarming()
 {
+	// global warming is a natural disaster, and the setup screen can switch those off
+	if (!GC.getMapINLINE().areDisastersEnabled())
+	{
+		return;
+	}
+
 	int iGlobalWarmingDefense = 0;
 
 // BUG - Global Warming Mod - start

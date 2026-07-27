@@ -95,7 +95,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -495,7 +495,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -1033,7 +1033,7 @@
 			<bPickOtherPlayerCity>1</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>1</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -2984,7 +2984,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -3431,7 +3431,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity>canTriggerHurricaneCity</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -3520,7 +3520,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity>canTriggerCycloneCity</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -3609,7 +3609,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity>canTriggerTsunamiCity</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -3818,7 +3818,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -3907,7 +3907,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -3994,7 +3994,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -6672,7 +6672,7 @@
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>canTriggerNaturalDisaster</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
