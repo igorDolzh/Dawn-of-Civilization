@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ukraine -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_DESC</Tag>
+		<English>The Ukrainians</English>
+		<French>The Ukrainians</French>
+		<German>The Ukrainians</German>
+		<Italian>The Ukrainians</Italian>
+		<Spanish>The Ukrainians</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_PEOPLES</Tag>
+		<English>Ukrainian Peoples</English>
+		<French>Ukrainian Peoples</French>
+		<German>Ukrainian Peoples</German>
+		<Italian>Ukrainian Peoples</Italian>
+		<Spanish>Ukrainian Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_ADJECTIVE</Tag>
+		<English>Ukrainian</English>
+		<French>Ukrainian</French>
+		<German>Ukrainian</German>
+		<Italian>Ukrainian</Italian>
+		<Spanish>Ukrainian</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_SHORT_DESC</Tag>
+		<English>Ukraine</English>
+		<French>Ukraine</French>
+		<German>Ukraine</German>
+		<Italian>Ukraine</Italian>
+		<Spanish>Ukraine</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_UKRAINE_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Iraq -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_DESC</Tag>
+		<English>The Iraqis</English>
+		<French>The Iraqis</French>
+		<German>The Iraqis</German>
+		<Italian>The Iraqis</Italian>
+		<Spanish>The Iraqis</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_PEOPLES</Tag>
+		<English>Iraqi Peoples</English>
+		<French>Iraqi Peoples</French>
+		<German>Iraqi Peoples</German>
+		<Italian>Iraqi Peoples</Italian>
+		<Spanish>Iraqi Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_ADJECTIVE</Tag>
+		<English>Iraqi</English>
+		<French>Iraqi</French>
+		<German>Iraqi</German>
+		<Italian>Iraqi</Italian>
+		<Spanish>Iraqi</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_SHORT_DESC</Tag>
+		<English>Iraq</English>
+		<French>Iraq</French>
+		<German>Iraq</German>
+		<Italian>Iraq</Italian>
+		<Spanish>Iraq</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IRAQ_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

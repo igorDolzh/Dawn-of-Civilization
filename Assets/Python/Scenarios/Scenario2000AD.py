@@ -3,7 +3,7 @@ from Core import *
 
 
 # The world as it stands in 2000. Only civilizations historically extant are present -
-# roughly half the mod's roster is gone, and its land belongs to whoever actually holds it.
+# roughly a third of the mod's roster is gone, and its land belongs to whoever actually holds it.
 # Rus and the Zulu are deliberately omitted despite qualifying on dates alone: Russia and
 # South Africa already occupy their territory and represent them.
 lCivilizations = [
@@ -102,10 +102,10 @@ lCivilizations = [
 	),
 	Civilization(
 		iSpain,
-		iGold=900,
+		iGold=1500,
 		iStateReligion=iCatholicism,
 		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iMultilateralism],
-		techs=techs.column(18),
+		techs=techs.column(19),
 	),
 	Civilization(
 		iEngland,
@@ -172,6 +172,13 @@ lCivilizations = [
 		techs=techs.column(18),
 	),
 	Civilization(
+		iInca,
+		iGold=500,
+		iStateReligion=iCatholicism,
+		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(17),
+	),
+	Civilization(
 		iItaly,
 		iGold=1500,
 		iStateReligion=iCatholicism,
@@ -223,6 +230,13 @@ lCivilizations = [
 		iGold=1500,
 		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
 		techs=techs.column(19),
+	),
+	Civilization(
+		iCongo,
+		iGold=250,
+		iStateReligion=iCatholicism,
+		lCivics=[iStateParty, iBureaucracy, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(16),
 	),
 	Civilization(
 		iIran,
@@ -323,6 +337,13 @@ lCivilizations = [
 		techs=techs.column(17),
 	),
 	Civilization(
+		iIraq,
+		iGold=500,
+		iStateReligion=iIslam,
+		lCivics=[iStateParty, iBureaucracy, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(17),
+	),
+	Civilization(
 		iIsrael,
 		iGold=1500,
 		iStateReligion=iJudaism,
@@ -336,6 +357,20 @@ lCivilizations = [
 		techs=techs.column(19),
 	),
 	Civilization(
+		iNigeria,
+		iGold=250,
+		iStateReligion=iProtestantism,
+		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(16),
+	),
+	Civilization(
+		iAlgeria,
+		iGold=500,
+		iStateReligion=iIslam,
+		lCivics=[iStateParty, iBureaucracy, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(17),
+	),
+	Civilization(
 		iSingapore,
 		iGold=1500,
 		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
@@ -347,6 +382,20 @@ lCivilizations = [
 		iStateReligion=iIslam,
 		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
 		techs=techs.column(16),
+	),
+	Civilization(
+		iUkraine,
+		iGold=900,
+		iStateReligion=iOrthodoxy,
+		lCivics=[iDemocracy, iConstitution, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(18),
+	),
+	Civilization(
+		iKazakhstan,
+		iGold=500,
+		iStateReligion=iIslam,
+		lCivics=[iStateParty, iBureaucracy, iEgalitarianism, iFreeEnterprise, iSecularism, iNationhood],
+		techs=techs.column(17),
 	),
 	Civilization(
 		iNative,
@@ -370,21 +419,21 @@ lCivilizations = [
 lAllGoalsFailed = [
 	iAmerica, iArgentina, iAustralia, iBangladesh, iBelgium, iBulgaria,
 	iBurma, iCanada, iColombia, iEthiopia, iFrance, iGeorgia,
-	iHaiti, iHolyRome, iHungary, iIran, iIsrael, iItaly,
-	iJava, iKhmer, iMalays, iMexico, iMisr, iMongols,
-	iMoors, iMughals, iNetherlands, iNorse, iOttomans, iPhilippines,
-	iPortugal, iRussia, iSaudis, iSingapore, iSouthAfrica, iSwahili,
-	iSweden, iSwitzerland, iTaiwan, iThailand, iVietnam,
+	iHaiti, iHolyRome, iHungary, iInca, iIran, iIsrael,
+	iItaly, iJava, iKhmer, iMalays, iMexico, iMisr,
+	iMongols, iMoors, iMughals, iNetherlands, iNorse, iOttomans,
+	iPhilippines, iPortugal, iRussia, iSaudis, iSingapore, iSouthAfrica,
+	iSwahili, iSweden, iSwitzerland, iTaiwan, iThailand, iVietnam,
 ]
 
 
 def setupGoals(iCiv, goals):
 	"""Fail the individual goals whose deadline is in the past.
 
-	lAllGoalsFailed is whole-civilization, so the eleven civs that still hold at least one
-	live goal need their expired ones failed here instead. Goal expiry is event-driven on the
-	exact deadline turn (Victory/Goals.py:303), so nothing retro-expires them otherwise -
-	an unfailed 1800 goal would sit at POSSIBLE and remain winnable in 2050.
+	lAllGoalsFailed is whole-civilization, so civs that still hold at least one live goal need
+	their expired ones failed here. Goal expiry is event-driven on the exact deadline turn
+	(Victory/Goals.py:303), so nothing retro-expires them - an unfailed 1800 goal would sit at
+	POSSIBLE and remain winnable in 2050.
 	"""
 	if iCiv == iChina:
 		goals[0].fail()
@@ -408,12 +457,19 @@ def setupGoals(iCiv, goals):
 	elif iCiv == iPoland:
 		goals[0].fail()
 		goals[2].fail()
+	elif iCiv == iCongo:
+		goals[0].fail()
+		goals[1].fail()
 	elif iCiv == iGermany:
 		goals[0].fail()
 		goals[1].fail()
 	elif iCiv == iBrazil:
 		goals[0].fail()
 		goals[2].fail()
+	elif iCiv == iIraq:
+		goals[0].fail()
+	elif iCiv == iAlgeria:
+		goals[0].fail()
 
 
 def updateData():

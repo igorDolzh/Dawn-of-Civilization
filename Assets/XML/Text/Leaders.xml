@@ -1637,4 +1637,84 @@
 		<Italian>Sheikh Mujibur Rahman</Italian>
 		<Spanish>Sheikh Mujibur Rahman</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SADDAM</Tag>
+		<English>Saddam Hussein</English>
+		<French>Saddam Hussein</French>
+		<German>Saddam Hussein</German>
+		<Italian>Saddam Hussein</Italian>
+		<Spanish>Saddam Hussein</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SADDAM_PEDIA</Tag>
+		<English>Saddam Hussein</English>
+		<French>Saddam Hussein</French>
+		<German>Saddam Hussein</German>
+		<Italian>Saddam Hussein</Italian>
+		<Spanish>Saddam Hussein</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AZIKIWE</Tag>
+		<English>Nnamdi Azikiwe</English>
+		<French>Nnamdi Azikiwe</French>
+		<German>Nnamdi Azikiwe</German>
+		<Italian>Nnamdi Azikiwe</Italian>
+		<Spanish>Nnamdi Azikiwe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AZIKIWE_PEDIA</Tag>
+		<English>Nnamdi Azikiwe</English>
+		<French>Nnamdi Azikiwe</French>
+		<German>Nnamdi Azikiwe</German>
+		<Italian>Nnamdi Azikiwe</Italian>
+		<Spanish>Nnamdi Azikiwe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ABDELKADER</Tag>
+		<English>Abdelkader</English>
+		<French>Abdelkader</French>
+		<German>Abdelkader</German>
+		<Italian>Abdelkader</Italian>
+		<Spanish>Abdelkader</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ABDELKADER_PEDIA</Tag>
+		<English>Abdelkader</English>
+		<French>Abdelkader</French>
+		<German>Abdelkader</German>
+		<Italian>Abdelkader</Italian>
+		<Spanish>Abdelkader</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HRUSHEVSKY</Tag>
+		<English>Mykhailo Hrushevsky</English>
+		<French>Mykhailo Hrushevsky</French>
+		<German>Mykhailo Hrushevsky</German>
+		<Italian>Mykhailo Hrushevsky</Italian>
+		<Spanish>Mykhailo Hrushevsky</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HRUSHEVSKY_PEDIA</Tag>
+		<English>Mykhailo Hrushevsky</English>
+		<French>Mykhailo Hrushevsky</French>
+		<German>Mykhailo Hrushevsky</German>
+		<Italian>Mykhailo Hrushevsky</Italian>
+		<Spanish>Mykhailo Hrushevsky</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ABYLAI</Tag>
+		<English>Abylai Khan</English>
+		<French>Abylai Khan</French>
+		<German>Abylai Khan</German>
+		<Italian>Abylai Khan</Italian>
+		<Spanish>Abylai Khan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ABYLAI_PEDIA</Tag>
+		<English>Abylai Khan</English>
+		<French>Abylai Khan</French>
+		<German>Abylai Khan</German>
+		<Italian>Abylai Khan</Italian>
+		<Spanish>Abylai Khan</Spanish>
+	</TEXT>
 </Civ4GameText>

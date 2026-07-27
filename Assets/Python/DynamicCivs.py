@@ -737,6 +737,11 @@ dStartingLeaders = [
 	iBulgaria: iSimeon,
 	iHungary: iStephen,
 	iSwitzerland: iTell,
+	iIraq: iSaddam,
+	iNigeria: iAzikiwe,
+	iAlgeria: iAbdelkader,
+	iUkraine: iHrushevsky,
+	iKazakhstan: iAbylai,
 },
 ]
 

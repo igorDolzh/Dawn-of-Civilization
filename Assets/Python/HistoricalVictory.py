@@ -1039,6 +1039,31 @@ dGoals = {
 		NoCityLost(by=2000),
 		HappiestTurns(20, by=2000),
 	),
+	iIraq: (
+		Control(plots.region(rMesopotamia).named(MESOPOTAMIA), at=1990),
+		GoldAmount(15000, by=2020),
+		NoCityLost(by=2030),
+	),
+	iNigeria: (
+		PopulationCount(80, by=2030),
+		Control(plots.regions(rGuinea, rSahel).named(WEST_AFRICA), at=2020),
+		GoldAmount(12000, by=2040),
+	),
+	iAlgeria: (
+		NoCityLost(by=2000),
+		Control(plots.region(rMaghreb).named(MAGHREB), at=2020),
+		GoldAmount(10000, by=2040),
+	),
+	iUkraine: (
+		Control(plots.region(rPonticSteppe).named(PONTIC_STEPPE), at=2030),
+		NoCityLost(by=2030),
+		HappiestTurns(30, by=2050),
+	),
+	iKazakhstan: (
+		Control(plots.regions(rTransoxiana).named(CENTRAL_ASIA), at=2030),
+		GoldAmount(12000, by=2040),
+		HappiestTurns(30, by=2050),
+	),
 }
 
 

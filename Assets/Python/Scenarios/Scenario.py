@@ -163,6 +163,11 @@ LEADER_DATES = {
 	iChiang: 1949,
 	iLee: 1965,
 	iMujib: 1971,
+	iAbdelkader: 1840,
+	iAbylai: 1750,
+	iHrushevsky: 1918,
+	iAzikiwe: 1960,
+	iSaddam: 1980,
 }
 
 RELIGION_FOUNDING_DATES = {

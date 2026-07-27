@@ -493,3 +493,96 @@ def bangladeshiPower(iGameTurn, iPlayer):
 	for city in cities.owner(iPlayer):
 		if city.getPopulation() >= iBangladeshiProduction:
 			city.changeCulture(iPlayer, scale(city.getPopulation() / iBangladeshiProduction), True)
+
+
+# Iraqi UP: Rentier State - an economy where the oil is refined at home and the revenue does the
+# work that an industrial base would otherwise have to.
+iIraqiProduction = 2
+
+
+@handler("BeginPlayerTurn")
+def iraqiPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iIraq:
+		return
+
+	iFields = player(iPlayer).getNumAvailableBonuses(iOil)
+	if iFields <= 0:
+		return
+
+	for city in cities.owner(iPlayer):
+		city.changeProduction(scale(iFields * iIraqiProduction))
+
+
+# Nigerian UP: the Giant of Africa - not a rich country in 2000, but an enormous one, and a
+# domestic market that size is worth something on its own.
+iNigerianGoldPerPopulation = 12
+
+
+@handler("BeginPlayerTurn")
+def nigerianPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iNigeria:
+		return
+
+	iPopulation = player(iPlayer).getTotalPopulation()
+	if iPopulation <= 0:
+		return
+
+	player(iPlayer).changeGold(scale(iPopulation / iNigerianGoldPerPopulation))
+
+
+# Algerian UP: Guerre d'Algerie - a war fought in a country the occupier never controlled outside
+# the cities. An army inside Algeria bleeds whether or not anyone gives battle.
+iAlgerianAttrition = 4
+
+
+@handler("BeginPlayerTurn")
+def algerianPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iAlgeria:
+		return
+
+	tPlayer = team(iPlayer)
+
+	for unit in units.all().where(lambda unit: plot(unit).getOwner() == iPlayer):
+		iOwner = unit.getOwner()
+
+		if iOwner == iPlayer or is_minor(iOwner):
+			continue
+
+		if not tPlayer.isAtWar(player(iOwner).getTeam()):
+			continue
+
+		# never lethal: attrition wears an occupier down, it does not win the battle for you
+		unit.setDamage(min(80, unit.getDamage() + iAlgerianAttrition), iPlayer)
+
+
+# Ukrainian UP: the Breadbasket - the black earth of the steppe, which fed empires that had no
+# particular interest in the people farming it.
+iUkrainianFood = 2
+
+
+@handler("BeginPlayerTurn")
+def ukrainianPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iUkraine:
+		return
+
+	for city in cities.owner(iPlayer):
+		city.changeFood(scale(iUkrainianFood))
+
+
+# Kazakh UP: Baikonur - the steppe held the Soviet launch complex and the uranium that fuelled the
+# programme, and the expertise stayed after the state that built it went.
+iKazakhGreatPeople = 2
+
+
+@handler("BeginPlayerTurn")
+def kazakhPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iKazakhstan:
+		return
+
+	iOre = player(iPlayer).getNumAvailableBonuses(iUranium)
+	if iOre <= 0:
+		return
+
+	capital_city = capital(iPlayer)
+	if capital_city:
+		capital_city.changeGreatPeopleProgress(scale(iOre * iKazakhGreatPeople))

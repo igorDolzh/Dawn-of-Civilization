@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Algeria -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_DESC</Tag>
+		<English>The Algerians</English>
+		<French>The Algerians</French>
+		<German>The Algerians</German>
+		<Italian>The Algerians</Italian>
+		<Spanish>The Algerians</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_PEOPLES</Tag>
+		<English>Algerian Peoples</English>
+		<French>Algerian Peoples</French>
+		<German>Algerian Peoples</German>
+		<Italian>Algerian Peoples</Italian>
+		<Spanish>Algerian Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_ADJECTIVE</Tag>
+		<English>Algerian</English>
+		<French>Algerian</French>
+		<German>Algerian</German>
+		<Italian>Algerian</Italian>
+		<Spanish>Algerian</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_SHORT_DESC</Tag>
+		<English>Algeria</English>
+		<French>Algeria</French>
+		<German>Algeria</German>
+		<Italian>Algeria</Italian>
+		<Spanish>Algeria</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ALGERIA_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Kazakhstan -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_DESC</Tag>
+		<English>The Kazakhs</English>
+		<French>The Kazakhs</French>
+		<German>The Kazakhs</German>
+		<Italian>The Kazakhs</Italian>
+		<Spanish>The Kazakhs</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_PEOPLES</Tag>
+		<English>Kazakh Peoples</English>
+		<French>Kazakh Peoples</French>
+		<German>Kazakh Peoples</German>
+		<Italian>Kazakh Peoples</Italian>
+		<Spanish>Kazakh Peoples</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_ADJECTIVE</Tag>
+		<English>Kazakh</English>
+		<French>Kazakh</French>
+		<German>Kazakh</German>
+		<Italian>Kazakh</Italian>
+		<Spanish>Kazakh</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_SHORT_DESC</Tag>
+		<English>Kazakhstan</English>
+		<French>Kazakhstan</French>
+		<German>Kazakhstan</German>
+		<Italian>Kazakhstan</Italian>
+		<Spanish>Kazakhstan</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>Kingdom of %s1</French>
+		<German>Kingdom of %s1</German>
+		<Italian>Kingdom of %s1</Italian>
+		<Spanish>Kingdom of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>Republic of %s1</French>
+		<German>Republic of %s1</German>
+		<Italian>Republic of %s1</Italian>
+		<Spanish>Republic of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_COMMUNIST</Tag>
+		<English>%s2 Soviet Republic</English>
+		<French>%s2 Soviet Republic</French>
+		<German>%s2 Soviet Republic</German>
+		<Italian>%s2 Soviet Republic</Italian>
+		<Spanish>%s2 Soviet Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_KAZAKHSTAN_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>%s2 State</French>
+		<German>%s2 State</German>
+		<Italian>%s2 State</Italian>
+		<Spanish>%s2 State</Spanish>
+	</TEXT>
+</Civ4GameText>

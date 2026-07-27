@@ -1465,4 +1465,84 @@
 		<Italian>culture from your largest cities</Italian>
 		<Spanish>culture from your largest cities</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IRQ_TITLE</Tag>
+		<English>Rentier State</English>
+		<French>Rentier State</French>
+		<German>Rentier State</German>
+		<Italian>Rentier State</Italian>
+		<Spanish>Rentier State</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IRQ</Tag>
+		<English>production in every city from each source of oil</English>
+		<French>production in every city from each source of oil</French>
+		<German>production in every city from each source of oil</German>
+		<Italian>production in every city from each source of oil</Italian>
+		<Spanish>production in every city from each source of oil</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NGR_TITLE</Tag>
+		<English>Giant of Africa</English>
+		<French>Giant of Africa</French>
+		<German>Giant of Africa</German>
+		<Italian>Giant of Africa</Italian>
+		<Spanish>Giant of Africa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NGR</Tag>
+		<English>gold from the sheer size of your population</English>
+		<French>gold from the sheer size of your population</French>
+		<German>gold from the sheer size of your population</German>
+		<Italian>gold from the sheer size of your population</Italian>
+		<Spanish>gold from the sheer size of your population</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ALG_TITLE</Tag>
+		<English>Guerre d'Algerie</English>
+		<French>Guerre d'Algerie</French>
+		<German>Guerre d'Algerie</German>
+		<Italian>Guerre d'Algerie</Italian>
+		<Spanish>Guerre d'Algerie</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ALG</Tag>
+		<English>enemy armies inside your borders bleed each turn</English>
+		<French>enemy armies inside your borders bleed each turn</French>
+		<German>enemy armies inside your borders bleed each turn</German>
+		<Italian>enemy armies inside your borders bleed each turn</Italian>
+		<Spanish>enemy armies inside your borders bleed each turn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_KAZ_TITLE</Tag>
+		<English>Baikonur</English>
+		<French>Baikonur</French>
+		<German>Baikonur</German>
+		<Italian>Baikonur</Italian>
+		<Spanish>Baikonur</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_KAZ</Tag>
+		<English>great people in your capital from each source of uranium</English>
+		<French>great people in your capital from each source of uranium</French>
+		<German>great people in your capital from each source of uranium</German>
+		<Italian>great people in your capital from each source of uranium</Italian>
+		<Spanish>great people in your capital from each source of uranium</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_UKN_TITLE</Tag>
+		<English>The Breadbasket</English>
+		<French>The Breadbasket</French>
+		<German>The Breadbasket</German>
+		<Italian>The Breadbasket</Italian>
+		<Spanish>The Breadbasket</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_UKN</Tag>
+		<English>extra food in every city</English>
+		<French>extra food in every city</French>
+		<German>extra food in every city</German>
+		<Italian>extra food in every city</Italian>
+		<Spanish>extra food in every city</Spanish>
+	</TEXT>
 </Civ4GameText>

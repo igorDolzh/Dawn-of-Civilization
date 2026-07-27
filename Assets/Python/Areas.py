@@ -85,6 +85,11 @@ iIsrael :		(84, 45), # Jerusalem
 iTaiwan :		(128, 47), # Taipei
 iSingapore :	(121, 29), # Singapore
 iBangladesh :	(113, 43), # Dhaka
+iIraq :		(89, 48), # Baghdad
+iNigeria :	(63, 31), # Lagos
+iAlgeria :	(62, 47), # Algiers
+iUkraine :	(81, 62), # Kyiv
+iKazakhstan :	(103, 60), # Almaty
 })
 
 dPeriodCapitals = {
@@ -181,6 +186,11 @@ iIsrael :		((82, 43),	(86, 47)),
 iTaiwan :		((127, 45),	(129, 48)),
 iSingapore :	((120, 28),	(122, 30)),
 iBangladesh :	((111, 41),	(115, 45)),
+iIraq :		((86, 45),	(92, 51)),
+iNigeria :	((60, 28),	(66, 34)),
+iAlgeria :	((58, 44),	(66, 49)),
+iUkraine :	((77, 59),	(84, 65)),
+iKazakhstan :	((97, 56),	(107, 64)),
 })
 
 dExtendedBirthArea = CivDict({
@@ -324,6 +334,11 @@ iIsrael :		((83, 44),	(85, 46)),
 iTaiwan :		((128, 46),	(128, 47)),
 iSingapore :	((121, 29),	(121, 29)),
 iBangladesh :	((112, 42),	(114, 44)),
+iIraq :		((87, 46),	(91, 50)),
+iNigeria :	((61, 29),	(65, 33)),
+iAlgeria :	((59, 45),	(65, 48)),
+iUkraine :	((78, 60),	(83, 64)),
+iKazakhstan :	((98, 57),	(106, 63)),
 })
 
 dCoreAreaExceptions = CivDict({
@@ -443,6 +458,11 @@ iIsrael :	((82, 43),	(86, 47)),
 iTaiwan :	((127, 45),	(129, 48)),
 iSingapore :	((120, 28),	(122, 30)),
 iBangladesh :	((111, 41),	(115, 45)),
+iIraq :	((86, 45),	(92, 51)),
+iNigeria :	((60, 28),	(66, 34)),
+iAlgeria :	((58, 44),	(66, 49)),
+iUkraine :	((77, 59),	(84, 65)),
+iKazakhstan :	((97, 56),	(107, 64)),
 })
 
 dRespawnAreaExceptions = CivDict({
