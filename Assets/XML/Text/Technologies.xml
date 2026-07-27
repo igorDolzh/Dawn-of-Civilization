@@ -5561,4 +5561,292 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GRAVITIC_ENGINEERING</Tag>
+		<English>Gravitic Engineering</English>
+		<French>Gravitic Engineering</French>
+		<German>Gravitic Engineering</German>
+		<Italian>Gravitic Engineering</Italian>
+		<Spanish>Gravitic Engineering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GRAVITIC_ENGINEERING_PEDIA</Tag>
+		<English>Gravitic Engineering. Mass ceases to be a fixed property of matter.</English>
+		<French>Gravitic Engineering. Mass ceases to be a fixed property of matter.</French>
+		<German>Gravitic Engineering. Mass ceases to be a fixed property of matter.</German>
+		<Italian>Gravitic Engineering. Mass ceases to be a fixed property of matter.</Italian>
+		<Spanish>Gravitic Engineering. Mass ceases to be a fixed property of matter.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GRAVITIC_ENGINEERING_QUOTE</Tag>
+		<English>Mass ceases to be a fixed property of matter.</English>
+		<French>Mass ceases to be a fixed property of matter.</French>
+		<German>Mass ceases to be a fixed property of matter.</German>
+		<Italian>Mass ceases to be a fixed property of matter.</Italian>
+		<Spanish>Mass ceases to be a fixed property of matter.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GENERATIVE_ARTS</Tag>
+		<English>Generative Arts</English>
+		<French>Generative Arts</French>
+		<German>Generative Arts</German>
+		<Italian>Generative Arts</Italian>
+		<Spanish>Generative Arts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GENERATIVE_ARTS_PEDIA</Tag>
+		<English>Generative Arts. Culture that composes itself, endlessly and without repetition.</English>
+		<French>Generative Arts. Culture that composes itself, endlessly and without repetition.</French>
+		<German>Generative Arts. Culture that composes itself, endlessly and without repetition.</German>
+		<Italian>Generative Arts. Culture that composes itself, endlessly and without repetition.</Italian>
+		<Spanish>Generative Arts. Culture that composes itself, endlessly and without repetition.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GENERATIVE_ARTS_QUOTE</Tag>
+		<English>Culture that composes itself, endlessly and without repetition.</English>
+		<French>Culture that composes itself, endlessly and without repetition.</French>
+		<German>Culture that composes itself, endlessly and without repetition.</German>
+		<Italian>Culture that composes itself, endlessly and without repetition.</Italian>
+		<Spanish>Culture that composes itself, endlessly and without repetition.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNIVERSAL_JURISPRUDENCE</Tag>
+		<English>Universal Jurisprudence</English>
+		<French>Universal Jurisprudence</French>
+		<German>Universal Jurisprudence</German>
+		<Italian>Universal Jurisprudence</Italian>
+		<Spanish>Universal Jurisprudence</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNIVERSAL_JURISPRUDENCE_PEDIA</Tag>
+		<English>Universal Jurisprudence. One law, applied identically everywhere, by nobody.</English>
+		<French>Universal Jurisprudence. One law, applied identically everywhere, by nobody.</French>
+		<German>Universal Jurisprudence. One law, applied identically everywhere, by nobody.</German>
+		<Italian>Universal Jurisprudence. One law, applied identically everywhere, by nobody.</Italian>
+		<Spanish>Universal Jurisprudence. One law, applied identically everywhere, by nobody.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNIVERSAL_JURISPRUDENCE_QUOTE</Tag>
+		<English>One law, applied identically everywhere, by nobody.</English>
+		<French>One law, applied identically everywhere, by nobody.</French>
+		<German>One law, applied identically everywhere, by nobody.</German>
+		<Italian>One law, applied identically everywhere, by nobody.</Italian>
+		<Spanish>One law, applied identically everywhere, by nobody.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CONSCIOUSNESS_TRANSFER</Tag>
+		<English>Consciousness Transfer</English>
+		<French>Consciousness Transfer</French>
+		<German>Consciousness Transfer</German>
+		<Italian>Consciousness Transfer</Italian>
+		<Spanish>Consciousness Transfer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CONSCIOUSNESS_TRANSFER_PEDIA</Tag>
+		<English>Consciousness Transfer. The mind outlives the body that carried it.</English>
+		<French>Consciousness Transfer. The mind outlives the body that carried it.</French>
+		<German>Consciousness Transfer. The mind outlives the body that carried it.</German>
+		<Italian>Consciousness Transfer. The mind outlives the body that carried it.</Italian>
+		<Spanish>Consciousness Transfer. The mind outlives the body that carried it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CONSCIOUSNESS_TRANSFER_QUOTE</Tag>
+		<English>The mind outlives the body that carried it.</English>
+		<French>The mind outlives the body that carried it.</French>
+		<German>The mind outlives the body that carried it.</German>
+		<Italian>The mind outlives the body that carried it.</Italian>
+		<Spanish>The mind outlives the body that carried it.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HYDROSPHERIC_ENGINEERING</Tag>
+		<English>Hydrospheric Engineering</English>
+		<French>Hydrospheric Engineering</French>
+		<German>Hydrospheric Engineering</German>
+		<Italian>Hydrospheric Engineering</Italian>
+		<Spanish>Hydrospheric Engineering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HYDROSPHERIC_ENGINEERING_PEDIA</Tag>
+		<English>Hydrospheric Engineering. The ocean floor becomes habitable ground.</English>
+		<French>Hydrospheric Engineering. The ocean floor becomes habitable ground.</French>
+		<German>Hydrospheric Engineering. The ocean floor becomes habitable ground.</German>
+		<Italian>Hydrospheric Engineering. The ocean floor becomes habitable ground.</Italian>
+		<Spanish>Hydrospheric Engineering. The ocean floor becomes habitable ground.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HYDROSPHERIC_ENGINEERING_QUOTE</Tag>
+		<English>The ocean floor becomes habitable ground.</English>
+		<French>The ocean floor becomes habitable ground.</French>
+		<German>The ocean floor becomes habitable ground.</German>
+		<Italian>The ocean floor becomes habitable ground.</Italian>
+		<Spanish>The ocean floor becomes habitable ground.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUTONOMOUS_WARFARE</Tag>
+		<English>Autonomous Warfare</English>
+		<French>Autonomous Warfare</French>
+		<German>Autonomous Warfare</German>
+		<Italian>Autonomous Warfare</Italian>
+		<Spanish>Autonomous Warfare</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUTONOMOUS_WARFARE_PEDIA</Tag>
+		<English>Autonomous Warfare. War fought by machines that need no orders.</English>
+		<French>Autonomous Warfare. War fought by machines that need no orders.</French>
+		<German>Autonomous Warfare. War fought by machines that need no orders.</German>
+		<Italian>Autonomous Warfare. War fought by machines that need no orders.</Italian>
+		<Spanish>Autonomous Warfare. War fought by machines that need no orders.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUTONOMOUS_WARFARE_QUOTE</Tag>
+		<English>War fought by machines that need no orders.</English>
+		<French>War fought by machines that need no orders.</French>
+		<German>War fought by machines that need no orders.</German>
+		<Italian>War fought by machines that need no orders.</Italian>
+		<Spanish>War fought by machines that need no orders.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MOLECULAR_AGRICULTURE</Tag>
+		<English>Molecular Agriculture</English>
+		<French>Molecular Agriculture</French>
+		<German>Molecular Agriculture</German>
+		<Italian>Molecular Agriculture</Italian>
+		<Spanish>Molecular Agriculture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MOLECULAR_AGRICULTURE_PEDIA</Tag>
+		<English>Molecular Agriculture. Food assembled rather than grown.</English>
+		<French>Molecular Agriculture. Food assembled rather than grown.</French>
+		<German>Molecular Agriculture. Food assembled rather than grown.</German>
+		<Italian>Molecular Agriculture. Food assembled rather than grown.</Italian>
+		<Spanish>Molecular Agriculture. Food assembled rather than grown.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MOLECULAR_AGRICULTURE_QUOTE</Tag>
+		<English>Food assembled rather than grown.</English>
+		<French>Food assembled rather than grown.</French>
+		<German>Food assembled rather than grown.</German>
+		<Italian>Food assembled rather than grown.</Italian>
+		<Spanish>Food assembled rather than grown.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNIVERSAL_EDUCATION</Tag>
+		<English>Universal Education</English>
+		<French>Universal Education</French>
+		<German>Universal Education</German>
+		<Italian>Universal Education</Italian>
+		<Spanish>Universal Education</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNIVERSAL_EDUCATION_PEDIA</Tag>
+		<English>Universal Education. Everything known, known by everyone, at once.</English>
+		<French>Universal Education. Everything known, known by everyone, at once.</French>
+		<German>Universal Education. Everything known, known by everyone, at once.</German>
+		<Italian>Universal Education. Everything known, known by everyone, at once.</Italian>
+		<Spanish>Universal Education. Everything known, known by everyone, at once.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_UNIVERSAL_EDUCATION_QUOTE</Tag>
+		<English>Everything known, known by everyone, at once.</English>
+		<French>Everything known, known by everyone, at once.</French>
+		<German>Everything known, known by everyone, at once.</German>
+		<Italian>Everything known, known by everyone, at once.</Italian>
+		<Spanish>Everything known, known by everyone, at once.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_VACUUM_TRANSIT</Tag>
+		<English>Vacuum Transit</English>
+		<French>Vacuum Transit</French>
+		<German>Vacuum Transit</German>
+		<Italian>Vacuum Transit</Italian>
+		<Spanish>Vacuum Transit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_VACUUM_TRANSIT_PEDIA</Tag>
+		<English>Vacuum Transit. Distance stops costing time.</English>
+		<French>Vacuum Transit. Distance stops costing time.</French>
+		<German>Vacuum Transit. Distance stops costing time.</German>
+		<Italian>Vacuum Transit. Distance stops costing time.</Italian>
+		<Spanish>Vacuum Transit. Distance stops costing time.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_VACUUM_TRANSIT_QUOTE</Tag>
+		<English>Distance stops costing time.</English>
+		<French>Distance stops costing time.</French>
+		<German>Distance stops costing time.</German>
+		<Italian>Distance stops costing time.</Italian>
+		<Spanish>Distance stops costing time.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEMETIC_ENGINEERING</Tag>
+		<English>Memetic Engineering</English>
+		<French>Memetic Engineering</French>
+		<German>Memetic Engineering</German>
+		<Italian>Memetic Engineering</Italian>
+		<Spanish>Memetic Engineering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEMETIC_ENGINEERING_PEDIA</Tag>
+		<English>Memetic Engineering. Ideas designed to spread, and spreading as designed.</English>
+		<French>Memetic Engineering. Ideas designed to spread, and spreading as designed.</French>
+		<German>Memetic Engineering. Ideas designed to spread, and spreading as designed.</German>
+		<Italian>Memetic Engineering. Ideas designed to spread, and spreading as designed.</Italian>
+		<Spanish>Memetic Engineering. Ideas designed to spread, and spreading as designed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEMETIC_ENGINEERING_QUOTE</Tag>
+		<English>Ideas designed to spread, and spreading as designed.</English>
+		<French>Ideas designed to spread, and spreading as designed.</French>
+		<German>Ideas designed to spread, and spreading as designed.</German>
+		<Italian>Ideas designed to spread, and spreading as designed.</Italian>
+		<Spanish>Ideas designed to spread, and spreading as designed.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INTERSTELLAR_PROBE</Tag>
+		<English>Interstellar Probe</English>
+		<French>Interstellar Probe</French>
+		<German>Interstellar Probe</German>
+		<Italian>Interstellar Probe</Italian>
+		<Spanish>Interstellar Probe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INTERSTELLAR_PROBE_PEDIA</Tag>
+		<English>Interstellar Probe. The first thing we made to leave for good.</English>
+		<French>Interstellar Probe. The first thing we made to leave for good.</French>
+		<German>Interstellar Probe. The first thing we made to leave for good.</German>
+		<Italian>Interstellar Probe. The first thing we made to leave for good.</Italian>
+		<Spanish>Interstellar Probe. The first thing we made to leave for good.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INTERSTELLAR_PROBE_QUOTE</Tag>
+		<English>The first thing we made to leave for good.</English>
+		<French>The first thing we made to leave for good.</French>
+		<German>The first thing we made to leave for good.</German>
+		<Italian>The first thing we made to leave for good.</Italian>
+		<Spanish>The first thing we made to leave for good.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_STELLAR_HUSBANDRY</Tag>
+		<English>Stellar Husbandry</English>
+		<French>Stellar Husbandry</French>
+		<German>Stellar Husbandry</German>
+		<Italian>Stellar Husbandry</Italian>
+		<Spanish>Stellar Husbandry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_STELLAR_HUSBANDRY_PEDIA</Tag>
+		<English>Stellar Husbandry. A star, tended like a field.</English>
+		<French>Stellar Husbandry. A star, tended like a field.</French>
+		<German>Stellar Husbandry. A star, tended like a field.</German>
+		<Italian>Stellar Husbandry. A star, tended like a field.</Italian>
+		<Spanish>Stellar Husbandry. A star, tended like a field.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_STELLAR_HUSBANDRY_QUOTE</Tag>
+		<English>A star, tended like a field.</English>
+		<French>A star, tended like a field.</French>
+		<German>A star, tended like a field.</German>
+		<Italian>A star, tended like a field.</Italian>
+		<Spanish>A star, tended like a field.</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -1002,7 +1002,7 @@ iNumCorporations = 10
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 163
+iNumTechs = 175
 (iTanning, iMining, iPottery, iPastoralism, iAgriculture, iMythology, iSailing,
 iSmelting, iMasonry, iLeverage, iProperty, iCeremony, iDivination, iSeafaring,
 iAlloys, iConstruction, iRiding, iArithmetics, iWriting, iCalendar, iShipbuilding,
@@ -1026,7 +1026,8 @@ iSupermaterials, iFusion, iNanotechnology, iCybernetics, iBiotechnology,
 iUnifiedTheory, iArtificialIntelligence,
 iTranshumanism,
 iOrbitalIndustry, iHeliumThreeExtraction, iQuantumComputing, iSyntheticGenomics, iAsteroidMining, iClimateEngineering, iMachineConsciousness, iRegenerativeMedicine, iOrbitalHabitation, iTerraforming, iNanoassembly, iNeuralUplink, iDirectedEnergy, iSelfReplication, iPostScarcity, iPlanetaryConsciousness,
-iDistributedConsensus, iCognitiveEnhancement, iAlgorithmicGovernance, iAbundanceLogistics, iNoosphere, iWorldFederation) = range(iNumTechs)
+iDistributedConsensus, iCognitiveEnhancement, iAlgorithmicGovernance, iAbundanceLogistics, iNoosphere, iWorldFederation,
+iGraviticEngineering, iGenerativeArts, iUniversalJurisprudence, iConsciousnessTransfer, iHydrosphericEngineering, iAutonomousWarfare, iMolecularAgriculture, iUniversalEducation, iVacuumTransit, iMemeticEngineering, iInterstellarProbe, iStellarHusbandry) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
