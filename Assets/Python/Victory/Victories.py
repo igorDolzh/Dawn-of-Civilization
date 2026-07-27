@@ -202,7 +202,12 @@ class HistoricalVictory(Victory):
 	@classmethod
 	def create(cls, iPlayer):
 		iCiv = civ(iPlayer)
-		victory = cls(iPlayer, dHistoricalGoals.get(iCiv, []))
+		
+		# a scenario may carry its own goals; every other scenario keeps the historical set
+		scenario_goals = getScenario().dGoals
+		descriptions = (scenario_goals if scenario_goals is not None else dHistoricalGoals).get(iCiv, [])
+		
+		victory = cls(iPlayer, descriptions)
 		
 		getScenario().initGoals(iPlayer, victory.goals)
 		

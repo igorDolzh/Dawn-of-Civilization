@@ -399,6 +399,10 @@ class Scenario(object):
 		self.lWorkingCities = kwargs.get("lWorkingCities", [])
 		self.lUnexpiredWonders = kwargs.get("lUnexpiredWonders", [])
 		
+		# a scenario may replace the historical goals entirely: a 2000 AD start has no use for
+		# deadlines that expired centuries ago, so it supplies its own set instead of failing them
+		self.dGoals = kwargs.get("dGoals", None)
+
 		self.lAllGoalsFailed = kwargs.get("lAllGoalsFailed", [])
 		self.lGoalsSucceeded = kwargs.get("lGoalsSucceeded", [])
 		self.setupGoals = kwargs.get("setupGoals", lambda *args: None)

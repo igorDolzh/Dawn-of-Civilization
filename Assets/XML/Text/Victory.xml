@@ -4158,4 +4158,12 @@
 		<Italian>the Philippine Islands</Italian>
 		<Spanish>the Philippine Islands</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_HOMELAND</Tag>
+		<English>your homeland</English>
+		<French>your homeland</French>
+		<German>your homeland</German>
+		<Italian>your homeland</Italian>
+		<Spanish>your homeland</Spanish>
+	</TEXT>
 </Civ4GameText>
