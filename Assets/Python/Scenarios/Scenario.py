@@ -155,6 +155,14 @@ LEADER_DATES = {
 	iCurtin: 1940,
 	iMacDonald: 1870,
 	iTrudeau: 1970,
+	iSimeon: 927,
+	iStephen: 1000,
+	iTell: 1291,
+	iRizal: 1898,
+	iBenGurion: 1948,
+	iChiang: 1949,
+	iLee: 1965,
+	iMujib: 1971,
 }
 
 RELIGION_FOUNDING_DATES = {

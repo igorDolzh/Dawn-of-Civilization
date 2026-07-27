@@ -279,6 +279,10 @@ def setupScenario():
 	
 	data.dRelocatedCities.update(dRelocated)
 	data.dRenamedCities.update(dRenamed)
+	
+	if scenario() == i2000AD:
+		pass
+
 
 
 ### LANGUAGES ###

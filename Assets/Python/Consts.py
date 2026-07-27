@@ -1283,7 +1283,7 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 162
+iNumLeaders = 170
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iDjoser, iHatshepsut, iRamesses, iPtolemy, iSargon, iHammurabi, iWentAntu, 
 iAshurbanipal, iWu, iTaizong, iHongwu, iMao, iMursili, iPericles, iAlexanderTheGreat, iGeorge, iAsoka, 
 iChandragupta, iShivaji, iGandhi, iHiram, iHannibal, iTaharqa, iAmanirena, iAhoeitu, iCyrus, iDarius, 
@@ -1299,7 +1299,8 @@ iKublaiKhan, iMontezuma, iTughluq, iAkbar, iBhutto, iUzbeg, iNaresuan, iMongkut,
 iIvan, iPeter, iCatherine, iAlexanderI, iStalin, iMehmed, iSuleiman, iAtaturk, iMbemba, iAbbas, 
 iKhomeini, iWillemVanOranje, iWilliam, iKangxi, iFrederick, iBismarck, iHitler, iIbnSaud, iWashington, iLincoln, 
 iRoosevelt, iSanMartin, iPeron, iJuarez, iSantaAnna, iCardenas, iBolivar, iPedro, iVargas, iLeopold, 
-iCurtin, iMacDonald, iTrudeau, iSittingBull, iOseiTutu, iTamar, iToussaint, iMutota, iShaka, iGreatSun, iTeRauparaha, iKruger) = range(iNumLeaders)
+iCurtin, iMacDonald, iTrudeau, iSittingBull, iOseiTutu, iTamar, iToussaint, iMutota, iShaka, iGreatSun, iTeRauparaha, iKruger,
+iSimeon, iStephen, iTell, iRizal, iBenGurion, iChiang, iLee, iMujib) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 	iChina : iHongwu,
@@ -1350,10 +1351,10 @@ lLateColonyCivs = lTradingCompanyCivs + [iGermany]
 
 lMongolCivs = [iPersia, iByzantium, iTurks, iArabia, iRus]
 
-iNumScenarios = 5
-(i3000BC, i600AD, i1500AD, i1700AD, i1815AD) = range(iNumScenarios)
+iNumScenarios = 6
+(i3000BC, i600AD, i1500AD, i1700AD, i1815AD, i2000AD) = range(iNumScenarios)
 
-lScenarioStartYears = [-3000, 600, 1500, 1700, 1815]
+lScenarioStartYears = [-3000, 600, 1500, 1700, 1815, 2000]
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 4
