@@ -39,6 +39,7 @@ import Revolutions
 import Rise
 import Rules
 import Shortcuts
+import SlaveTrade
 import Stability
 import Terraforming
 import UniquePowers

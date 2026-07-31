@@ -4104,4 +4104,36 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SLAVE_TRADE_DEPOPULATION</Tag>
+		<English>The ships have taken another generation from %s1. The coast grows quiet.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SLAVE_TRADE_PASSAGE_PROFIT</Tag>
+		<English>Our plantations make the passage pay: %d1 additional gold.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SLAVE_TRADE_REVOLT</Tag>
+		<English>The enslaved of %s1 have risen. The plantations are burning.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SLAVE_TRADE_ABOLITION_PRESSURE</Tag>
+		<English>The world is turning against the trade, and against us for keeping it.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 </Civ4GameText>

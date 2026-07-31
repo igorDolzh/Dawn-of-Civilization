@@ -132,6 +132,16 @@ class PlayerData:
 		self.iMobilisationModifier = 0
 		self.iRevolutionTurn = -1
 		self.iSuppressionPenalty = 0
+
+		# Atlantic slave trade
+
+		# gold taken for captives, and the depopulation it cost - supply side
+		self.iSlaveTradeIncome = 0
+		self.iSlaveTradePenalty = 0
+		# abolitionist opinion accumulating against a slaveholding power
+		self.iAbolitionPressure = 0
+		# the plantation yield modifier currently applied, so it can be written as a delta
+		self.iPlantationModifier = 0
 		
 		# Birth Rate
 		

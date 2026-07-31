@@ -80,6 +80,12 @@ def decayPenalties():
 			if data.players[iPlayer].iSuppressionPenalty < 0:
 				data.players[iPlayer].iSuppressionPenalty += 1
 
+			# the slave trade: the supply side's losses heal slowly. Abolitionist pressure is
+			# deliberately absent here - it does not fade while the practice continues, and
+			# SlaveTrade.py clears it only once a civ can no longer use slaves.
+			if data.players[iPlayer].iSlaveTradePenalty < 0:
+				data.players[iPlayer].iSlaveTradePenalty += 1
+
 
 @handler("BeginGameTurn")
 def checkLostCitiesCollapses():
@@ -719,7 +725,10 @@ def calculateStability(iPlayer):
 		if (iRepublic, iDemocracy) not in civics and (iStratocracy, iConstitution) not in civics: iCivicEraTechStability -= 5
 	
 	if tPlayer.isHasTech(iCivilRights):
-		if (iSlavery, iManorialism, iCasteSystem) in civics: iCivicEraTechStability -= 5
+		# canUseSlaves() as well as the civics: Colonialism sets bColonialSlavery, so a European
+		# colonial power kept slaves in its plantations while never adopting the Slavery civic,
+		# and escaped this penalty entirely.
+		if (iSlavery, iManorialism, iCasteSystem) in civics or player(iPlayer).canUseSlaves(): iCivicEraTechStability -= 5
 	
 	if tPlayer.isHasTech(iEconomics):
 		if (iReciprocity, iRedistribution, iMerchantTrade) in civics: iCivicEraTechStability -= 5
@@ -751,7 +760,8 @@ def calculateStability(iPlayer):
 			if iIsolationism in civics: iCivicEraTechStability += 3
 
 		elif iStateReligion in [iZoroastrianism, iOrthodoxy, iCatholicism, iProtestantism]:
-			if iSlavery in civics: iCivicEraTechStability -= 3
+			# see the Civil Rights note above: colonial slavery carries the same moral cost here
+			if iSlavery in civics or player(iPlayer).canUseSlaves(): iCivicEraTechStability -= 3
 	
 		
 	if iThalassocracy in civics:
@@ -807,6 +817,19 @@ def calculateStability(iPlayer):
 	lParameters[iParameterReligion] = iReligionStability
 		
 	iDomesticStability += iReligionStability
+
+	# Institutional penalties accumulated by events: entrenched serfdom after the Black Death,
+	# revolutions and secessions put down by force, and the slave trade's cost to the societies
+	# that supplied it. Each is written by its own module and decayed in decayPenalties above.
+	#
+	# These were previously accumulated and decayed but never read, so every one of them was
+	# inert - the penalty existed in the save and affected nothing. They are folded into domestic
+	# stability rather than given their own lParameters slot, because that array is sized by
+	# iNumStabilityParameters and drives the stability breakdown screen.
+	iDomesticStability += data.players[iPlayer].iSerfdomPenalty
+	iDomesticStability += data.players[iPlayer].iSuppressionPenalty
+	iDomesticStability += data.players[iPlayer].iSlaveTradePenalty
+	iDomesticStability += data.players[iPlayer].iAbolitionPressure
 	
 	# FOREIGN
 	iForeignStability = 0
@@ -1094,7 +1117,8 @@ def getCivicStability(iPlayer, civics=None):
 	
 	if iPublicWelfare in civics:
 		if iDemocracy in civics: iStability += 2
-		if iSlavery in civics: iStability -= 2
+		# a welfare state that still holds slaves anywhere, not merely one running the civic
+		if iSlavery in civics or player(iPlayer).canUseSlaves(): iStability -= 2
 	
 	if iThalassocracy in civics:
 		if notcivics(iReciprocity, iRedistribution, iMerchantTrade) in civics: iStability -= 2
