@@ -1,6 +1,17 @@
 from Scenario import *
 from Core import *
 
+# The goal vocabulary used by dGoals2000 below. This import MUST come after Core: Definitions
+# redefines `plots` as an AreaArgumentFactory, and that is the type the Requirement classes expect -
+# Core's PlotFactory builds a different object and Control would not accept it. Nothing above this
+# line uses `plots`, and name resolution is per module, so Scenario.py keeps Core's version.
+from Definitions import *
+
+# Area name shown in goal descriptions. Declared here rather than imported from HistoricalVictory,
+# which owns the master list: ReligiousVictory.py declares its own the same way, and importing that
+# module would pull in every historical goal in the game for the sake of one string.
+HOMELAND = "TXT_KEY_VICTORY_NAME_HOMELAND"
+
 
 # The world as it stands in 2000. Only civilizations historically extant are present -
 # roughly a third of the mod's roster is gone, and its land belongs to whoever actually holds it.

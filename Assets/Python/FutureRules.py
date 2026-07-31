@@ -11,7 +11,16 @@
 from Core import *
 from Events import handler
 
+# The modifier identifiers live in Modifiers, not Consts, and Core does not star-import Modifiers -
+# so they have to be named explicitly. dModifierRules below is built at module scope, which means a
+# missing one is an ImportError at load rather than a failure in play.
 from Modifiers import setModifier
+from Modifiers import (
+	iModifierBuildingCost, iModifierCitiesMaintenance, iModifierCivicUpkeep,
+	iModifierColonyMaintenance, iModifierCulture, iModifierDistanceMaintenance,
+	iModifierGreatPeopleThreshold, iModifierHealth, iModifierInflationRate,
+	iModifierResearchCost, iModifierUnitCost, iModifierUnitUpkeep, iModifierWonderCost,
+)
 
 
 ### RULES ###

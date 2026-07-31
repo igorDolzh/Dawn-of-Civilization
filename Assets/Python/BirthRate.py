@@ -22,7 +22,7 @@
 
 from Core import *
 from Events import handler
-from Modifiers import getBaseModifier, setModifier
+from Modifiers import getBaseModifier, setModifier, iModifierGrowthThreshold
 
 import FoodImports
 

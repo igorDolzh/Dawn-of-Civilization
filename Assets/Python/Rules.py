@@ -66,7 +66,8 @@ def spreadTradingCompanyCulture(iOwner, iPlayer, city, bConquest, bTrade):
 				pass
 			elif distance(plot, city) == 1:
 				convertPlotCulture(plot, iPlayer, 65, True)
-			elif pPlot.getOwner() == iPreviousOwner:
+			# iOwner is the previous owner; pPlot/iPreviousOwner never existed in this scope
+			elif plot.getOwner() == iOwner:
 				convertPlotCulture(plot, iPlayer, 15, False)
 
 
@@ -229,7 +230,8 @@ def validateSlaves(iPlayer):
 @handler("unitBuilt")
 def moveSlavesToNewWorld(city, unit):
 	if base_unit(unit) == iSlave and city.getRegionID() in lEurope + [rMaghreb, rAnatolia] and not city.isHuman():	
-		colony = cities.owner(iPlayer).regions(*(lAmerica + lSubSaharanAfrica)).random()
+		# the handler receives (city, unit); iPlayer was never bound here
+		colony = cities.owner(city.getOwner()).regions(*(lAmerica + lSubSaharanAfrica)).random()
 		if colony:
 			move(unit, colony)
 
