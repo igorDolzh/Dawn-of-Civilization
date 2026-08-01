@@ -441,27 +441,30 @@ lCivilizations = [
 # mark scaled to where you stood in 2000, and one goal of quality rather than quantity.
 dGoals2000 = {
 	iChina: (
-		Control(plots.rectangle((120, 51), (126, 56)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((120, 51), (123, 56)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iGreece: (
-		Control(plots.rectangle((74, 49), (80, 53)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((74, 50), (80, 53)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iIndia: (
-		Control(plots.rectangle((105, 44), (111, 46)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((108, 43), (110, 46)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iCelts: (
-		Control(plots.rectangle((59, 56), (63, 61)).named(HOMELAND), at=2050),
+		# Ireland, not Aquitaine. Periods applies iPeriodInsularCelts at a 2000 start, whose core
+		# area is ((52, 64), (56, 67)) with Dublin as capital; the generated rectangle sat in
+		# south-west France and overlapped France's own homeland on every row.
+		Control(plots.rectangle((61, 56), (63, 59)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iEthiopia: (
-		Control(plots.rectangle((82, 33), (85, 36)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((82, 33), (84, 36)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
@@ -471,22 +474,22 @@ dGoals2000 = {
 		GoldAmount(40000, by=2070),
 	),
 	iKhmer: (
-		Control(plots.rectangle((120, 36), (122, 38)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((120, 36), (121, 38)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iFrance: (
-		Control(plots.rectangle((59, 57), (63, 62)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((59, 60), (64, 60)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iMalays: (
-		Control(plots.rectangle((119, 26), (121, 31)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((121, 26), (121, 32)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iJapan: (
-		Control(plots.rectangle((135, 52), (140, 55)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((135, 51), (139, 54)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
@@ -501,52 +504,52 @@ dGoals2000 = {
 		GoldAmount(15000, by=2070),
 	),
 	iMoors: (
-		Control(plots.rectangle((56, 44), (61, 50)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((55, 44), (59, 50)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iJava: (
-		Control(plots.rectangle((125, 24), (128, 25)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((125, 24), (127, 25)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iSpain: (
-		Control(plots.rectangle((54, 51), (59, 54)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((56, 51), (59, 54)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iEngland: (
-		Control(plots.rectangle((56, 63), (59, 67)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((56, 63), (58, 66)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iHolyRome: (
-		Control(plots.rectangle((64, 59), (70, 63)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((65, 61), (68, 63)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iBurma: (
-		Control(plots.rectangle((116, 38), (117, 43)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((116, 40), (117, 43)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iVietnam: (
-		Control(plots.rectangle((120, 41), (122, 43)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((120, 42), (122, 43)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iSwahili: (
-		Control(plots.rectangle((83, 19), (85, 27)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((83, 20), (85, 25)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iMisr: (
-		Control(plots.rectangle((76, 40), (81, 45)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((77, 41), (80, 45)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iHungary: (
-		Control(plots.rectangle((72, 57), (75, 60)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((72, 57), (74, 59)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
@@ -556,7 +559,7 @@ dGoals2000 = {
 		GoldAmount(15000, by=2070),
 	),
 	iPoland: (
-		Control(plots.rectangle((72, 61), (76, 64)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((72, 61), (75, 63)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
@@ -566,57 +569,57 @@ dGoals2000 = {
 		GoldAmount(25000, by=2070),
 	),
 	iInca: (
-		Control(plots.rectangle((28, 22), (32, 24)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((29, 22), (32, 24)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iItaly: (
-		Control(plots.rectangle((65, 54), (70, 57)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((66, 54), (69, 57)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iMongols: (
-		Control(plots.rectangle((116, 57), (126, 66)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((116, 57), (122, 64)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iMughals: (
-		Control(plots.rectangle((102, 45), (107, 48)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((103, 45), (106, 48)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iThailand: (
-		Control(plots.rectangle((118, 34), (120, 39)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((118, 34), (119, 39)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iSweden: (
-		Control(plots.rectangle((71, 69), (73, 73)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((71, 70), (73, 72)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iRussia: (
-		Control(plots.rectangle((81, 65), (90, 70)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((82, 64), (87, 68)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iOttomans: (
-		Control(plots.rectangle((79, 51), (84, 55)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((81, 51), (83, 55)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iSwitzerland: (
-		Control(plots.rectangle((64, 57), (67, 59)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((64, 57), (66, 59)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iCongo: (
-		Control(plots.rectangle((71, 24), (74, 27)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((71, 24), (72, 27)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iIran: (
-		Control(plots.rectangle((91, 48), (94, 52)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((91, 48), (94, 50)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
@@ -626,117 +629,117 @@ dGoals2000 = {
 		GoldAmount(40000, by=2070),
 	),
 	iGermany: (
-		Control(plots.rectangle((65, 62), (76, 66)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((66, 64), (76, 65)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iSaudis: (
-		Control(plots.rectangle((86, 38), (90, 42)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((87, 39), (90, 42)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iAmerica: (
-		Control(plots.rectangle((25, 54), (32, 58)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((26, 53), (30, 57)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 4, by=2080),
 		GoldAmount(60000, by=2070),
 	),
 	iHaiti: (
-		Control(plots.rectangle((31, 42), (32, 43)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((31, 42), (33, 43)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iArgentina: (
-		Control(plots.rectangle((35, 13), (38, 16)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((36, 13), (38, 15)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iMexico: (
-		Control(plots.rectangle((14, 41), (19, 44)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((16, 41), (18, 44)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iColombia: (
-		Control(plots.rectangle((26, 34), (35, 38)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((28, 32), (32, 38)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iBrazil: (
-		Control(plots.rectangle((42, 19), (47, 25)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((42, 19), (45, 24)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iBelgium: (
-		Control(plots.rectangle((61, 61), (63, 63)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((61, 61), (63, 62)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iAustralia: (
-		Control(plots.rectangle((139, 9), (143, 13)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((140, 10), (143, 15)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iSouthAfrica: (
-		Control(plots.rectangle((72, 11), (75, 13)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((72, 11), (74, 13)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iCanada: (
-		Control(plots.rectangle((26, 59), (37, 62)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((27, 59), (33, 63)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iPhilippines: (
-		Control(plots.rectangle((128, 35), (130, 39)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((129, 36), (131, 39)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iIraq: (
-		Control(plots.rectangle((87, 46), (91, 50)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((87, 46), (89, 50)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iIsrael: (
-		Control(plots.rectangle((83, 44), (85, 46)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((83, 44), (85, 45)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iTaiwan: (
-		Control(plots.rectangle((128, 46), (128, 47)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((127, 46), (128, 48)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iNigeria: (
-		Control(plots.rectangle((61, 29), (65, 33)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((63, 31), (66, 34)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iAlgeria: (
-		Control(plots.rectangle((59, 45), (65, 48)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((60, 45), (63, 48)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
 	iSingapore: (
-		Control(plots.rectangle((120, 29), (121, 30)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((119, 28), (120, 31)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iBangladesh: (
-		Control(plots.rectangle((112, 42), (114, 44)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((112, 42), (113, 44)).named(HOMELAND), at=2050),
 		PopulationCount(35, by=2060),
 		GoldAmount(8000, by=2070),
 	),
 	iUAE: (
-		Control(plots.rectangle((93, 40), (95, 42)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((92, 40), (95, 41)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 3, by=2080),
 		GoldAmount(40000, by=2070),
 	),
 	iUkraine: (
-		Control(plots.rectangle((78, 60), (83, 64)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((79, 60), (82, 64)).named(HOMELAND), at=2050),
 		EraFirstDiscover(iSynthetic, 2, by=2080),
 		GoldAmount(25000, by=2070),
 	),
 	iKazakhstan: (
-		Control(plots.rectangle((98, 57), (106, 63)).named(HOMELAND), at=2050),
+		Control(plots.rectangle((100, 57), (105, 63)).named(HOMELAND), at=2050),
 		PopulationCount(45, by=2060),
 		GoldAmount(15000, by=2070),
 	),
@@ -754,6 +757,50 @@ def updateData():
 		data.civs[iCiv].bTradingCompanyConquerors = False
 
 
+# Goals carry a title in the victory screen, and only HistoricalVictory decorates its own dGoals -
+# a scenario table never passes through that loop, so these would render with no title at all.
+# The per-civ TXT_KEY_VICTORY_TITLE_<IDENT><n> keys cannot be reused: they name each civilization's
+# historical goals, which these are not. Every civ here has the same three goals in the same order,
+# so three generic titles say the truth without inventing 180 new keys.
+lGoalTitles2000 = [
+	"TXT_KEY_VICTORY_TITLE_2000_HOMELAND",
+	"TXT_KEY_VICTORY_TITLE_2000_DEVELOPMENT",
+	"TXT_KEY_VICTORY_TITLE_2000_ECONOMY",
+]
+
+for iCiv, goals in dGoals2000.items():
+	for index, goal in enumerate(goals):
+		if index < len(lGoalTitles2000):
+			goal.options["title_key"] = lGoalTitles2000[index]
+
+
+# Every one of the 99 entries in WONDER_ORIGINAL_BUILDERS predates 2000, so expireWonders would
+# mark all of them created - including the ten religious shrines, which are an income mechanic
+# rather than a monument. The religions are already founded and spread across 271 cities on this
+# map, so their shrines have to stay buildable or that income is unobtainable for the whole game.
+# Itsukushima is deliberately absent: it is an actual historical building and should stay expired.
+lUnexpiredWonders2000 = [
+	iJewishShrine, iCatholicShrine, iOrthodoxShrine, iProtestantShrine, iIslamicShrine,
+	iBuddhistShrine, iHinduShrine, iConfucianShrine, iTaoistShrine, iZoroastrianShrine,
+]
+
+
+# By 2000 there is no terra incognita. Rather than the per-civ-group tables the earlier scenarios
+# use to model partial exploration, every group sees the whole world.
+lAllLand = lEurope + lAsia + lAfrica + lAmerica + lOceania
+
+# the water regions have no grouping list of their own; they occupy a contiguous block of ids
+lAllWater = range(100, 100 + iNumWaterRegions)
+
+tKnownWorld = Revealed(
+	lLandRegions = lAllLand,
+	lCoastRegions = lAllLand,
+	lSeaRegions = lAllWater,
+)
+
+dRevealed2000 = dict((iCivGroup, tKnownWorld) for iCivGroup in range(iNumCivGroups))
+
+
 scenario2000AD = Scenario(
 	iStartYear = 2000,
 	fileName = "RFC_2000AD",
@@ -761,6 +808,9 @@ scenario2000AD = Scenario(
 	lCivilizations = lCivilizations,
 
 	iCultureTurns = 150,
+
+	lUnexpiredWonders = lUnexpiredWonders2000,
+	dRevealed = dRevealed2000,
 
 	dGoals = dGoals2000,
 	updateData = updateData,

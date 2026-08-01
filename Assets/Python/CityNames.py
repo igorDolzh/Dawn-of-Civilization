@@ -239,7 +239,11 @@ def setupScenario():
 			"Teotihuacan": "Tenochtitlan",
 		}
 	
-	elif scenario() == i1815AD:
+	# 2000 shares the 1815 relocations: every one of them had already happened by then. Only the
+	# renames differ, and they are overridden below. Previously 2000 fell out of this chain
+	# entirely and reached a bare `pass` after the dicts had already been applied, so a game
+	# started in 2000 founded cities under their 3000 BC names.
+	elif scenario() in (i1815AD, i2000AD):
 		dRelocated = {
 			"Ayutthaya": "Bangkok",
 			"Birnin Kebbi": "Sakkwato",
@@ -276,12 +280,17 @@ def setupScenario():
 			"Ra-Kedet": "Alexandreia",
 			"Teotihuacan": "Tenochtitlan",
 		}
-	
+
+		# the same places, under the names they carry in 2000
+		if scenario() == i2000AD:
+			dRenamed.update({
+				"Byzantion": "Istanbul",
+				"Ra-Kedet": "Al-Iskandariyah",
+				"Teotihuacan": u"Ciudad de México",
+			})
+
 	data.dRelocatedCities.update(dRelocated)
 	data.dRenamedCities.update(dRenamed)
-	
-	if scenario() == i2000AD:
-		pass
 
 
 

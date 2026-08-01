@@ -192,6 +192,9 @@ ERA_START_DATES = {
 	iIndustrial: 1800,
 	iGlobal: 1920,
 	iDigital: 1980,
+	# Consts declares eight eras; without this entry ERA_START_DATES.get(iSynthetic) returns None,
+	# and the max() calls below silently keep the other operand instead of raising
+	iSynthetic: 2050,
 }
 
 WONDER_ORIGINAL_BUILDERS = {

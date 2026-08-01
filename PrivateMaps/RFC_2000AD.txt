@@ -11,6 +11,18 @@ EndMap
 BeginPlot
 	x=16,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MEXICO
 		CityName=Tlachco
@@ -31,6 +43,18 @@ EndPlot
 BeginPlot
 	x=16,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MEXICO
 		CityName=Tzintzuntzan
@@ -40,7 +64,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_MEXICO, Culture=100
@@ -51,6 +74,18 @@ EndPlot
 BeginPlot
 	x=17,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MEXICO
 		CityName=Tepecuacuilco
@@ -71,16 +106,28 @@ EndPlot
 BeginPlot
 	x=17,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MEXICO
 		CityName=Teotihuacan
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_MEXICO, Culture=100
@@ -91,6 +138,18 @@ EndPlot
 BeginPlot
 	x=18,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MEXICO
 		CityName=Cuauhnahuac
@@ -100,7 +159,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_MEXICO, Culture=100
@@ -111,6 +169,18 @@ EndPlot
 BeginPlot
 	x=18,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MEXICO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MEXICO
 		CityName=Teayo
@@ -131,6 +201,18 @@ EndPlot
 BeginPlot
 	x=26,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Lexington
@@ -140,7 +222,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -153,6 +234,18 @@ EndPlot
 BeginPlot
 	x=27,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Akron
@@ -162,7 +255,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -175,6 +267,18 @@ EndPlot
 BeginPlot
 	x=27,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=North Bay
@@ -197,6 +301,18 @@ EndPlot
 BeginPlot
 	x=28,y=33
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Males
@@ -217,6 +333,18 @@ EndPlot
 BeginPlot
 	x=28,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Riosucio
@@ -237,6 +365,18 @@ EndPlot
 BeginPlot
 	x=28,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Richmond
@@ -259,6 +399,18 @@ EndPlot
 BeginPlot
 	x=28,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Morgantown
@@ -268,7 +420,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -281,6 +432,18 @@ EndPlot
 BeginPlot
 	x=28,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Erie
@@ -303,6 +466,18 @@ EndPlot
 BeginPlot
 	x=29,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INCA
 		CityName=Willkawaman
@@ -322,6 +497,18 @@ EndPlot
 BeginPlot
 	x=29,y=35
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Medellín
@@ -331,7 +518,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_COLOMBIA, Culture=100
@@ -342,6 +528,18 @@ EndPlot
 BeginPlot
 	x=29,y=37
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Cartagena de Indias
@@ -362,9 +560,22 @@ EndPlot
 BeginPlot
 	x=29,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Washington
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -384,6 +595,18 @@ EndPlot
 BeginPlot
 	x=29,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Allentown
@@ -393,7 +616,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -406,6 +628,18 @@ EndPlot
 BeginPlot
 	x=29,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Petawawa
@@ -415,7 +649,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -428,6 +661,18 @@ EndPlot
 BeginPlot
 	x=30,y=32
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Florencia
@@ -437,7 +682,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_COLOMBIA, Culture=100
@@ -448,16 +692,28 @@ EndPlot
 BeginPlot
 	x=30,y=34
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Bogotá
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_COLOMBIA, Culture=100
@@ -468,6 +724,18 @@ EndPlot
 BeginPlot
 	x=30,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Bucaramanga
@@ -477,7 +745,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_COLOMBIA, Culture=100
@@ -488,6 +755,18 @@ EndPlot
 BeginPlot
 	x=30,y=38
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=Riohacha
@@ -508,6 +787,18 @@ EndPlot
 BeginPlot
 	x=30,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AMERICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AMERICA
 		CityName=Atlantic City
@@ -530,6 +821,18 @@ EndPlot
 BeginPlot
 	x=30,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Bytown
@@ -552,6 +855,18 @@ EndPlot
 BeginPlot
 	x=30,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Mont-Laurier
@@ -561,7 +876,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -574,6 +888,18 @@ EndPlot
 BeginPlot
 	x=31,y=22
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INCA
 		CityName=Ariqipaya
@@ -593,16 +919,28 @@ EndPlot
 BeginPlot
 	x=31,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INCA
 		CityName=Qusqu
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_INCA, Culture=100
 		EndCulture
@@ -612,6 +950,18 @@ EndPlot
 BeginPlot
 	x=31,y=33
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=San José del Guaviare
@@ -621,7 +971,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_COLOMBIA, Culture=100
@@ -632,9 +981,22 @@ EndPlot
 BeginPlot
 	x=31,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAITI
 		CityName=Port-au-Prince
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -650,6 +1012,18 @@ EndPlot
 BeginPlot
 	x=31,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Burlington
@@ -659,7 +1033,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -672,16 +1045,28 @@ EndPlot
 BeginPlot
 	x=31,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Montréal
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -694,6 +1079,18 @@ EndPlot
 BeginPlot
 	x=31,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Chibougamau
@@ -703,7 +1100,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -716,6 +1112,18 @@ EndPlot
 BeginPlot
 	x=32,y=23
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INCA
 		CityName=Hatunqulla
@@ -735,6 +1143,18 @@ EndPlot
 BeginPlot
 	x=32,y=34
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_COLOMBIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_COLOMBIA
 		CityName=San Martín de los Llanos Orientales
@@ -744,7 +1164,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_COLOMBIA, Culture=100
@@ -755,6 +1174,18 @@ EndPlot
 BeginPlot
 	x=32,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAITI
 		CityName=Santiago de los Caballeros
@@ -773,6 +1204,18 @@ EndPlot
 BeginPlot
 	x=32,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Sherbrooke
@@ -782,7 +1225,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -795,6 +1237,18 @@ EndPlot
 BeginPlot
 	x=32,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Shawinigan
@@ -804,7 +1258,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -817,6 +1270,18 @@ EndPlot
 BeginPlot
 	x=33,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAITI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HAITI
 		CityName=Santo Domingo
@@ -835,6 +1300,18 @@ EndPlot
 BeginPlot
 	x=33,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CANADA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CANADA
 		CityName=Saint-Georges
@@ -844,7 +1321,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -857,6 +1333,18 @@ EndPlot
 BeginPlot
 	x=36,y=13
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ARGENTINA
 		CityName=Villa Mercedes
@@ -866,7 +1354,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_ARGENTINA, Culture=100
@@ -877,6 +1364,18 @@ EndPlot
 BeginPlot
 	x=37,y=14
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ARGENTINA
 		CityName=Rosario
@@ -886,7 +1385,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_ARGENTINA, Culture=100
@@ -897,9 +1395,22 @@ EndPlot
 BeginPlot
 	x=38,y=13
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ARGENTINA
 		CityName=Buenos Aires
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -917,6 +1428,18 @@ EndPlot
 BeginPlot
 	x=38,y=15
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ARGENTINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ARGENTINA
 		CityName=Paraná
@@ -926,7 +1449,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_ARGENTINA, Culture=100
@@ -937,6 +1459,18 @@ EndPlot
 BeginPlot
 	x=42,y=20
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Castro
@@ -946,7 +1480,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BRAZIL, Culture=100
@@ -957,6 +1490,18 @@ EndPlot
 BeginPlot
 	x=42,y=22
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Paranaíba
@@ -966,7 +1511,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BRAZIL, Culture=100
@@ -977,6 +1521,18 @@ EndPlot
 BeginPlot
 	x=43,y=19
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Curitiba
@@ -997,6 +1553,18 @@ EndPlot
 BeginPlot
 	x=43,y=21
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Bauru
@@ -1006,7 +1574,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BRAZIL, Culture=100
@@ -1017,6 +1584,18 @@ EndPlot
 BeginPlot
 	x=43,y=23
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Uberaba
@@ -1026,7 +1605,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BRAZIL, Culture=100
@@ -1037,9 +1615,22 @@ EndPlot
 BeginPlot
 	x=44,y=20
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=São Paulo
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -1057,6 +1648,18 @@ EndPlot
 BeginPlot
 	x=44,y=22
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Ribeirão Preto
@@ -1066,7 +1669,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BRAZIL, Culture=100
@@ -1077,6 +1679,18 @@ EndPlot
 BeginPlot
 	x=44,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=Paracatu
@@ -1086,7 +1700,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_BRAZIL, Culture=100
@@ -1097,6 +1710,18 @@ EndPlot
 BeginPlot
 	x=45,y=21
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BRAZIL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BRAZIL
 		CityName=São José dos Campos
@@ -1117,9 +1742,22 @@ EndPlot
 BeginPlot
 	x=54,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Lisboa
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -1137,6 +1775,18 @@ EndPlot
 BeginPlot
 	x=54,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Porto
@@ -1157,6 +1807,18 @@ EndPlot
 BeginPlot
 	x=55,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Walbah
@@ -1175,6 +1837,18 @@ EndPlot
 BeginPlot
 	x=55,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Castelo Branco
@@ -1184,7 +1858,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=100
@@ -1195,6 +1868,18 @@ EndPlot
 BeginPlot
 	x=56,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Gadir
@@ -1213,6 +1898,18 @@ EndPlot
 BeginPlot
 	x=56,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Batalyaws
@@ -1231,6 +1928,18 @@ EndPlot
 BeginPlot
 	x=56,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=León
@@ -1240,7 +1949,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1253,6 +1961,18 @@ EndPlot
 BeginPlot
 	x=56,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Cardiff
@@ -1275,6 +1995,18 @@ EndPlot
 BeginPlot
 	x=57,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Aghmat
@@ -1293,6 +2025,18 @@ EndPlot
 BeginPlot
 	x=57,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Tinga
@@ -1311,9 +2055,22 @@ EndPlot
 BeginPlot
 	x=57,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Qurtubah
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -1329,19 +2086,32 @@ EndPlot
 BeginPlot
 	x=57,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Valladolid
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
+		HolyCityReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=100
 		EndCulture
@@ -1351,6 +2121,18 @@ EndPlot
 BeginPlot
 	x=57,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santander
@@ -1373,6 +2155,18 @@ EndPlot
 BeginPlot
 	x=57,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Winchester
@@ -1395,6 +2189,18 @@ EndPlot
 BeginPlot
 	x=57,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Derby
@@ -1417,6 +2223,18 @@ EndPlot
 BeginPlot
 	x=58,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Fizaz
@@ -1435,6 +2253,18 @@ EndPlot
 BeginPlot
 	x=58,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Al-Mariyya
@@ -1453,6 +2283,18 @@ EndPlot
 BeginPlot
 	x=58,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Cuenca
@@ -1462,7 +2304,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1475,6 +2316,18 @@ EndPlot
 BeginPlot
 	x=58,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Logroño
@@ -1484,7 +2337,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1497,9 +2349,22 @@ EndPlot
 BeginPlot
 	x=58,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=London
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -1510,6 +2375,7 @@ BeginPlot
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
+		HolyCityReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
@@ -1519,6 +2385,18 @@ EndPlot
 BeginPlot
 	x=58,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Lindon
@@ -1541,6 +2419,18 @@ EndPlot
 BeginPlot
 	x=59,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MOORS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MOORS
 		CityName=Mursiyya
@@ -1559,6 +2449,18 @@ EndPlot
 BeginPlot
 	x=59,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Zaragoza
@@ -1568,7 +2470,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1581,6 +2482,18 @@ EndPlot
 BeginPlot
 	x=59,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Bordeaux
@@ -1601,6 +2514,18 @@ EndPlot
 BeginPlot
 	x=59,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Roscella
@@ -1623,6 +2548,18 @@ EndPlot
 BeginPlot
 	x=59,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Le Mans
@@ -1632,7 +2569,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1645,6 +2581,18 @@ EndPlot
 BeginPlot
 	x=60,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ALGERIA
 		CityName=Shigan
@@ -1664,6 +2612,18 @@ EndPlot
 BeginPlot
 	x=60,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Angoulême
@@ -1673,7 +2633,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_CELT, Culture=100
@@ -1684,6 +2643,18 @@ EndPlot
 BeginPlot
 	x=60,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Tours
@@ -1693,7 +2664,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1706,6 +2676,18 @@ EndPlot
 BeginPlot
 	x=60,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Rouen
@@ -1728,6 +2710,18 @@ EndPlot
 BeginPlot
 	x=61,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ALGERIA
 		CityName=Muaskar
@@ -1737,7 +2731,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_ALGERIA, Culture=100
 		EndCulture
@@ -1747,6 +2740,18 @@ EndPlot
 BeginPlot
 	x=61,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Cahors
@@ -1756,7 +2761,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_CELT, Culture=100
@@ -1767,6 +2771,18 @@ EndPlot
 BeginPlot
 	x=61,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Bourges
@@ -1776,7 +2792,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_CELT, Culture=100
@@ -1787,16 +2802,28 @@ EndPlot
 BeginPlot
 	x=61,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Paris
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1809,6 +2836,18 @@ EndPlot
 BeginPlot
 	x=61,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BELGIUM
 		CityName=Amiens
@@ -1831,6 +2870,18 @@ EndPlot
 BeginPlot
 	x=62,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ALGERIA
 		CityName=Lbayed
@@ -1840,7 +2891,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_ALGERIA, Culture=100
 		EndCulture
@@ -1850,9 +2900,22 @@ EndPlot
 BeginPlot
 	x=62,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ALGERIA
 		CityName=Al-Asnam
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -1869,16 +2932,28 @@ EndPlot
 BeginPlot
 	x=62,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Clermont
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_CELT, Culture=100
@@ -1889,6 +2964,18 @@ EndPlot
 BeginPlot
 	x=62,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Auxerre
@@ -1898,7 +2985,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_CELT, Culture=100
@@ -1909,6 +2995,18 @@ EndPlot
 BeginPlot
 	x=62,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BELGIUM
 		CityName=Reims
@@ -1918,7 +3016,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -1931,9 +3028,22 @@ EndPlot
 BeginPlot
 	x=62,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Amsterdam
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -1953,6 +3063,18 @@ EndPlot
 BeginPlot
 	x=63,y=32
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Hulagan
@@ -1972,6 +3094,18 @@ EndPlot
 BeginPlot
 	x=63,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ALGERIA
 		CityName=Gelfa
@@ -1981,7 +3115,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_ALGERIA, Culture=100
 		EndCulture
@@ -1991,6 +3124,18 @@ EndPlot
 BeginPlot
 	x=63,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ALGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ALGERIA
 		CityName=Yksm
@@ -2010,6 +3155,18 @@ EndPlot
 BeginPlot
 	x=63,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CELT
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CELT
 		CityName=Avignon
@@ -2019,7 +3176,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_CELT, Culture=100
@@ -2030,6 +3186,18 @@ EndPlot
 BeginPlot
 	x=63,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Nancy
@@ -2039,7 +3207,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -2052,16 +3219,28 @@ EndPlot
 BeginPlot
 	x=63,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BELGIUM
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BELGIUM
 		CityName=Bruxelles
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -2074,6 +3253,18 @@ EndPlot
 BeginPlot
 	x=63,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Nijmegen
@@ -2083,7 +3274,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2096,6 +3286,18 @@ EndPlot
 BeginPlot
 	x=63,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Groningen
@@ -2118,6 +3320,18 @@ EndPlot
 BeginPlot
 	x=64,y=33
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Kana
@@ -2127,7 +3341,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_NIGERIA, Culture=100
 		EndCulture
@@ -2137,6 +3350,18 @@ EndPlot
 BeginPlot
 	x=64,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWITZERLAND
 		CityName=Genève
@@ -2146,7 +3371,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2159,6 +3383,18 @@ EndPlot
 BeginPlot
 	x=64,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Trier
@@ -2168,7 +3404,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -2181,9 +3416,22 @@ EndPlot
 BeginPlot
 	x=65,y=32
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Èkó
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2200,6 +3448,18 @@ EndPlot
 BeginPlot
 	x=65,y=34
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Kontagora
@@ -2209,7 +3469,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_NIGERIA, Culture=100
 		EndCulture
@@ -2219,6 +3478,18 @@ EndPlot
 BeginPlot
 	x=65,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWITZERLAND
 		CityName=Augusta Taurinorum
@@ -2228,7 +3499,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2241,16 +3511,28 @@ EndPlot
 BeginPlot
 	x=65,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWITZERLAND
 		CityName=Bern
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2263,16 +3545,28 @@ EndPlot
 BeginPlot
 	x=65,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Köln
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2282,6 +3576,18 @@ EndPlot
 BeginPlot
 	x=65,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Münster
@@ -2291,7 +3597,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2301,6 +3606,18 @@ EndPlot
 BeginPlot
 	x=65,y=73
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Kaupanger
@@ -2321,6 +3638,18 @@ EndPlot
 BeginPlot
 	x=66,y=31
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Warri
@@ -2340,6 +3669,18 @@ EndPlot
 BeginPlot
 	x=66,y=33
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NIGERIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NIGERIA
 		CityName=Bida
@@ -2349,7 +3690,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_NIGERIA, Culture=100
 		EndCulture
@@ -2359,6 +3699,18 @@ EndPlot
 BeginPlot
 	x=66,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Genua
@@ -2381,6 +3733,18 @@ EndPlot
 BeginPlot
 	x=66,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Frankfurt
@@ -2390,7 +3754,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2400,6 +3763,18 @@ EndPlot
 BeginPlot
 	x=66,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Paderborn
@@ -2409,7 +3784,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2419,6 +3793,18 @@ EndPlot
 BeginPlot
 	x=66,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Hamburg
@@ -2441,6 +3827,18 @@ EndPlot
 BeginPlot
 	x=66,y=71
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Oddernes
@@ -2461,9 +3859,22 @@ EndPlot
 BeginPlot
 	x=67,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Florentia
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2483,6 +3894,18 @@ EndPlot
 BeginPlot
 	x=67,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Brixia
@@ -2492,7 +3915,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -2505,6 +3927,18 @@ EndPlot
 BeginPlot
 	x=67,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWITZERLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWITZERLAND
 		CityName=Augsburg
@@ -2514,7 +3948,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2527,6 +3960,18 @@ EndPlot
 BeginPlot
 	x=67,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Erfurt
@@ -2536,7 +3981,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2546,6 +3990,18 @@ EndPlot
 BeginPlot
 	x=67,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Lüneburg
@@ -2555,7 +4011,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2568,6 +4023,18 @@ EndPlot
 BeginPlot
 	x=67,y=69
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Aalborg
@@ -2588,6 +4055,18 @@ EndPlot
 BeginPlot
 	x=67,y=72
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Tønsberg
@@ -2608,6 +4087,18 @@ EndPlot
 BeginPlot
 	x=67,y=74
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Lillehammer
@@ -2628,6 +4119,18 @@ EndPlot
 BeginPlot
 	x=68,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Perusia
@@ -2650,6 +4153,18 @@ EndPlot
 BeginPlot
 	x=68,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Bononia
@@ -2659,7 +4174,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CATHOLICISM
@@ -2672,6 +4186,18 @@ EndPlot
 BeginPlot
 	x=68,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Nürnberg
@@ -2681,7 +4207,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2691,6 +4216,18 @@ EndPlot
 BeginPlot
 	x=68,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HOLY_ROMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HOLY_ROMAN
 		CityName=Magdeburg
@@ -2700,7 +4237,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_HOLY_ROMAN, Culture=100
 		EndCulture
@@ -2710,6 +4246,18 @@ EndPlot
 BeginPlot
 	x=68,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Roskilde
@@ -2730,6 +4278,18 @@ EndPlot
 BeginPlot
 	x=68,y=73
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Hamar
@@ -2739,7 +4299,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=100
@@ -2750,9 +4309,22 @@ EndPlot
 BeginPlot
 	x=68,y=75
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Niðaróss
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2770,6 +4342,18 @@ EndPlot
 BeginPlot
 	x=69,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ITALY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ITALY
 		CityName=Ariminum
@@ -2792,16 +4376,28 @@ EndPlot
 BeginPlot
 	x=69,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Brandenburg
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2814,6 +4410,18 @@ EndPlot
 BeginPlot
 	x=69,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Stralsund
@@ -2836,6 +4444,18 @@ EndPlot
 BeginPlot
 	x=70,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Dresden
@@ -2845,7 +4465,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2858,6 +4477,18 @@ EndPlot
 BeginPlot
 	x=70,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Neubrandenburg
@@ -2867,7 +4498,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2880,9 +4510,22 @@ EndPlot
 BeginPlot
 	x=71,y=25
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CONGO
 		CityName=M'banza-Kongo
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -2899,6 +4542,18 @@ EndPlot
 BeginPlot
 	x=71,y=27
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CONGO
 		CityName=Kakongo
@@ -2918,6 +4573,18 @@ EndPlot
 BeginPlot
 	x=71,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Glogów
@@ -2927,7 +4594,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -2940,6 +4606,18 @@ EndPlot
 BeginPlot
 	x=71,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Kolberg
@@ -2962,6 +4640,18 @@ EndPlot
 BeginPlot
 	x=71,y=71
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWEDEN
 		CityName=Örebro
@@ -2984,9 +4674,22 @@ EndPlot
 BeginPlot
 	x=72,y=11
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SOUTH_AFRICA
 		CityName=Kaapstad
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3004,6 +4707,18 @@ EndPlot
 BeginPlot
 	x=72,y=13
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SOUTH_AFRICA
 		CityName=O'okiep
@@ -3024,6 +4739,18 @@ EndPlot
 BeginPlot
 	x=72,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CONGO
 		CityName=Mbwila
@@ -3033,7 +4760,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_CONGO, Culture=100
 		EndCulture
@@ -3043,6 +4769,18 @@ EndPlot
 BeginPlot
 	x=72,y=26
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CONGO
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CONGO
 		CityName=Ntamo
@@ -3052,7 +4790,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_CONGO, Culture=100
 		EndCulture
@@ -3062,6 +4799,18 @@ EndPlot
 BeginPlot
 	x=72,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HUNGARY
 		CityName=Zagreb
@@ -3071,7 +4820,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_HUNGARY, Culture=100
@@ -3082,6 +4830,18 @@ EndPlot
 BeginPlot
 	x=72,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HUNGARY
 		CityName=Györ
@@ -3091,7 +4851,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_HUNGARY, Culture=100
@@ -3102,6 +4861,18 @@ EndPlot
 BeginPlot
 	x=72,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_POLAND
 		CityName=Ostrava
@@ -3111,7 +4882,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_POLAND, Culture=100
@@ -3122,6 +4892,18 @@ EndPlot
 BeginPlot
 	x=72,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Gniezno
@@ -3131,7 +4913,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -3144,6 +4925,18 @@ EndPlot
 BeginPlot
 	x=72,y=70
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWEDEN
 		CityName=Norrköping
@@ -3166,6 +4959,18 @@ EndPlot
 BeginPlot
 	x=72,y=72
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWEDEN
 		CityName=Uppsala
@@ -3188,6 +4993,18 @@ EndPlot
 BeginPlot
 	x=73,y=12
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SOUTH_AFRICA
 		CityName=Vanrhynsdorp
@@ -3208,16 +5025,28 @@ EndPlot
 BeginPlot
 	x=73,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HUNGARY
 		CityName=Pécs
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_HUNGARY, Culture=100
@@ -3228,6 +5057,18 @@ EndPlot
 BeginPlot
 	x=73,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_POLAND
 		CityName=Opole
@@ -3237,7 +5078,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_POLAND, Culture=100
@@ -3248,6 +5088,18 @@ EndPlot
 BeginPlot
 	x=73,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Danzig
@@ -3270,9 +5122,22 @@ EndPlot
 BeginPlot
 	x=73,y=71
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWEDEN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWEDEN
 		CityName=Birka
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3292,6 +5157,18 @@ EndPlot
 BeginPlot
 	x=74,y=11
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SOUTH_AFRICA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SOUTH_AFRICA
 		CityName=Oudtshoorn
@@ -3312,6 +5189,18 @@ EndPlot
 BeginPlot
 	x=74,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Epidamnos
@@ -3332,6 +5221,18 @@ EndPlot
 BeginPlot
 	x=74,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HUNGARY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_HUNGARY
 		CityName=Petrovaradin
@@ -3341,7 +5242,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_HUNGARY, Culture=100
@@ -3352,16 +5252,28 @@ EndPlot
 BeginPlot
 	x=74,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_POLAND
 		CityName=Kraków
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_POLAND, Culture=100
@@ -3372,6 +5284,18 @@ EndPlot
 BeginPlot
 	x=74,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_POLAND
 		CityName=Wloclawek
@@ -3381,7 +5305,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_POLAND, Culture=100
@@ -3392,6 +5315,18 @@ EndPlot
 BeginPlot
 	x=75,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Korinthos
@@ -3412,6 +5347,18 @@ EndPlot
 BeginPlot
 	x=75,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Larissa
@@ -3432,6 +5379,18 @@ EndPlot
 BeginPlot
 	x=75,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_POLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_POLAND
 		CityName=Sandomierz
@@ -3441,7 +5400,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_POLAND, Culture=100
@@ -3452,6 +5410,18 @@ EndPlot
 BeginPlot
 	x=75,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Plock
@@ -3461,7 +5431,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -3474,9 +5443,22 @@ EndPlot
 BeginPlot
 	x=76,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Athenai
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3494,6 +5476,18 @@ EndPlot
 BeginPlot
 	x=76,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BULGARIA
 		CityName=Târgovishte
@@ -3503,7 +5497,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_BULGARIA, Culture=100
@@ -3514,6 +5507,18 @@ EndPlot
 BeginPlot
 	x=76,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GERMANY
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GERMANY
 		CityName=Warszawa
@@ -3523,7 +5528,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -3536,6 +5540,18 @@ EndPlot
 BeginPlot
 	x=77,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Khem
@@ -3554,6 +5570,18 @@ EndPlot
 BeginPlot
 	x=77,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BULGARIA
 		CityName=Tarnovo
@@ -3563,7 +5591,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_BULGARIA, Culture=100
@@ -3574,6 +5601,18 @@ EndPlot
 BeginPlot
 	x=78,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Khemenu
@@ -3592,6 +5631,18 @@ EndPlot
 BeginPlot
 	x=78,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Zau
@@ -3610,9 +5661,22 @@ EndPlot
 BeginPlot
 	x=78,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BULGARIA
 		CityName=Constanta
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3630,6 +5694,18 @@ EndPlot
 BeginPlot
 	x=79,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Abdju
@@ -3648,9 +5724,22 @@ EndPlot
 BeginPlot
 	x=79,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Inebu-hedj
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3666,6 +5755,18 @@ EndPlot
 BeginPlot
 	x=79,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Djedet
@@ -3684,6 +5785,18 @@ EndPlot
 BeginPlot
 	x=79,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Ephesos
@@ -3704,9 +5817,22 @@ EndPlot
 BeginPlot
 	x=79,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Byzantion
+		BuildingType=BUILDING_PALACE
 		CityPopulation=9
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -3724,6 +5850,18 @@ EndPlot
 BeginPlot
 	x=79,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BULGARIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BULGARIA
 		CityName=Chilia
@@ -3744,6 +5882,18 @@ EndPlot
 BeginPlot
 	x=79,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Rivne
@@ -3753,7 +5903,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_UKRAINE, Culture=100
 		EndCulture
@@ -3763,6 +5912,18 @@ EndPlot
 BeginPlot
 	x=80,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Tepy-hewet
@@ -3781,6 +5942,18 @@ EndPlot
 BeginPlot
 	x=80,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MISR
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MISR
 		CityName=Per-Amun
@@ -3799,6 +5972,18 @@ EndPlot
 BeginPlot
 	x=80,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Halikarnassos
@@ -3819,6 +6004,18 @@ EndPlot
 BeginPlot
 	x=80,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GREECE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GREECE
 		CityName=Nikaia
@@ -3839,6 +6036,18 @@ EndPlot
 BeginPlot
 	x=80,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Vinnytsia
@@ -3848,7 +6057,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_UKRAINE, Culture=100
 		EndCulture
@@ -3858,6 +6066,18 @@ EndPlot
 BeginPlot
 	x=80,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Mozyr
@@ -3867,7 +6087,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_UKRAINE, Culture=100
 		EndCulture
@@ -3877,6 +6096,18 @@ EndPlot
 BeginPlot
 	x=81,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Amorion
@@ -3886,8 +6117,8 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
+		HolyCityReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_OTTOMAN, Culture=100
 		EndCulture
@@ -3897,6 +6128,18 @@ EndPlot
 BeginPlot
 	x=81,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Herakleia
@@ -3917,6 +6160,18 @@ EndPlot
 BeginPlot
 	x=81,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Odesa
@@ -3936,16 +6191,28 @@ EndPlot
 BeginPlot
 	x=81,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Kyiv
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_UKRAINE, Culture=100
 		EndCulture
@@ -3955,6 +6222,18 @@ EndPlot
 BeginPlot
 	x=81,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Gomel
@@ -3964,7 +6243,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_UKRAINE, Culture=100
 		EndCulture
@@ -3974,6 +6252,18 @@ EndPlot
 BeginPlot
 	x=81,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Vitebsk
@@ -3983,7 +6273,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -3994,6 +6283,18 @@ EndPlot
 BeginPlot
 	x=82,y=35
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ETHIOPIA
 		CityName=Gorgora
@@ -4012,6 +6313,18 @@ EndPlot
 BeginPlot
 	x=82,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Silifke
@@ -4032,6 +6345,18 @@ EndPlot
 BeginPlot
 	x=82,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Gordion
@@ -4041,7 +6366,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_OTTOMAN, Culture=100
@@ -4052,6 +6376,18 @@ EndPlot
 BeginPlot
 	x=82,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Amastris
@@ -4072,6 +6408,18 @@ EndPlot
 BeginPlot
 	x=82,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UKRAINE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UKRAINE
 		CityName=Cherkasy
@@ -4081,7 +6429,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_UKRAINE, Culture=100
 		EndCulture
@@ -4091,6 +6438,18 @@ EndPlot
 BeginPlot
 	x=82,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Roslavl
@@ -4100,7 +6459,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4111,6 +6469,18 @@ EndPlot
 BeginPlot
 	x=82,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Toropets
@@ -4120,7 +6490,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4131,6 +6500,18 @@ EndPlot
 BeginPlot
 	x=83,y=20
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWAHILI
 		CityName=Whampula
@@ -4148,6 +6529,18 @@ EndPlot
 BeginPlot
 	x=83,y=22
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWAHILI
 		CityName=Masasi
@@ -4165,6 +6558,18 @@ EndPlot
 BeginPlot
 	x=83,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWAHILI
 		CityName=Mzizima
@@ -4182,6 +6587,18 @@ EndPlot
 BeginPlot
 	x=83,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ETHIOPIA
 		CityName=Akordat
@@ -4200,6 +6617,18 @@ EndPlot
 BeginPlot
 	x=83,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ISRAEL
 		CityName=Gazza
@@ -4222,6 +6651,18 @@ EndPlot
 BeginPlot
 	x=83,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_OTTOMAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_OTTOMAN
 		CityName=Tuwanuwa
@@ -4231,7 +6672,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_OTTOMAN, Culture=100
@@ -4242,6 +6682,18 @@ EndPlot
 BeginPlot
 	x=83,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Vyazma
@@ -4251,7 +6703,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4262,6 +6713,18 @@ EndPlot
 BeginPlot
 	x=84,y=21
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWAHILI
 		CityName=Mikindani
@@ -4279,9 +6742,22 @@ EndPlot
 BeginPlot
 	x=84,y=23
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWAHILI
 		CityName=Kilwa
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -4296,6 +6772,18 @@ EndPlot
 BeginPlot
 	x=84,y=33
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ETHIOPIA
 		CityName=Roha
@@ -4314,9 +6802,22 @@ EndPlot
 BeginPlot
 	x=84,y=35
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ETHIOPIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ETHIOPIA
 		CityName=Aksum
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -4332,9 +6833,22 @@ EndPlot
 BeginPlot
 	x=84,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ISRAEL
 		CityName=Yerushalayim
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -4345,6 +6859,7 @@ BeginPlot
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_JUDAISM
+		HolyCityReligionType=RELIGION_JUDAISM
 		BeginCulture
 			Civilization=CIVILIZATION_ISRAEL, Culture=100
 		EndCulture
@@ -4354,6 +6869,18 @@ EndPlot
 BeginPlot
 	x=84,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Kaluga
@@ -4363,7 +6890,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4374,6 +6900,18 @@ EndPlot
 BeginPlot
 	x=84,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Tver
@@ -4383,7 +6921,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4394,6 +6931,18 @@ EndPlot
 BeginPlot
 	x=85,y=25
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SWAHILI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SWAHILI
 		CityName=Zanzibar
@@ -4411,6 +6960,18 @@ EndPlot
 BeginPlot
 	x=85,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ISRAEL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ISRAEL
 		CityName=Sela
@@ -4420,7 +6981,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_JUDAISM
@@ -4433,6 +6993,18 @@ EndPlot
 BeginPlot
 	x=85,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Yelets
@@ -4442,7 +7014,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4453,17 +7024,30 @@ EndPlot
 BeginPlot
 	x=85,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Moskva
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
+		HolyCityReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
 		EndCulture
@@ -4473,6 +7057,18 @@ EndPlot
 BeginPlot
 	x=85,y=68
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Ust-Sheksna
@@ -4482,7 +7078,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4493,6 +7088,18 @@ EndPlot
 BeginPlot
 	x=86,y=65
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Pereslavl
@@ -4502,7 +7109,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4513,6 +7119,18 @@ EndPlot
 BeginPlot
 	x=86,y=67
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Rostov
@@ -4522,7 +7140,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4533,6 +7150,18 @@ EndPlot
 BeginPlot
 	x=87,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SAUDI
 		CityName=Afif
@@ -4542,7 +7171,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_SAUDI, Culture=100
@@ -4553,6 +7181,18 @@ EndPlot
 BeginPlot
 	x=87,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAQ
 		CityName=Mari
@@ -4562,7 +7202,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_IRAQ, Culture=100
 		EndCulture
@@ -4572,6 +7211,18 @@ EndPlot
 BeginPlot
 	x=87,y=66
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Vladimir
@@ -4581,7 +7232,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ORTHODOXY
 		BeginCulture
 			Civilization=CIVILIZATION_RUSSIA, Culture=100
@@ -4592,6 +7242,18 @@ EndPlot
 BeginPlot
 	x=88,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SAUDI
 		CityName=Halaban
@@ -4601,7 +7263,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_SAUDI, Culture=100
@@ -4612,6 +7273,18 @@ EndPlot
 BeginPlot
 	x=88,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SAUDI
 		CityName=Buraydah
@@ -4621,7 +7294,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_SAUDI, Culture=100
@@ -4632,6 +7304,18 @@ EndPlot
 BeginPlot
 	x=88,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAQ
 		CityName=Barsip
@@ -4641,7 +7325,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_IRAQ, Culture=100
 		EndCulture
@@ -4651,6 +7334,18 @@ EndPlot
 BeginPlot
 	x=88,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAQ
 		CityName=Dur-Kurigalzu
@@ -4660,7 +7355,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_IRAQ, Culture=100
 		EndCulture
@@ -4670,6 +7364,18 @@ EndPlot
 BeginPlot
 	x=88,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GEORGIA
 		CityName=Sukhumi
@@ -4688,6 +7394,18 @@ EndPlot
 BeginPlot
 	x=89,y=39
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SAUDI
 		CityName=Al-Aqiq
@@ -4697,7 +7415,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_SAUDI, Culture=100
@@ -4708,16 +7425,28 @@ EndPlot
 BeginPlot
 	x=89,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SAUDI
 		CityName=Hajr
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_SAUDI, Culture=100
@@ -4728,6 +7457,18 @@ EndPlot
 BeginPlot
 	x=89,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAQ
 		CityName=Uruk
@@ -4737,7 +7478,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_IRAQ, Culture=100
 		EndCulture
@@ -4747,16 +7487,28 @@ EndPlot
 BeginPlot
 	x=89,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAQ
 		CityName=Akkadê
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_IRAQ, Culture=100
 		EndCulture
@@ -4766,6 +7518,18 @@ EndPlot
 BeginPlot
 	x=89,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAQ
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAQ
 		CityName=Ash-shur
@@ -4785,9 +7549,22 @@ EndPlot
 BeginPlot
 	x=89,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GEORGIA
 		CityName=Mtskheta
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -4803,6 +7580,18 @@ EndPlot
 BeginPlot
 	x=90,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SAUDI
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SAUDI
 		CityName=Al-Kharj
@@ -4812,7 +7601,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_SAUDI, Culture=100
@@ -4823,6 +7611,18 @@ EndPlot
 BeginPlot
 	x=90,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_GEORGIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_GEORGIA
 		CityName=Qabala
@@ -4841,6 +7641,18 @@ EndPlot
 BeginPlot
 	x=91,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAN
 		CityName=Shapurkhast
@@ -4850,7 +7662,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_IRAN, Culture=100
@@ -4861,6 +7672,18 @@ EndPlot
 BeginPlot
 	x=92,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UAE
 		CityName=Murwab
@@ -4880,6 +7703,18 @@ EndPlot
 BeginPlot
 	x=92,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAN
 		CityName=Nahavand
@@ -4889,7 +7724,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_IRAN, Culture=100
@@ -4900,16 +7734,28 @@ EndPlot
 BeginPlot
 	x=93,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAN
 		CityName=Spahan
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_IRAN, Culture=100
@@ -4920,6 +7766,18 @@ EndPlot
 BeginPlot
 	x=93,y=50
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAN
 		CityName=Kom
@@ -4929,7 +7787,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_IRAN, Culture=100
@@ -4940,9 +7797,22 @@ EndPlot
 BeginPlot
 	x=94,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UAE
 		CityName=Julfar
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -4959,6 +7829,18 @@ EndPlot
 BeginPlot
 	x=94,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_IRAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_IRAN
 		CityName=Jandaq
@@ -4968,7 +7850,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_ISLAM
 		BeginCulture
 			Civilization=CIVILIZATION_IRAN, Culture=100
@@ -4979,6 +7860,18 @@ EndPlot
 BeginPlot
 	x=95,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_UAE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_UAE
 		CityName=Sohar
@@ -4998,6 +7891,18 @@ EndPlot
 BeginPlot
 	x=100,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Dzhezkazgan
@@ -5007,7 +7912,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_KAZAKHSTAN, Culture=100
 		EndCulture
@@ -5017,6 +7921,18 @@ EndPlot
 BeginPlot
 	x=101,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Sozaq
@@ -5026,7 +7942,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_KAZAKHSTAN, Culture=100
 		EndCulture
@@ -5036,6 +7951,18 @@ EndPlot
 BeginPlot
 	x=102,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Sayrom
@@ -5045,7 +7972,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_KAZAKHSTAN, Culture=100
 		EndCulture
@@ -5055,6 +7981,18 @@ EndPlot
 BeginPlot
 	x=102,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Temirtau
@@ -5074,6 +8012,18 @@ EndPlot
 BeginPlot
 	x=102,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Bozok
@@ -5093,6 +8043,18 @@ EndPlot
 BeginPlot
 	x=103,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MUGHALS
 		CityName=Ajodhan
@@ -5111,6 +8073,18 @@ EndPlot
 BeginPlot
 	x=103,y=58
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Taraz
@@ -5130,9 +8104,22 @@ EndPlot
 BeginPlot
 	x=103,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Saryshaghan
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5149,6 +8136,18 @@ EndPlot
 BeginPlot
 	x=103,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Karaganda
@@ -5158,7 +8157,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_KAZAKHSTAN, Culture=100
 		EndCulture
@@ -5168,6 +8166,18 @@ EndPlot
 BeginPlot
 	x=104,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MUGHALS
 		CityName=Neemrana
@@ -5186,6 +8196,18 @@ EndPlot
 BeginPlot
 	x=104,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MUGHALS
 		CityName=Satudardesh
@@ -5204,6 +8226,18 @@ EndPlot
 BeginPlot
 	x=104,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Balasagun
@@ -5223,6 +8257,18 @@ EndPlot
 BeginPlot
 	x=104,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Balkhash
@@ -5242,6 +8288,18 @@ EndPlot
 BeginPlot
 	x=104,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Ekibastuz
@@ -5251,7 +8309,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BeginCulture
 			Civilization=CIVILIZATION_KAZAKHSTAN, Culture=100
 		EndCulture
@@ -5261,9 +8318,22 @@ EndPlot
 BeginPlot
 	x=105,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MUGHALS
 		CityName=Indraprastha
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5279,6 +8349,18 @@ EndPlot
 BeginPlot
 	x=105,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MUGHALS
 		CityName=Kangra
@@ -5297,6 +8379,18 @@ EndPlot
 BeginPlot
 	x=105,y=59
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KAZAKHSTAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KAZAKHSTAN
 		CityName=Gorguz
@@ -5316,6 +8410,18 @@ EndPlot
 BeginPlot
 	x=106,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MUGHALS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MUGHALS
 		CityName=Kanyakubja
@@ -5334,6 +8440,18 @@ EndPlot
 BeginPlot
 	x=108,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INDIA
 		CityName=Ghazipur
@@ -5343,7 +8461,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_HINDUISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDIA, Culture=100
@@ -5354,6 +8471,18 @@ EndPlot
 BeginPlot
 	x=109,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INDIA
 		CityName=Sahastrarama
@@ -5363,7 +8492,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_HINDUISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDIA, Culture=100
@@ -5374,6 +8502,18 @@ EndPlot
 BeginPlot
 	x=109,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INDIA
 		CityName=Gorkha Dabar
@@ -5383,7 +8523,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_HINDUISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDIA, Culture=100
@@ -5394,6 +8533,18 @@ EndPlot
 BeginPlot
 	x=110,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INDIA
 		CityName=Pithoria
@@ -5403,7 +8554,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_HINDUISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDIA, Culture=100
@@ -5414,17 +8564,30 @@ EndPlot
 BeginPlot
 	x=110,y=45
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_INDIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_INDIA
 		CityName=Pataliputra
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_HINDUISM
+		HolyCityReligionType=RELIGION_HINDUISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDIA, Culture=100
 		EndCulture
@@ -5434,6 +8597,18 @@ EndPlot
 BeginPlot
 	x=112,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BANGLADESH
 		CityName=Chandraketugarh
@@ -5452,6 +8627,18 @@ EndPlot
 BeginPlot
 	x=112,y=44
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BANGLADESH
 		CityName=Lakshmanavati
@@ -5470,9 +8657,22 @@ EndPlot
 BeginPlot
 	x=113,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BANGLADESH
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BANGLADESH
 		CityName=Bikrampur
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5488,6 +8688,18 @@ EndPlot
 BeginPlot
 	x=116,y=41
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BURMA
 		CityName=Dhanyawadi
@@ -5506,6 +8718,18 @@ EndPlot
 BeginPlot
 	x=116,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BURMA
 		CityName=Kalaymyo
@@ -5524,6 +8748,18 @@ EndPlot
 BeginPlot
 	x=116,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Mörön
@@ -5542,6 +8778,18 @@ EndPlot
 BeginPlot
 	x=117,y=29
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MALAYS
 		CityName=Barus
@@ -5562,6 +8810,18 @@ EndPlot
 BeginPlot
 	x=117,y=40
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BURMA
 		CityName=Thaye Khittaya
@@ -5580,9 +8840,22 @@ EndPlot
 BeginPlot
 	x=117,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_BURMA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_BURMA
 		CityName=Pagan
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5598,6 +8871,18 @@ EndPlot
 BeginPlot
 	x=117,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Bayankhongor
@@ -5616,6 +8901,18 @@ EndPlot
 BeginPlot
 	x=117,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Slyudyanka
@@ -5634,6 +8931,18 @@ EndPlot
 BeginPlot
 	x=118,y=28
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MALAYS
 		CityName=Dharmasraya
@@ -5654,6 +8963,18 @@ EndPlot
 BeginPlot
 	x=118,y=34
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_THAILAND
 		CityName=Chaiya
@@ -5674,6 +8995,18 @@ EndPlot
 BeginPlot
 	x=118,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_THAILAND
 		CityName=Phetchaburi
@@ -5694,6 +9027,18 @@ EndPlot
 BeginPlot
 	x=118,y=38
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_THAILAND
 		CityName=Mywlamyine
@@ -5714,6 +9059,18 @@ EndPlot
 BeginPlot
 	x=118,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Ordu Baliq
@@ -5732,6 +9089,18 @@ EndPlot
 BeginPlot
 	x=119,y=31
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SINGAPORE
 		CityName=Beruas
@@ -5753,9 +9122,22 @@ EndPlot
 BeginPlot
 	x=119,y=37
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_THAILAND
 		CityName=Ayutthaya
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5764,6 +9146,7 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_BUDDHISM
+		HolyCityReligionType=RELIGION_BUDDHISM
 		BeginCulture
 			Civilization=CIVILIZATION_THAILAND, Culture=100
 		EndCulture
@@ -5773,6 +9156,18 @@ EndPlot
 BeginPlot
 	x=119,y=39
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_THAILAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_THAILAND
 		CityName=Phitsanulok
@@ -5782,7 +9177,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_BUDDHISM
 		BeginCulture
 			Civilization=CIVILIZATION_THAILAND, Culture=100
@@ -5793,6 +9187,18 @@ EndPlot
 BeginPlot
 	x=119,y=57
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Bayannaghur
@@ -5811,9 +9217,22 @@ EndPlot
 BeginPlot
 	x=119,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Qara Qorum
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5829,6 +9248,18 @@ EndPlot
 BeginPlot
 	x=119,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Tankhoy
@@ -5847,9 +9278,22 @@ EndPlot
 BeginPlot
 	x=120,y=27
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MALAYS
 		CityName=Palembang
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5867,6 +9311,18 @@ EndPlot
 BeginPlot
 	x=120,y=28
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SINGAPORE
 		CityName=Jambi
@@ -5888,9 +9344,22 @@ EndPlot
 BeginPlot
 	x=120,y=30
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SINGAPORE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SINGAPORE
 		CityName=Tumasik
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -5909,6 +9378,18 @@ EndPlot
 BeginPlot
 	x=120,y=32
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MALAYS
 		CityName=Terengganu
@@ -5929,6 +9410,18 @@ EndPlot
 BeginPlot
 	x=120,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KHMER
 		CityName=Chanthaburi
@@ -5947,6 +9440,18 @@ EndPlot
 BeginPlot
 	x=120,y=38
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KHMER
 		CityName=Nakhon Ratchasima
@@ -5965,6 +9470,18 @@ EndPlot
 BeginPlot
 	x=120,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_VIETNAM
 		CityName=Yen Bai
@@ -5974,7 +9491,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_VIETNAM, Culture=100
@@ -5985,6 +9501,18 @@ EndPlot
 BeginPlot
 	x=120,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Nanzheng
@@ -5994,7 +9522,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6005,6 +9532,18 @@ EndPlot
 BeginPlot
 	x=120,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Qingyang
@@ -6014,7 +9553,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6025,6 +9563,18 @@ EndPlot
 BeginPlot
 	x=120,y=62
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Maimaicheng
@@ -6043,6 +9593,18 @@ EndPlot
 BeginPlot
 	x=120,y=64
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Kabansk
@@ -6061,6 +9623,18 @@ EndPlot
 BeginPlot
 	x=121,y=26
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MALAYS
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MALAYS
 		CityName=Menggala
@@ -6081,9 +9655,22 @@ EndPlot
 BeginPlot
 	x=121,y=37
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KHMER
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KHMER
 		CityName=Yashodharapura
+		BuildingType=BUILDING_PALACE
 		CityPopulation=12
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6099,9 +9686,22 @@ EndPlot
 BeginPlot
 	x=121,y=42
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_VIETNAM
 		CityName=Dai La
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6119,16 +9719,28 @@ EndPlot
 BeginPlot
 	x=121,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Chang'an
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6139,6 +9751,18 @@ EndPlot
 BeginPlot
 	x=121,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Dingbian
@@ -6148,7 +9772,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6159,6 +9782,18 @@ EndPlot
 BeginPlot
 	x=121,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Jiuyuan
@@ -6168,7 +9803,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6179,6 +9813,18 @@ EndPlot
 BeginPlot
 	x=121,y=61
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Ikh Khüree
@@ -6197,6 +9843,18 @@ EndPlot
 BeginPlot
 	x=121,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Galuuta Nuur
@@ -6215,6 +9873,18 @@ EndPlot
 BeginPlot
 	x=122,y=43
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_VIETNAM
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_VIETNAM
 		CityName=Chongzuo
@@ -6235,6 +9905,18 @@ EndPlot
 BeginPlot
 	x=122,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Shangluo
@@ -6244,7 +9926,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6255,6 +9936,18 @@ EndPlot
 BeginPlot
 	x=122,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Tongchuan
@@ -6264,7 +9957,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6275,6 +9967,18 @@ EndPlot
 BeginPlot
 	x=122,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Yulin
@@ -6284,7 +9988,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6295,6 +9998,18 @@ EndPlot
 BeginPlot
 	x=122,y=60
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MONGOL
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_MONGOL
 		CityName=Choir
@@ -6313,6 +10028,18 @@ EndPlot
 BeginPlot
 	x=123,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_CHINA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_CHINA
 		CityName=Luoyang
@@ -6322,7 +10049,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_CHINA, Culture=100
@@ -6333,6 +10059,18 @@ EndPlot
 BeginPlot
 	x=125,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAVA
 		CityName=Yogyakarta
@@ -6353,9 +10091,22 @@ EndPlot
 BeginPlot
 	x=126,y=25
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAVA
 		CityName=Kahuripan
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6373,6 +10124,18 @@ EndPlot
 BeginPlot
 	x=127,y=24
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAVA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAVA
 		CityName=Banger
@@ -6393,6 +10156,18 @@ EndPlot
 BeginPlot
 	x=127,y=46
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_TAIWAN
 		CityName=Jianyang
@@ -6402,7 +10177,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		BeginCulture
@@ -6414,6 +10188,18 @@ EndPlot
 BeginPlot
 	x=127,y=48
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_TAIWAN
 		CityName=Tunxi
@@ -6435,9 +10221,22 @@ EndPlot
 BeginPlot
 	x=128,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_TAIWAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_TAIWAN
 		CityName=Dong'ou
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6456,6 +10255,18 @@ EndPlot
 BeginPlot
 	x=129,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PHILIPPINES
 		CityName=Puerto Princesa
@@ -6476,9 +10287,22 @@ EndPlot
 BeginPlot
 	x=130,y=38
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PHILIPPINES
 		CityName=Selurong
+		BuildingType=BUILDING_PALACE
 		CityPopulation=15
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6496,6 +10320,18 @@ EndPlot
 BeginPlot
 	x=130,y=55
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KOREA
 		CityName=Haeju
@@ -6518,6 +10354,18 @@ EndPlot
 BeginPlot
 	x=131,y=36
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PHILIPPINES
 		CityName=Sugbo
@@ -6538,6 +10386,18 @@ EndPlot
 BeginPlot
 	x=131,y=39
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PHILIPPINES
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PHILIPPINES
 		CityName=Ibon
@@ -6558,9 +10418,22 @@ EndPlot
 BeginPlot
 	x=131,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KOREA
 		CityName=Wiryeseong
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6571,6 +10444,7 @@ BeginPlot
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_CONFUCIANISM
+		HolyCityReligionType=RELIGION_CONFUCIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_KOREA, Culture=100
 		EndCulture
@@ -6580,6 +10454,18 @@ EndPlot
 BeginPlot
 	x=131,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KOREA
 		CityName=Jungcheon
@@ -6602,6 +10488,18 @@ EndPlot
 BeginPlot
 	x=132,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_KOREA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_KOREA
 		CityName=Daegu
@@ -6624,6 +10522,18 @@ EndPlot
 BeginPlot
 	x=135,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAPAN
 		CityName=Matsue
@@ -6645,6 +10555,18 @@ EndPlot
 BeginPlot
 	x=137,y=51
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAPAN
 		CityName=Takamatsu
@@ -6666,9 +10588,22 @@ EndPlot
 BeginPlot
 	x=137,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAPAN
 		CityName=Heian-kyou
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6687,6 +10622,18 @@ EndPlot
 BeginPlot
 	x=138,y=52
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAPAN
 		CityName=Wakayama
@@ -6708,6 +10655,18 @@ EndPlot
 BeginPlot
 	x=138,y=54
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAPAN
 		CityName=Echizen
@@ -6729,6 +10688,18 @@ EndPlot
 BeginPlot
 	x=139,y=53
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_JAPAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_JAPAN
 		CityName=Nagoya
@@ -6750,6 +10721,18 @@ EndPlot
 BeginPlot
 	x=140,y=12
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AUSTRALIA
 		CityName=Canberra
@@ -6759,7 +10742,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -6772,6 +10754,18 @@ EndPlot
 BeginPlot
 	x=141,y=13
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AUSTRALIA
 		CityName=Bathurst
@@ -6781,7 +10775,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -6794,6 +10787,18 @@ EndPlot
 BeginPlot
 	x=142,y=10
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AUSTRALIA
 		CityName=Eden
@@ -6816,9 +10821,22 @@ EndPlot
 BeginPlot
 	x=142,y=12
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AUSTRALIA
 		CityName=Sydney
+		BuildingType=BUILDING_PALACE
 		CityPopulation=18
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
@@ -6838,6 +10856,18 @@ EndPlot
 BeginPlot
 	x=142,y=15
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AUSTRALIA
 		CityName=Warwick
@@ -6847,7 +10877,6 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_LIBRARY
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_BANK
 		BuildingType=BUILDING_UNIVERSITY
 		ReligionType=RELIGION_PROTESTANTISM
@@ -6860,6 +10889,18 @@ EndPlot
 BeginPlot
 	x=143,y=13
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INFANTRY
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_AUSTRALIA
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_AUSTRALIA
 		CityName=Port Macquarie

@@ -2797,7 +2797,34 @@ def startingLeader(identifier):
 	if not isinstance(identifier, Civ):
 		identifier = civ(identifier)
 		
-	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i3000BC][identifier])
+	leaders = dStartingLeaders[scenario()]
+	if identifier in leaders:
+		return leaders[identifier]
+
+	# The 3000 BC table is the fallback, but it does not cover every civilization: eighteen of
+	# them, all added after it was written, are absent - including South Africa, which appears in
+	# no scenario dict at all. Passing it as the default argument to .get() evaluated the lookup
+	# on every call regardless of whether it was needed, so those civs raised KeyError in every
+	# scenario rather than falling back.
+	base = dStartingLeaders[i3000BC]
+	if identifier in base:
+		return base[identifier]
+
+	return defaultLeader(identifier)
+
+
+def defaultLeader(iCiv):
+	"""The civilization's own first available leader, from CIV4CivilizationInfos.xml.
+
+	Every civ declares a <Leaders> block, so this is a guaranteed answer where the hand-written
+	tables have gaps.
+	"""
+	info = infos.civ(iCiv)
+	for iLeader in infos.leaders():
+		if info.isLeaders(iLeader):
+			return iLeader
+
+	return -1
 	
 def leader(iPlayer):
 	iCiv = civ(iPlayer)
