@@ -23,8 +23,13 @@
 #define RANDPLOT_NOT_VISIBLE_TO_CIV		(0x00000020)
 #define RANDPLOT_NOT_CITY				(0x00000040)
 
+// Raised from 36 to seat the 2000 AD scenario, which needs 63 civilizations plus barbarians.
+// One civ slot is left free so a resurrection during play still has somewhere to go.
+//
+// This invalidates every existing save: CvInitCore::read consumes exactly MAX_PLAYERS strings
+// positionally, so a save written at 36 desyncs when read at 64 rather than failing cleanly.
 #ifdef _USRDLL
-#define MAX_CIV_PLAYERS				(36)
+#define MAX_CIV_PLAYERS				(64)
 #else
 #define MAX_CIV_PLAYERS				(CvGlobals::getInstance().getMaxCivPlayers())
 #endif
