@@ -89,8 +89,12 @@ def flood(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_NOT_CARDINAL')
 		return
 
-	# erase() would destroy a city outright, and flooding beside one silently guts its yields
-	if isAdjacentToCity(target) or city(target):
+	# only the city's own tile is refused: erase() inside setPlotType calls pCity->kill() and the
+	# city is gone, with no warning and nothing to undo it. Flooding a neighbouring tile is a
+	# different matter entirely - the city merely works water where it worked land, and since
+	# CvCity::isCoastal defers to plot()->isCoastalLand() and is evaluated live, an inland city
+	# with the sea brought up to its edge becomes coastal and can build a harbour.
+	if city(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_BLOCKED_BY_CITY')
 		return
 
@@ -323,10 +327,6 @@ def isCardinallyAdjacentToSea(target):
 
 def isAdjacentToLand(target):
 	return plots.ring(target, radius=1).where(lambda p: not p.isWater()).any()
-
-
-def isAdjacentToCity(target):
-	return plots.ring(target, radius=1).where(lambda p: p.isCity()).any()
 
 
 def abandon(target, key, *format):
