@@ -20,11 +20,10 @@ iFrance, iGermany, iGreece, iHarappa, iHittites, iHolyRome, iInca, iIndia, iIran
 iJapan, iJava, iKhmer, iCongo, iKorea, iKushans, iMalays, iMali, iManchuria, iMaya,
 iMexico, iMisr, iMongols, iMoors, iMughals, iNativeAmericans, iNetherlands, iNorse, iNubia, iOttomans,
 iPersia, iPoland, iPolynesia, iPortugal, iRome, iRus, iRussia, iSaudis, iSpain, iSumeria,
-iSwahili, iSweden, iTatars, iThailand, iTibet, iToltecs, iTurks, iVietnam, iZulu,
-iAshanti, iGeorgia, iHaiti, iZimbabwe, iMaori, iSouthAfrica, iSwitzerland,
-iHungary, iBulgaria, iPhilippines, iIsrael, iTaiwan, iSingapore,
-iBangladesh, iIraq, iNigeria, iAlgeria, iUkraine, iKazakhstan, iUAE, iIndependent,
-iIndependent2, iNative, iMinor, iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iSwahili, iSweden, iTatars, iThailand, iTibet, iToltecs, iTurks, iVietnam, iZulu, iIndependent,
+iIndependent2, iNative, iMinor, iBarbarian, iAshanti, iGeorgia, iHaiti, iZimbabwe, iMaori, iSouthAfrica,
+iSwitzerland, iHungary, iBulgaria, iPhilippines, iIsrael, iTaiwan, iSingapore, iBangladesh, iIraq, iNigeria,
+iAlgeria, iUkraine, iKazakhstan, iUAE) = tuple(Civ(i) for i in range(iNumCivs))
 
 iPhoenicia = iCarthage
 
