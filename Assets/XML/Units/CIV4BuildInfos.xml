@@ -1948,5 +1948,20 @@
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Builds/BuildOrchard.dds</Button>
 		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_SHOALING</Type>
+			<Description>TXT_KEY_BUILD_SHOALING</Description>
+			<PrereqTech>TECH_TERRAFORMING</PrereqTech>
+			<iTime>600</iTime>
+			<bKill>1</bKill>
+			<ImprovementType>IMPROVEMENT_SHOALING_WORKS</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>Art/Interface/Buttons/Builds/BuildOrchard.dds</Button>
+		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

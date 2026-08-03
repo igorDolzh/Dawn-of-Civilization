@@ -27,6 +27,8 @@ def onTerraformingWorks(iImprovement, x, y):
 		flood(plot(x, y))
 	elif iImprovement == iReclamation:
 		reclaim(plot(x, y))
+	elif iImprovement == iShoalingWorks:
+		shoal(plot(x, y))
 
 
 ### LAND -> SEA ###
@@ -175,7 +177,44 @@ def floodFill(start, excluded):
 	return seen
 
 
+### DEEP OCEAN -> SHALLOW COAST ###
+
+def shoal(target):
+	"""Raise the seabed of a deep ocean plot until it becomes coast.
+
+	The gentlest of the three. Both terrains are water, so this never calls setPlotType and
+	therefore never reaches erase(): no unit is destroyed, no bonus, route or improvement is
+	stripped, and no city can be harmed. Only what the tile is changes.
+
+	What it buys is real even so - coast is workable by a city, carries a harbour's trade
+	connection, and lets coastal ships pass where they could not before.
+	"""
+	if not target.isWater():
+		return
+
+	if target.getTerrainType() != iOcean:
+		return
+
+	# a seabed is raised from somewhere: there has to be shallower ground already adjacent
+	if not isAdjacentToShallows(target):
+		abandon(target, 'TXT_KEY_TERRAFORMING_NOT_SHALLOW')
+		return
+
+	iOwner = target.getOwner()
+	name = describe(target)
+
+	target.setTerrainType(iCoast, True, True)
+
+	announce(iOwner, 'TXT_KEY_TERRAFORMING_SHOALED', name, target)
+
+
 ### SHARED ###
+
+def isAdjacentToShallows(target):
+	"""Whether anything next to this plot is land or already shallow water."""
+	return plots.ring(target, radius=1).where(
+		lambda p: not p.isWater() or p.getTerrainType() != iOcean).any()
+
 
 def isAdjacentToWater(target):
 	return plots.ring(target, radius=1).where(lambda p: p.isWater()).any()

@@ -17242,6 +17242,10 @@
 					<BuildType>BUILD_RECLAMATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_SHOALING</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iCost>30</iCost>
