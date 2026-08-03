@@ -1996,7 +1996,12 @@ class CivFactory(object):
 		return Civilizations([Civ(i) for i in range(iNumCivs)])
 	
 	def major(self):
-		return Civilizations(lBirthOrder)
+		# lDisabledCivs are defined but held out of play, and are not major civilizations in any
+		# sense while they are. Filtering here rather than at each call site matters because
+		# several of them pass the civilization straight to the DLL: Setup.init calls
+		# plot.setCore and Stability calls plot.isCore, both of which index arrays sized by
+		# NUM_CIVS, and the shipped DLL sizes them for 69.
+		return Civilizations([iCiv for iCiv in lBirthOrder if iCiv not in lDisabledCivs])
 	
 	def of(self, *items):
 		return Civilizations([civ(element) for element in items])
