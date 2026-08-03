@@ -1074,9 +1074,20 @@ dGoals = {
 }
 
 
+# This runs at module scope, so anything it raises aborts the import and leaves the module
+# half-built - after dGoals is already assigned. Every later reader then fails with the misleading
+# "AttributeError: 'module' object has no attribute 'dGoals'" rather than the real cause.
+#
+# dGoals still carries entries for the twenty civilizations held out of play by lDisabledCivs,
+# whose indices run to 88, while the shipped DLL only knows 74. infos.civ() has nothing to return
+# for those, and calling getIdentifier() on it is what aborted the import.
 for iCiv, goals in dGoals.items():
+	info = infos.civ(iCiv)
+	if info is None:
+		continue
+
 	for index, goal in enumerate(goals):
-		title_key = "TXT_KEY_VICTORY_TITLE_%s%s" % (infos.civ(iCiv).getIdentifier(), index+1)
+		title_key = "TXT_KEY_VICTORY_TITLE_%s%s" % (info.getIdentifier(), index+1)
 		goal.options["title_key"] = title_key
 
 
