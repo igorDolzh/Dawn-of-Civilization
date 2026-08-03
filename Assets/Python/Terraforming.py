@@ -107,9 +107,11 @@ def evacuate(target):
 	if refuge is None:
 		return
 
-	x, y = location(refuge)
+	# Core.move, not setXY: CyUnit::setXY takes (x, y, bGroup, bUpdate, bShow) and calling it with
+	# two arguments raises ArgumentError from Boost.Python. move() supplies them and skips units
+	# that are already there.
 	for unit in units.at(target).land():
-		unit.setXY(x, y)
+		move(unit, refuge)
 
 
 ### SEA -> LAND ###
