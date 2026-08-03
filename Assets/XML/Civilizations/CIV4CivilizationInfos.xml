@@ -7528,7 +7528,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SWITZERLAND</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_HOLY_ROMAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>SWI</Identifier>
@@ -7587,7 +7587,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_HOLY_ROME</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_HOLY_ROMAN</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_HOLY_ROME_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_HOLY_ROME_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -7600,7 +7600,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_HUNGARY</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_HOLY_ROMAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HUN</Identifier>
@@ -7659,7 +7659,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_HOLY_ROME</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_HOLY_ROMAN</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_HOLY_ROME_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_HOLY_ROME_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -7744,7 +7744,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PHILIPPINES</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MALAY</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PHI</Identifier>
@@ -7814,7 +7814,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ISRAEL</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EAST</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_PHOENICIA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>ISR</Identifier>
@@ -7884,7 +7884,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_TAIWAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_CHINA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>TWN</Identifier>
@@ -7954,7 +7954,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SINGAPORE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_ASIAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_ASIAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_MALAY</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>SIN</Identifier>
@@ -8094,7 +8094,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_IRAQ</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EAST</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_ARABIA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRQ</Identifier>
@@ -8234,7 +8234,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ALGERIA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EAST</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_ARABIA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>ALG</Identifier>
@@ -8304,7 +8304,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_UKRAINE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_RUSSIA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>UKN</Identifier>
@@ -8374,7 +8374,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_KAZAKHSTAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EAST</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_TURKIC</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>KAZ</Identifier>
@@ -8444,7 +8444,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_UAE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_MIDDLE_EAST</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_MIDDLE_EAST</UnitArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_ARABIA</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_MAZDAISM</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>UAE</Identifier>
