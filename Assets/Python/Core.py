@@ -607,6 +607,21 @@ def latin1(text):
 
 
 def text(key, *format):
+	# Callers normally pass a TXT_KEY, but a few pass text that has already been translated:
+	# Arguments.improvement_resources names its aggregate with infos.improvement(...).getText().
+	# str() on that raises UnicodeEncodeError as soon as the localisation is not ASCII, which took
+	# the civilization selection screen down in Russian - Cyrillic "и" is byte 0xE8 in CP1251 and
+	# surfaces as u'\xe8'.
+	#
+	# There is nothing to look up in that case, so return it as it is.
+	if isinstance(key, unicode):
+		try:
+			key = str(key)
+		except UnicodeEncodeError:
+			if format:
+				return key % tuple(format)
+			return key
+
 	return translator.getText(str(key), tuple(format))
 	
 	
