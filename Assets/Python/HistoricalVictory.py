@@ -1068,7 +1068,7 @@ dGoals = {
 	),
 	iUAE: (
 		GoldAmount(30000, by=2030),
-		BestPopulationCity(by=2040),
+		BestPopulationCity(capital().named(CAPITAL), by=2040),
 		HappiestTurns(40, by=2050),
 	),
 }
