@@ -1005,7 +1005,8 @@ dGoals = {
 	iHungary: (
 		All(
 			StateReligion(iCatholicism),
-			Control(plots.rectangle((70, 56), (77, 61)).named(CARPATHIAN_BASIN), at=1200),
+			Control(plots.rectangle((70, 56), (77, 61)).named(CARPATHIAN_BASIN)),
+			at=1200,
 		),
 		AllowOnly(plots.rectangle((70, 56), (77, 61)).named(CARPATHIAN_BASIN), civs(iHungary).named(HUNGARIAN), at=1500),
 		CultureLevelCityCount(iCultureLevelRefined, 3, by=1500),
