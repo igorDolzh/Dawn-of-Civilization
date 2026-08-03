@@ -255,8 +255,18 @@ class Translations(object):
 	
 	def getSingle(self):
 		if not self.translations:
+			# A tile Cities.csv does not name has no base name, and a translation of nothing is
+			# not a name anybody can use: every flag on it defaults to False, so it passes
+			# isApplicable, reaches applyName, and dies there on None.startswith. Yield nothing
+			# instead, which is what an empty translation set already means to every caller.
+			#
+			# The wrapping is deliberate: this is the only place a Translation is built from a
+			# base name rather than from the file, so it is the only place the name can be None.
+			if not self.base_name:
+				return -1, ()
+
 			return -1, (Translation(self.base_name),)
-		
+
 		iLanguage = self.translations.keys()[0]
 		return iLanguage, self[iLanguage]
 

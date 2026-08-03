@@ -554,6 +554,13 @@ def checkName(city, bFound=False, bNotify=False):
 
 
 def applyName(city, translation, bNotify=False):
+	# Nothing below can do anything useful without a name: the relocation and renaming branches
+	# would store None, and the suffix trimming calls startswith on it. Translations.getSingle no
+	# longer manufactures a nameless translation, so this should not trigger; it is here because
+	# the cost of being wrong about that is a crash in the middle of founding a city.
+	if not translation.name:
+		return
+
 	if translation.bRelocation:
 		applyRelocation(city, translation.name)
 		return
