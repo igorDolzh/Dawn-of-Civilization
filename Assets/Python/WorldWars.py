@@ -102,11 +102,13 @@ def blocs():
 	if len(lPowers) < 2 * iMinimumBloc:
 		return [], []
 
-	iFirst = max(lPowers, key=lambda p: team(p).getPower(True))
+	# max() and min() only gained their key argument in Python 2.5, and Civ4 embeds 2.4, so these
+	# compare (metric, player) tuples instead. Ties break on the player id, which is deterministic.
+	iFirst = max([(team(p).getPower(True), p) for p in lPowers])[1]
 	lRest = [iPlayer for iPlayer in lPowers if iPlayer != iFirst]
 
 	# the strongest power's least favourite great power leads the other side
-	iSecond = min(lRest, key=lambda p: player(iFirst).AI_getAttitude(p))
+	iSecond = min([(player(iFirst).AI_getAttitude(p), p) for p in lRest])[1]
 
 	lAlliance = [iFirst]
 	lCoalition = [iSecond]

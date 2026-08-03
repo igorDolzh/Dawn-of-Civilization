@@ -116,7 +116,10 @@ def surroundingTerrain(target):
 	terrains = [t for t in terrains if t >= 0]
 	if not terrains:
 		return -1
-	return max(set(terrains), key=terrains.count)
+
+	# max()'s key argument arrived in Python 2.5 and Civ4 embeds 2.4, so compare (count, terrain)
+	# tuples instead. Ties break on the terrain id, which is at least deterministic.
+	return max([(terrains.count(t), t) for t in set(terrains)])[1]
 
 
 def firstCityLosingCoast(target):
