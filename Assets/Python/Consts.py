@@ -28,6 +28,31 @@ iIndependent2, iNative, iMinor, iBarbarian) = tuple(Civ(i) for i in range(iNumCi
 
 iPhoenicia = iCarthage
 
+
+# Civilizations that are defined but held out of play.
+#
+# CvPlot allocates its per-plot civilization arrays as byte[NUM_CIVS], and the shipped DLL was
+# built with NUM_CIVS 69. Passing it a civilization index at or above that writes past the end of
+# the array - CvPlot::setSettlerValue has only an FAssertMsg, which is compiled out of a release
+# build, so there is no bounds check. These twenty sit at indices 69 to 88 and take the game down
+# with "RuntimeError: unidentifiable C++ exception" as soon as Rise.initMaps runs.
+#
+# Nothing is deleted. Their constants, XML, areas, leaders, unique powers, city names and settler
+# maps all remain, and none of the shipped scenarios seats any of them. They are simply skipped
+# where a civilization index would reach the DLL: births and settler/war maps in Rise.
+#
+# lBirthOrder itself is deliberately left whole. lCivOrder is lBirthOrder plus the five special
+# civilizations and its position is what indexes the fourteen 92-entry tables in Modifiers, so
+# shrinking it would silently shift every modifier after the first disabled civilization.
+#
+# To re-enable: rebuild the DLL with NUM_CIVS 89 and empty this list.
+lDisabledCivs = [
+	iAshanti, iGeorgia, iHaiti, iZimbabwe, iMaori, iSouthAfrica, iSwitzerland, iHungary,
+	iBulgaria, iPhilippines, iIsrael, iTaiwan, iSingapore, iBangladesh, iIraq, iNigeria,
+	iAlgeria, iUkraine, iKazakhstan, iUAE,
+]
+
+
 lBirthOrder = [
 	iEgypt, iBabylonia, iHarappa, iAssyria, iNubia, iChina, iHittites, iGreece, iIndia, iCarthage,
 	iPolynesia, iPersia, iCelts, iRome, iMaya, iDravidia, iEthiopia, iToltecs, iKushans, iKorea,
@@ -1366,10 +1391,10 @@ lLateColonyCivs = lTradingCompanyCivs + [iGermany]
 
 lMongolCivs = [iPersia, iByzantium, iTurks, iArabia, iRus]
 
-iNumScenarios = 6
-(i3000BC, i600AD, i1500AD, i1700AD, i1815AD, i2000AD) = range(iNumScenarios)
+iNumScenarios = 5
+(i3000BC, i600AD, i1500AD, i1700AD, i1815AD) = range(iNumScenarios)
 
-lScenarioStartYears = [-3000, 600, 1500, 1700, 1815, 2000]
+lScenarioStartYears = [-3000, 600, 1500, 1700, 1815]
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 4

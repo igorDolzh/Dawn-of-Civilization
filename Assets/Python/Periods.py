@@ -50,23 +50,11 @@ dPeriods1815AD = {
 	iManchuria : iPeriodQing,
 }
 
-dPeriods2000AD = {
-	iMughals : iPeriodPakistan,
-	iItaly : iPeriodModernItaly,
-	iGermany : iPeriodModernGermany,
-	iGreece : iPeriodModernGreece,
-	iCelts : iPeriodInsularCelts,
-	iHolyRome : iPeriodAustria,
-	iMoors : iPeriodMorocco,
-	iEngland : iPeriodUnitedKingdom,
-}
-
 dScenarioPeriods = {
 	600: dPeriods600AD,
 	1500: dPeriods1500AD,
 	1700: dPeriods1700AD,
 	1815: dPeriods1815AD,
-	2000: dPeriods2000AD,
 }
 
 

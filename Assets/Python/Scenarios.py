@@ -6,7 +6,6 @@ from Scenario600AD import scenario600AD
 from Scenario1500AD import scenario1500AD
 from Scenario1700AD import scenario1700AD
 from Scenario1815AD import scenario1815AD
-from Scenario2000AD import scenario2000AD
 
 
 @handler("GameStart")
@@ -20,7 +19,6 @@ SCENARIOS = {
 	i1500AD: scenario1500AD,
 	i1700AD: scenario1700AD,
 	i1815AD: scenario1815AD,
-	i2000AD: scenario2000AD,
 }
 
 

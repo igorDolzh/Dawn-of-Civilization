@@ -102,7 +102,7 @@ def showDawnOfMan(iGameTurn):
 
 @handler("GameStart")
 def initBirths():
-	data.births = [Birth(iCiv) for iCiv in lBirthOrder]
+	data.births = [Birth(iCiv) for iCiv in lBirthOrder if iCiv not in lDisabledCivs]
 	
 	for birth in data.births:
 		birth.check()
@@ -135,7 +135,7 @@ def checkBirths():
 
 @handler("playerCivAssigned")
 def updateMapsOnActive(iPlayer, iCivilization):
-	if iCivilization in lBirthOrder:
+	if iCivilization in lBirthOrder and iCivilization not in lDisabledCivs:
 		applyMaps(iCivilization)
 
 
@@ -399,6 +399,9 @@ def applyMaps(iCivilization, iPeriod=-1):
 		
 def initMaps():
 	for iCivilization in lBirthOrder:
+		# setSettlerValue indexes a byte[NUM_CIVS] array in the DLL; see lDisabledCivs in Consts
+		if iCivilization in lDisabledCivs:
+			continue
 		applyMaps(iCivilization)
 
 

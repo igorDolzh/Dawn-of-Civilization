@@ -12,7 +12,6 @@ lStartingDates = [
 	"1500 AD",
 	"1700 AD",
 	"1815 AD",
-	"2000 AD",
 ]
 
 
