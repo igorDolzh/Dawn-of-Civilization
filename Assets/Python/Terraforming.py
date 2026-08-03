@@ -82,9 +82,9 @@ def flood(target):
 	if target.isWater():
 		return
 
-	# the sea has to be able to reach the site
-	if not isAdjacentToWater(target):
-		abandon(target, 'TXT_KEY_TERRAFORMING_NOT_COASTAL')
+	# the sea has to reach the site squarely: diagonal water is not enough to join it to the ocean
+	if not isCardinallyAdjacentToWater(target):
+		abandon(target, 'TXT_KEY_TERRAFORMING_NOT_CARDINAL')
 		return
 
 	# erase() would destroy a city outright, and flooding beside one silently guts its yields
@@ -283,8 +283,24 @@ def isAdjacentToShallows(target):
 		lambda p: not p.isWater() or p.getTerrainType() != iOcean).any()
 
 
-def isAdjacentToWater(target):
-	return plots.ring(target, radius=1).where(lambda p: p.isWater()).any()
+def isCardinallyAdjacentToWater(target):
+	"""Whether the plot due north, south, east or west of this one is water.
+
+	Not the same question as "is there water next to it", and the difference decides whether the
+	flooded tile is part of the sea or a puddle.
+
+	CvPlot::setPlotType puts a new water plot into a neighbouring water area, and to find one it
+	searches the four cardinal directions only - CvPlot.cpp:5715, under a comment conceding the
+	point: "XXX might want to change this if we allow diagonal water movement". Land is searched
+	in all eight (:5740), so reclaim() does not have this problem.
+
+	Find nothing and it does not give up; it calls CvMap::addArea and hands the tile a private
+	one-plot ocean (:5817-5823). The result looks like sea and behaves like a moat: no ship can
+	enter it, because Civ4 pathfinding never crosses an area boundary.
+	"""
+	x, y = location(target)
+	cardinal = [wrap(x + dx, y + dy) for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]]
+	return plots.of(cardinal).where(lambda p: p.isWater()).any()
 
 
 def isAdjacentToLand(target):
