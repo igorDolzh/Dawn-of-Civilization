@@ -21,14 +21,50 @@ iConnectivitySearchLimit = 400
 
 ### BEGIN IMPROVEMENT BUILT ###
 
+lTerraformingWorks = [iFloodWorks, iReclamation, iShoalingWorks]
+
+
 @handler("improvementBuilt")
 def onTerraformingWorks(iImprovement, x, y):
-	if iImprovement == iFloodWorks:
-		flood(plot(x, y))
-	elif iImprovement == iReclamation:
-		reclaim(plot(x, y))
-	elif iImprovement == iShoalingWorks:
-		shoal(plot(x, y))
+	"""Record the works. Deliberately does not carry them out.
+
+	This fires from inside CvPlot::setImprovementType (CvPlot.cpp:6389), which has not finished
+	running, and the unit that completed the build is still live further up the DLL's stack.
+	Converting the plot here reaches erase(), which kills every unit standing on it - that unit
+	included - and then the DLL carries on through freed memory. BUILD_RECLAMATION and
+	BUILD_SHOALING declare bKill, so the DLL kills the work boat itself once the event returns:
+	the second kill lands on a unit Python already destroyed and the process exits silently, with
+	no Python traceback because nothing Python did was wrong by the time it crashed.
+
+	Refusing is no safer than converting. abandon() calls setImprovementType, and so does erase();
+	either way setImprovementType re-enters itself on the plot it is halfway through updating.
+
+	So nothing touches the plot until BeginGameTurn, by which point the DLL holds no reference to
+	it and the build that started this has fully unwound.
+	"""
+	if iImprovement in lTerraformingWorks:
+		data.lTerraformingQueue.append((x, y, iImprovement))
+
+
+@handler("BeginGameTurn")
+def processTerraformingWorks(iGameTurn):
+	"""Carry out the works queued since the last turn."""
+	queue = data.lTerraformingQueue
+	data.lTerraformingQueue = []
+
+	for x, y, iImprovement in queue:
+		target = plot(x, y)
+
+		# the marker can be gone by now: pillaged, or the tile captured and rebuilt
+		if target.getImprovementType() != iImprovement:
+			continue
+
+		if iImprovement == iFloodWorks:
+			flood(target)
+		elif iImprovement == iReclamation:
+			reclaim(target)
+		elif iImprovement == iShoalingWorks:
+			shoal(target)
 
 
 ### LAND -> SEA ###
@@ -203,6 +239,10 @@ def shoal(target):
 	iOwner = target.getOwner()
 	name = describe(target)
 
+	# the other two have their marker stripped by erase(); this one has to clear its own, or the
+	# works sit on the finished coast forever. Removing it fires improvementDestroyed, not
+	# improvementBuilt, so this does not come back through onTerraformingWorks.
+	target.setImprovementType(-1)
 	target.setTerrainType(iCoast, True, True)
 
 	announce(iOwner, 'TXT_KEY_TERRAFORMING_SHOALED', name, target)

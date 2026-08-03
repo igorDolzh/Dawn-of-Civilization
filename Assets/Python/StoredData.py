@@ -323,6 +323,10 @@ class GameData:
 		self.bCivilWarStarted = False
 		self.bCivilWarResolved = False
 		
+		# Terraforming works waiting to be applied, as (x, y, improvement). They cannot be applied
+		# when the improvement is built: see Terraforming.onTerraformingWorks.
+		self.lTerraformingQueue = []
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}
