@@ -84,8 +84,8 @@ def flood(target):
 	if target.isWater():
 		return
 
-	# the sea has to reach the site squarely: diagonal water is not enough to join it to the ocean
-	if not isCardinallyAdjacentToWater(target):
+	# open sea has to reach the site squarely, or the new tile is a puddle rather than a bay
+	if not isCardinallyAdjacentToSea(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_NOT_CARDINAL')
 		return
 
@@ -102,7 +102,11 @@ def flood(target):
 	# everything still standing here is destroyed by erase() inside setPlotType
 	trace('flood', target, 'setPlotType')
 	target.setPlotType(PlotTypes.PLOT_OCEAN, True, True)
-	trace('flood', target, 'done')
+
+	# a flooded tile is only useful if it joined the sea. isLake is a property of the area it was
+	# put into, so this is the one check that says whether a ship can actually get here
+	trace('flood', target, 'done: area %d, %d tiles, lake=%s' % (
+		target.getArea(), map.getArea(target.getArea()).getNumTiles(), target.isLake()))
 
 	announce(iOwner, 'TXT_KEY_TERRAFORMING_FLOODED', name, target)
 
@@ -293,24 +297,28 @@ def isAdjacentToShallows(target):
 		lambda p: not p.isWater() or p.getTerrainType() != iOcean).any()
 
 
-def isCardinallyAdjacentToWater(target):
-	"""Whether the plot due north, south, east or west of this one is water.
+def isCardinallyAdjacentToSea(target):
+	"""Whether the plot due north, south, east or west of this one is open sea.
 
-	Not the same question as "is there water next to it", and the difference decides whether the
-	flooded tile is part of the sea or a puddle.
+	Two conditions, and the flooded tile is navigable only if both hold.
 
-	CvPlot::setPlotType puts a new water plot into a neighbouring water area, and to find one it
-	searches the four cardinal directions only - CvPlot.cpp:5715, under a comment conceding the
-	point: "XXX might want to change this if we allow diagonal water movement". Land is searched
-	in all eight (:5740), so reclaim() does not have this problem.
+	Cardinal, because CvPlot::setPlotType puts a new water plot into a neighbouring water area and
+	searches the four cardinal directions only to find one - CvPlot.cpp:5715, under a comment
+	conceding the point: "XXX might want to change this if we allow diagonal water movement".
+	Land is searched in all eight (:5740), so reclaim() does not have this problem. Find nothing
+	and it does not give up: it calls CvMap::addArea and hands the tile a private one-plot ocean
+	(:5817-5823), which no ship can enter because Civ4 never paths across an area boundary.
 
-	Find nothing and it does not give up; it calls CvMap::addArea and hands the tile a private
-	one-plot ocean (:5817-5823). The result looks like sea and behaves like a moat: no ship can
-	enter it, because Civ4 pathfinding never crosses an area boundary.
+	Sea rather than merely water, because the tile inherits whichever area it joins. A water body
+	of LAKE_MAX_AREA_SIZE tiles or fewer - nine, by GlobalDefines - is a lake, and CvArea::isLake
+	is a property of the area, not of the plot. Flood next to a pond and the tile joins the pond,
+	the pond is still a pond, and ocean-going ships are barred from all of it.
+
+	Plots.sea() is exactly water that is not a lake.
 	"""
 	x, y = location(target)
 	cardinal = [wrap(x + dx, y + dy) for dx, dy in [(1, 0), (-1, 0), (0, 1), (0, -1)]]
-	return plots.of(cardinal).where(lambda p: p.isWater()).any()
+	return plots.of(cardinal).sea().any()
 
 
 def isAdjacentToLand(target):
