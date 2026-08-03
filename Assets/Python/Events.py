@@ -1,5 +1,7 @@
 from BugEventManager import g_eventManager as events
 import inspect
+import sys
+import traceback
 
 from Core import *
 
@@ -10,6 +12,36 @@ victory_handlers = appenddict()
 
 logged_events = []
 
+# BugEventManager wraps every handler call in a bare `except:` and reports the failure with
+# BugUtil.trace, which writes to the on-screen message area and nowhere else - no traceback, no
+# file. A handler that raises on every turn therefore leaves no evidence beyond one line that
+# scrolls away, which is how a NameError in Rules.moveSlavesToNewWorld survived unnoticed.
+#
+# fileLog is the engine's own writer (CvPythonExtensions) and goes straight to
+# Logs\<name>, so it does not depend on the BUG log level options being set.
+ERROR_LOG = "Errors.log"
+
+
+def logHandlerError(event, func):
+	"""Write the current exception, with its traceback, to Logs\\Errors.log.
+
+	Re-raising afterwards leaves BugEventManager's own behaviour untouched: it still catches the
+	exception and shows its one-line notice, so nothing that worked before changes. This only
+	adds the record that was missing.
+
+	Deliberately defensive - a failure while reporting a failure must not replace the original
+	exception with a less useful one.
+	"""
+	try:
+		fileLog(ERROR_LOG, "%s in %s.%s handling '%s'\n%s\n" % (
+			sys.exc_info()[0].__name__,
+			getattr(func, "__module__", "?"),
+			getattr(func, "__name__", "?"),
+			event,
+			traceback.format_exc()))
+	except:
+		pass
+
 
 def handler(event):
 	def handler_decorator(func):
@@ -19,7 +51,11 @@ def handler(event):
 			func = log(func)
 		
 		def handler_func(args):
-			return func(*args[:len(arg_names)])
+			try:
+				return func(*args[:len(arg_names)])
+			except:
+				logHandlerError(event, func)
+				raise
 			
 		handler_func.__name__ = func.__name__
 		handler_func.__module__ = func.__module__
