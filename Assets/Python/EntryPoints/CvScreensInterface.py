@@ -896,6 +896,8 @@ def getVictoryTooltip(argsList):
 # Leoreth
 def getHistoricalVictoryDescriptions(argsList):
 	iCiv = argsList[0]
+	# this screen is drawn before fontsLoaded, so the goal tables may not be built yet
+	Victories.ensureLoaded()
 	if iCiv not in Victories.dHistoricalGoals:
 		return ""
 	

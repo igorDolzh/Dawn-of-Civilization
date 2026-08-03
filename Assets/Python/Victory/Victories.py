@@ -10,26 +10,49 @@ from Types import *
 
 ### GLOBALS ###
 
-dHistoricalGoals = None
-dReligiousGoals = None
-dAdditionalPaganGoal = None
+# Empty rather than None so that reading one before it is populated degrades to "no goals"
+# instead of raising. The civilization selection screen asks for victory descriptions before
+# fontsLoaded fires, and "iCiv not in None" raises TypeError: iterable argument required.
+dHistoricalGoals = {}
+dReligiousGoals = {}
+dAdditionalPaganGoal = {}
 
 
 ### EVENT HANDLERS ###
 
-@handler("fontsLoaded")
-def loadVictories():
-	import HistoricalVictory as Historical
-	import ReligiousVictory as Religious
-	
+def ensureLoaded():
+	"""Build the goal tables if they have not been built yet.
+
+	Callers should use this rather than reading the globals directly. loadVictories runs on
+	fontsLoaded, but the civilization selection screen is drawn before that, so the data has to
+	be available on demand whenever the first reader appears.
+
+	Idempotent: the tables are module-level dicts in HistoricalVictory and ReligiousVictory, so
+	rebinding to the same objects costs nothing and repeated calls are free.
+
+	The imports stay inside the function deliberately. HistoricalVictory builds its tables at
+	module scope using plots.core(), which needs civilization infos - importing it at module
+	scope is what took the whole mod down previously.
+	"""
 	global dHistoricalGoals
 	global dReligiousGoals
 	global dAdditionalPaganGoal
-	
+
+	if dHistoricalGoals:
+		return
+
+	import HistoricalVictory as Historical
+	import ReligiousVictory as Religious
+
 	dHistoricalGoals = Historical.dGoals
 	dReligiousGoals = Religious.dGoals
 	dAdditionalPaganGoal = Religious.dAdditionalPaganGoal
-	
+
+
+@handler("fontsLoaded")
+def loadVictories():
+	ensureLoaded()
+
 	#printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal)
 
 
@@ -201,8 +224,10 @@ class HistoricalVictory(Victory):
 
 	@classmethod
 	def create(cls, iPlayer):
+		ensureLoaded()
+
 		iCiv = civ(iPlayer)
-		
+
 		# a scenario may carry its own goals; every other scenario keeps the historical set.
 		# Written long-hand: Civ4 embeds Python 2.4, which has no conditional expression.
 		scenario_goals = getScenario().dGoals
@@ -235,6 +260,8 @@ class ReligiousVictory(Victory):
 
 	@classmethod
 	def create(cls, iPlayer):
+		ensureLoaded()
+
 		iStateReligion = player(iPlayer).getStateReligion()
 		
 		if iStateReligion >= 0:

@@ -141,6 +141,7 @@ class CvPediaReligion:
 		text = self.top.getNextWidgetName()
 
 		screen.addPanel(panel, CyTranslator().getText("TXT_KEY_CIVILOPEDIA_HISTORY", ()), "", True, True, self.X_HISTORY, self.Y_HISTORY, self.W_HISTORY, self.H_HISTORY, PanelStyles.PANEL_STYLE_BLUE50)
+		Victories.ensureLoaded()
 		victorytext = CyTranslator().getText("TXT_KEY_PEDIA_RELIGIOUS_VICTORY", ())
 		victorytext += "\n".join(u"%c%s" % (game.getSymbolID(FontSymbols.BULLET_CHAR), goal.description()) for goal in Victories.dReligiousGoals[self.iReligion])
 		szHistory = victorytext + "\n\n" + gc.getReligionInfo(self.iReligion).getCivilopedia()
