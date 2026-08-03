@@ -44,6 +44,16 @@ def ensureLoaded():
 	import HistoricalVictory as Historical
 	import ReligiousVictory as Religious
 
+	# If either module raised while building its tables, Civ4's loader leaves the half-built module
+	# cached in sys.modules, and every later import hands back that shell. Reading dGoals off it
+	# then raises "AttributeError: 'module' object has no attribute 'dGoals'", which reports the
+	# consequence and hides the original failure - and it repeats on every call.
+	#
+	# Leave the tables empty instead. The real exception was already raised and logged where it
+	# happened; the game keeps running with no goals rather than failing again here.
+	if not hasattr(Historical, "dGoals") or not hasattr(Religious, "dGoals"):
+		return
+
 	dHistoricalGoals = Historical.dGoals
 	dReligiousGoals = Religious.dGoals
 	dAdditionalPaganGoal = Religious.dAdditionalPaganGoal
