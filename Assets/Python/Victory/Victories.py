@@ -203,9 +203,12 @@ class HistoricalVictory(Victory):
 	def create(cls, iPlayer):
 		iCiv = civ(iPlayer)
 		
-		# a scenario may carry its own goals; every other scenario keeps the historical set
+		# a scenario may carry its own goals; every other scenario keeps the historical set.
+		# Written long-hand: Civ4 embeds Python 2.4, which has no conditional expression.
 		scenario_goals = getScenario().dGoals
-		descriptions = (scenario_goals if scenario_goals is not None else dHistoricalGoals).get(iCiv, [])
+		if scenario_goals is None:
+			scenario_goals = dHistoricalGoals
+		descriptions = scenario_goals.get(iCiv, [])
 		
 		victory = cls(iPlayer, descriptions)
 		
