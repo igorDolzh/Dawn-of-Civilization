@@ -22,6 +22,22 @@ logged_events = []
 ERROR_LOG = "Errors.log"
 
 
+def logStartup():
+	"""Write one line when this module loads, so the log's absence is unambiguous.
+
+	Without it, a missing Errors.log has two very different meanings: no handler has failed, or
+	this version of Events.py was never copied into the game folder. With it, the file appearing
+	at all proves the logger is installed, and an empty tail proves the handlers are clean.
+	"""
+	try:
+		fileLog(ERROR_LOG, "--- handler error logging active ---\n")
+	except:
+		pass
+
+
+logStartup()
+
+
 def logHandlerError(event, func):
 	"""Write the current exception, with its traceback, to Logs\\Errors.log.
 
