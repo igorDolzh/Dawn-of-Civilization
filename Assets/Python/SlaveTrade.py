@@ -71,9 +71,18 @@ iPassageBonusCap = 200
 iPlantationModifierPer = 3
 iPlantationModifierCap = 45
 
-# The crops the trade existed to grow. HistoricalVictory already names this basket for
-# Portugal's third goal; reusing it keeps the two definitions from drifting apart.
-from HistoricalVictory import lColonialResources
+# The crops the trade existed to grow. HistoricalVictory already names this basket for Portugal's
+# third goal, and reusing it keeps the two from drifting apart - but it MUST be imported lazily.
+#
+# HistoricalVictory builds its goal tables at module scope, and those call plots.core(), which
+# reads infos.civ(iCiv).getShortDescription(). When Handlers imports this module the civilization
+# infos are not loaded yet, so that returns None and the whole mod dies with
+# "AttributeError: 'NoneType' object has no attribute 'getShortDescription'".
+#
+# Victories.py defers its own HistoricalVictory import inside a function for exactly this reason.
+def colonialResources():
+	from HistoricalVictory import lColonialResources
+	return lColonialResources
 
 
 ### THE RECKONING ###
@@ -123,11 +132,13 @@ def isSlaveholder(iPlayer):
 
 def countSlavePlantations(iPlayer):
 	"""Slave plantations this player works on colonial crops."""
+	crops = colonialResources()
+
 	iCount = 0
 	for city in cities.owner(iPlayer):
 		for plot in plots.surrounding(city):
 			if plot.getImprovementType() == iSlavePlantation:
-				if plot.getBonusType(-1) in lColonialResources:
+				if plot.getBonusType(-1) in crops:
 					iCount += 1
 	return iCount
 
