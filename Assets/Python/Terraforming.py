@@ -22,9 +22,11 @@ from Events import handler, ERROR_LOG
 
 ### CONSTANTS ###
 
-# how far the water-connectivity flood fill will look before assuming open ocean;
-# an unbounded fill would visit the entire ocean on a 150x80 map every reclamation
-iConnectivitySearchLimit = 400
+# how far from the site the water-connectivity check will look. An unbounded fill would visit
+# the whole ocean on a 150x80 map every reclamation; a window is enough because only a narrow
+# neck can be severed by a single plot. Water beyond it is treated as unreachable, so raising
+# this makes reclamation more permissive, not less.
+iConnectivityRadius = 4
 
 
 ### BEGIN IMPROVEMENT BUILT ###
@@ -185,9 +187,17 @@ def firstCityLosingCoast(target):
 
 
 def wouldSeverWater(target):
-	"""True if filling this plot would split the surrounding water into separate pools.
+	"""True unless the water around this plot provably stays joined without it.
 
-	Ships in a sealed pocket are stranded permanently, which the AI never recovers from.
+	Filling a strait splits one ocean in two, and nothing notices. The plot became land, so
+	CvPlot::setPlotType only re-examines land areas (CvPlot.cpp:5740); the water is never looked
+	at again and both halves keep one area id. Civ4 treats the area as its cheap "can a ship get
+	there" test, so every navy then believes the far side is reachable, runs an A* over the whole
+	ocean, and fails - every unit, every turn, until the game is unplayable.
+
+	So this fails closed. If connectivity cannot be proved within iConnectivityRadius the answer
+	is "it might sever" and the works are refused. Refusing a legal fill costs a work boat;
+	allowing an illegal one costs the game.
 	"""
 	neighbours = [p for p in plots.ring(target, radius=1) if p.isWater()]
 	if len(neighbours) < 2:
@@ -195,30 +205,30 @@ def wouldSeverWater(target):
 
 	reached = floodFill(neighbours[0], target)
 
-	# if the search hit its limit we are in open ocean, which cannot be severed by one plot
-	if reached is None:
-		return False
-
 	return any(location(p) not in reached for p in neighbours[1:])
 
 
 def floodFill(start, excluded):
 	"""Locations of water reachable from start without crossing `excluded`.
 
-	Returns None if the search exceeds iConnectivitySearchLimit, meaning open water.
+	Bounded to a window around the excluded plot rather than by a global budget. A plot can only
+	sever water by being a cut vertex, which means a narrow neck, and necks are narrow by
+	definition - so if the neighbours rejoin at all they rejoin close by. Water outside the
+	window is not searched and so does not count as reached, which is what makes the caller
+	conservative rather than optimistic.
 	"""
 	tExcluded = location(excluded)
+	ex, ey = tExcluded
 	seen = set([location(start)])
 	queue = [start]
 
 	while queue:
-		if len(seen) > iConnectivitySearchLimit:
-			return None
-
 		current = queue.pop()
 		for p in plots.ring(current, radius=1):
 			t = location(p)
 			if t == tExcluded or t in seen or not p.isWater():
+				continue
+			if plotDistance(t[0], t[1], ex, ey) > iConnectivityRadius:
 				continue
 			seen.add(t)
 			queue.append(p)
