@@ -6,10 +6,18 @@
 # CvPlot::setPlotType calls erase() on any water transition, which kills every unit on
 # the plot, kills any city on it, and strips the bonus, improvement, route, feature and
 # rivers. Everything below exists to make that destruction predictable.
+#
+# Nothing here calls CyMap::recalculateAreas. setPlotType's bRecalculate argument already
+# covers it: the DLL inspects the neighbours, decides whether the change merges or splits
+# landmasses, and rebuilds the areas itself only when it must. recalculateAreas is brutal -
+# it points every plot at FFreeList::INVALID_INDEX, destroys every CvArea, and rebuilds from
+# nothing - and CvPlot::setPlotType dereferences pLoopPlot->area() without a null check
+# (CvPlot.cpp:5723 and :5746). The only other callers in the mod are RegionMap, CvWBDesc and
+# MapParser, all of which run at map load, with no cities or units holding area references.
 
 from Core import *
 from RFCUtils import *
-from Events import handler
+from Events import handler, ERROR_LOG
 
 
 ### CONSTANTS ###
@@ -90,8 +98,9 @@ def flood(target):
 	evacuate(target)
 
 	# everything still standing here is destroyed by erase() inside setPlotType
+	trace('flood', target, 'setPlotType')
 	target.setPlotType(PlotTypes.PLOT_OCEAN, True, True)
-	map.recalculateAreas()
+	trace('flood', target, 'done')
 
 	announce(iOwner, 'TXT_KEY_TERRAFORMING_FLOODED', name, target)
 
@@ -139,13 +148,15 @@ def reclaim(target):
 	name = describe(target)
 	iTerrain = surroundingTerrain(target)
 
+	trace('reclaim', target, 'setPlotType')
 	target.setPlotType(PlotTypes.PLOT_LAND, True, True)
 
 	# setPlotType applies the global LAND_TERRAIN default; match the neighbours instead
 	if iTerrain >= 0:
+		trace('reclaim', target, 'setTerrainType %d' % iTerrain)
 		target.setTerrainType(iTerrain, True, True)
 
-	map.recalculateAreas()
+	trace('reclaim', target, 'done')
 
 	announce(iOwner, 'TXT_KEY_TERRAFORMING_RECLAIMED', name, target)
 
@@ -251,6 +262,20 @@ def shoal(target):
 
 
 ### SHARED ###
+
+def trace(operation, target, step):
+	"""Breadcrumb through the steps that can end the process without raising.
+
+	setPlotType runs a great deal of C++ - erase(), plot groups, area bookkeeping - and when that
+	dies it takes the process with it, leaving no Python exception and so no traceback. The only
+	evidence of how far the conversion got is what reached disk beforehand, so each step is
+	written before it is attempted. fileLog writes through on every call.
+	"""
+	try:
+		x, y = location(target)
+		fileLog(ERROR_LOG, "terraforming: %s (%d, %d) %s\n" % (operation, x, y, step))
+	except:
+		pass
 
 def isAdjacentToShallows(target):
 	"""Whether anything next to this plot is land or already shallow water."""
