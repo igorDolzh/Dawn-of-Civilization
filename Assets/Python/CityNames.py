@@ -636,13 +636,29 @@ def getDisplayNameForName(identifier, tile, tile_names, bFound=True):
 
 def getNameEvolution(identifier, tile):
 	tile_names = getTileNames(tile)
+
+	# A tile absent from Cities.csv has no name to evolve. FileMap stores None for every cell the
+	# file does not mention (Files.py:112) and treats None as "no value" throughout, so this is
+	# the map saying it knows nothing about the plot rather than anything having gone wrong.
+	#
+	# Until terraforming there was no way to reach this: the file names the tiles that were land
+	# when the map was drawn, and those were the only land there was. A plot raised from the sea
+	# is land the file has never heard of, and the None reached the join below as
+	# "sequence item 0: expected string, NoneType found".
+	if not tile_names[0]:
+		return ""
+
 	bFound = not plot_(tile).isCity()
-	
+
 	for translation, preceding in getApplicablePrecedingTranslations(identifier, tile, tile_names, bFound=bFound):
 		sequence = [t.name for t in preceding if t.isEraSpecific(bFound=bFound)] + [translation.name]
-		if sequence:
-			return " -> ".join(reversed([entry for entry in sequence if entry != "?"]))
-	
+
+		# test what is left after filtering, not before: a sequence of nothing but placeholders
+		# used to return an empty string here instead of falling through to getDisplayName
+		names = [entry for entry in sequence if entry and entry != "?"]
+		if names:
+			return " -> ".join(reversed(names))
+
 	return getDisplayName(identifier, tile)
 
 
