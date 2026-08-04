@@ -1806,6 +1806,30 @@
 		<Spanish>Slave</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_MIGRANT</Tag>
+		<English>Migrant</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MIGRANT_PEDIA</Tag>
+		<English>Families leaving a crowded or failing city for a better one. Building a Migrant costs the city a citizen; the Migrant restores that citizen to whichever of your cities it is standing in at the start of your turn.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MIGRANT_STRATEGY</Tag>
+		<English>Moves population from where it is unhappy, unhealthy or unfed to where it is not. A city of size 1 cannot raise one.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT] and can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</English>
 		<French>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT] and can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</French>

@@ -29,6 +29,7 @@ import History
 import Logging
 import Messages
 import Migration
+import Migrants
 import Minors
 import Periods
 import Plague

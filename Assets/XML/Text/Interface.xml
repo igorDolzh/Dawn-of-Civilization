@@ -58,6 +58,30 @@
 		<Spanish>&#161;Migrantes de %s1 se han asentado en %s2!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MIGRANT_DEPARTED</Tag>
+		<English>A family has left %s1 to seek a better life elsewhere.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MIGRANT_SETTLED</Tag>
+		<English>Migrants have settled in %s1!</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MIGRANT_TOO_SMALL</Tag>
+		<English>%s1 is too small to spare anyone, and the migrants have dispersed.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MIGRATION_INTERNAL</Tag>
 		<English>People are leaving %s1 to settle in %s2!</English>
 		<French>Des habitants quittent %s1 pour s'installer &#224; %s2 !</French>
