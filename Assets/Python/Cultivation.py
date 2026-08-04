@@ -136,31 +136,47 @@ def choose(target, iOwner, lChoices):
 	plot, peaks, hills, the terrain and feature the bonus needs, and latitude. Reimplementing any
 	of that in Python would only be a second opinion that could disagree with the first.
 
-	A resource counts if it is connected to the capital or merely standing on this player's land.
+	Two passes. The ground gets first say: if anything the empire keeps would grow here on its
+	own, that is what is planted, so a grassland becomes corn rather than whatever happens to head
+	the list. Only when nothing fits does the ground stop being consulted.
+
+	That second pass is the loose part, and it is deliberate. canHaveBonus enforces the rules that
+	decide where a resource appears when the world is generated - terrain, feature, hills,
+	latitude - and those describe where a thing arises unaided, not where people can establish it.
+	An empire holding only pigs, which want grassland, could otherwise cultivate almost nowhere.
+
+	What survives is the rule that matters: you can only spread what you already have. Without it
+	there would be nothing to choose between seven resources and every tile would come out corn.
 	"""
 	held = holdings(iOwner)
+	available = []
 
 	for iBonus in lChoices:
 		iConnected = player(iOwner).getNumAvailableBonuses(iBonus)
 		bHeld = iBonus in held
-		# bIgnoreLatitude: the bands decide where a resource appears when the world is generated,
-		# which is a different question from whether people can establish it. Pigs are kept across
-		# northern Europe and the band stops at fifty; sheep are barred from everything south of
-		# thirty. Terrain still applies, so pigs need grassland wherever they are.
-		bCanHave = target.canHaveBonus(iBonus, True)
 
-		trace("  candidate %-3d connected=%-3d held=%-5s canHaveBonus=%s" % (
-			iBonus, iConnected, bHeld, bCanHave))
+		trace("  candidate %-3d connected=%-3d held=%-5s natural=%s" % (
+			iBonus, iConnected, bHeld, target.canHaveBonus(iBonus, True)))
 
-		if iConnected <= 0 and not bHeld:
-			continue
+		if iConnected > 0 or bHeld:
+			available.append(iBonus)
 
-		if not bCanHave:
-			continue
+	if not available:
+		return -1
 
-		return iBonus
+	for iBonus in available:
+		if target.canHaveBonus(iBonus, True):
+			return iBonus
 
-	return -1
+	# Nothing belongs here naturally, so plant it anyway. The one thing not overridden is a
+	# resource already on the tile: createResource would replace it without a word, and losing
+	# the gold under your feet to a herd of pigs is not a trade anyone asked for.
+	if target.getBonusType(-1) >= 0:
+		trace("  tile already carries %d, leaving it alone" % target.getBonusType(-1))
+		return -1
+
+	trace("  nothing fits naturally, planting %d anyway" % available[0])
+	return available[0]
 
 
 def holdings(iOwner):
