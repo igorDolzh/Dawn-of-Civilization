@@ -136,16 +136,19 @@ def choose(target, iOwner, lChoices):
 	plot, peaks, hills, the terrain and feature the bonus needs, and latitude. Reimplementing any
 	of that in Python would only be a second opinion that could disagree with the first.
 
-	getNumAvailableBonuses counts what the empire has connected, so an unworked copy in a city
-	that is cut off does not qualify - you can spread what you actually have to hand.
+	A resource counts if it is connected to the capital or merely standing on this player's land.
 	"""
+	held = holdings(iOwner)
+
 	for iBonus in lChoices:
-		iHave = player(iOwner).getNumAvailableBonuses(iBonus)
+		iConnected = player(iOwner).getNumAvailableBonuses(iBonus)
+		bHeld = iBonus in held
 		bCanHave = target.canHaveBonus(iBonus, False)
 
-		trace("  candidate %-3d connected=%-3d canHaveBonus=%s" % (iBonus, iHave, bCanHave))
+		trace("  candidate %-3d connected=%-3d held=%-5s canHaveBonus=%s" % (
+			iBonus, iConnected, bHeld, bCanHave))
 
-		if iHave <= 0:
+		if iConnected <= 0 and not bHeld:
 			continue
 
 		if not bCanHave:
@@ -154,3 +157,33 @@ def choose(target, iOwner, lChoices):
 		return iBonus
 
 	return -1
+
+
+def holdings(iOwner):
+	"""Every resource standing on land this player's cities can reach, roads or no roads.
+
+	getNumAvailableBonuses is the strict test: it counts the capital's plot group, so a resource
+	has to be improved and joined to the capital by road or coast before it registers at all. That
+	is the right rule for deciding what you can build with. It is the wrong rule for deciding what
+	your farmers know how to grow - a province that has kept sheep for a century does not forget
+	them because a road was pillaged, or because the herd sits in a colony across the sea.
+
+	City radii rather than the whole territory: it is a few hundred plots instead of twelve
+	thousand, and a resource outside every city's reach is one nobody could improve or use anyway.
+	"""
+	bonuses = set()
+
+	for city in cities.owner(iOwner):
+		for i in range(21):
+			p = city.getCityIndexPlot(i)
+
+			# getCityIndexPlot returns a null plot where the radius runs off the map
+			if not p or p.isNone():
+				continue
+
+			iBonus = p.getBonusType(-1)
+
+			if iBonus >= 0 and p.getOwner() == iOwner:
+				bonuses.add(iBonus)
+
+	return bonuses
