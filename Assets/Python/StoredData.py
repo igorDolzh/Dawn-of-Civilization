@@ -111,6 +111,11 @@ class PlayerData:
 		
 		self.iAggressionLevel = 0
 		
+		# Food Imports
+		
+		# gold spent feeding this player's cities since the last treasury report
+		self.iFoodImportSpending = 0
+		
 		# Plague
 		
 		self.iPlagueCountdown = 0
@@ -340,6 +345,7 @@ class GameData:
 		# Food Imports
 		
 		self.lImportDependentCities = []
+		self.iFoodImportReportTimer = 0
 		
 		# Crusades
 		

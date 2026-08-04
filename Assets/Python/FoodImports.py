@@ -42,6 +42,9 @@ iSizeSurcharge = 10
 # feeding cities can never bankrupt a player - least of all the AI, which does not budget
 iTreasuryShare = 25
 
+# turns between treasury reports on what imported food is costing
+iReportInterval = 20
+
 
 ### BEGIN PLAYER TURN ###
 
@@ -69,9 +72,43 @@ def importFood(iGameTurn, iPlayer):
 			player(iPlayer).changeGold(-iCost)
 			city.changeFood(iDeficit)
 			iBudget -= iCost
+			data.players[iPlayer].iFoodImportSpending += iCost
 			notifyDependence(city)
 		else:
 			famine(city)
+
+
+### TREASURY REPORT ###
+
+@handler("BeginGameTurn")
+def reportFoodImports(iGameTurn):
+	"""Say periodically what feeding the empire has cost.
+
+	notifyDependence fires once per city and never again, so a player who took on imported food
+	early pays for it for the rest of the game with nothing on screen to show where the gold went.
+	The charge is per city per turn and easily the largest invisible line in a late treasury.
+
+	Reported per player rather than per city: the individual amounts are small and the total is
+	the number worth acting on.
+	"""
+	data.iFoodImportReportTimer -= 1
+
+	if data.iFoodImportReportTimer > 0:
+		return
+
+	iPeriod = turns(iReportInterval)
+	data.iFoodImportReportTimer = iPeriod
+
+	for iPlayer in players.major().existing():
+		iSpent = data.players[iPlayer].iFoodImportSpending
+		data.players[iPlayer].iFoodImportSpending = 0
+
+		if iSpent <= 0:
+			continue
+
+		message(iPlayer, 'TXT_KEY_FOOD_IMPORT_SUMMARY', iSpent, iPeriod,
+			event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
+			color=iYellow)
 
 
 def isImportDependent(city):
@@ -191,6 +228,8 @@ def notifyDependence(city):
 
 	data.lImportDependentCities.append(tLocation)
 
+	# a major event: this is the moment a city stops paying for itself and starts charging the
+	# treasury every turn for the rest of the game, and it is announced exactly once
 	message(city.getOwner(), 'TXT_KEY_FOOD_IMPORT_DEPENDENT', city.getName(),
-		event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
+		event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT,
 		color=iYellow, location=city)
