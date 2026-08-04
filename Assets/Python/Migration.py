@@ -292,6 +292,8 @@ def announce(sourceCity, targetCity, sSourceName, sTargetName):
 		event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
 		button=infos.unit(iSettler).getButton(), color=iYellow, location=sourceCity)
 
+	# a major event on the receiving side: arrivals from abroad are a citizen the empire did not
+	# have to grow, and unlike the departure above they are net population rather than a transfer
 	message(iTargetPlayer, 'TXT_KEY_MIGRATION_IMMIGRATION', sSourceName, sTargetName,
-		event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
+		event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT,
 		button=infos.unit(iSettler).getButton(), color=iYellow, location=targetCity)

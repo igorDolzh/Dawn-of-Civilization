@@ -200,9 +200,11 @@ def famine(city):
 		color=iRed, location=city)
 
 	if destination.getOwner() != iOwner:
+		# same treatment as an ordinary arrival in Migration.announce, and the same settler button,
+		# so refugees from a foreign famine read as immigration rather than as a different mechanic
 		message(destination.getOwner(), 'TXT_KEY_MIGRATION_IMMIGRATION', city.getName(), destination.getName(),
-			event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
-			color=iYellow, location=destination)
+			event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT,
+			button=infos.unit(iSettler).getButton(), color=iYellow, location=destination)
 
 
 def findRefuge(city):
