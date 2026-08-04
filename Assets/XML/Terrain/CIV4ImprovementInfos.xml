@@ -3056,6 +3056,11 @@
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
+			<FeatureMakesValids/>
+			<ImprovementPillage/>
+			<ImprovementUpgrade/>
+			<TechYieldChanges/>
+			<RouteYieldChanges/>
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>
 		<ImprovementInfo>
@@ -3102,6 +3107,11 @@
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
+			<FeatureMakesValids/>
+			<ImprovementPillage/>
+			<ImprovementUpgrade/>
+			<TechYieldChanges/>
+			<RouteYieldChanges/>
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>
 	</ImprovementInfos>
