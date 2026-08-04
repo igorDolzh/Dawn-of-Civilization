@@ -916,6 +916,7 @@
 			<iAnarchyLength>2</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCorporationCommerceModifier>-50</iCorporationCommerceModifier>
+			<iCorporationUnhappinessModifier>-100</iCorporationUnhappinessModifier>
 			<iFoodProductionModifier>25</iFoodProductionModifier>
 			<bNoForeignTrade>1</bNoForeignTrade>
 		</CivicInfo>
