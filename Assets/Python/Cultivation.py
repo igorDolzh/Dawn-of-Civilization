@@ -143,7 +143,11 @@ def choose(target, iOwner, lChoices):
 	for iBonus in lChoices:
 		iConnected = player(iOwner).getNumAvailableBonuses(iBonus)
 		bHeld = iBonus in held
-		bCanHave = target.canHaveBonus(iBonus, False)
+		# bIgnoreLatitude: the bands decide where a resource appears when the world is generated,
+		# which is a different question from whether people can establish it. Pigs are kept across
+		# northern Europe and the band stops at fifty; sheep are barred from everything south of
+		# thirty. Terrain still applies, so pigs need grassland wherever they are.
+		bCanHave = target.canHaveBonus(iBonus, True)
 
 		trace("  candidate %-3d connected=%-3d held=%-5s canHaveBonus=%s" % (
 			iBonus, iConnected, bHeld, bCanHave))
