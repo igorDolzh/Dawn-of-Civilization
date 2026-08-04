@@ -332,6 +332,9 @@ class GameData:
 		# when the improvement is built: see Terraforming.onTerraformingWorks.
 		self.lTerraformingQueue = []
 
+		# cultivated tiles waiting for their crop, as (x, y); see Cultivation.onCultivation
+		self.lCultivationQueue = []
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}

@@ -278,6 +278,46 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CULTIVATION</Tag>
+		<English>Cultivation</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CULTIVATION_PEDIA</Tag>
+		<English>Ground being broken for a crop or a pasture. When the work is done the land carries whichever of your resources will grow there.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_CULTIVATION</Tag>
+		<English>Cultivate</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CULTIVATION_GREW</Tag>
+		<English>%s1 now grows near %s2.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CULTIVATION_BARREN</Tag>
+		<English>Nothing we keep will grow on this ground, and the cultivation has come to nothing.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_SHOALING_WORKS_PEDIA</Tag>
 		<English>Raises the floor of a deep ocean tile until it becomes shallow coast. The water remains, but a city may work it, a harbour may reach it, and coastal ships may cross it.</English>
 		<French>No Translation</French>

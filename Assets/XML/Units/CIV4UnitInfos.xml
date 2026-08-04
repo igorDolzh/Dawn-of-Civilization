@@ -693,6 +693,10 @@
 					<BuildType>BUILD_FLOOD</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+							<Build>
+								<BuildType>BUILD_CULTIVATION</BuildType>
+								<bBuild>1</bBuild>
+							</Build>
 			</Builds>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
