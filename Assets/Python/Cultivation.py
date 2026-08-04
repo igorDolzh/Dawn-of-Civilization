@@ -17,7 +17,7 @@
 # still running.
 
 from Core import *
-from Events import handler
+from Events import handler, ERROR_LOG
 
 import Resources
 
@@ -45,6 +45,21 @@ dWorks = {
 }
 
 
+### TRACE ###
+
+def trace(message):
+	"""Write to Logs\\Errors.log.
+
+	Every gate here is silent: an improvement id that does not match, a resource the empire does
+	not have, a plot canHaveBonus rejects. Each one ends with nothing on the tile and nothing on
+	screen, which is indistinguishable from the handler never running at all.
+	"""
+	try:
+		fileLog(ERROR_LOG, "cultivation: %s\n" % message)
+	except:
+		pass
+
+
 ### BEGIN IMPROVEMENT BUILT ###
 
 @handler("improvementBuilt")
@@ -55,8 +70,12 @@ def onCultivation(iImprovement, x, y):
 	(CvPlot.cpp:6389) and clearing the marker would re-enter it on the plot it is halfway through
 	updating - the defect that made reclamation take the whole process down.
 	"""
+	trace("built improvement %d at (%d, %d); cultivation=%d restocking=%d" % (
+		iImprovement, x, y, iCultivation, iRestocking))
+
 	if iImprovement in dWorks:
 		data.lCultivationQueue.append((x, y, iImprovement))
+		trace("queued (%d, %d); queue now %d" % (x, y, len(data.lCultivationQueue)))
 
 
 @handler("BeginGameTurn")
@@ -65,11 +84,16 @@ def processCultivation(iGameTurn):
 	queue = data.lCultivationQueue
 	data.lCultivationQueue = []
 
+	if queue:
+		trace("processing %d queued works" % len(queue))
+
 	for x, y, iImprovement in queue:
 		target = plot(x, y)
 
 		# the marker can be gone by now: pillaged, or the tile captured and rebuilt
 		if target.getImprovementType() != iImprovement:
+			trace("(%d, %d) marker gone: expected %d, found %d" % (
+				x, y, iImprovement, target.getImprovementType()))
 			continue
 
 		cultivate(target, dWorks[iImprovement])
@@ -86,7 +110,12 @@ def cultivate(target, lChoices):
 	if iOwner < 0:
 		return
 
+	trace("(%d, %d) owner=%d terrain=%d feature=%d hills=%s bonus=%d" % (
+		x, y, iOwner, target.getTerrainType(), target.getFeatureType(),
+		target.isHills(), target.getBonusType(-1)))
+
 	iBonus = choose(target, iOwner, lChoices)
+	trace("(%d, %d) chose %d" % (x, y, iBonus))
 
 	if iBonus < 0:
 		message(iOwner, 'TXT_KEY_CULTIVATION_BARREN',
@@ -111,10 +140,15 @@ def choose(target, iOwner, lChoices):
 	that is cut off does not qualify - you can spread what you actually have to hand.
 	"""
 	for iBonus in lChoices:
-		if player(iOwner).getNumAvailableBonuses(iBonus) <= 0:
+		iHave = player(iOwner).getNumAvailableBonuses(iBonus)
+		bCanHave = target.canHaveBonus(iBonus, False)
+
+		trace("  candidate %-3d connected=%-3d canHaveBonus=%s" % (iBonus, iHave, bCanHave))
+
+		if iHave <= 0:
 			continue
 
-		if not target.canHaveBonus(iBonus, False):
+		if not bCanHave:
 			continue
 
 		return iBonus
