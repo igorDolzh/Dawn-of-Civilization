@@ -84,7 +84,7 @@
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>
 			<iMaintenance>0</iMaintenance>
-			<iHappiness>-2</iHappiness>
+			<iHappiness>-1</iHappiness>
 			<iHealth>0</iHealth>
 			<iMaxConsumableBonuses>12</iMaxConsumableBonuses>
 			<PrereqBonuses>
@@ -265,7 +265,7 @@
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>
 			<iMaintenance>0</iMaintenance>
-			<iHappiness>-3</iHappiness>
+			<iHappiness>-1</iHappiness>
 			<iHealth>-2</iHealth>
 			<iMaxConsumableBonuses>12</iMaxConsumableBonuses>
 			<PrereqBonuses>
@@ -343,7 +343,7 @@
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>
 			<iMaintenance>0</iMaintenance>
-			<iHappiness>-3</iHappiness>
+			<iHappiness>-2</iHappiness>
 			<iHealth>-2</iHealth>
 			<iMaxConsumableBonuses>12</iMaxConsumableBonuses>
 			<PrereqBonuses>
