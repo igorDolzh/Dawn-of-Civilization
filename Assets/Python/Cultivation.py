@@ -24,13 +24,20 @@ import Resources
 
 ### CONSTANTS ###
 
-# What can be cultivated, in the order it is preferred. These are exactly the members of
-# BONUSCLASS_GRAIN and BONUSCLASS_LIVESTOCK - the mod already separates what grows from what is
-# dug up, so there is no hand-written judgement here about what counts as farmable.
+# What can be cultivated, in the order it is preferred. Every land resource the game treats as
+# food: BONUSCLASS_GRAIN and BONUSCLASS_LIVESTOCK, plus the rest of what carries +1 health, which
+# is how Civ4 marks something as eaten rather than smelted or worn.
 #
-# Grain before livestock, and within each the more productive first: the tile is the point, and a
-# grass tile carrying corn is worth more than the same tile carrying sheep.
-lCultivable = [iCorn, iRice, iWheat, iPotato, iCow, iSheep, iPig]
+# The order matters more than it looks. When nothing suits the ground the first entry the empire
+# holds is planted regardless, so this runs from the staples outward: grains, then orchard crops,
+# then herds, then the specialities. A tile that could take corn should not come out as salt
+# because salt happened to be listed first.
+lCultivable = [
+	iCorn, iRice, iWheat, iMillet, iPotato,
+	iCitrus, iDates, iOlives, iBanana, iSugar,
+	iCow, iSheep, iPig,
+	iDeer, iCamel, iSalt,
+]
 
 # What can be restocked. There is no bonus class for the sea, so unlike the land list this one is
 # a judgement: the marine resources that reproduce, and can therefore be seeded and left to breed.
