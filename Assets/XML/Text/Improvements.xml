@@ -318,6 +318,30 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_RESTOCKING</Tag>
+		<English>Restocking</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_RESTOCKING_PEDIA</Tag>
+		<English>Waters being seeded with a shoal or a bed taken from your own fisheries. When the work is done the sea carries whichever of your marine resources will live there.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_RESTOCKING</Tag>
+		<English>Restock</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_SHOALING_WORKS_PEDIA</Tag>
 		<English>Raises the floor of a deep ocean tile until it becomes shallow coast. The water remains, but a city may work it, a harbour may reach it, and coastal ships may cross it.</English>
 		<French>No Translation</French>

@@ -17250,6 +17250,10 @@
 					<BuildType>BUILD_SHOALING</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_RESTOCKING</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iCost>30</iCost>
