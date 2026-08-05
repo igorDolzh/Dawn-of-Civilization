@@ -1225,7 +1225,12 @@ class PlotFactory:
 	def surrounding(self, *args, **kwargs):
 		radius = kwargs.get('radius', 1)
 		if radius < 0: raise ValueError("radius cannot be negative, received: '%d'" % radius)
-		x, y = _parse_tile(*args)
+		tile = _parse_tile(*args)
+		# _parse_tile answers None for a destroyed city or unit, and unpacking that reports
+		# "TypeError: unpack non-sequence" from here - which names neither the caller nor the
+		# object. Say what was actually passed instead.
+		if tile is None: raise ValueError("no valid tile in %s, entity may have been destroyed" % (args,))
+		x, y = tile
 		if not isinstance(x, int): raise Exception("x must be int, is %s" % type(x))
 		if not isinstance(y, int): raise Exception("y must be int, is %s" % type(y))
 		return Plots(sort(list(set(wrap(x+i, y+j) for i in range(-radius, radius+1) for j in range(-radius, radius+1)))))

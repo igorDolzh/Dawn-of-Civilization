@@ -182,9 +182,18 @@ def hasWarClaim(iPlayer, city):
 	return True
 		
 def secedeCity(city, iNewOwner, bRelocate, iArmyPercent):
-	if not city: 
+	# `if not city` does not catch a city that has already been destroyed: the handle stays
+	# truthy and only isNone() reports it. That matters because the list of seceding cities is
+	# built before any of the flipping starts - cities are razed at the top of secedeCities, a
+	# resurrection can take cities that are also queued for a minor below - so by the time a
+	# later entry is reached its city may be gone.
+	#
+	# The test matches _parse_tile's own, since the first thing done with the city is to ask
+	# plots.surrounding for its neighbours, and that unpacks _parse_tile's result without
+	# checking it. A dead city there reads as "TypeError: unpack non-sequence".
+	if not city or city.isNone() or city.getX() < 0:
 		return
-	
+
 	name = city.getName()
 	iOldOwner = city.getOwner()
 	tile = location(city)
