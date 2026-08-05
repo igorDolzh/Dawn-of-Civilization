@@ -555,6 +555,52 @@ def algerianPower(iGameTurn, iPlayer):
 		unit.setDamage(min(80, unit.getDamage() + iAlgerianAttrition), iPlayer)
 
 
+# Russian UP: General Winter - the army that reached Moscow and the army that left it were not
+# the same army, and no battle accounted for the difference. Distance and cold did.
+#
+# Deliberately the same shape as the Algerian power above rather than something cleverer: both
+# describe an occupier bleeding for being where it is, and one mechanic behaving one way is worth
+# more than two that nearly agree.
+iRussianAttrition = 3
+
+# what the north costs on top. Snow and tundra are the ground that emptied the Grande Armee and
+# stopped Barbarossa, so an invader who pushes into them pays almost three times over
+iRussianWinterAttrition = 8
+lRussianWinterTerrains = [iSnow, iTundra]
+
+# attrition is never lethal here either: it hands you a broken army, not a won war
+iRussianAttritionCap = 80
+
+
+@handler("BeginPlayerTurn")
+def russianPower(iGameTurn, iPlayer):
+	if civ(iPlayer) != iRussia:
+		return
+
+	tPlayer = team(iPlayer)
+
+	for unit in units.all().where(lambda unit: plot(unit).getOwner() == iPlayer):
+		iOwner = unit.getOwner()
+
+		if iOwner == iPlayer or is_minor(iOwner):
+			continue
+
+		if not tPlayer.isAtWar(player(iOwner).getTeam()):
+			continue
+
+		# ships are not caught by a winter on land, and a fleet in your waters is a different
+		# problem from an army in your provinces
+		if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
+			continue
+
+		if plot(unit).getTerrainType() in lRussianWinterTerrains:
+			iAttrition = iRussianWinterAttrition
+		else:
+			iAttrition = iRussianAttrition
+
+		unit.setDamage(min(iRussianAttritionCap, unit.getDamage() + iAttrition), iPlayer)
+
+
 # Ukrainian UP: the Breadbasket - the black earth of the steppe, which fed empires that had no
 # particular interest in the people farming it.
 iUkrainianFood = 2
