@@ -1234,7 +1234,12 @@ class Birth(object):
 		
 		for city in flippedCities:
 			city = completeCityFlip(city, self.iPlayer, city.getOwner(), 100, bFlipUnits=True)
-			
+
+			# completeCityFlip answers None when the city did not survive the transfer, and
+			# prepareCity goes straight to city.rebuild()
+			if not city or city.isNone():
+				continue
+
 			self.prepareCity(city)
 		
 		convertSurroundingPlotCulture(self.iPlayer, flippedPlots.land())

@@ -202,8 +202,10 @@ def depopulate(iPlayer):
 	if not coastal:
 		return
 
-	city = coastal.where_maximum(lambda city: city.getPopulation())
-	if not city or city.getPopulation() <= 1:
+	# maximum, not where_maximum: the latter returns the subset of cities that tie for the largest
+	# population, and a collection has no getPopulation
+	city = coastal.maximum(lambda city: city.getPopulation())
+	if not city or city.isNone() or city.getPopulation() <= 1:
 		return
 
 	city.changePopulation(-1)

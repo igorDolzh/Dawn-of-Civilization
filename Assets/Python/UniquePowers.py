@@ -530,6 +530,40 @@ def nigerianPower(iGameTurn, iPlayer):
 	player(iPlayer).changeGold(scale(iPopulation / iNigerianGoldPerPopulation))
 
 
+def occupiers(iPlayer):
+	"""Enemy land units standing inside this player's borders.
+
+	units.all() does not exist - UnitFactory offers of, owner, at and surrounding, and nothing
+	else - so this walks the units of the civilizations actually at war instead. That is also far
+	less work than looking at every unit on the map to discard almost all of them.
+
+	Ships are left out: a fleet in your waters is a different problem from an army in your
+	provinces, and neither attrition power has any business sinking one.
+	"""
+	tPlayer = team(iPlayer)
+	lOccupiers = []
+
+	for iOther in players.major().existing():
+		if iOther == iPlayer:
+			continue
+
+		if not tPlayer.isAtWar(player(iOther).getTeam()):
+			continue
+
+		for unit in units.owner(iOther):
+			# a unit killed earlier this turn is still in the collection
+			if unit.isNone() or unit.getX() < 0:
+				continue
+
+			if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
+				continue
+
+			if plot(unit).getOwner() == iPlayer:
+				lOccupiers.append(unit)
+
+	return lOccupiers
+
+
 # Algerian UP: Guerre d'Algerie - a war fought in a country the occupier never controlled outside
 # the cities. An army inside Algeria bleeds whether or not anyone gives battle.
 iAlgerianAttrition = 4
@@ -540,17 +574,7 @@ def algerianPower(iGameTurn, iPlayer):
 	if civ(iPlayer) != iAlgeria:
 		return
 
-	tPlayer = team(iPlayer)
-
-	for unit in units.all().where(lambda unit: plot(unit).getOwner() == iPlayer):
-		iOwner = unit.getOwner()
-
-		if iOwner == iPlayer or is_minor(iOwner):
-			continue
-
-		if not tPlayer.isAtWar(player(iOwner).getTeam()):
-			continue
-
+	for unit in occupiers(iPlayer):
 		# never lethal: attrition wears an occupier down, it does not win the battle for you
 		unit.setDamage(min(80, unit.getDamage() + iAlgerianAttrition), iPlayer)
 
@@ -577,22 +601,7 @@ def russianPower(iGameTurn, iPlayer):
 	if civ(iPlayer) != iRussia:
 		return
 
-	tPlayer = team(iPlayer)
-
-	for unit in units.all().where(lambda unit: plot(unit).getOwner() == iPlayer):
-		iOwner = unit.getOwner()
-
-		if iOwner == iPlayer or is_minor(iOwner):
-			continue
-
-		if not tPlayer.isAtWar(player(iOwner).getTeam()):
-			continue
-
-		# ships are not caught by a winter on land, and a fleet in your waters is a different
-		# problem from an army in your provinces
-		if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
-			continue
-
+	for unit in occupiers(iPlayer):
 		if plot(unit).getTerrainType() in lRussianWinterTerrains:
 			iAttrition = iRussianWinterAttrition
 		else:
