@@ -175,8 +175,21 @@ def famine(city):
 
 	doGrowth does the shrinking itself, so nothing here touches the source city's food or
 	population - doing so would cost it two citizens instead of one. Only the arrival is added.
+
+	Which makes the timing everything, and getting it wrong is how a player ends up reporting a
+	population of a billion.
 	"""
 	iOwner = city.getOwner()
+
+	# Only on the turn the city actually loses someone. doGrowth takes a citizen when the food box
+	# runs out, not when the city is merely hungry: CvCity.cpp:15315 subtracts the deficit and
+	# shrinks only if getFood() has gone below zero. This function runs every turn the city cannot
+	# be paid for, so relocating on any other turn hands the destination a citizen the source
+	# never lost. A large city with a full box starves once in several turns and was being emptied
+	# into a neighbour on every one of them - population created from nothing, every turn, for the
+	# rest of the game, and compounding as the cities it inflates grow hungrier in their turn.
+	if city.getFood() + city.foodDifference(False) >= 0:
+		return
 
 	# doGrowth spares size-1 cities, so growing a destination here would invent a citizen
 	if city.getPopulation() <= 1:
