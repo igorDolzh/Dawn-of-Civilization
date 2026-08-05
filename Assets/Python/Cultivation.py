@@ -157,23 +157,26 @@ def choose(target, iOwner, lChoices):
 	"""
 	held = holdings(iOwner)
 	available = []
+	dCount = {}
 
 	for iBonus in lChoices:
 		iConnected = player(iOwner).getNumAvailableBonuses(iBonus)
-		bHeld = iBonus in held
+		iHeld = held.get(iBonus, 0)
 
-		trace("  candidate %-3d connected=%-3d held=%-5s natural=%s" % (
-			iBonus, iConnected, bHeld, target.canHaveBonus(iBonus, True)))
+		trace("  candidate %-3d connected=%-3d held=%-3d natural=%s" % (
+			iBonus, iConnected, iHeld, target.canHaveBonus(iBonus, True)))
 
-		if iConnected > 0 or bHeld:
+		if iConnected > 0 or iHeld > 0:
 			available.append(iBonus)
+			dCount[iBonus] = iConnected + iHeld
 
 	if not available:
 		return -1
 
-	for iBonus in available:
-		if target.canHaveBonus(iBonus, True):
-			return iBonus
+	fitting = [iBonus for iBonus in available if target.canHaveBonus(iBonus, True)]
+
+	if fitting:
+		return rarest(fitting, dCount)
 
 	# Nothing belongs here naturally, so plant it anyway. The one thing not overridden is a
 	# resource already on the tile: createResource would replace it without a word, and losing
@@ -182,12 +185,41 @@ def choose(target, iOwner, lChoices):
 		trace("  tile already carries %d, leaving it alone" % target.getBonusType(-1))
 		return -1
 
-	trace("  nothing fits naturally, planting %d anyway" % available[0])
-	return available[0]
+	iBonus = rarest(available, dCount)
+	trace("  nothing fits naturally, planting %d anyway" % iBonus)
+	return iBonus
+
+
+def rarest(lBonuses, dCount):
+	"""Whichever of these the empire has least of.
+
+	Order used to decide this, and order is self-reinforcing: plant one wheat and the empire now
+	holds wheat, and wheat sits third in the list, so it beat everything after it on every tile
+	from then on. The first success chose every cultivation that followed, which is why a player
+	reported finding nothing but wheat.
+
+	Counting instead makes each planting argue against the next one of its kind, so a cultivated
+	resource becomes less attractive precisely because it succeeded. Ties break on list order,
+	which keeps the result deterministic - it must not depend on dictionary iteration, and it must
+	not draw from the synced random number generator either.
+	"""
+	iBest = -1
+	iFewest = -1
+
+	for iBonus in lBonuses:
+		iCount = dCount.get(iBonus, 0)
+
+		if iBest < 0 or iCount < iFewest:
+			iBest, iFewest = iBonus, iCount
+
+	return iBest
 
 
 def holdings(iOwner):
-	"""Every resource standing on land this player's cities can reach, roads or no roads.
+	"""How many tiles of each resource stand on land this player's cities can reach.
+
+	Counted rather than merely listed, because the count is what stops one resource taking over:
+	each planting makes the next of its kind less likely.
 
 	getNumAvailableBonuses is the strict test: it counts the capital's plot group, so a resource
 	has to be improved and joined to the capital by road or coast before it registers at all. That
@@ -198,7 +230,8 @@ def holdings(iOwner):
 	City radii rather than the whole territory: it is a few hundred plots instead of twelve
 	thousand, and a resource outside every city's reach is one nobody could improve or use anyway.
 	"""
-	bonuses = set()
+	dBonuses = {}
+	seen = set()
 
 	for city in cities.owner(iOwner):
 		for i in range(21):
@@ -208,9 +241,16 @@ def holdings(iOwner):
 			if not p or p.isNone():
 				continue
 
+			tile = location(p)
+
+			# city radii overlap, and a tile counted twice would look twice as common
+			if tile in seen:
+				continue
+
+			seen.add(tile)
 			iBonus = p.getBonusType(-1)
 
 			if iBonus >= 0 and p.getOwner() == iOwner:
-				bonuses.add(iBonus)
+				dBonuses[iBonus] = dBonuses.get(iBonus, 0) + 1
 
-	return bonuses
+	return dBonuses
