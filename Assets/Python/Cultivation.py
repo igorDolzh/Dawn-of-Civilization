@@ -24,19 +24,21 @@ import Resources
 
 ### CONSTANTS ###
 
-# What can be cultivated, in the order it is preferred. Every land resource the game treats as
-# food: BONUSCLASS_GRAIN and BONUSCLASS_LIVESTOCK, plus the rest of what carries +1 health, which
-# is how Civ4 marks something as eaten rather than smelted or worn.
+# What can be cultivated. The test is the improvement that harvests it, which is the game's own
+# statement of how a resource is got: a farm, a paddy field, an orchard, a plantation or a pasture
+# is something grown or herded, and can therefore be established somewhere new.
 #
-# The order matters more than it looks. When nothing suits the ground the first entry the empire
-# holds is planted regardless, so this runs from the staples outward: grains, then orchard crops,
-# then herds, then the specialities. A tile that could take corn should not come out as salt
-# because salt happened to be listed first.
+# That excludes two things an earlier and worse test let in. Salt is worked by a quarry and deer
+# by a camp - one is dug out of the ground and the other is hunted, and neither is planted
+# whatever a farmer might wish. Both had qualified under "carries +1 health", which describes what
+# can be eaten rather than what can be grown, and salt duly began appearing on cultivated fields.
+#
+# Order only breaks ties now that the rarest held resource is preferred, but it still runs staples
+# outward so that a tie resolves to the more ordinary crop.
 lCultivable = [
 	iCorn, iRice, iWheat, iMillet, iPotato,
 	iCitrus, iDates, iOlives, iBanana, iSugar,
-	iCow, iSheep, iPig,
-	iDeer, iCamel, iSalt,
+	iCow, iSheep, iPig, iCamel,
 ]
 
 # What can be restocked. There is no bonus class for the sea, so unlike the land list this one is
