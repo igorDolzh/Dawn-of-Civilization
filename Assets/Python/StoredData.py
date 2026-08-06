@@ -335,6 +335,12 @@ class GameData:
 		# cultivated tiles waiting for their crop, as (x, y); see Cultivation.onCultivation
 		self.lCultivationQueue = []
 
+		# Overcrowding
+		
+		# happiness granted per city to cancel the doubled overcrowding anger, by (x, y);
+		# see Overcrowding.relieve
+		self.dOvercrowdingRelief = {}
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}
