@@ -5487,7 +5487,12 @@ int CvCity::getOvercrowdingPercentAnger(int iExtra) const
 	iAnger = 0;
 	iPopulation = getPopulation() + iExtra;
 
-	iOvercrowding = iPopulation + std::max(0, iPopulation-10);
+	// Every citizen past the tenth used to anger twice: iPopulation + max(0, iPopulation - 10),
+	// so a city of sixteen carried twenty-two unhappy faces. Back to the Beyond the Sword rule of
+	// one citizen, one face. Assets/Python/Overcrowding.py compensates for this from Python until
+	// the DLL is rebuilt, and detects the change rather than assuming it, so it will stop of its
+	// own accord once this line is in effect.
+	iOvercrowding = iPopulation;
 
 	if (iOvercrowding > 0)
 	{

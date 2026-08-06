@@ -54,7 +54,7 @@ def relieve(city):
 	erase whatever else had contributed to it.
 	"""
 	tile = location(city)
-	iRelief = max(0, city.getPopulation() - 10)
+	iRelief = excess(city)
 	iApplied = data.dOvercrowdingRelief.get(tile, 0)
 
 	if iRelief == iApplied:
@@ -62,3 +62,21 @@ def relieve(city):
 
 	city.changeExtraHappiness(iRelief - iApplied)
 	data.dOvercrowdingRelief[tile] = iRelief
+
+
+def excess(city):
+	"""How many unhappy faces the doubling invents here, asked of the DLL rather than assumed.
+
+	getOvercrowdingPercentAnger returns (overcrowding * divisor / population) + 1, so under the
+	vanilla rule - where overcrowding is simply the population - it is always divisor + 1, at any
+	size. Anything above that is the second term, and only the second term, showing itself.
+
+	Asking is worth the call. If the DLL is ever rebuilt with the vanilla formula this returns
+	zero of its own accord and the module falls silent, rather than handing out happiness that
+	nothing is taking away. The alternative was to assume the doubling is present and hard-code
+	max(0, population - 10), which is right until the day it silently is not.
+	"""
+	if city.getOvercrowdingPercentAnger(0) <= gc.getPERCENT_ANGER_DIVISOR() + 1:
+		return 0
+
+	return max(0, city.getPopulation() - 10)
