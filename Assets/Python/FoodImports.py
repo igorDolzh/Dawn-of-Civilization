@@ -1,5 +1,8 @@
 # Food imports: from the railway age, cities buy the food their own land cannot grow.
 #
+# Currently switched off - see bEnabled below. What follows describes the mechanic as it works
+# when it is on, and none of it runs while it is not.
+#
 # Before this, every city fed itself from its worked tiles in every era - a 20th century
 # metropolis lived under the same rule as a bronze age village. Once bulk transport exists, a
 # city running a local deficit covers it from the treasury instead.
@@ -29,6 +32,18 @@ import Migration
 
 ### CONSTANTS ###
 
+# Whether cities may buy food at all.
+#
+# Off, and a city that cannot feed itself simply starves, as it did before this module existed:
+# nothing is charged to the treasury, nobody is relocated, and CvCity::doGrowth handles the whole
+# affair by itself. Turned off because the bill was the largest invisible line in a late empire's
+# budget - a share of gold on hand, every turn, for every hungry city, and easily worse than the
+# citizen it was saving.
+#
+# Everything below still works if this is turned back on. The one thing that will not come back is
+# the population already created by the famine relocation before it was fixed.
+bEnabled = False
+
 # bulk grain by rail is what let London, Chicago and Berlin outgrow their hinterland
 iFoodImportTech = iRailroad
 
@@ -56,6 +71,9 @@ def importFood(iGameTurn, iPlayer):
 	CvPlayer.cpp:3008 and cities are handled at :3048, so paying here offsets exactly the
 	deficit that doGrowth is about to subtract, and no starvation occurs.
 	"""
+	if not bEnabled:
+		return
+
 	if is_minor(iPlayer):
 		return
 
@@ -120,7 +138,15 @@ def isImportDependent(city):
 
 
 def canImport(city):
-	"""Whether food could physically reach this city, ignoring whether it can be paid for."""
+	"""Whether food could physically reach this city, ignoring whether it can be paid for.
+
+	Answering no while the mechanic is off matters beyond this module: effectiveFoodDifference
+	falls back to the city's real deficit, so Migration's scorers see a starving city as starving
+	rather than as one quietly kept alive by a treasury that is no longer paying.
+	"""
+	if not bEnabled:
+		return False
+
 	iOwner = city.getOwner()
 
 	if is_minor(iOwner):
