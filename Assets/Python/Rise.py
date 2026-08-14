@@ -12,6 +12,7 @@ from Events import events, handler
 from Collapse import completeCollapse
 from Popups import popup
 
+import SimultaneousStart
 import Logging as log
 
 import BugCore
@@ -102,7 +103,14 @@ def showDawnOfMan(iGameTurn):
 
 @handler("GameStart")
 def initBirths():
-	data.births = [Birth(iCiv) for iCiv in lBirthOrder if iCiv not in lDisabledCivs]
+	lCivs = [iCiv for iCiv in lBirthOrder if iCiv not in lDisabledCivs]
+	
+	# a simultaneous start cannot use the whole roster: sixty-eight civilizations do not fit in
+	# thirty-six player slots, and nothing recycles them when nobody dies first
+	if SimultaneousStart.enabled():
+		lCivs = [iCiv for iCiv in lCivs if iCiv in SimultaneousStart.lSimultaneousCivs]
+	
+	data.births = [Birth(iCiv) for iCiv in lCivs]
 	
 	for birth in data.births:
 		birth.check()
@@ -416,7 +424,11 @@ class Birth(object):
 
 	def __init__(self, iCiv):
 		self.iCiv = iCiv
-		self.iTurn = year(dBirth[iCiv])
+		# everyone at the scenario's own start rather than their historical year
+		if SimultaneousStart.enabled():
+			self.iTurn = scenarioStartTurn()
+		else:
+			self.iTurn = year(dBirth[iCiv])
 		
 		self.iPlayer = None
 		self.area = None

@@ -1,3 +1,5 @@
+import SimultaneousStart
+
 from Core import *
 
 from StoredData import data
@@ -99,6 +101,12 @@ def printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal):
 
 @handler("playerCivAssigned")
 def assignGoals(iPlayer):
+	# historical goals carry dates, and a simultaneous start has rewritten every one of them. China
+	# founded in the Renaissance cannot be asked for anything by 1000 BC, and a goal that cannot be
+	# attempted is worse than no goal: it fails on schedule and reports the failure.
+	if SimultaneousStart.enabled():
+		return
+
 	if player(iPlayer).isHuman():
 		data.players[iPlayer].historicalVictory = HistoricalVictory.create(iPlayer)
 		data.players[iPlayer].religiousVictory = ReligiousVictory.create(iPlayer)

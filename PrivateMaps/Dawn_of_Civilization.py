@@ -25,9 +25,19 @@ lDisasters = [
 
 # Option 0 is the scenario: CvMap::getScenario() reads getCustomMapOption(0) directly.
 # Everything below this list is written generically over it, so adding an entry is the whole change.
+# Whether every civilization on SimultaneousStart.lSimultaneousCivs is born together at the
+# starting date, all at the same technology. The index of "On" is the contract read by
+# SimultaneousStart.enabled(); keep the two in step.
+lSimultaneous = [
+	"Off",
+	"On",
+]
+
+
 lCustomMapOptions = [
 	("Starting Date", lStartingDates, lStartingDates[0]),
 	("Natural Disasters", lDisasters, lDisasters[0]),
+	("Simultaneous Start", lSimultaneous, lSimultaneous[0]),
 ]
 
 
