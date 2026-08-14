@@ -101,6 +101,16 @@ def showDawnOfMan(iGameTurn):
 		CvScreensInterface.dawnOfMan.interfaceScreen()
 			
 
+def isAlreadyPlaced(iCiv):
+	"""Whether a scenario has already brought this civilization into the game."""
+	iPlayer = slot(iCiv)
+	
+	if iPlayer < 0:
+		return False
+	
+	return player(iPlayer).isAlive() and player(iPlayer).getNumCities() > 0
+
+
 @handler("GameStart")
 def initBirths():
 	lCivs = [iCiv for iCiv in lBirthOrder if iCiv not in lDisabledCivs]
@@ -109,6 +119,13 @@ def initBirths():
 	# thirty-six player slots, and nothing recycles them when nobody dies first
 	if SimultaneousStart.enabled():
 		lCivs = [iCiv for iCiv in lCivs if iCiv in SimultaneousStart.lSimultaneousCivs]
+		
+		# a scenario has already placed the civilizations alive at its date, with cities, borders
+		# and armies. Birth would give them a second starting stack and reset their attributes on
+		# top of that, so leave anyone already standing alone. This is a guard rather than a
+		# feature: a simultaneous start belongs on the empty 3000 BC map, where nothing is placed
+		# in advance and the whole roster really does begin level.
+		lCivs = [iCiv for iCiv in lCivs if not isAlreadyPlaced(iCiv)]
 	
 	data.births = [Birth(iCiv) for iCiv in lCivs]
 	
