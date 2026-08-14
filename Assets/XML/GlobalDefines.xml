@@ -467,15 +467,15 @@
 	</Define>
 	<Define>
 		<DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>GREAT_PEOPLE_THRESHOLD_INCREASE_TEAM</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>GREAT_PEOPLE_THRESHOLD</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>GREAT_GENERALS_THRESHOLD_INCREASE</DefineName>
