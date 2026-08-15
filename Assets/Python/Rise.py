@@ -458,11 +458,28 @@ def getBirth(iCiv):
 
 class Birth(object):
 
+	# Whether birth() has already run for this civilization. Class level rather than assigned in
+	# __init__ so that a Birth restored from a save written before this existed answers False
+	# instead of raising AttributeError.
+	born = False
+
 	def __init__(self, iCiv):
 		self.iCiv = iCiv
-		# everyone at the scenario's own start rather than their historical year
+		# Everyone at the scenario's own start rather than their historical year - but one turn
+		# past it, not on it, and that single turn is the entire difference between a world and an
+		# empty map.
+		#
+		# check() only calls birth() - the step that creates the starting units and takes the
+		# capital - on the turn until(iTurn) equals exactly 1. A birth dated to the scenario start
+		# is never 1 away from it: until() is 0 on the first turn and negative forever after. So
+		# the first branch of check() ran, activate() gave every civilization a player slot and set
+		# it alive, prepare() granted it the technology - and birth() was never reached, so not one
+		# of the thirty-one was ever given a settler or a city. Alive, present, and holding nothing.
+		#
+		# Dating it one turn later makes that first check both prepare and deliver: until() is 1 at
+		# the scenario start, so the whole roster arrives in a single pass.
 		if SimultaneousStart.enabled():
-			self.iTurn = scenarioStartTurn()
+			self.iTurn = scenarioStartTurn() + 1
 		else:
 			self.iTurn = year(dBirth[iCiv])
 		
@@ -827,7 +844,19 @@ class Birth(object):
 				self.cancel()
 				return
 			self.askSwitch()
-		elif iUntilBirth == 1:
+		elif iUntilBirth <= 1 and not self.born:
+			# At or past the birth turn, and not yet delivered.
+			#
+			# Exactly 1 was the old condition and is still the normal case - the countdown passes
+			# through it once and the flag makes sure it is acted on once. But "exactly" meant a
+			# birth that missed that single turn for any reason was never born at all, silently and
+			# permanently, while still holding a player slot and counting as alive. At or past
+			# means it arrives late instead of never.
+			#
+			# The flag is set before the call rather than after, so that a birth that raises partway
+			# through does not come back next turn and hand out a second starting stack on top of
+			# the half it already placed.
+			self.born = True
 			self.birth()
 			self.checkSwitch()
 		elif -turns(3) <= iUntilBirth <= 0 and not scenarioStart():
