@@ -185,3 +185,69 @@ def grantStartingTechs(iCiv):
 			tPlayer.setHasTech(iTech, True, iPlayer, False, False)
 
 	player(iPlayer).setStartingEra(player(iPlayer).getCurrentEra())
+
+
+### DIAGNOSIS ###
+
+@handler("GameStart")
+def reportConfiguration():
+	"""Say what this module actually read, once, at the start of the game.
+
+	Everything here hangs on two custom map options, and every way of failing to read them produces
+	exactly the same silent False as deciding not to use them. A stale PrivateMaps that still offers
+	two options; a second copy of the map script being loaded from PublicMaps instead; a game begun
+	through a path that never refreshes the options, which leaves every one of them reading its
+	default of zero - all of these end with a game that simply plays normally and says nothing.
+
+	That is the worst property this feature has. The scenario not running and the scenario not being
+	asked for look identical from the map, and the only way to tell them apart from the outside is
+	to notice that the wrong civilizations exist - by which point a game has been started, played,
+	and thrown away.
+
+	Reported rather than repaired, because it cannot be repaired from here: the option either
+	reached the DLL or it did not, and this module is downstream of that either way. But one line
+	at the start of a game is worth an hour of wondering where thirty civilizations went.
+	"""
+	try:
+		iOptions = map.getNumCustomMapOptions()
+	except Exception, e:
+		report("cannot read the map options at all (%s)" % e, iRed)
+		return
+
+	values = []
+	for iOption in range(iOptions):
+		try:
+			values.append(int(map.getCustomMapOption(iOption)))
+		except Exception:
+			values.append(-1)
+
+	try:
+		import Logging
+		Logging.rise("SIMULTANEOUS START: %d custom map options visible, values %s", iOptions, values)
+	except Exception:
+		pass
+
+	# the option is not merely off, it does not exist: nothing the player chose could have set it
+	if iOptions <= iAdvancedOption:
+		report("off - the map script offers only %d options, so this one never reached the game. "
+			"PrivateMaps/Dawn_of_Civilization.py is out of date, or a second copy of it is being "
+			"loaded from elsewhere." % iOptions, iRed)
+		return
+
+	if not enabled():
+		report("off - Simultaneous Start reads %d, where %d is On. Set it in the Custom Game screen "
+			"rather than starting the map directly." % (values[iSimultaneousOption], iSimultaneousOn),
+			iYellow)
+		return
+
+	sAdvanced = ""
+	if advancedEnabled():
+		sAdvanced = ", one of them at %s" % infos.era(iAdvancedEra).getText()
+
+	report("on - %d civilizations at %s%s." % (
+		len(lSimultaneousCivs), infos.era(iStartingEra).getText(), sAdvanced), iGreen)
+
+
+def report(sText, iColor):
+	"""Forced, so it survives the noise of the first turn and is still there to be read."""
+	message(active(), "Simultaneous start: %s" % sText, color=iColor, force=True)

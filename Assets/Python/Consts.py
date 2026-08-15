@@ -33,8 +33,13 @@ iPhoenicia = iCarthage
 # CvPlot allocates its per-plot civilization arrays as byte[NUM_CIVS], and the shipped DLL was
 # built with NUM_CIVS 69. Passing it a civilization index at or above that writes past the end of
 # the array - CvPlot::setSettlerValue has only an FAssertMsg, which is compiled out of a release
-# build, so there is no bounds check. These twenty sit at indices 69 to 88 and take the game down
+# build, so there is no bounds check. These twenty sit at indices 74 to 93 and take the game down
 # with "RuntimeError: unidentifiable C++ exception" as soon as Rise.initMaps runs.
+#
+# Indices 69 to 73 are also at or above the limit, but they are Independent, Independent2, Native,
+# Minor and Barbarian, and none of them appears in lBirthOrder, so no civilization index in that
+# range is ever handed to a settler or war map. Verified by walking lBirthOrder minus this list:
+# the highest index that reaches the DLL is 68.
 #
 # Nothing is deleted. Their constants, XML, areas, leaders, unique powers, city names and settler
 # maps all remain, and none of the shipped scenarios seats any of them. They are simply skipped
