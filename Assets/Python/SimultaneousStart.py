@@ -191,6 +191,27 @@ def grantStartingTechs(iCiv):
 
 @handler("GameStart")
 def reportConfiguration():
+	"""Report, and never be the reason a game fails to start.
+
+	Events.handler_func re-raises after logging, and initBirths is a GameStart handler registered
+	after this one - Rise imports this module at its top, so this module's handlers go on the list
+	first. Anything raised here therefore ran before the roster was built and took all thirty-one
+	births with it, which is the precise failure this diagnostic exists to explain. It caused it
+	once, by formatting an era name.
+
+	A diagnostic that can break the thing it is describing is worse than no diagnostic. So the whole
+	of it is behind this, and the report of a failed report is itself allowed to fail.
+	"""
+	try:
+		describeConfiguration()
+	except Exception, e:
+		try:
+			report("could not report itself (%s)" % e, iRed)
+		except Exception:
+			pass
+
+
+def describeConfiguration():
 	"""Say what this module actually read, once, at the start of the game.
 
 	Everything here hangs on two custom map options, and every way of failing to read them produces
@@ -249,5 +270,66 @@ def reportConfiguration():
 
 
 def report(sText, iColor):
-	"""Forced, so it survives the noise of the first turn and is still there to be read."""
-	message(active(), "Simultaneous start: %s" % sText, color=iColor, force=True)
+	"""Forced, so it survives the noise of the first turn and is still there to be read.
+
+	latin1 rather than the string itself, and that is not decoration. Era names come back from the
+	DLL as unicode, formatting one into a string promotes the whole result to unicode, and
+	CyTranslator.getText takes a char const * - a unicode argument is an ArgumentError rather than a
+	conversion. Rise.announce encodes for exactly this reason and this did not, which is how a line
+	of text stopped a world from being born.
+	"""
+	message(active(), latin1(u"Simultaneous start: %s" % sText), color=iColor, force=True)
+
+
+### THE SAFETY NET ###
+
+@handler("BeginGameTurn")
+def ensureSettlers(iGameTurn):
+	"""Every civilization on the roster ends its first turn able to found a city.
+
+	A net rather than the mechanism. Birth already creates a starting stack, and when that works
+	this does nothing whatsoever. But the roster is thirty-one deep, each birth reads the state of
+	a world that does not exist yet, and a birth that fails for any reason leaves a civilization
+	alive on the map with nothing to act with - which from the outside is indistinguishable from
+	that civilization never having existed.
+
+	One settler is the whole difference between a civilization that lost its opening and one that
+	was never in the game at all. Cheap insurance against a roster this large.
+	"""
+	if not enabled():
+		return
+
+	if iGameTurn != scenarioStartTurn():
+		return
+
+	for iCiv in lSimultaneousCivs:
+		# per civilization, so that one bad position cannot cost the other thirty their settler
+		try:
+			provideSettler(iCiv)
+		except Exception:
+			pass
+
+
+def provideSettler(iCiv):
+	"""Give this civilization a settler if it has nothing to found a city with."""
+	iPlayer = slot(iCiv)
+
+	if iPlayer < 0:
+		return
+
+	if not player(iPlayer).isAlive():
+		return
+
+	# a city already founded, or a settler still walking to its site: either way, not stranded
+	if player(iPlayer).getNumCities() > 0:
+		return
+
+	if units.owner(iPlayer).type(iSettler).any():
+		return
+
+	start = player(iPlayer).getStartingPlot()
+
+	if not start or start.isNone():
+		return
+
+	makeUnit(iPlayer, iSettler, start, UnitAITypes.UNITAI_SETTLE)
