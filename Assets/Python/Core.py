@@ -1706,7 +1706,23 @@ class UnitFactory:
 		return Units([UnitKey.of(unit) for unit in units])
 
 	def owner(self, identifier):
-		units = _iterate(player(identifier).firstUnit, player(identifier).nextUnit, UnitKey.of)
+		# A civilization holding no player slot resolves to a NullPlayer, and every attribute of a
+		# NullPlayer is the NullPlayer. So firstUnit is not a method returning (unit, iterator), it
+		# is the NullPlayer again, and _iterate fails trying to unpack it - "TypeError: unpack
+		# non-sequence", raised two frames below whatever actually asked the question.
+		#
+		# CityFactory.owner has carried this guard since it was written. This one never did, and the
+		# omission is the whole bug: cities were safe and units were not.
+		#
+		# Empty rather than an error, for the same reason cities are empty: a player who does not
+		# exist owns no units, and that is the answer every caller wants. Minors.spawn_limit counts
+		# a barbarian owner's existing units to decide whether to spawn more, and took the turn down
+		# with it whenever that owner had not been given a slot.
+		owner = player(identifier)
+		if not owner:
+			return Units([])
+
+		units = _iterate(owner.firstUnit, owner.nextUnit, UnitKey.of)
 		return Units(units)
 		
 	def at(self, *args):
