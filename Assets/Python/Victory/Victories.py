@@ -114,12 +114,21 @@ def assignGoals(iPlayer):
 
 @handler("switch")
 def onSwitch(iPrevious, iCurrent):
-	data.players[iPrevious].historicalVictory.disable()
-	data.players[iPrevious].religiousVictory.disable()
-	
+	# Same absence as switchReligiousGoals below: under a simultaneous start no goals were ever
+	# created, so there is nothing to disable and nothing to build in their place. Switching
+	# civilization is still offered in that game, so this is reachable rather than theoretical.
+	if data.players[iPrevious].historicalVictory:
+		data.players[iPrevious].historicalVictory.disable()
+
+	if data.players[iPrevious].religiousVictory:
+		data.players[iPrevious].religiousVictory.disable()
+
 	data.players[iPrevious].historicalVictory = None
 	data.players[iPrevious].religiousVictory = None
-	
+
+	if SimultaneousStart.enabled():
+		return
+
 	data.players[iCurrent].historicalVictory = HistoricalVictory.create(iCurrent)
 	data.players[iCurrent].religiousVictory = ReligiousVictory.create(iCurrent)
 	
@@ -148,6 +157,16 @@ def onVictory(iPlayer):
 ### UTILITY FUNCTIONS ###
 
 def switchReligiousGoals(iPlayer):
+	# A simultaneous start has no goals to switch. assignGoals returns before creating any, because
+	# a historical goal carrying a date cannot be asked of a civilization whose date was rewritten,
+	# so religiousVictory is still None - and both handlers that call this fire on the very first
+	# turn, as thirty-one civilizations take their civics and their state religions at once.
+	#
+	# StoredData.onLoad already tests these the same way before enabling them; these two callers
+	# were simply the ones that did not.
+	if not data.players[iPlayer].religiousVictory:
+		return
+
 	data.players[iPlayer].religiousVictory.disable()
 	data.players[iPlayer].religiousVictory = ReligiousVictory.create(iPlayer)
 
