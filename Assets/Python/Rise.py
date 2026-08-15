@@ -128,9 +128,9 @@ def initBirths():
 		lCivs = [iCiv for iCiv in lCivs if not isAlreadyPlaced(iCiv)]
 	
 	data.births = [Birth(iCiv) for iCiv in lCivs]
-	
+
 	for birth in data.births:
-		birth.check()
+		checkBirth(birth)
 
 
 @handler("GameStart")
@@ -155,7 +155,26 @@ def cleanupGreatWall():
 @handler("BeginGameTurn")
 def checkBirths():
 	for birth in data.births:
+		checkBirth(birth)
+
+
+def checkBirth(birth):
+	"""Check one birth without letting it take the rest of the roster down with it.
+
+	A birth check reads the state of other civilizations, so it can fail on a world that does not
+	look the way its rule expects. Raising here used to escape the whole loop: every civilization
+	after it in the birth order was silently never born, and the game carried on with a roster that
+	stopped partway through and no indication of why.
+
+	Cancelling the one civilization and saying so in the log is a far smaller failure than losing
+	all the others to it. This is a backstop and not a licence - anything that reaches it is a bug
+	and the log is where to find it.
+	"""
+	try:
 		birth.check()
+	except Exception, e:
+		birth.canceled = True
+		log.rise("BIRTH FAILED: %s: %s", infos.civ(birth.iCiv).getText(), e)
 
 
 @handler("playerCivAssigned")
@@ -833,7 +852,22 @@ class Birth(object):
 			if getImpact(self.iCiv) <= iImpactLimited:
 				if year(dBirth[active()]) > year(dFall[self.iCiv]) + turns(20):
 					return False
-		
+
+		# Everything below is a rule about historical succession: Italy inherits a dead Rome, Misr a
+		# spent Arabia, Mexico a collapsed Aztec empire, Australia a continent someone else has
+		# already settled. Every one of them asks what the world looks like centuries after the game
+		# began, and none of them can be answered at turn one on an empty map.
+		#
+		# Two of them do not merely answer wrongly, they raise. Italy divides by the number of cities
+		# in Italy, of which there are none yet, and Misr reads the stability of an Arabia that a
+		# simultaneous start never gives a player slot to. Either exception used to escape this loop
+		# and take every civilization after it in the birth order with it.
+		#
+		# There is no version of these rules that means anything when the whole roster is born at
+		# once, so they are skipped rather than repaired. A simultaneous start has no succession.
+		if SimultaneousStart.enabled():
+			return True
+
 		# Byzantium requires Rome to be alive and Greece to be dead (human Rome can avoid Byzantine spawn by being solid)
 		if self.iCiv == iByzantium:
 			if not player(iRome).isExisting():

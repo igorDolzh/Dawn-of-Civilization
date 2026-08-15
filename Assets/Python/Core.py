@@ -452,6 +452,15 @@ def eventpopup(id, title, message, labels=[]):
 
 
 def stability(identifier):
+	# A civilization that was never given a player slot has no stability to report. dSlots.get
+	# returns None for it and PlayerList then indexes a list with None, which fails as "list indices
+	# must be integers" some distance from the civilization that actually caused it.
+	#
+	# Collapsing is the honest answer rather than an error: every caller is asking whether someone is
+	# standing in the way of something, and a civilization that does not exist is not.
+	if isinstance(identifier, Civ) and slot(identifier) < 0:
+		return iStabilityCollapsing
+
 	return data.players[identifier].iStabilityLevel
 
 
@@ -1163,6 +1172,13 @@ class EntityCollection(object):
 		return self.copy([self._keyify(mapped) for mapped in self.get(func)])
 	
 	def proportion(self, func):
+		# What share of nothing satisfies anything is not a question with an answer, but every caller
+		# compares the result against a threshold, and zero is the reading all of them want: none of
+		# an empty set is minor, or coastal, or at war. Raising ZeroDivisionError at the caller was
+		# never the useful outcome.
+		if not self.count():
+			return 0.0
+
 		return 1.0 * self.count(func) / self.count()
 	
 	def format(self, separator=",", final_separator=None, formatter=lambda x: x):
