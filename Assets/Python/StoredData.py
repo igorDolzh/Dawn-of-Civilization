@@ -341,6 +341,12 @@ class GameData:
 		# see Overcrowding.relieve
 		self.dOvercrowdingRelief = {}
 
+		# Simultaneous Start
+		
+		# which player is three eras ahead of the world, drawn once; see
+		# SimultaneousStart.advancedPlayer
+		self.iAdvancedPlayer = -1
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}

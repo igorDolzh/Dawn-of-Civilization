@@ -34,10 +34,20 @@ lSimultaneous = [
 ]
 
 
+# Whether one civilization begins three eras ahead of the rest, and who. Requires the simultaneous
+# start. The indices here are the contract read by SimultaneousStart.advancedSetting().
+lAdvanced = [
+	"Off",
+	"You",
+	"Random AI",
+]
+
+
 lCustomMapOptions = [
 	("Starting Date", lStartingDates, lStartingDates[0]),
 	("Natural Disasters", lDisasters, lDisasters[0]),
 	("Simultaneous Start", lSimultaneous, lSimultaneous[0]),
+	("Advanced Civilization", lAdvanced, lAdvanced[0]),
 ]
 
 

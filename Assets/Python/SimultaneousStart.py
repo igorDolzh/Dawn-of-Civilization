@@ -41,6 +41,60 @@ def enabled():
 		return False
 
 
+### THE ADVANCED CIVILIZATION ###
+
+# Slot 3, declared alongside the others in PrivateMaps/Dawn_of_Civilization.py. Off, the human, or
+# one artificial player drawn at random; the indices are the contract with that file.
+iAdvancedOption = 3
+iAdvancedOff = 0
+iAdvancedHuman = 1
+iAdvancedAI = 2
+
+
+def advancedSetting():
+	"""Which of the three the player chose, defaulting to off if it cannot be read."""
+	try:
+		if map.getNumCustomMapOptions() <= iAdvancedOption:
+			return iAdvancedOff
+
+		return map.getCustomMapOption(iAdvancedOption)
+	except:
+		return iAdvancedOff
+
+
+def advancedEnabled():
+	"""Whether one civilization is out of its time. Requires the simultaneous start itself.
+
+	On its own the setting would mean little: without a simultaneous start the civilizations
+	arrive centuries apart already, and being three eras ahead of a neighbour who has not been
+	born yet is not a scenario.
+	"""
+	return enabled() and advancedSetting() != iAdvancedOff
+
+
+def advancedPlayer():
+	"""Which player is the advanced one, or -1.
+
+	Chosen once and remembered, because it must not be reconsidered every time a civilization is
+	born: the draw uses the synchronised generator, and asking it again would both give different
+	answers and desynchronise a multiplayer game.
+	"""
+	if data.iAdvancedPlayer != -1:
+		return data.iAdvancedPlayer
+
+	if advancedSetting() == iAdvancedHuman:
+		data.iAdvancedPlayer = active()
+		return data.iAdvancedPlayer
+
+	candidates = [iPlayer for iPlayer in players.major().alive() if not player(iPlayer).isHuman()]
+
+	if not candidates:
+		return -1
+
+	data.iAdvancedPlayer = candidates[rand(len(candidates))]
+	return data.iAdvancedPlayer
+
+
 ### THE ROSTER ###
 
 # Chosen as nations that still exist rather than by birth date, which is why France, China, Japan
@@ -73,24 +127,60 @@ lSimultaneousCivs = [
 iStartingEra = iRenaissance
 
 
-def startingTechs():
-	"""Every technology up to and including the starting era.
+# The one civilization out of its time, when the advanced option is on. Everyone else drops to
+# medieval, so the gap is three eras: machine guns and artillery against knights.
+#
+# Global rather than anything later because it is the widest gap in which the medieval world still
+# has an answer - mass, distance, terrain and attrition. Beyond it there is no game, only a
+# demonstration.
+iBackwardEra = iMedieval
+iAdvancedEra = iGlobal
+
+
+def techsUpTo(iEra):
+	"""Every technology up to and including an era.
 
 	Read from the era each technology declares rather than listed by hand, so it stays correct if
 	techs are added or moved between eras - which has happened to this tree before.
 	"""
-	return [iTech for iTech in infos.techs() if infos.tech(iTech).getEra() <= iStartingEra]
+	return [iTech for iTech in infos.techs() if infos.tech(iTech).getEra() <= iEra]
 
 
-@handler("birth")
-def grantStartingTechs(iPlayer):
-	"""Bring a newly born civilization up to the common starting technology."""
+def startingEra(iPlayer):
+	"""Which era this civilization begins in."""
+	if not advancedEnabled():
+		return iStartingEra
+
+	if iPlayer == advancedPlayer():
+		return iAdvancedEra
+
+	return iBackwardEra
+
+
+@handler("prepareBirth")
+def grantStartingTechs(iCiv):
+	"""Bring a civilization up to its starting technology, before it is given anything else.
+
+	prepareBirth rather than birth, and the difference is the whole point. Birth fires at the end
+	of Birth.birth(), by which time assignAttributes and createUnits have already run - and
+	createUnits asks getUnitForRole for the strongest unit the civilization can presently train.
+	Granting the technology afterwards produces a renaissance empire defended by archers.
+
+	prepare() runs at Rise.py:797, after activate() has taken a player slot and before birth() at
+	:812 touches anything. Nothing here is undone later: civ.apply adds its own technologies and
+	setHasTech only ever adds.
+	"""
 	if not enabled():
+		return
+
+	iPlayer = slot(iCiv)
+
+	if iPlayer < 0:
 		return
 
 	tPlayer = team(iPlayer)
 
-	for iTech in startingTechs():
+	for iTech in techsUpTo(startingEra(iPlayer)):
 		if not tPlayer.isHasTech(iTech):
 			tPlayer.setHasTech(iTech, True, iPlayer, False, False)
 
