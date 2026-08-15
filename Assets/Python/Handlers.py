@@ -25,6 +25,7 @@ import DynamicCivs
 import EventSigns
 import FoodImports
 import FutureRules
+import GrandAlliance
 import GreatPeople
 import History
 import Logging

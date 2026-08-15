@@ -347,6 +347,14 @@ class GameData:
 		# SimultaneousStart.advancedPlayer
 		self.iAdvancedPlayer = -1
 
+		# Grand Alliance
+		
+		# grievance and industry granted per player, written as deltas; see GrandAlliance
+		self.dAllianceResentment = {}
+		self.dAllianceProduction = {}
+		self.iAllianceConquests = 0
+		self.bAllianceDeclared = False
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}
