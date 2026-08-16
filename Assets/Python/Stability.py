@@ -921,6 +921,12 @@ def calculateStability(iPlayer):
 		if iRelationStability < 0:
 			iRelationStability /= 2
 	
+	# The same mercy for whoever the world has been scripted to hate, because that war was not their
+	# diplomacy failing - it was handed to them. Only while it is actually running.
+	if data.bAllianceDeclared and iPlayer == data.iAdvancedPlayer:
+		if iRelationStability < 0:
+			iRelationStability /= 2
+	
 	lParameters[iParameterVassals] = iVassalStability
 	lParameters[iParameterDefensivePacts] = iDefensivePactStability
 	lParameters[iParameterRelations] = iRelationStability
@@ -1323,6 +1329,19 @@ def calculateAttitude(iFromPlayer, iToPlayer):
 	iAttitude -= pPlayer.AI_getSameReligionAttitude(iToPlayer)
 	iAttitude -= pPlayer.AI_getDifferentReligionAttitude(iToPlayer)
 	iAttitude -= pPlayer.AI_getFirstImpressionAttitude(iToPlayer)
+	
+	# The Grand Alliance's grievance is a scenario mechanic rather than a diplomatic fact, and it is
+	# deliberately large: thirty points, so that it sits below every threshold at which an AI will
+	# agree to anything. Counted here it would also be thirty points of instability per civilization,
+	# which is how a relations score reaches -47 - the alliance would not merely fight the player's
+	# empire, it would collapse it from the inside at the same time. That is not the difficulty it
+	# exists to supply.
+	#
+	# Removed the same way the religion and first impression components above are, and for the same
+	# reason: not everything the AI feels is something the population should riot over. The amount is
+	# read from where GrandAlliance already records it, so this can never drift from what was applied.
+	if data.iAdvancedPlayer >= 0 and iToPlayer == data.iAdvancedPlayer:
+		iAttitude -= data.dAllianceResentment.get(iFromPlayer, 0)
 	
 	if team(iFromPlayer).isVassal(team(iToPlayer).getID()) and not team(iFromPlayer).isCapitulated():
 		iAttitude -= 100
