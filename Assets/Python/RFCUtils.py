@@ -862,7 +862,7 @@ def toggleStabilityOverlay(iPlayer = -1):
 			if not plot.isPeak() and not plot.isWater():
 				if plot.isPlayerCore(iPlayer):
 					iPlotType = iCoreArea
-				elif plot.getPlayerSettlerValue(iPlayer) > 0:
+				elif isHistorical(iPlayer, plot):
 					iPlotType = iHistoricalArea
 				elif plot.getPlayerWarValue(iPlayer) > 1:
 					iPlotType = iConquestArea

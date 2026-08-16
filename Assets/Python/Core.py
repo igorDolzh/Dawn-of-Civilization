@@ -451,6 +451,20 @@ def eventpopup(id, title, message, labels=[]):
 	popup.launch(not labels)
 
 
+def isHistorical(iPlayer, plot):
+	"""Whether this plot is this civilization's historical territory.
+
+	The settler map answers this for everyone else. The civilizations in lWorldHistorical hold the
+	whole world instead, and are answered here rather than by marking their settler map, because
+	the settler map is also what the DLL uses to decide which plots are worth evaluating as city
+	sites - see the note there for what that cost.
+	"""
+	if plot.getPlayerSettlerValue(iPlayer) > 0:
+		return True
+
+	return civ(iPlayer) in lWorldHistorical
+
+
 def stability(identifier):
 	# A civilization that was never given a player slot has no stability to report. dSlots.get
 	# returns None for it and PlayerList then indexes a list with None, which fails as "list indices

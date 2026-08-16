@@ -251,6 +251,26 @@ iGermany :		[(64, 59), (64, 60), (64, 64), (64, 65), (69, 59), (69, 60), (69, 61
 iArgentina :	[(33, 17), (34, 17), (35, 17), (36, 17), (37, 17), (38, 17), (39, 14), (39, 15)],
 }, [])
 
+### World Historical ###
+
+# Civilizations that hold the entire world as historical territory, and so pay no separatism for
+# governing any part of it.
+#
+# Declared here and answered by Core.isHistorical rather than by writing the settler map itself,
+# which is where this started and is a mistake worth recording. The settler map is not read only by
+# stability: CvPlayerAI::AI_foundValue returns zero immediately for a plot whose settler value is
+# zero, and AI_updateFoundValues calls it for every revealed plot, every turn, for every player
+# including the human. Marking the whole map removed that early exit and turned the heaviest
+# routine in the AI loose on four thousand eight hundred tiles a turn instead of two hundred.
+#
+# There is a second exit at value 1, but only for civilizations of limited impact or less, and
+# Australia is IMPACT_SIGNIFICANT. So nothing caught it. The result was not a slow turn; it was a
+# turn that never ended, and it arrived the moment a conquest revealed enough new map to matter.
+lWorldHistorical = [
+	iAustralia,
+]
+
+
 ### Core Area ###
 
 dCoreArea = CivDict({
