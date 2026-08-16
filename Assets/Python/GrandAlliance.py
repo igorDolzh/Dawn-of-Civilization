@@ -63,6 +63,30 @@ iPactInterval = 10
 iWarThreshold = 5
 
 
+# How long the world keeps fighting after the last city falls.
+#
+# Counted from the most recent conquest rather than from the declaration, so it is the conquering
+# that sustains the war and stopping that ends it. Without this the alliance had no way out at all:
+# resentment only ever grew, thirty civilizations sat permanently at -30, and no diplomacy any of
+# them could offer would ever be accepted. A war that cannot end is not a scenario, it is a tax on
+# every city the player owns, forever, through war weariness.
+iAllianceRespite = 20
+
+
+# Happiness for a civilization at war with the whole world.
+#
+# War weariness in CvCity::getWarWearinessPercentAnger accumulates per war, so being at war with
+# thirty civilizations at once produces thirty times the unhappiness of the same amount of fighting
+# against one. That is a consequence of the alliance's scale rather than anything the player chose,
+# and it is not the difficulty the mechanic is meant to supply - the difficulty is meant to be the
+# thirty armies.
+#
+# The proper fix is changeWarWearinessModifier, which the DLL has and Python does not: only the
+# getter is exposed on CyPlayer. Happiness is the lever that is actually reachable.
+iEnemiesPerRelief = 5
+iMaximumRelief = 5
+
+
 ### RESENTMENT ###
 
 @handler("BeginGameTurn")
@@ -80,6 +104,8 @@ def maintainAlliance(iGameTurn):
 		resent(iPlayer, iAdvanced)
 		subsidise(iPlayer, iAdvanced)
 
+	relieve(iAdvanced)
+	settle(iAdvanced)
 	combine(iAdvanced)
 
 
@@ -132,6 +158,65 @@ def subsidise(iPlayer, iAdvanced):
 			event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT, color=iYellow)
 
 
+### THE COST OF BEING ALONE ###
+
+def relieve(iAdvanced):
+	"""Happiness for the civilization the world is at war with, by how many are at war with it.
+
+	Tracked as a delta like everything else here, because changeExtraHappiness is relative and
+	Overcrowding is already writing to the same field.
+	"""
+	tAdvanced = player(iAdvanced).getTeam()
+
+	iEnemies = players.major().existing().without(iAdvanced).where(
+		lambda iPlayer: team(iPlayer).isAtWar(tAdvanced)).count()
+
+	iRelief = min(iMaximumRelief, iEnemies / iEnemiesPerRelief)
+	iApplied = data.iAllianceRelief
+
+	if iRelief == iApplied:
+		return
+
+	player(iAdvanced).changeExtraHappiness(iRelief - iApplied)
+	data.iAllianceRelief = iRelief
+
+
+### THE WAY OUT ###
+
+def settle(iAdvanced):
+	"""The world stops when the conquering stops.
+
+	Peace is made rather than merely allowed, because it could not be reached by ordinary diplomacy:
+	the whole point of the resentment is that it sits below every threshold at which an AI will
+	accept anything, so leaving the alliance to sue for peace by itself means it never does.
+
+	The grievance is not forgotten. The conquest count drops back just under the threshold, so the
+	world remains hostile and one more city taken puts it straight back at war - which is the shape
+	the mechanic should have had from the start. Conquer, and the world unites against you; stop,
+	and it lets you keep what you took; start again, and it comes back.
+	"""
+	if not data.bAllianceDeclared:
+		return
+
+	if since(data.iAllianceLastConquest) < turns(iAllianceRespite):
+		return
+
+	tAdvanced = player(iAdvanced).getTeam()
+	iPeace = 0
+
+	for iPlayer in players.major().existing().without(iAdvanced):
+		if team(iPlayer).isAtWar(tAdvanced):
+			team(iPlayer).makePeace(tAdvanced)
+			iPeace += 1
+
+	data.bAllianceDeclared = False
+	data.iAllianceConquests = min(data.iAllianceConquests, iWarThreshold - 1)
+
+	if iPeace > 0:
+		message(iAdvanced, 'TXT_KEY_ALLIANCE_PEACE', iPeace,
+			event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT, color=iGreen, force=True)
+
+
 ### COMBINATION ###
 
 @handler("cityAcquired")
@@ -147,6 +232,8 @@ def countConquest(iOwner, iPlayer, city, bConquest):
 		return
 
 	data.iAllianceConquests += 1
+	# the respite is counted from here, so a war is sustained by conquest and ended by stopping
+	data.iAllianceLastConquest = turn()
 
 
 def combine(iAdvanced):
@@ -312,6 +399,8 @@ def declare(lAllies, iAdvanced):
 	does unaided: thirty civilizations declaring one at a time are thirty wars won separately.
 	"""
 	data.bAllianceDeclared = True
+	# so the clock starts at the declaration even if the last city fell long before it
+	data.iAllianceLastConquest = turn()
 
 	tAdvanced = player(iAdvanced).getTeam()
 

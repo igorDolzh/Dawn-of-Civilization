@@ -354,6 +354,10 @@ class GameData:
 		self.dAllianceProduction = {}
 		self.iAllianceConquests = 0
 		self.bAllianceDeclared = False
+		# turn the advanced civilization last took a city, so the world knows when to stop fighting
+		self.iAllianceLastConquest = 0
+		# happiness granted while the world is at war with it, written as a delta
+		self.iAllianceRelief = 0
 
 		self.bNoCongressOption = False
 		
