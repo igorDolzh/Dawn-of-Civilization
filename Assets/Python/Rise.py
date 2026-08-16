@@ -441,6 +441,29 @@ def applyMaps(iCivilization, iPeriod=-1):
 			if not plot(x, y).isWater():
 				plot(x, y).setWarValue(iCivilization, iValue)
 		
+@handler("OnLoad")
+def repairWorldHistoricalMaps():
+	"""Put back a settler map that was once written across the whole world.
+
+	Settler values are serialised - CvPlot::read restores them from the save - so a game begun while
+	the file marked every land tile keeps every land tile marked, however the file reads afterwards.
+	Correcting the data on disk does nothing for a game already in progress, and that game is the
+	one whose turns do not end.
+
+	The file is the source of truth, so re-reading it is the repair. Only for the civilizations in
+	lWorldHistorical, because applyMaps rewrites every plot for a civilization and there is no
+	reason to do that for the other eighty-seven.
+	"""
+	for iCivilization in lWorldHistorical:
+		if iCivilization in lDisabledCivs:
+			continue
+
+		try:
+			applyMaps(iCivilization)
+		except Exception, e:
+			log.rise("MAP REPAIR FAILED: %s: %s", infos.civ(iCivilization).getText(), e)
+
+
 def initMaps():
 	for iCivilization in lBirthOrder:
 		# setSettlerValue indexes a byte[NUM_CIVS] array in the DLL; see lDisabledCivs in Consts

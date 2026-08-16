@@ -239,6 +239,72 @@ def partner(iPlayer, candidates):
 	return None
 
 
+### REPAIR ###
+
+@handler("OnLoad")
+def prunePacts():
+	"""Cut an existing defensive pact web back to one partner each.
+
+	Changing how pacts are made does nothing for a game that already made them. Pacts are deals,
+	deals live in the DLL's list and are serialised with the save, so a game begun under the mesh
+	version carries all four hundred and thirty five of them for the rest of its life - and
+	CvTeam::declareWar still recurses through every one at the moment the world declares.
+
+	Neither setDefensivePact nor cancelDefensivePacts is exposed to Python. CyDeal.kill is, and a
+	defensive pact is a deal like any other, so this is the only way to reach them.
+
+	Pruned rather than cleared: the first agreement each civilization made stands, and only the
+	surplus is cut. The diplomacy was the point of the mechanic.
+	"""
+	if not SimultaneousStart.advancedEnabled():
+		return
+
+	# collected first and killed afterwards, because killing a deal while walking the list is how
+	# you end up reading one that has already been freed
+	lPacts = []
+
+	for iDeal in range(game.getIndexAfterLastDeal()):
+		deal = game.getDeal(iDeal)
+
+		if not deal or deal.isNone():
+			continue
+
+		if isPactDeal(deal):
+			lPacts.append((deal.getID(), deal.getFirstPlayer(), deal.getSecondPlayer()))
+
+	paired = set()
+	iKilled = 0
+
+	for iID, iFirst, iSecond in lPacts:
+		if iFirst not in paired and iSecond not in paired:
+			paired.add(iFirst)
+			paired.add(iSecond)
+			continue
+
+		deal = game.getDeal(iID)
+
+		if deal and not deal.isNone():
+			deal.kill()
+			iKilled += 1
+
+	if iKilled > 0:
+		message(active(), latin1(u"Grand Alliance: %d surplus defensive pacts dissolved." % iKilled),
+			color=iYellow, force=True)
+
+
+def isPactDeal(deal):
+	"""Whether this deal is a defensive pact, from either side of it."""
+	for iTrade in range(deal.getLengthFirstTrades()):
+		if deal.getFirstTrade(iTrade).ItemType == TradeableItems.TRADE_DEFENSIVE_PACT:
+			return True
+
+	for iTrade in range(deal.getLengthSecondTrades()):
+		if deal.getSecondTrade(iTrade).ItemType == TradeableItems.TRADE_DEFENSIVE_PACT:
+			return True
+
+	return False
+
+
 def declare(lAllies, iAdvanced):
 	"""The world goes to war at once.
 
