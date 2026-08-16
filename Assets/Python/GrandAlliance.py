@@ -50,6 +50,15 @@ iProductionGap = 2
 # Cities the advanced civilization must take before the world stops watching and starts signing.
 iPactThreshold = 2
 
+# Turns between attempts to arrange pacts.
+#
+# Not every turn, and this is not a performance nicety. CvTeam::signDefensivePact does nothing at
+# all unless canTradeItem succeeds on both sides, and reports nothing when it does not - so a pact
+# that cannot be signed this turn is silently retried forever, and every retry costs two
+# canTradeItem calls. Across thirty civilizations that was hundreds of failed negotiations a turn,
+# for the rest of the game.
+iPactInterval = 10
+
 # and before it declares
 iWarThreshold = 5
 
@@ -155,35 +164,79 @@ def combine(iAdvanced):
 	if len(lAllies) < 2:
 		return
 
-	sign(lAllies)
+	# Once the world has declared there is nothing left to prepare for, and every turn spent
+	# arranging pacts after that is spent for nothing.
+	if data.bAllianceDeclared:
+		return
 
-	if data.iAllianceConquests >= iWarThreshold and not data.bAllianceDeclared:
+	if turn() % turns(iPactInterval) == 0:
+		sign(lAllies)
+
+	if data.iAllianceConquests >= iWarThreshold:
 		declare(lAllies, iAdvanced)
 
 
 def sign(lAllies):
-	"""Defensive pacts among everyone not the anachronism.
+	"""Pair the world off, one partner each.
 
-	Only between civilizations that have met and are not already at war with each other, because a
-	pact between strangers is meaningless and one between belligerents is impossible.
+	Deliberately not a web. Thirty civilizations each pacted to all the others is four hundred and
+	thirty five agreements, and CvTeam::declareWar walks every defensive pact of every team it
+	declares on and declares again through each of them - recursively, at CvTeam.cpp:1566. A joint
+	declaration across a full mesh is therefore a cascade of hundreds of recursive declarations,
+	each one recalculating war plans and attitudes for everybody. That is not slow, it is a game
+	that never finishes the turn.
+
+	One partner each keeps the diplomacy visible on the screen, which is the point of it, while
+	leaving the cascade linear in the number of civilizations rather than quadratic.
 	"""
-	for iPlayer in lAllies:
-		for iOther in lAllies:
-			if iPlayer >= iOther:
-				continue
+	unpaired = [iPlayer for iPlayer in lAllies
+				if team(iPlayer).isDefensivePactTrading() and not pacted(iPlayer, lAllies)]
 
-			tPlayer, tOther = team(iPlayer), team(iOther)
+	while len(unpaired) >= 2:
+		iPlayer = unpaired.pop(0)
+		iPartner = partner(iPlayer, unpaired)
 
-			if not tPlayer.isHasMet(player(iOther).getTeam()):
-				continue
+		if iPartner is None:
+			continue
 
-			if tPlayer.isAtWar(player(iOther).getTeam()):
-				continue
+		unpaired.remove(iPartner)
+		team(iPlayer).signDefensivePact(player(iPartner).getTeam())
 
-			if tPlayer.isDefensivePact(player(iOther).getTeam()):
-				continue
 
-			tPlayer.signDefensivePact(player(iOther).getTeam())
+def pacted(iPlayer, lAllies):
+	"""Whether this civilization already has a partner among the others."""
+	for iOther in lAllies:
+		if iOther != iPlayer and team(iPlayer).isDefensivePact(player(iOther).getTeam()):
+			return True
+
+	return False
+
+
+def partner(iPlayer, candidates):
+	"""The first civilization this one could actually sign with, or None.
+
+	A pact between strangers is meaningless and one between belligerents is impossible, and neither
+	side can trade the agreement at all without the technology for it - which is checked here rather
+	than discovered by a call that fails in silence.
+	"""
+	for iOther in candidates:
+		tOther = player(iOther).getTeam()
+
+		if not team(iPlayer).isHasMet(tOther):
+			continue
+
+		if team(iPlayer).isAtWar(tOther):
+			continue
+
+		if team(iPlayer).isDefensivePact(tOther):
+			continue
+
+		if not team(iOther).isDefensivePactTrading():
+			continue
+
+		return iOther
+
+	return None
 
 
 def declare(lAllies, iAdvanced):
