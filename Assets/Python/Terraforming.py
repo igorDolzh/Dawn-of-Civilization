@@ -7,13 +7,26 @@
 # the plot, kills any city on it, and strips the bonus, improvement, route, feature and
 # rivers. Everything below exists to make that destruction predictable.
 #
-# Nothing here calls CyMap::recalculateAreas. setPlotType's bRecalculate argument already
-# covers it: the DLL inspects the neighbours, decides whether the change merges or splits
-# landmasses, and rebuilds the areas itself only when it must. recalculateAreas is brutal -
-# it points every plot at FFreeList::INVALID_INDEX, destroys every CvArea, and rebuilds from
-# nothing - and CvPlot::setPlotType dereferences pLoopPlot->area() without a null check
-# (CvPlot.cpp:5723 and :5746). The only other callers in the mod are RegionMap, CvWBDesc and
-# MapParser, all of which run at map load, with no cities or units holding area references.
+# The areas are the hard part, and this file used to be wrong about them twice.
+#
+# It first said nothing here calls CyMap::recalculateAreas, and left the decision to setPlotType's
+# bRecalculate argument. That was true and useless: setPlotType makes the call itself, at
+# CvPlot.cpp:5804, whenever the change joins two areas or the neighbours cross more than two area
+# boundaries. It does so holding CvArea pointers in locals taken at :5716 and :5742, which
+# recalculateAreas has just destroyed. Declining to make a call is not the same as it not happening.
+#
+# It then refused those conversions instead, which kept the game alive at the cost of the only
+# works worth doing - a strait filled to join two islands, a channel cut so a navy can pass.
+#
+# What it does now is take the rebuild away from the DLL and do it here: setPlotType with
+# bRecalculate false, so the DLL never holds an area pointer at all, then CyMap::recalculateAreas
+# from Python, on a BeginGameTurn, with no conversion frame on the stack. That this is safe rests
+# on one fact - nothing in the game caches an area. CvCity::area, CvUnit::area and
+# CvSelectionGroup::area all resolve through plot()->area() on every call, so once the plots are
+# re-assigned, every city, unit and stack is correct again by construction.
+#
+# It is also more correct than what it replaced. A fill that cuts an ocean in two now produces two
+# areas, which is the truth, instead of one area that no longer connects.
 
 from Core import *
 from RFCUtils import *
@@ -27,6 +40,19 @@ from Events import handler, ERROR_LOG
 # neck can be severed by a single plot. Water beyond it is treated as unreachable, so raising
 # this makes reclamation more permissive, not less.
 iConnectivityRadius = 4
+
+
+# Whether a conversion that joins two landmasses, or two seas, is carried out or refused.
+#
+# On, these are the interesting works: filling the strait between two islands to make one, or
+# cutting a channel that lets a navy pass between two oceans. Both require every area on the map to
+# be rebuilt, which is the one operation in this file that can end the process - see convert() for
+# why it is survivable when done from here and not survivable where the DLL does it.
+#
+# Set to False and such works are abandoned with a message instead. That is the conservative
+# behaviour and it costs a work boat; this is the one setting in the file worth reaching for if
+# terraforming ever starts taking the game down again.
+bAllowMerging = True
 
 
 ### BEGIN IMPROVEMENT BUILT ###
@@ -98,8 +124,10 @@ def flood(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_BLOCKED_BY_CITY')
 		return
 
-	# same trap from the other side: a flood that joins two separate bodies of water
-	if wouldRecalculateAreas(target, True):
+	# the same from the other side: a channel joining two separate bodies of water
+	bMerging = wouldRecalculateAreas(target, True)
+
+	if bMerging and not bAllowMerging:
 		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_REBUILD')
 		return
 
@@ -109,8 +137,7 @@ def flood(target):
 	evacuate(target)
 
 	# everything still standing here is destroyed by erase() inside setPlotType
-	trace('flood', target, 'setPlotType')
-	target.setPlotType(PlotTypes.PLOT_OCEAN, True, True)
+	convert(target, PlotTypes.PLOT_OCEAN, bMerging, 'flood')
 
 	# a flooded tile is only useful if it joined the sea. isLake is a property of the area it was
 	# put into, so this is the one check that says whether a ship can actually get here
@@ -141,7 +168,7 @@ def evacuate(target):
 ### SEA -> LAND ###
 
 def reclaim(target):
-	"""Convert a sea plot into land, refusing if it would strand ships or landlock a city."""
+	"""Convert a sea plot into land, refusing only if it would landlock a city."""
 	if not target.isWater():
 		return
 
@@ -155,13 +182,17 @@ def reclaim(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_LANDLOCK', landlocked.getName())
 		return
 
-	if wouldSeverWater(target):
-		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_STRAND')
-		return
+	# Two different ways this fill changes the shape of the world: it can join two landmasses into
+	# one, or cut one ocean into two. Both used to be refused, and severing was refused for a reason
+	# that no longer holds - the danger was never the split itself, it was that the DLL does not
+	# re-examine water when a plot becomes land, so both halves keep one area id and every navy
+	# believes it can sail between them.
+	#
+	# Rebuilding the areas answers that properly instead of avoiding it. The two halves come back as
+	# two areas, which is the truth, and no ship plans a route that does not exist.
+	bRebuild = wouldSeverWater(target) or wouldRecalculateAreas(target, False)
 
-	# joining two landmasses makes the DLL rebuild every area on the map mid-conversion, which
-	# does not survive; see wouldRecalculateAreas
-	if wouldRecalculateAreas(target, False):
+	if bRebuild and not bAllowMerging:
 		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_REBUILD')
 		return
 
@@ -169,8 +200,7 @@ def reclaim(target):
 	name = describe(target)
 	iTerrain = surroundingTerrain(target)
 
-	trace('reclaim', target, 'setPlotType')
-	target.setPlotType(PlotTypes.PLOT_LAND, True, True)
+	convert(target, PlotTypes.PLOT_LAND, bRebuild, 'reclaim')
 
 	# setPlotType applies the global LAND_TERRAIN default; match the neighbours instead
 	if iTerrain >= 0:
@@ -288,6 +318,41 @@ def shoal(target):
 	target.setTerrainType(iCoast, True, True)
 
 	announce(iOwner, 'TXT_KEY_TERRAFORMING_SHOALED', name, target)
+
+
+def convert(target, iPlotType, bMerging, operation):
+	"""Change the plot, rebuilding the map's areas afterwards when the change joins two of them.
+
+	setPlotType rebuilds them itself when it must, and that is the one thing it must not do. It
+	takes CvArea pointers into locals at CvPlot.cpp:5716 and :5742 and then calls recalculateAreas
+	at :5804, which destroys every area those pointers refer to. What follows is not a Python error
+	and leaves no traceback.
+
+	Passing bRecalculate=False skips that entire block, so the DLL never takes an area pointer at
+	all, and the rebuild is done from here instead: at Python top level, on a BeginGameTurn, with no
+	conversion frame anywhere on the stack.
+
+	That this is safe from here and not from there rests on one fact worth stating plainly, because
+	the whole feature depends on it. Nothing caches an area. CvCity::area, CvUnit::area and
+	CvSelectionGroup::area all resolve through plot()->area() on every call - CvCity.cpp:6575,
+	CvUnit.cpp:10927, CvSelectionGroup.cpp:3259 - so the moment the plots are re-assigned, every
+	city, unit and stack on the map is correct again by construction. The only references that
+	cannot survive are the ones the DLL holds in local variables across its own call, and this way
+	it holds none.
+
+	Between the two calls the plot is land carrying a water area, or the reverse. Nothing runs in
+	that gap.
+	"""
+	if not bMerging:
+		target.setPlotType(iPlotType, True, True)
+		return
+
+	trace(operation, target, 'setPlotType, deferring the area rebuild')
+	target.setPlotType(iPlotType, False, True)
+
+	trace(operation, target, 'recalculateAreas')
+	map.recalculateAreas()
+	trace(operation, target, 'areas rebuilt')
 
 
 ### THE AREA TRAP ###
