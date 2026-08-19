@@ -254,6 +254,14 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TERRAFORMING_WOULD_REBUILD</Tag>
+		<English>Joining these shores would remake every coastline on the map, and the works have been abandoned.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TERRAFORMING_BLOCKED_BY_CITY</Tag>
 		<English>The works would sweep the city away, and cannot proceed here.</English>
 		<French>No Translation</French>

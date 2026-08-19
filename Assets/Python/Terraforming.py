@@ -98,6 +98,11 @@ def flood(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_BLOCKED_BY_CITY')
 		return
 
+	# same trap from the other side: a flood that joins two separate bodies of water
+	if wouldRecalculateAreas(target, True):
+		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_REBUILD')
+		return
+
 	iOwner = target.getOwner()
 	name = describe(target)
 
@@ -152,6 +157,12 @@ def reclaim(target):
 
 	if wouldSeverWater(target):
 		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_STRAND')
+		return
+
+	# joining two landmasses makes the DLL rebuild every area on the map mid-conversion, which
+	# does not survive; see wouldRecalculateAreas
+	if wouldRecalculateAreas(target, False):
+		abandon(target, 'TXT_KEY_TERRAFORMING_WOULD_REBUILD')
 		return
 
 	iOwner = target.getOwner()
@@ -277,6 +288,94 @@ def shoal(target):
 	target.setTerrainType(iCoast, True, True)
 
 	announce(iOwner, 'TXT_KEY_TERRAFORMING_SHOALED', name, target)
+
+
+### THE AREA TRAP ###
+
+# Neighbour offsets in DIRECTION_NORTH..DIRECTION_NORTHWEST order, matching aiPlotDirectionX and
+# aiPlotDirectionY in CvGlobals.cpp:262. The order is not decoration: the transition count below
+# walks the neighbours in exactly this sequence, and a different one gives a different answer.
+lDirections = [(0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1)]
+
+
+def neighbourAreas(target):
+	"""Area id of each of the eight neighbours in direction order, None where the map ends."""
+	x, y = location(target)
+	areas = []
+
+	for dx, dy in lDirections:
+		iY = y + dy
+
+		# plotDirection returns NULL past the poles. Core.wrap clamps y instead, which would report
+		# the edge row twice and give a different count from the one the DLL arrives at.
+		if iY < 0 or iY >= iWorldY:
+			areas.append(None)
+			continue
+
+		areas.append(plot((x + dx) % iWorldX, iY).getArea())
+
+	return areas
+
+
+def wouldRecalculateAreas(target, bWater):
+	"""Whether setPlotType would rebuild every area on the map to make this change.
+
+	This is the crash. Not a Python error and not something this module does - the DLL does it
+	itself, at CvPlot.cpp:5804, in the middle of the conversion:
+
+	    if (bRecalculateAreas) { GC.getMapINLINE().recalculateAreas(); }
+
+	recalculateAreas points every plot at FFreeList::INVALID_INDEX, destroys every CvArea and
+	rebuilds from nothing, while cities, units and plot groups all hold area references taken
+	before it ran. The header of this file already explains why that cannot be survived; what it
+	did not know is that declining to call it is not enough, because setPlotType reaches it without
+	being asked.
+
+	So the condition is predicted here instead, exactly as CvPlot.cpp:5709-5804 computes it. Either
+	branch is enough for the DLL:
+
+	  - the new plot touches more than one area of the element it is becoming. For a reclamation
+	    that means two separate landmasses, which is precisely what filling the strait between two
+	    islands does; for a flood, two cardinally adjacent bodies of water.
+	  - walking the eight neighbours in direction order crosses more than two area boundaries, which
+	    a broken coastline manages easily.
+
+	Fails closed, like wouldSeverWater above it and for the same reason. Refusing a fill costs a
+	work boat. Allowing this one costs the game, every time the save is loaded, because the queue
+	that carries it is saved with everything else.
+	"""
+	areas = neighbourAreas(target)
+
+	matching = set()
+
+	if bWater:
+		# cardinal only, because that is all setPlotType looks at for water, under a comment
+		# conceding the point: diagonal water movement is not allowed
+		lConsidered = [areas[0], areas[2], areas[4], areas[6]]
+	else:
+		lConsidered = areas
+
+	for iArea in lConsidered:
+		if iArea is None:
+			continue
+
+		if map.getArea(iArea).isWater() == bWater:
+			matching.add(iArea)
+
+	if len(matching) > 1:
+		return True
+
+	# the transition count, started from the last direction exactly as the DLL starts it
+	iCount = 0
+	iLast = areas[-1]
+
+	for iArea in areas:
+		if iArea != iLast:
+			iCount += 1
+
+		iLast = iArea
+
+	return iCount > 2
 
 
 ### SHARED ###
