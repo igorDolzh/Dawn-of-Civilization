@@ -363,6 +363,11 @@ class GameData:
 		# happiness granted while the world is at war with it, written as a delta
 		self.iAllianceRelief = 0
 
+		# The invasion: turn the warning began, -1 until it does; see AlienInvasion
+		self.iInvasionTurn = -1
+		self.iInvasionWave = 0
+		self.bInvasionEnded = False
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}
