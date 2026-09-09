@@ -368,6 +368,10 @@ class GameData:
 		self.iInvasionWave = 0
 		self.bInvasionEnded = False
 
+		# The reversal: turn the warning began, -1 until it does; see PoleReversal
+		self.iReversalTurn = -1
+		self.bReversalDone = False
+
 		self.bNoCongressOption = False
 		
 		self.dLastClaims = {}
