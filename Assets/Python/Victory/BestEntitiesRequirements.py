@@ -74,7 +74,7 @@ class BestPopulationPlayer(BestPlayersRequirement):
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_BEST_POPULATION"
 	
 	def metric(self, iPlayer):
-		return player(iPlayer).getRealPopulation()
+		return realPopulation(iPlayer)
 
 
 # Third Mugyo URV goal

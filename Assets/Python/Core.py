@@ -451,6 +451,23 @@ def eventpopup(id, title, message, labels=[]):
 	popup.launch(not labels)
 
 
+def realPopulation(identifier):
+	"""A civilization's population, in thousands.
+
+	Summed here rather than read from CvPlayer::getRealPopulation, because that function cannot be
+	relied on to mean the same thing in every build. The source divides the empire total by a
+	thousand so that a large late empire does not saturate a 32 bit return, and the comment there
+	says consumers should append the three zeros when displaying. The shipped binary predates that
+	change and returns the figure whole - so everything that dutifully appended the zeros has been
+	reporting a thousand times too many people.
+
+	Asking the cities instead settles it. They are the same in either build, Python has no 32 bit
+	ceiling to saturate against, and the division happens exactly once, here. Correct against the
+	DLL as shipped and against the DLL as it will be once rebuilt.
+	"""
+	return sum([city.getRealPopulation() for city in cities.owner(identifier)]) / 1000
+
+
 def isHistorical(iPlayer, plot):
 	"""Whether this plot is this civilization's historical territory.
 

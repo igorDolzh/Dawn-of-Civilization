@@ -258,9 +258,12 @@ def buildingBuiltFeats(pCity, iBuildingType):
 
 def endTurnFeats(iPlayer):
 
-	# getRealPopulation() now returns the empire total in thousands, so every threshold
-	# below is expressed in thousands too. The feats fire at the same real populations.
-	lRealPopulation = gc.getPlayer(iPlayer).getRealPopulation()
+	# Thresholds below are in thousands. Core.realPopulation sums the cities rather than trusting
+	# CvPlayer::getRealPopulation, whose unit differs between the shipped DLL and the source - see
+	# the note there. Imported inside the function because this module is loaded early and does not
+	# otherwise depend on Core.
+	import Core
+	lRealPopulation = Core.realPopulation(iPlayer)
 
 	if (lRealPopulation > 500):
 		populationFeat(iPlayer, FeatTypes.FEAT_POPULATION_HALF_MILLION, "TXT_KEY_FEAT_HALF_MILLION")

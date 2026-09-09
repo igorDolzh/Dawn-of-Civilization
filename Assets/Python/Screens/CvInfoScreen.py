@@ -1503,7 +1503,7 @@ class CvInfoScreen:
 					iLandAreaGameAverage += iValue
 				aiGroupLandArea.append((iValue, iPlayerLoop))
 
-				iValue = pCurrPlayer.getRealPopulation()
+				iValue = realPopulation(iPlayerLoop)
 				if iPlayerLoop == self.iActivePlayer:
 					iPopulation = iValue
 				else:
