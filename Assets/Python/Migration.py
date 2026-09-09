@@ -7,6 +7,8 @@ from Core import *
 from RFCUtils import *
 from Events import handler
 
+import Urbanisation
+
 
 ### CONSTANTS ###
 
@@ -14,7 +16,10 @@ from Events import handler
 iMigrationInterval = 3
 iMigrationIntervalRand = 5
 
-# at most this many people move in a single cycle, across the entire world
+# at most this many people move in a single cycle, across the entire world.
+#
+# A floor rather than the figure: Urbanisation raises it from the Industrial era, because three
+# people per cycle for the whole world cannot represent a countryside emptying into cities.
 iMaxMigrationsPerCycle = 3
 
 # how far people are willing to travel, in plots
@@ -23,7 +28,10 @@ iMaxMigrationDistance = 12
 # a city is never reduced to or below this size by emigration
 iMinSourcePopulation = 2
 
-# how miserable a city has to be before anyone leaves at all
+# how miserable a city has to be before anyone leaves at all.
+#
+# A ceiling rather than the figure: Urbanisation lowers it from the Industrial era, when people
+# began leaving villages that were merely small rather than only ones that were failing.
 iMinEmigrationValue = 3
 
 # the destination has to be this much better than the origin, so that population
@@ -156,7 +164,7 @@ def migration():
 		return dEmigration.get(location(city), 0)
 
 	sourceCities = candidates.where(lambda city: canEmigrateFrom(city, emigrationValue(city))) \
-							 .highest(iMaxMigrationsPerCycle, emigrationValue)
+							 .highest(Urbanisation.migrationsPerCycle(iMaxMigrationsPerCycle), emigrationValue)
 
 	# locations already involved this cycle, so nobody migrates twice in one go
 	lUsed = []
@@ -184,7 +192,7 @@ def canEmigrateFrom(city, iEmigrationValue):
 	if player(city.getOwner()).isBirthProtected():
 		return False
 
-	return iEmigrationValue >= iMinEmigrationValue
+	return iEmigrationValue >= Urbanisation.emigrationThreshold(iMinEmigrationValue)
 
 
 def findDestination(sourceCity, candidates, dImmigration, lUsed):

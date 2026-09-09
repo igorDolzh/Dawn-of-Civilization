@@ -48,6 +48,7 @@ import SlaveTrade
 import Stability
 import Terraforming
 import UniquePowers
+import Urbanisation
 import Victories
 import Wonders
 import WorldWars

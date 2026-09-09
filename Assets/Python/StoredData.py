@@ -115,6 +115,10 @@ class PlayerData:
 		
 		# gold spent feeding this player's cities since the last treasury report
 		self.iFoodImportSpending = 0
+		# carrying capacity this civilization's technology has earned, written as deltas;
+		# see Urbanisation
+		self.iUrbanFood = 0
+		self.iUrbanHealth = 0
 		
 		# Plague
 		
